@@ -149,10 +149,17 @@ function learnMappings(data, normalization) {
 function syncPhysicalUnits(empreendimento, table) {
   const catalog = new Map((empreendimento.unidades || []).map((unit) => [unit.chave, unit]));
   for (const unit of table.unidades || []) {
-    const existing = catalog.get(unit.chave); const physical = { chave: unit.chave, bloco: unit.quadra || '', unidade: unit.unidade || '', areaPrivativa: unit.areaPrivativa ?? null, vagas: unit.vagas ?? null, createdFromTableId: existing?.createdFromTableId || table.id, updatedAt: now() };
+    const existing = catalog.get(unit.chave); const situacaoComercial = normalizeUnitStatus(unit.situacaoExtraida); const historicoSituacao = [...(existing?.historicoSituacao || [])]; const last = historicoSituacao.at(-1);
+    if (!last || last.situacao !== situacaoComercial || last.tabelaId !== table.id) historicoSituacao.push({ tabelaId: table.id, validade: table.validityDate, situacao: situacaoComercial, origem: unit.origemLeitura || 'tabela_confirmada', confirmadoEm: now() });
+    const physical = { chave: unit.chave, bloco: unit.quadra || '', unidade: unit.unidade || '', areaPrivativa: unit.areaPrivativa ?? null, vagas: unit.vagas ?? null, situacaoComercial, situacaoExtraida: situacaoComercial, tabelaStatusAtualId: table.id, historicoSituacao, createdFromTableId: existing?.createdFromTableId || table.id, updatedAt: now() };
     catalog.set(unit.chave, { ...existing, ...physical });
   }
   empreendimento.unidades = [...catalog.values()];
+}
+function projectedPhysicalUnits(empreendimento) {
+  const catalog = new Map((empreendimento.unidades || []).map((unit) => [unit.chave, unit])); const latest = sortTables(empreendimento.tabelas || []).at(-1);
+  for (const unit of latest?.unidades || []) { const current = catalog.get(unit.chave) || {}; const situacaoComercial = normalizeUnitStatus(unit.situacaoExtraida); catalog.set(unit.chave, { ...current, chave: unit.chave, bloco: unit.quadra || current.bloco || '', unidade: unit.unidade || current.unidade || '', situacaoComercial, situacaoExtraida: situacaoComercial, tabelaStatusAtualId: latest.id }); }
+  return [...catalog.values()];
 }
 function compareWithPrevious(empreendimento, currentUnits, tableType = null) {
   const currentType = tableType;
@@ -285,16 +292,20 @@ function removalSummary(details) {
   }
   return summary;
 }
+function soldStatusTransitions(previous, current) {
+  const prior = new Map((previous?.unidades || []).map((unit) => [unit.chave, normalizeUnitStatus(unit.situacaoExtraida)]));
+  return (current?.unidades || []).filter((unit) => normalizeUnitStatus(unit.situacaoExtraida) === 'Vendida' && prior.get(unit.chave) !== 'Vendida');
+}
 function buildRadar(empreendimento) {
   // Indicadores decisórios nunca usam uma versão ainda em validação.
   // O empreendimento pode aparecer no mapa desde já, mas VGV, IVV e vendas
   // só passam a refletir uma tabela após a confirmação explícita.
   const allTables = [...(empreendimento.tabelas || [])].sort((a, b) => a.validityDate.localeCompare(b.validityDate) || a.createdAt.localeCompare(b.createdAt)); const registeredTables = allTables.filter((table) => table.status === 'registered'); const latest = registeredTables.at(-1) || null; const tables = latest ? registeredTables.filter((table) => table.tipoTabela === latest.tipoTabela) : []; const previous = tables.at(-2) || null;
-  const current = tableMetrics(latest); const prior = tableMetrics(previous); const removedDetails = removalDetails(previous, latest, latest?.classificacoesRemocao || {}); const removals = removalSummary(removedDetails); const rawComparison = comparisonMetrics(previous, latest); const returned = latest?.comparacao?.retornadas?.length || 0; const comparison = { ...rawComparison, added: Math.max(0, rawComparison.added - returned), returned, removedPending: removals.pendentes, salesConfirmed: removals.vendidas, removals };
+  const current = tableMetrics(latest); const prior = tableMetrics(previous); const removedDetails = removalDetails(previous, latest, latest?.classificacoesRemocao || {}); const removals = removalSummary(removedDetails); const salesByStatus = soldStatusTransitions(previous, latest); const rawComparison = comparisonMetrics(previous, latest); const returned = latest?.comparacao?.retornadas?.length || 0; const comparison = { ...rawComparison, added: Math.max(0, rawComparison.added - returned), returned, removedPending: removals.pendentes, salesConfirmed: removals.vendidas + salesByStatus.length, salesByStatus: salesByStatus.map((unit) => unit.chave), removals };
   const keys = new Set([...(latest?.unidades || []), ...(previous?.unidades || [])].map((unit) => unit.quadra || 'Sem bloco'));
   const byBlock = [...keys].sort().map((block) => {
     const latestTable = { unidades: (latest?.unidades || []).filter((unit) => (unit.quadra || 'Sem bloco') === block) }; const previousTable = { unidades: (previous?.unidades || []).filter((unit) => (unit.quadra || 'Sem bloco') === block) };
-    const currentBlock = tableMetrics(latestTable); const priorBlock = tableMetrics(previousTable); const blockDetails = removedDetails.filter((item) => item.bloco === block); const blockRemoval = removalSummary(blockDetails); const blockComparison = { ...comparisonMetrics(previousTable, latestTable), removedPending: blockRemoval.pendentes, salesConfirmed: blockRemoval.vendidas, removals: blockRemoval };
+    const currentBlock = tableMetrics(latestTable); const priorBlock = tableMetrics(previousTable); const blockDetails = removedDetails.filter((item) => item.bloco === block); const blockRemoval = removalSummary(blockDetails); const blockSales = soldStatusTransitions(previousTable, latestTable); const blockComparison = { ...comparisonMetrics(previousTable, latestTable), removedPending: blockRemoval.pendentes, salesConfirmed: blockRemoval.vendidas + blockSales.length, salesByStatus: blockSales.map((unit) => unit.chave), removals: blockRemoval };
     return { block, current: currentBlock, previous: priorBlock, comparison: blockComparison, vgvDelta: currentBlock.vgv - priorBlock.vgv, vgvDeltaPercent: priorBlock.vgv ? (currentBlock.vgv - priorBlock.vgv) / priorBlock.vgv : null };
   });
   const timeline = tables.map((table, index) => ({ id: table.id, name: table.name, validityDate: table.validityDate, ...tableMetrics(table), comparison: index ? comparisonMetrics(tables[index - 1], table) : null }));
@@ -305,7 +316,7 @@ function buildRadar(empreendimento) {
     current, previous: prior, comparison, removedDetails, vgvDelta: current.vgv - prior.vgv, vgvDeltaPercent: prior.vgv ? (current.vgv - prior.vgv) / prior.vgv : null, byBlock, timeline, tiposTabela: [...new Map(registeredTables.map((table) => [table.tipoTabela, table.tipoTabelaLabel || TABLE_TYPE_LABELS[table.tipoTabela] || 'Outro'])).entries()].map(([id, label]) => ({ id, label }))
   };
 }
-function publicEmpreendimento(empreendimento) { const tables = empreendimento.tabelas || []; const latest = [...tables].sort((a, b) => b.validityDate.localeCompare(a.validityDate))[0]; return { ...empreendimento, tableCount: tables.length, latestTable: latest ? { id: latest.id, name: latest.name, validityDate: latest.validityDate, status: latest.status } : null }; }
+function publicEmpreendimento(empreendimento) { const tables = empreendimento.tabelas || []; const latest = [...tables].sort((a, b) => b.validityDate.localeCompare(a.validityDate))[0]; return { ...empreendimento, unidades: projectedPhysicalUnits(empreendimento), tableCount: tables.length, latestTable: latest ? { id: latest.id, name: latest.name, validityDate: latest.validityDate, status: latest.status } : null }; }
 async function geocode(empreendimento) {
   const cep = String(empreendimento.cep || '').replace(/\D/g, '');
   // CEP é a âncora territorial do empreendimento. O logradouro só refina o
