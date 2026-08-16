@@ -69,6 +69,33 @@ if(ticketReference&&!document.getElementById('filter-ticket')){
 const filterHeaderButton=document.getElementById('open-filters');
 const filterHeader=document.querySelector('.topbar .nav');
 if(filterHeaderButton&&filterHeader)filterHeader.prepend(filterHeaderButton);
+const liveRadiusKm=document.getElementById('radius-km-live');
+liveRadiusKm?.addEventListener('input',()=>{
+  const km=Math.min(30,Math.max(.2,Number(liveRadiusKm.value||2)));
+  if(radiusScope){
+    radiusScope.km=km;
+    document.getElementById('radius-feedback-live').textContent=`Raio atualizado para ${km} km.`;
+    render();
+  }
+});
+async function completeRadiusFormFromMap(lat,lng){
+  const cepField=document.getElementById('radius-cep-live');
+  const addressField=document.getElementById('radius-address-live');
+  const feedback=document.getElementById('radius-feedback-live');
+  addressField.value='Localizando endereço…';
+  try{
+    const result=await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${encodeURIComponent(lat)}&lon=${encodeURIComponent(lng)}&addressdetails=1`).then(response=>response.json());
+    const address=result.address||{};
+    const formatted=[address.road,address.house_number,address.suburb||address.neighbourhood,address.city||address.town||address.village,address.state].filter(Boolean).join(' · ');
+    addressField.value=formatted||result.display_name||`${lat.toFixed(6)}, ${lng.toFixed(6)}`;
+    cepField.value=String(address.postcode||'').replace(/[^0-9-]/g,'');
+    feedback.textContent=`Pin criado: ${addressField.value} · ${radiusScope.km} km.`;
+  }catch(error){
+    addressField.value=`Coordenadas: ${lat.toFixed(6)}, ${lng.toFixed(6)}`;
+    cepField.value='';
+    feedback.textContent=`Pin criado no mapa · raio de ${radiusScope.km} km.`;
+  }
+}
 renderMap=function(){
   if(map){map.remove();map=null;}
   renderMapWithRadius();
@@ -80,9 +107,8 @@ renderMap=function(){
   map.on('click',event=>{
     const km=Math.min(30,Math.max(.2,Number(document.getElementById('radius-km-live')?.value||2)));
     radiusScope={lat:event.latlng.lat,lng:event.latlng.lng,km,name:document.getElementById('radius-name-live')?.value||'Área de interesse'};
-    const feedback=document.getElementById('radius-feedback-live');
-    if(feedback)feedback.textContent=`Pin criado no mapa · raio de ${km} km.`;
     render();
+    completeRadiusFormFromMap(event.latlng.lat,event.latlng.lng);
   });
 };
 </script></body></html>
