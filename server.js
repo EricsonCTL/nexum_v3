@@ -198,12 +198,15 @@ function reviewAlerts(empreendimento, table, units = table.unidades || []) {
     const current = unitValue(unit); const previousUnit = prior.get(unit.chave); const priorValue = unitValue(previousUnit);
     if (current !== null && priorValue !== null && current < priorValue) alerts.push({ id: `preco:${unit.chave}`, tipo: 'REDUCAO_PRECO', nivel: 'critico', chave: unit.chave, anterior: priorValue, atual: current, variacao: (current - priorValue) / priorValue, mensagem: `Redução de preço detectada em ${unit.quadra || 'Sem bloco'} · ${unit.unidade || 'Sem unidade'}.` });
     if (unit.origemLeitura === 'ausente_na_tabela_atual') alerts.push({ id: `ausente:${unit.chave}`, tipo: 'UNIDADE_AUSENTE_TRATADA_COMO_VENDIDA', nivel: 'critico', chave: unit.chave, mensagem: `${unit.quadra || 'Bloco'} · ${unit.unidade || 'unidade'} não foi encontrada no PDF atual e foi incluída como Vendida. Confirme ou ajuste a situação.` });
+    if (unit.origemLeitura === 'nova_na_tabela_atual' && normalizeUnitStatus(unit.situacaoExtraida) === 'Disponível') alerts.push({ id: `nova:${unit.chave}`, tipo: 'NOVA_UNIDADE_DISPONIVEL', nivel: 'critico', chave: unit.chave, mensagem: `${unit.quadra || 'Bloco'} · ${unit.unidade || 'unidade'} é nova nesta tabela e foi incluída como Disponível. Confirme ou ajuste a situação.` });
   }
   if (table.confiancaLeitura?.classificacao === 'baixa') alerts.push({ id: 'ocr:baixa', tipo: 'CONFIANCA_BAIXA', nivel: 'atencao', mensagem: 'Leitura automática com baixa confiança. Revise os campos destacados antes de concluir.' });
   return alerts;
 }
 function rebuildTableDerived(empreendimento, table) {
   table.unidades = (table.unidades || []).map((unit) => ({ ...unit, chave: buildUnitKey(empreendimento.id, unit.quadra, unit.unidade), situacaoExtraida: normalizeUnitStatus(unit.situacaoExtraida) }));
+  const previous = previousRegisteredTable(empreendimento, table); const priorKeys = new Set((previous?.unidades || []).map((unit) => unit.chave));
+  if (previous) table.unidades = table.unidades.map((unit) => !priorKeys.has(unit.chave) && unit.origemLeitura !== 'ausente_na_tabela_atual' ? { ...unit, origemLeitura: 'nova_na_tabela_atual', confirmadoPeloUsuario: false } : unit);
   if (table.status === 'pending_validation') includePreviousAbsencesAsSold(empreendimento, table);
   table.comparacao = compareWithPrevious({ ...empreendimento, tabelas: (empreendimento.tabelas || []).filter((item) => item.id !== table.id) }, table.unidades, table.tipoTabela);
   table.comparacao.ausentesTratadas = table.unidades.filter((unit) => unit.origemLeitura === 'ausente_na_tabela_atual').map((unit) => unit.chave);
@@ -250,7 +253,8 @@ function tableMetrics(table) {
   const byStatus = Object.fromEntries(Object.entries(units.reduce((map, unit) => { const status = unit.situacaoExtraida || 'Não identificado'; map[status] = (map[status] || 0) + 1; return map; }, {})).sort());
   const available = units.filter((unit) => /^dispon[ií]vel$/i.test(String(unit.situacaoExtraida || '').trim())).length;
   const unknownAvailability = units.filter((unit) => !String(unit.situacaoExtraida || '').trim() || /n[aã]o identificado/i.test(unit.situacaoExtraida)).length;
-  return { units: units.length, available, unknownAvailability, pricedUnits: priced.length, vgv, area, pricePerM2: area ? vgv / area : null, averagePrice: priced.length ? vgv / priced.length : null, byStatus };
+  const sold = units.filter((unit) => normalizeUnitStatus(unit.situacaoExtraida) === 'Vendida').length; const newAvailable = units.filter((unit) => unit.origemLeitura === 'nova_na_tabela_atual' && normalizeUnitStatus(unit.situacaoExtraida) === 'Disponível').length;
+  return { units: units.length, available, sold, newAvailable, unknownAvailability, pricedUnits: priced.length, vgv, area, pricePerM2: area ? vgv / area : null, averagePrice: priced.length ? vgv / priced.length : null, byStatus };
 }
 function comparisonMetrics(previous, current) {
   if (!previous || !current) return { base: false, retained: 0, added: 0, removed: 0, returned: 0, priceChanged: 0, priceIncrease: 0, priceDecrease: 0, samePrice: 0, priceDelta: 0, priceDeltaPercent: null, removedVgv: 0 };
