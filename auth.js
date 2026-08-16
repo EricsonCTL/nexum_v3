@@ -86,5 +86,25 @@ function mountNexumFooter() {
   document.body.append(footer);
 }
 
-if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mountNexumFooter, { once: true });
-else mountNexumFooter();
+function enhanceNexumNavigation() {
+  const user = getCTIUser(); const nav = document.querySelector('.topbar .nav');
+  if (!user || document.body.classList.contains('login-page') || !nav || nav.querySelector('.enterprise-nav-menu')) return;
+  const enterpriseLink = [...nav.querySelectorAll('a')].find((link) => /empreendimentos\.html(?:$|[?#])/.test(link.getAttribute('href') || ''));
+  if (!enterpriseLink) return;
+  const isHome = /empreendimentos\.html$/.test(location.pathname) || location.pathname.endsWith('/');
+  const home = document.createElement('a'); home.href = pageUrl('empreendimentos.html'); home.textContent = 'Início'; home.className = isHome ? 'active nav-home-link' : 'nav-home-link';
+  const menu = document.createElement('div'); menu.className = 'enterprise-nav-menu';
+  menu.innerHTML = `<button class="nav-enterprise-trigger ${isHome ? '' : 'active'}" type="button" aria-expanded="false">Empreendimentos <span>⌄</span></button><section class="enterprise-nav-panel" hidden><div class="enterprise-nav-search"><input type="search" placeholder="Buscar empreendimento" aria-label="Buscar empreendimento"><a class="button teal" href="${pageUrl('empreendimento.html')}?novo=1">+ Novo</a></div><div class="enterprise-nav-results" role="listbox"><p>Carregando empreendimentos…</p></div></section>`;
+  enterpriseLink.replaceWith(menu); nav.insertBefore(home, menu);
+  const trigger = menu.querySelector('.nav-enterprise-trigger'), panel = menu.querySelector('.enterprise-nav-panel'), input = menu.querySelector('input'), results = menu.querySelector('.enterprise-nav-results'); let records = [];
+  const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[char]));
+  const draw = () => { const query = input.value.trim().toLocaleLowerCase('pt-BR'); const filtered = records.filter((item) => `${item.nome} ${item.bairro || ''} ${item.cidade || ''}`.toLocaleLowerCase('pt-BR').includes(query)); results.innerHTML = filtered.length ? filtered.map((item) => `<a role="option" href="${pageUrl('empreendimento.html')}?id=${encodeURIComponent(item.id)}"><strong>${escape(item.nome)}</strong><span>${escape([item.bairro,item.cidade,item.estado].filter(Boolean).join(' · ') || 'Abrir cadastro')}</span></a>`).join('') : '<p>Nenhum empreendimento encontrado.</p>'; };
+  trigger.onclick = () => { const open = trigger.getAttribute('aria-expanded') === 'true'; trigger.setAttribute('aria-expanded', String(!open)); panel.hidden = open; if (!open) input.focus(); };
+  input.oninput = draw;
+  document.addEventListener('click', (event) => { if (!menu.contains(event.target)) { trigger.setAttribute('aria-expanded', 'false'); panel.hidden = true; } });
+  fetch('/api/empreendimentos').then((response) => response.ok ? response.json() : Promise.reject()).then((data) => { records = data; draw(); }).catch(() => { results.innerHTML = '<p>Não foi possível carregar os empreendimentos.</p>'; });
+}
+
+function mountNexumShell() { mountNexumFooter(); enhanceNexumNavigation(); }
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mountNexumShell, { once: true });
+else mountNexumShell();
