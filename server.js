@@ -92,7 +92,7 @@ function extractZuhausUnits(text, empreendimentoId) {
     if (!bloco || !row) continue;
     const unidade = row[1]; const key = buildUnitKey(empreendimentoId, bloco, unidade); if (seen.has(key)) continue; seen.add(key);
     const sinal = parseMoney(row[4]); const parcelas100x = parseMoney(row[5]); const intercaladas10x = parseMoney(row[6]); const chave = parseMoney(row[7]); const valorTotal = parseMoney(row[8]);
-    units.push({ id: crypto.randomUUID(), chave: key, quadra: bloco, unidade, valorExtraido: valorTotal, valorInterpretado: valorTotal, valorValidado: null, areaPrivativa: parseMoney(row[3]), vagas: parseMoney(row[2]), situacaoExtraida: 'Não identificado', condicoes: { sinal: { percentual: 15, valor: sinal }, parcelas: { quantidade: 100, percentual: 50, valor: parcelas100x }, intercaladas: { quantidade: 10, percentual: 20, valor: intercaladas10x }, chave: { percentual: 15, valor: chave } }, linhaOriginal: rawLine, status: 'extracted' });
+    units.push({ id: crypto.randomUUID(), chave: key, quadra: bloco, unidade, valorExtraido: valorTotal, valorInterpretado: valorTotal, valorValidado: null, areaPrivativa: parseMoney(row[3]), vagas: parseMoney(row[2]), situacaoExtraida: 'Disponível', condicoes: { sinal: { percentual: 15, valor: sinal }, parcelas: { quantidade: 100, percentual: 50, valor: parcelas100x }, intercaladas: { quantidade: 10, percentual: 20, valor: intercaladas10x }, chave: { percentual: 15, valor: chave } }, linhaOriginal: rawLine, status: 'extracted' });
   }
   return units;
 }
@@ -112,7 +112,7 @@ function extractUnits(text, empreendimentoId) {
     if (!quadra || !unidade) continue;
     const valueMatch = line.match(/R\$\s*([\d.]+,\d{2})/i); const valor = apartmentRow ? parseMoney(apartmentRow[7]) : (valueMatch ? parseMoney(valueMatch[1]) : null);
     const key = buildUnitKey(empreendimentoId, quadra, unidade); if (seen.has(key)) continue; seen.add(key);
-    units.push({ id: crypto.randomUUID(), chave: key, quadra, unidade, valorExtraido: valor, valorInterpretado: valor, valorValidado: null, areaPrivativa: apartmentRow ? parseMoney(apartmentRow[4]) : null, descricaoExtraida: apartmentRow?.[5] || null, situacaoExtraida: apartmentRow?.[6] || null, valorAvaliacaoExtraido: apartmentRow?.[8] ? parseMoney(apartmentRow[8]) : null, condicoes: {}, linhaOriginal: rawLine, status: valor === null ? 'pending_validation' : 'extracted' });
+    units.push({ id: crypto.randomUUID(), chave: key, quadra, unidade, valorExtraido: valor, valorInterpretado: valor, valorValidado: null, areaPrivativa: apartmentRow ? parseMoney(apartmentRow[4]) : null, descricaoExtraida: apartmentRow?.[5] || null, situacaoExtraida: apartmentRow?.[6] || 'Disponível', valorAvaliacaoExtraido: apartmentRow?.[8] ? parseMoney(apartmentRow[8]) : null, condicoes: {}, linhaOriginal: rawLine, status: valor === null ? 'pending_validation' : 'extracted' });
   }
   return units;
 }
@@ -172,7 +172,7 @@ function normalizeUnitStatus(value) {
   if (/^RESERVAD[AO]?$/.test(normalized)) return 'Reservada';
   if (/^INDISPONIVEL$/.test(normalized)) return 'Indisponível';
   if (/^RETIRAD[AO]?$/.test(normalized)) return 'Retirada';
-  return 'Não identificado';
+  return 'Disponível';
 }
 function tableOriginLabel(table) { return table?.origem?.label || (table?.documento ? 'PDF importado' : 'Cadastro manual'); }
 function readingConfidence(extraction) {
