@@ -42,6 +42,52 @@ document.querySelectorAll('.territory-radius').forEach(node=>node.remove());cons
 /* Camada final do mapa: o raio é uma lente de leitura, não um filtro destrutivo. */
 const finalFilterBase=mapFilteredBase;
 let radiusPortfolio=[];
+const periodStartLabel=document.getElementById('filter-start')?.closest('label');
+const periodEndLabel=document.getElementById('filter-end')?.closest('label');
+periodStartLabel?.remove();
+periodEndLabel?.remove();
+const filterBody=document.querySelector('#map-filters .map-filter-body');
+if(filterBody&&!document.getElementById('filter-period'))filterBody.insertAdjacentHTML('afterbegin','<label>Período<select id="filter-period"><option value="">Todos os períodos</option><option value="current-month">Mês atual</option><option value="last-30">Últimos 30 dias</option><option value="last-90">Últimos 90 dias</option><option value="last-6-months">Últimos 6 meses</option><option value="current-year">Este ano</option><option value="last-12-months">Últimos 12 meses</option></select></label>');
+const activeMapFilters=document.createElement('div');
+activeMapFilters.id='active-map-filters';
+activeMapFilters.className='map-active-filters';
+document.querySelector('.workspace-search')?.after(activeMapFilters);
+const clearMapFiltersButton=document.getElementById('clear-filters');
+const mapFilterDrawer=document.getElementById('map-filters');
+if(clearMapFiltersButton&&mapFilterDrawer)mapFilterDrawer.append(clearMapFiltersButton);
+function matchesMapPeriod(value,period){
+  if(!period)return true;
+  if(!value)return false;
+  const reference=new Date(`${value}T12:00:00`);
+  const today=new Date();
+  today.setHours(23,59,59,999);
+  if(period==='current-month')return reference.getFullYear()===today.getFullYear()&&reference.getMonth()===today.getMonth();
+  if(period==='current-year')return reference.getFullYear()===today.getFullYear();
+  const start=new Date(today);
+  if(period==='last-30')start.setDate(start.getDate()-30);
+  if(period==='last-90')start.setDate(start.getDate()-90);
+  if(period==='last-6-months')start.setMonth(start.getMonth()-6);
+  if(period==='last-12-months')start.setMonth(start.getMonth()-12);
+  return reference>=start&&reference<=today;
+}
+function renderActiveMapFilters(){
+  const filters=[
+    ['filter-period',{'current-month':'Mês atual','last-30':'Últimos 30 dias','last-90':'Últimos 90 dias','last-6-months':'Últimos 6 meses','current-year':'Este ano','last-12-months':'Últimos 12 meses'}],
+    ['filter-bairro'],['filter-type'],['filter-pattern'],['filter-ticket']
+  ].map(([id,labels])=>{const input=document.getElementById(id);const value=input?.value||'';return value?{id,label:labels?.[value]||input.options[input.selectedIndex]?.text||value}:null}).filter(Boolean);
+  activeMapFilters.hidden=!filters.length;
+  activeMapFilters.innerHTML=filters.map(filter=>`<button type="button" data-filter-id="${filter.id}">${esc(filter.label)} <span>×</span></button>`).join('');
+  activeMapFilters.querySelectorAll('button').forEach(button=>button.onclick=()=>{const input=document.getElementById(button.dataset.filterId);if(input)input.value='';render()});
+}
+document.getElementById('filter-period')?.addEventListener('change',render);
+document.getElementById('radius-clear').onclick=()=>{
+  radiusScope=null;
+  ['radius-name-live','radius-cep-live','radius-address-live'].forEach(id=>{const input=document.getElementById(id);if(input)input.value=''});
+  const km=document.getElementById('radius-km-live');
+  if(km)km.value='2';
+  document.getElementById('radius-feedback-live').textContent='Sem raio ativo. Informe um CEP ou clique no mapa.';
+  render();
+};
 filtered=function(){
   finalFilterBase();
   const start=document.getElementById('filter-start')?.value||'';
@@ -50,12 +96,14 @@ filtered=function(){
   const tipo=document.getElementById('filter-type')?.value||'';
   const padrao=document.getElementById('filter-pattern')?.value||'';
   const ticket=document.getElementById('filter-ticket')?.value||'';
+  const period=document.getElementById('filter-period')?.value||'';
   visibleRadar=visibleRadar.filter(item=>{
     const average=Number(item.current?.averagePrice||0);
     const ticketMatches=!ticket||(ticket==='ate-500'&&average<=500000)||(ticket==='500-800'&&average>500000&&average<=800000)||(ticket==='800-1200'&&average>800000&&average<=1200000)||(ticket==='acima-1200'&&average>1200000);
-    return (!start||item.latestTable?.validityDate>=start)&&(!end||item.latestTable?.validityDate<=end)&&(!bairro||item.bairro===bairro)&&(!tipo||item.tipo===tipo)&&(!padrao||item.padrao===padrao)&&ticketMatches;
+    return (!start||item.latestTable?.validityDate>=start)&&(!end||item.latestTable?.validityDate<=end)&&(!bairro||item.bairro===bairro)&&(!tipo||item.tipo===tipo)&&(!padrao||item.padrao===padrao)&&ticketMatches&&matchesMapPeriod(item.latestTable?.validityDate,period);
   });
   radiusPortfolio=radiusScope?visibleRadar.filter(item=>hasCoordinates(item)&&kmDistance(radiusScope.lat,radiusScope.lng,item.latitude,item.longitude)<=radiusScope.km):visibleRadar;
+  renderActiveMapFilters();
 };
 const renderScopeForRadius=renderScope;
 renderScope=function(){
