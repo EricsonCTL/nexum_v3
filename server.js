@@ -190,15 +190,26 @@ function reviewAlerts(empreendimento, table, units = table.unidades || []) {
   for (const unit of units) {
     const current = unitValue(unit); const previousUnit = prior.get(unit.chave); const priorValue = unitValue(previousUnit);
     if (current !== null && priorValue !== null && current < priorValue) alerts.push({ id: `preco:${unit.chave}`, tipo: 'REDUCAO_PRECO', nivel: 'critico', chave: unit.chave, anterior: priorValue, atual: current, variacao: (current - priorValue) / priorValue, mensagem: `Redução de preço detectada em ${unit.quadra || 'Sem bloco'} · ${unit.unidade || 'Sem unidade'}.` });
+    if (unit.origemLeitura === 'ausente_na_tabela_atual') alerts.push({ id: `ausente:${unit.chave}`, tipo: 'UNIDADE_AUSENTE_TRATADA_COMO_VENDIDA', nivel: 'critico', chave: unit.chave, mensagem: `${unit.quadra || 'Bloco'} · ${unit.unidade || 'unidade'} não foi encontrada no PDF atual e foi incluída como Vendida. Confirme ou ajuste a situação.` });
   }
   if (table.confiancaLeitura?.classificacao === 'baixa') alerts.push({ id: 'ocr:baixa', tipo: 'CONFIANCA_BAIXA', nivel: 'atencao', mensagem: 'Leitura automática com baixa confiança. Revise os campos destacados antes de concluir.' });
   return alerts;
 }
 function rebuildTableDerived(empreendimento, table) {
   table.unidades = (table.unidades || []).map((unit) => ({ ...unit, chave: buildUnitKey(empreendimento.id, unit.quadra, unit.unidade), situacaoExtraida: normalizeUnitStatus(unit.situacaoExtraida) }));
+  if (table.status === 'pending_validation') includePreviousAbsencesAsSold(empreendimento, table);
   table.comparacao = compareWithPrevious({ ...empreendimento, tabelas: (empreendimento.tabelas || []).filter((item) => item.id !== table.id) }, table.unidades, table.tipoTabela);
+  table.comparacao.ausentesTratadas = table.unidades.filter((unit) => unit.origemLeitura === 'ausente_na_tabela_atual').map((unit) => unit.chave);
+  table.comparacao.removidas = table.comparacao.ausentesTratadas;
   table.alertas = reviewAlerts(empreendimento, table);
   return table;
+}
+function includePreviousAbsencesAsSold(empreendimento, table) {
+  const previous = previousRegisteredTable(empreendimento, table); if (!previous?.unidades?.length) return 0;
+  const present = new Set((table.unidades || []).map((unit) => unit.chave));
+  const missing = previous.unidades.filter((unit) => !present.has(unit.chave));
+  for (const unit of missing) table.unidades.push({ ...unit, id: crypto.randomUUID(), chave: buildUnitKey(empreendimento.id, unit.quadra, unit.unidade), situacaoExtraida: 'Vendida', status: 'inferred_sold_pending_confirmation', origemLeitura: 'ausente_na_tabela_atual', tabelaOrigemId: previous.id, confirmadoPeloUsuario: false });
+  return missing.length;
 }
 function copyForReview(empreendimento, source) {
   return (source.unidades || []).map((unit) => ({ ...unit, id: crypto.randomUUID(), chave: buildUnitKey(empreendimento.id, unit.quadra, unit.unidade), valorExtraido: unit.valorExtraido ?? unitValue(unit), valorInterpretado: unit.valorInterpretado ?? unitValue(unit), valorValidado: unit.valorValidado ?? unitValue(unit), situacaoExtraida: normalizeUnitStatus(unit.situacaoExtraida), status: 'referenced_previous' }));
