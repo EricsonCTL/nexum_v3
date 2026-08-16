@@ -1,1 +1,30 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nexo Radar Imobiliário · Acesso</title><link rel="stylesheet" href="nexo.css"><style>body{min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 80% 10%,#167f89 0,transparent 27%),linear-gradient(135deg,#021438,#06336d)}.access{width:min(880px,calc(100% - 32px));display:grid;gap:18px}.intro,.access-card{background:#fff;border-radius:16px;padding:26px;box-shadow:0 20px 56px rgba(0,0,0,.22)}.intro img{width:min(360px,100%);display:block}.intro h1{margin:21px 0 7px;font-size:2rem}.intro p{margin:0;color:var(--muted);max-width:610px}.choices{display:grid;grid-template-columns:1fr 1fr;gap:14px}.access-card{display:grid;gap:12px}.access-card h2{margin:0}.access-card p{color:var(--muted);margin:0}@media(max-width:650px){.choices{grid-template-columns:1fr}.intro,.access-card{padding:20px}}</style></head><body><main class="access"><section class="intro"><img src="logo/ChatGPT%20Image%2013%20de%20ago.%20de%202026,%2011_38_17.png" alt="Nexo Radar Imobiliário"><h1>Inteligência para transformar dados imobiliários em decisões.</h1><p>Centralize tabelas, acompanhe condições comerciais e preserve a evolução de cada empreendimento em um único ambiente.</p></section><section class="choices" aria-label="Selecionar acesso"><article class="access-card"><span class="eyebrow">Administrador</span><h2>Marcos</h2><p>Cadastro de empreendimentos, importação, validação e histórico de tabelas.</p><button class="button primary" data-user-code="ADMIN">Entrar como administrador</button></article><article class="access-card"><span class="eyebrow">Consulta comercial</span><h2>Corretor</h2><p>Acesso demonstrativo à consulta dos empreendimentos publicados.</p><button class="button teal" data-user-code="BROKER">Entrar como corretor</button></article></section></main><script src="auth.js"></script><script src="login.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NEXUM Radar Imobiliário · Acesso</title>
+  <link rel="stylesheet" href="nexo.css">
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <section class="login-panel" aria-labelledby="login-title">
+      <img class="login-logo" src="logo/ChatGPT%20Image%2013%20de%20ago.%20de%202026,%2011_38_17.png" alt="NEXUM Radar Imobiliário">
+      <p class="login-location">Campina Grande · PB</p>
+      <h1 id="login-title">Inteligência<br>imobiliária</h1>
+      <p class="login-copy">Escolha um perfil para importar, revisar e versionar tabelas comerciais com rastreabilidade.</p>
+      <div class="profile-list" role="group" aria-label="Selecionar perfil de acesso">
+        <button class="profile-option is-selected" type="button" data-user-code="ADMIN" aria-pressed="true">
+          <span>Administrador</span><strong>Gestão NEXUM</strong>
+        </button>
+        <button class="profile-option" type="button" data-user-code="INCORPORADORA" aria-pressed="false">
+          <span>Incorporadora</span><strong>Operação comercial</strong>
+        </button>
+      </div>
+      <button class="login-submit" type="button" id="login-submit">Entrar</button>
+    </section>
+  </main>
+  <script src="auth.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

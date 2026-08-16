@@ -7,11 +7,11 @@ const CTI_USERS = {
     role: 'ADMIN',
     roleLabel: 'Administrador'
   },
-  BROKER: {
-    code: 'BROKER',
-    name: 'Corretor',
-    role: 'BROKER',
-    roleLabel: 'Corretor'
+  INCORPORADORA: {
+    code: 'INCORPORADORA',
+    name: 'Incorporadora',
+    role: 'INCORPORADORA',
+    roleLabel: 'Incorporadora'
   }
 };
 
@@ -65,7 +65,8 @@ function requireCTIUser(allowedRoles) {
     window.location.replace(pageUrl('index.html'));
     return null;
   }
-  if (Array.isArray(allowedRoles) && !allowedRoles.includes(user.role)) {
+  const isLegacyCommercialAccess = user.role === 'INCORPORADORA' && allowedRoles?.includes('BROKER');
+  if (Array.isArray(allowedRoles) && !allowedRoles.includes(user.role) && !isLegacyCommercialAccess) {
     window.location.replace(pageUrl('empreendimentos.html'));
     return null;
   }

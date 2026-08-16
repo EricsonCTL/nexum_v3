@@ -9,7 +9,7 @@ const execFileAsync = promisify(execFile);
 const ROOT = __dirname;
 const DATA_DIR = path.join(ROOT, 'data');
 const DATA_FILE = path.join(DATA_DIR, 'nexo-radar.json');
-const PDF_DIRS = ['entrada', 'processando', 'cadastrados', 'erro'].map((name) => path.join(ROOT, 'pdf', name));
+const PDF_DIRS = ['entrada', 'processando', 'cadastrados', 'erro', 'excluidos'].map((name) => path.join(ROOT, 'pdf', name));
 // A aplicação local é acessada pelo endereço padrão do usuário.
 const PORT = Number(process.env.PORT || 3000);
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.pdf': 'application/pdf', '.csv': 'text/csv; charset=utf-8', '.md': 'text/markdown; charset=utf-8' };
@@ -35,10 +35,11 @@ function canonicalTableType(value) {
   return 'PADRAO';
 }
 const TABLE_TYPE_LABELS = { PADRAO: 'Padrão / não informado', A_VISTA: 'À vista', FINANCIAMENTO_CEF: 'Financiamento CEF / Caixa', DIRETO_CONSTRUTORA: 'Financiamento direto com construtora', FINANCIAMENTO_BANCARIO: 'Financiamento bancário', OUTRO: 'Outro' };
+const UNIT_STATUSES = ['Disponível', 'Vendida', 'Bloqueada', 'Reservada', 'Indisponível', 'Retirada', 'Não identificado'];
 function normalizeDataModel(data) {
   data.version = Math.max(Number(data.version || 1), 2); data.dicionario = data.dicionario || []; data.sequences = data.sequences || {}; data.empreendimentos = data.empreendimentos || [];
   for (const empreendimento of data.empreendimentos) {
-    empreendimento.unidades = empreendimento.unidades || [];
+    empreendimento.unidades = empreendimento.unidades || []; empreendimento.tabelasExcluidas = empreendimento.tabelasExcluidas || [];
     for (const table of empreendimento.tabelas || []) {
       table.tipoTabela = table.tipoTabela || canonicalTableType(table.name); table.tipoTabelaLabel = table.tipoTabelaLabel || TABLE_TYPE_LABELS[table.tipoTabela] || 'Outro';
       table.manualReviewRequired = table.manualReviewRequired ?? (!(table.unidades || []).length && !String(table.extracao?.texto || '').replace(/\f/g, '').trim());
@@ -46,8 +47,12 @@ function normalizeDataModel(data) {
         if (unit.valorAvaliacaoExtraido != null) unit.valorAvaliacaoExtraido = parseMoney(unit.valorAvaliacaoExtraido);
       }
       table.normalizacao = table.normalizacao || { formato: 'legado', campos: [] }; table.classificacoesRemocao = table.classificacoesRemocao || {};
+      table.origem = table.origem || { tipo: table.documento ? 'pdf' : 'manual', label: table.documento ? 'PDF importado' : 'Cadastro manual' };
+      table.confiancaLeitura = table.confiancaLeitura || { percentual: table.manualReviewRequired ? 0 : 95, classificacao: table.manualReviewRequired ? 'baixa' : 'alta', metodo: table.manualReviewRequired ? 'pdf_imagem_sem_ocr' : 'texto_embutido' };
+      table.alertas = table.alertas || [];
     }
   }
+  for (const empreendimento of data.empreendimentos) for (const table of empreendimento.tabelas || []) table.alertas = reviewAlerts(empreendimento, table);
   return data;
 }
 function sanitize(value) { return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_|_$/g, '').slice(0, 96) || 'sem_nome'; }
@@ -117,8 +122,8 @@ async function extractPdf(filePath, empreendimentoId) {
     const text = stdout || ''; const units = extractUnits(text, empreendimentoId); const imageOnly = !text.replace(/\f/g, '').trim(); const isZuhausPattern = /Parcelas\s+100X/i.test(text) && /Intercaladas\s+10X/i.test(text);
     const commercialRules = isZuhausPattern ? 'Sinal: 15%. Parcelas: 100x (50%). Intercaladas: 10x (20%). Chave: 15%. Reajuste: INCC mensal durante a construção e IGP-M + 1% após a entrega.' : '';
     const warnings = units.length ? [] : [imageOnly ? 'O PDF é composto por imagens. Nenhuma unidade será inferida automaticamente; use a versão anterior como base e revise os destaques antes de confirmar.' : 'Nenhuma unidade foi reconhecida automaticamente. Revise ou inclua as unidades na validação.'];
-    return { text, units, commercialRules, warnings, manualReviewRequired: imageOnly };
-  } catch (error) { return { text: '', units: [], warnings: [`Não foi possível extrair o PDF: ${error.message}`], error: error.message }; }
+    return { text, units, commercialRules, warnings, manualReviewRequired: imageOnly, imageOnly, confidence: readingConfidence({ text, units, imageOnly }) };
+  } catch (error) { return { text: '', units: [], warnings: [`Não foi possível extrair o PDF: ${error.message}`], error: error.message, imageOnly: false, confidence: { percentual: 0, classificacao: 'baixa', metodo: 'falha_de_extracao' } }; }
 }
 function emptyComparison() { return { previousTableId: null, novas: [], removidas: [], retornadas: [], alteracoesValor: [], alteracoesComerciais: [], automaticoSuprimido: true }; }
 function buildNormalization(text, extraction) {
@@ -156,8 +161,67 @@ function compareWithPrevious(empreendimento, currentUnits, tableType = null) {
   const prior = new Map((previous.unidades || []).map((unit) => [unit.chave, unit])); const current = new Map(currentUnits.map((unit) => [unit.chave, unit]));
   const allEarlier = new Set((empreendimento.tabelas || []).flatMap((table) => (table.unidades || []).map((unit) => unit.chave)));
   const novas = []; const retornadas = []; const alteracoesValor = [];
-  for (const unit of currentUnits) { if (!prior.has(unit.chave)) (allEarlier.has(unit.chave) ? retornadas : novas).push(unit.chave); else { const oldValue = prior.get(unit.chave).valorValidado ?? prior.get(unit.chave).valorInterpretado; const newValue = unit.valorInterpretado; if (oldValue != null && newValue != null && oldValue !== newValue) alteracoesValor.push({ chave: unit.chave, anterior: oldValue, atual: newValue, divergenciaRelevante: Math.abs(oldValue - newValue) / oldValue >= 0.1 }); } }
+  for (const unit of currentUnits) { if (!prior.has(unit.chave)) (allEarlier.has(unit.chave) ? retornadas : novas).push(unit.chave); else { const oldValue = prior.get(unit.chave).valorValidado ?? prior.get(unit.chave).valorInterpretado; const newValue = unit.valorValidado ?? unit.valorInterpretado; if (oldValue != null && newValue != null && oldValue !== newValue) alteracoesValor.push({ chave: unit.chave, anterior: oldValue, atual: newValue, direcao: newValue < oldValue ? 'reducao' : 'aumento', divergenciaRelevante: Math.abs(oldValue - newValue) / oldValue >= 0.1 }); } }
   return { previousTableId: previous.id, novas, removidas: [...prior.keys()].filter((key) => !current.has(key)), retornadas, alteracoesValor, alteracoesComerciais: [] };
+}
+function normalizeUnitStatus(value) {
+  const normalized = String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim().toUpperCase();
+  if (/^DISPONIVEL$/.test(normalized)) return 'Disponível';
+  if (/^VENDID[AO]?$/.test(normalized)) return 'Vendida';
+  if (/^BLOQUEAD[AO]?$/.test(normalized)) return 'Bloqueada';
+  if (/^RESERVAD[AO]?$/.test(normalized)) return 'Reservada';
+  if (/^INDISPONIVEL$/.test(normalized)) return 'Indisponível';
+  if (/^RETIRAD[AO]?$/.test(normalized)) return 'Retirada';
+  return 'Não identificado';
+}
+function tableOriginLabel(table) { return table?.origem?.label || (table?.documento ? 'PDF importado' : 'Cadastro manual'); }
+function readingConfidence(extraction) {
+  const imageOnly = Boolean(extraction?.imageOnly); const units = extraction?.units?.length || 0; const hasText = Boolean(String(extraction?.text || '').replace(/\f/g, '').trim());
+  const percentual = imageOnly ? 0 : units ? 95 : hasText ? 60 : 0;
+  return { percentual, classificacao: percentual >= 90 ? 'alta' : percentual >= 70 ? 'media' : 'baixa', metodo: imageOnly ? 'pdf_imagem_sem_ocr' : 'texto_embutido' };
+}
+function reviewAlerts(empreendimento, table, units = table.unidades || []) {
+  const alerts = []; const keys = new Map();
+  for (const unit of units) {
+    const key = unit.chave || buildUnitKey(empreendimento.id, unit.quadra, unit.unidade); if (!keys.has(key)) keys.set(key, []); keys.get(key).push(unit);
+  }
+  for (const [key, duplicates] of keys) if (duplicates.length > 1) alerts.push({ id: `duplicada:${key}`, tipo: 'UNIDADE_DUPLICADA', nivel: 'critico', chave: key, mensagem: `A unidade ${key.split(':').slice(-2).join(' · ')} está duplicada.` });
+  const previous = previousRegisteredTable(empreendimento, table); const prior = new Map((previous?.unidades || []).map((unit) => [unit.chave, unit]));
+  for (const unit of units) {
+    const current = unitValue(unit); const previousUnit = prior.get(unit.chave); const priorValue = unitValue(previousUnit);
+    if (current !== null && priorValue !== null && current < priorValue) alerts.push({ id: `preco:${unit.chave}`, tipo: 'REDUCAO_PRECO', nivel: 'critico', chave: unit.chave, anterior: priorValue, atual: current, variacao: (current - priorValue) / priorValue, mensagem: `Redução de preço detectada em ${unit.quadra || 'Sem bloco'} · ${unit.unidade || 'Sem unidade'}.` });
+  }
+  if (table.confiancaLeitura?.classificacao === 'baixa') alerts.push({ id: 'ocr:baixa', tipo: 'CONFIANCA_BAIXA', nivel: 'atencao', mensagem: 'Leitura automática com baixa confiança. Revise os campos destacados antes de concluir.' });
+  return alerts;
+}
+function rebuildTableDerived(empreendimento, table) {
+  table.unidades = (table.unidades || []).map((unit) => ({ ...unit, chave: buildUnitKey(empreendimento.id, unit.quadra, unit.unidade), situacaoExtraida: normalizeUnitStatus(unit.situacaoExtraida) }));
+  table.comparacao = compareWithPrevious({ ...empreendimento, tabelas: (empreendimento.tabelas || []).filter((item) => item.id !== table.id) }, table.unidades, table.tipoTabela);
+  table.alertas = reviewAlerts(empreendimento, table);
+  return table;
+}
+function copyForReview(empreendimento, source) {
+  return (source.unidades || []).map((unit) => ({ ...unit, id: crypto.randomUUID(), chave: buildUnitKey(empreendimento.id, unit.quadra, unit.unidade), valorExtraido: unit.valorExtraido ?? unitValue(unit), valorInterpretado: unit.valorInterpretado ?? unitValue(unit), valorValidado: unit.valorValidado ?? unitValue(unit), situacaoExtraida: normalizeUnitStatus(unit.situacaoExtraida), status: 'referenced_previous' }));
+}
+function tableDependencies(empreendimento, tableId) {
+  return (empreendimento.tabelas || []).filter((table) => table.id !== tableId && (table.manualReviewBaseTableId === tableId || table.origem?.tabelaBaseId === tableId || table.comparacao?.previousTableId === tableId)).map((table) => ({ id: table.id, name: table.name, validityDate: table.validityDate, relation: table.manualReviewBaseTableId === tableId || table.origem?.tabelaBaseId === tableId ? 'base_de_revisao' : 'comparacao_historica' }));
+}
+function nullableNumber(value) { if (value === '' || value == null) return null; const number = Number(value); return Number.isFinite(number) ? number : null; }
+function normalizeReviewedUnits(empreendimento, existingUnits, submittedUnits) {
+  if (!Array.isArray(submittedUnits) || !submittedUnits.length) throw new Error('Informe ao menos uma unidade para revisão.');
+  const previous = new Map((existingUnits || []).map((unit) => [unit.id, unit]));
+  return submittedUnits.map((submitted) => {
+    const prior = previous.get(submitted.id) || {};
+    const unit = { ...prior, ...submitted, id: submitted.id || crypto.randomUUID() };
+    unit.quadra = String(unit.quadra || '').trim(); unit.unidade = String(unit.unidade || '').trim();
+    if (!unit.quadra || !unit.unidade) throw new Error('Bloco e unidade são obrigatórios em todas as linhas.');
+    for (const field of ['areaPrivativa', 'vagas', 'valorExtraido', 'valorInterpretado', 'valorValidado', 'valorAvaliacaoExtraido']) unit[field] = nullableNumber(unit[field]);
+    unit.valorInterpretado = unit.valorInterpretado ?? unit.valorValidado ?? unit.valorExtraido;
+    unit.valorValidado = unit.valorValidado ?? unit.valorInterpretado;
+    unit.situacaoExtraida = normalizeUnitStatus(unit.situacaoExtraida || prior.situacaoExtraida || 'Disponível');
+    unit.chave = buildUnitKey(empreendimento.id, unit.quadra, unit.unidade); unit.status = 'validated';
+    return unit;
+  });
 }
 function unitValue(unit) { const value = unit?.valorValidado ?? unit?.valorInterpretado; return Number.isFinite(Number(value)) ? Number(value) : null; }
 function sum(values) { return values.reduce((total, value) => total + (Number.isFinite(value) ? value : 0), 0); }
@@ -286,15 +350,24 @@ async function api(req, res, pathname) {
     // que uma extração incorreta entre no histórico definitivo.
     const pendingName = `${tableId}_${sanitize(file.name)}.pdf`; const pendingPath = path.join(ROOT, 'pdf', 'processando', pendingName);
     try { await fs.rename(processing, pendingPath); } catch (error) { const errorPath = path.join(ROOT, 'pdf', 'erro', path.basename(processing)); await fs.rename(processing, errorPath).catch(() => {}); log(data, 'processamento_falhou', { empreendimentoId: id, motivo: error.message, arquivo: file.name }); await writeData(data); return send(res, 500, { error: 'O PDF não pôde ser organizado.', detail: error.message }); }
-    const tipoTabela = canonicalTableType(fields.tipoTabela || fields.nome); const normalizacao = buildNormalization(extracted.text, extracted); const table = { id: tableId, name: fields.nome.trim(), tipoTabela, tipoTabelaLabel: TABLE_TYPE_LABELS[tipoTabela] || 'Outro', validityDate: fields.dataValidade, status: 'pending_validation', createdAt: now(), processedAt: now(), documento: { originalName: file.name, storedName: pendingName, path: `pdf/processando/${pendingName}`, hash, mimeType: file.type || 'application/pdf' }, extracao: { texto: extracted.text, warnings: extracted.warnings, error: extracted.error || null }, normalizacao, unidades: extracted.units, manualReviewRequired: Boolean(extracted.manualReviewRequired), comparacao: extracted.manualReviewRequired ? emptyComparison() : compareWithPrevious(empreendimento, extracted.units, tipoTabela), regrasComerciais: fields.regrasComerciais || extracted.commercialRules || '', observacoes: fields.observacoes || '', auditoria: [] }; empreendimento.tabelas.push(table); empreendimento.updatedAt = now(); log(data, 'extracao_concluida', { empreendimentoId: id, tabelaId: tableId, unidades: table.unidades.length }); if (table.extracao.warnings.length) log(data, 'validacao_pendente', { empreendimentoId: id, tabelaId: tableId, avisos: table.extracao.warnings }); await writeData(data); return send(res, 201, table);
+    const tipoTabela = canonicalTableType(fields.tipoTabela || fields.nome); const normalizacao = buildNormalization(extracted.text, extracted); const table = { id: tableId, name: fields.nome.trim(), tipoTabela, tipoTabelaLabel: TABLE_TYPE_LABELS[tipoTabela] || 'Outro', validityDate: fields.dataValidade, status: 'pending_validation', createdAt: now(), processedAt: now(), documento: { originalName: file.name, storedName: pendingName, path: `pdf/processando/${pendingName}`, hash, mimeType: file.type || 'application/pdf' }, extracao: { texto: extracted.text, warnings: extracted.warnings, error: extracted.error || null }, normalizacao, unidades: extracted.units, manualReviewRequired: Boolean(extracted.manualReviewRequired), origem: { tipo: 'pdf', label: 'PDF importado' }, confiancaLeitura: extracted.confidence || readingConfidence(extracted), comparacao: emptyComparison(), alertas: [], regrasComerciais: fields.regrasComerciais || extracted.commercialRules || '', observacoes: fields.observacoes || '', auditoria: [] }; empreendimento.tabelas.push(table); rebuildTableDerived(empreendimento, table); empreendimento.updatedAt = now(); log(data, 'extracao_concluida', { empreendimentoId: id, tabelaId: tableId, unidades: table.unidades.length }); if (table.extracao.warnings.length) log(data, 'validacao_pendente', { empreendimentoId: id, tabelaId: tableId, avisos: table.extracao.warnings }); await writeData(data); return send(res, 201, table);
+  }
+  if (method === 'POST' && parts[3] === 'tabelas' && parts[4] === 'copiar' && parts.length === 5) {
+    const payload = parseJson(await body(req)); const source = (empreendimento.tabelas || []).find((item) => item.id === payload.tabelaBaseId);
+    if (!source) return send(res, 404, { error: 'A tabela-base não foi encontrada.' });
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(payload.dataValidade || '')) return send(res, 422, { error: 'Informe a data de validade da nova versão.' });
+    const tableId = nextId(data, 'tabela', 'TAB'); const tipoTabela = canonicalTableType(payload.tipoTabela || source.tipoTabela);
+    const table = { id: tableId, name: String(payload.nome || `Cópia de ${source.name}`).trim(), tipoTabela, tipoTabelaLabel: TABLE_TYPE_LABELS[tipoTabela] || 'Outro', validityDate: payload.dataValidade, status: 'pending_validation', createdAt: now(), processedAt: now(), documento: null, extracao: { texto: '', warnings: [], error: null }, normalizacao: source.normalizacao || { formato: 'copia_manual', campos: [] }, unidades: copyForReview(empreendimento, source), manualReviewRequired: false, origem: { tipo: 'copia_manual', label: 'Cópia editável de tabela existente', tabelaBaseId: source.id }, confiancaLeitura: { percentual: 100, classificacao: 'alta', metodo: 'copia_manual' }, comparacao: emptyComparison(), alertas: [], regrasComerciais: source.regrasComerciais || '', observacoes: String(payload.observacoes || ''), auditoria: [{ at: now(), action: 'tabela_criada_por_copia', tabelaBaseId: source.id }] };
+    empreendimento.tabelas.push(table); rebuildTableDerived(empreendimento, table); empreendimento.updatedAt = now(); log(data, 'tabela_criada_por_copia', { empreendimentoId: id, tabelaId: table.id, tabelaBaseId: source.id, unidades: table.unidades.length }); await writeData(data); return send(res, 201, table);
   }
   if (parts[3] !== 'tabelas' || !parts[4]) return send(res, 404, { error: 'Rota não encontrada.' });
   const tableId = parts[4]; const table = (empreendimento.tabelas || []).find((item) => item.id === tableId); if (!table) return send(res, 404, { error: 'Tabela não encontrada.' });
   if (method === 'POST' && parts[5] === 'reprocessar') {
     if (table.status !== 'pending_validation') return send(res, 409, { error: 'Apenas tabelas pendentes podem ser reprocessadas. Versões confirmadas preservam sua extração histórica.' });
+    if (!table.documento?.path) return send(res, 409, { error: 'Esta versão foi criada manualmente e não possui PDF para reprocessar.' });
     const sourcePath = path.join(ROOT, table.documento.path); const extracted = await extractPdf(sourcePath, id);
-    table.unidades = extracted.units; table.extracao = { texto: extracted.text, warnings: extracted.warnings, error: extracted.error || null }; table.normalizacao = buildNormalization(extracted.text, extracted); table.manualReviewRequired = Boolean(extracted.manualReviewRequired);
-    table.regrasComerciais = table.regrasComerciais || extracted.commercialRules || ''; table.comparacao = extracted.manualReviewRequired ? emptyComparison() : compareWithPrevious({ ...empreendimento, tabelas: empreendimento.tabelas.filter((item) => item.id !== table.id) }, table.unidades, table.tipoTabela); table.processedAt = now(); table.auditoria = table.auditoria || []; table.auditoria.push({ at: now(), action: 'reprocessamento_de_pdf', unidadesReconhecidas: table.unidades.length }); empreendimento.updatedAt = now(); log(data, 'tabela_reprocessada', { empreendimentoId: id, tabelaId: table.id, unidades: table.unidades.length }); await writeData(data); return send(res, 200, table);
+    table.unidades = extracted.units; table.extracao = { texto: extracted.text, warnings: extracted.warnings, error: extracted.error || null }; table.normalizacao = buildNormalization(extracted.text, extracted); table.manualReviewRequired = Boolean(extracted.manualReviewRequired); table.confiancaLeitura = extracted.confidence || readingConfidence(extracted);
+    table.regrasComerciais = table.regrasComerciais || extracted.commercialRules || ''; rebuildTableDerived(empreendimento, table); table.processedAt = now(); table.auditoria = table.auditoria || []; table.auditoria.push({ at: now(), action: 'reprocessamento_de_pdf', unidadesReconhecidas: table.unidades.length }); empreendimento.updatedAt = now(); log(data, 'tabela_reprocessada', { empreendimentoId: id, tabelaId: table.id, unidades: table.unidades.length }); await writeData(data); return send(res, 200, table);
   }
   if (method === 'POST' && parts[5] === 'classificar-removidas') {
     const payload = parseJson(await body(req)); if (!Array.isArray(payload.classificacoes)) return send(res, 422, { error: 'Informe as classificações das unidades removidas.' });
@@ -315,25 +388,34 @@ async function api(req, res, pathname) {
     if (!table.manualReviewRequired || (table.unidades || []).length) return send(res, 409, { error: 'Esta tabela já possui unidades para revisão.' });
     const previousTable = previousRegisteredTable(empreendimento, table);
     if (!previousTable?.unidades?.length) return send(res, 409, { error: 'Não há uma versão anterior compatível para usar como base.' });
-    table.unidades = previousTable.unidades.map((unit) => {
-      const priorValue = unitValue(unit);
-      return { ...unit, id: crypto.randomUUID(), valorExtraido: priorValue, valorInterpretado: priorValue, valorValidado: null, situacaoExtraida: 'Não identificado', linhaOriginal: null, origemLeitura: 'versao_anterior_para_revisao_manual', status: 'referenced_previous' };
-    });
-    table.manualReviewBaseTableId = previousTable.id; table.comparacao = compareWithPrevious({ ...empreendimento, tabelas: empreendimento.tabelas.filter((item) => item.id !== table.id) }, table.unidades, table.tipoTabela);
+    table.unidades = copyForReview(empreendimento, previousTable).map((unit) => ({ ...unit, valorValidado: null, situacaoExtraida: 'Não identificado', linhaOriginal: null, origemLeitura: 'versao_anterior_para_revisao_manual' }));
+    table.manualReviewBaseTableId = previousTable.id; table.origem = { ...(table.origem || {}), tabelaBaseId: previousTable.id, label: 'PDF-imagem com base anterior para revisão' }; rebuildTableDerived(empreendimento, table);
     table.auditoria = table.auditoria || []; table.auditoria.push({ at: now(), action: 'unidades_baseadas_na_versao_anterior', tabelaBaseId: previousTable.id, unidades: table.unidades.length }); empreendimento.updatedAt = now();
     log(data, 'unidades_baseadas_na_versao_anterior', { empreendimentoId: id, tabelaId: table.id, tabelaBaseId: previousTable.id, unidades: table.unidades.length }); await writeData(data); return send(res, 200, table);
   }
   if (method === 'PUT' && parts.length === 5) {
     const payload = parseJson(await body(req)); const tipoTabela = canonicalTableType(payload.tipoTabela || table.tipoTabela);
-    table.tipoTabela = tipoTabela; table.tipoTabelaLabel = TABLE_TYPE_LABELS[tipoTabela] || 'Outro'; table.updatedAt = now();
+    table.tipoTabela = tipoTabela; table.tipoTabelaLabel = TABLE_TYPE_LABELS[tipoTabela] || 'Outro'; rebuildTableDerived(empreendimento, table); table.updatedAt = now();
     table.auditoria = table.auditoria || []; table.auditoria.push({ at: now(), action: 'modalidade_atualizada', tipoTabela, tipoTabelaLabel: table.tipoTabelaLabel });
     empreendimento.updatedAt = now(); log(data, 'modalidade_de_tabela_atualizada', { empreendimentoId: id, tabelaId: table.id, tipoTabela }); await writeData(data);
     return send(res, 200, table);
   }
-  if (method === 'POST' && parts[5] === 'validar') { const payload = parseJson(await body(req)); if (!Array.isArray(payload.unidades)) return send(res, 422, { error: 'Informe as unidades validadas.' }); const previous = new Map((table.unidades || []).map((unit) => [unit.id, unit])); table.unidades = payload.unidades.map((unit) => { const prior = previous.get(unit.id); const interpreted = unit.valorInterpretado === '' || unit.valorInterpretado == null ? null : Number(unit.valorInterpretado); const validated = unit.valorValidado === '' || unit.valorValidado == null ? interpreted : Number(unit.valorValidado); const changed = prior && (prior.valorInterpretado !== interpreted || prior.valorValidado !== validated); if (changed) table.auditoria.push({ at: now(), action: 'correcao_manual', unidade: unit.chave, valorExtraido: prior.valorExtraido, valorCorrigido: validated }); return { ...prior, ...unit, valorInterpretado: interpreted, valorValidado: validated, chave: unit.chave || buildUnitKey(id, unit.quadra, unit.unidade), status: 'validated' }; });
-    const finalName = `${sanitize(empreendimento.nome)}_${table.validityDate}_${sanitize(table.name)}.pdf`; const sourcePath = path.join(ROOT, table.documento.path); const targetPath = path.join(ROOT, 'pdf', 'cadastrados', `${table.id}_${finalName}`);
-    try { await fs.rename(sourcePath, targetPath); table.documento.storedName = path.basename(targetPath); table.documento.path = `pdf/cadastrados/${path.basename(targetPath)}`; } catch (error) { log(data, 'processamento_falhou', { empreendimentoId: id, tabelaId: table.id, motivo: `Não foi possível concluir o cadastro do PDF: ${error.message}` }); await writeData(data); return send(res, 500, { error: 'Os dados foram revisados, mas o PDF não pôde ser movido para cadastrados.', detail: error.message }); }
-    table.status = 'registered'; table.validatedAt = now(); table.regrasComerciais = payload.regrasComerciais ?? table.regrasComerciais; table.observacoes = payload.observacoes ?? table.observacoes; table.comparacao = compareWithPrevious({ ...empreendimento, tabelas: empreendimento.tabelas.filter((item) => item.id !== table.id) }, table.unidades, table.tipoTabela); syncPhysicalUnits(empreendimento, table); learnMappings(data, table.normalizacao || { campos: [] }); empreendimento.updatedAt = now(); log(data, 'validacao_concluida', { empreendimentoId: id, tabelaId: table.id, unidades: table.unidades.length }); log(data, 'pdf_cadastrado', { empreendimentoId: id, tabelaId: table.id, arquivo: table.documento.storedName }); await writeData(data); return send(res, 200, table); }
+  if (method === 'POST' && parts[5] === 'rascunho') {
+    if (table.status !== 'pending_validation') return send(res, 409, { error: 'Apenas tabelas em revisão podem ser salvas como rascunho.' });
+    const payload = parseJson(await body(req));
+    try { table.unidades = normalizeReviewedUnits(empreendimento, table.unidades, payload.unidades); } catch (error) { return send(res, 422, { error: error.message }); }
+    table.regrasComerciais = payload.regrasComerciais ?? table.regrasComerciais; table.observacoes = payload.observacoes ?? table.observacoes; rebuildTableDerived(empreendimento, table); table.updatedAt = now(); table.auditoria = table.auditoria || []; table.auditoria.push({ at: now(), action: 'rascunho_salvo', unidades: table.unidades.length }); empreendimento.updatedAt = now(); log(data, 'rascunho_de_revisao_salvo', { empreendimentoId: id, tabelaId: table.id, unidades: table.unidades.length }); await writeData(data); return send(res, 200, table);
+  }
+  if (method === 'DELETE' && parts.length === 5) {
+    const dependencies = tableDependencies(empreendimento, table.id); if (dependencies.length) return send(res, 409, { error: 'Esta tabela é referência de outras versões e não pode ser excluída antes das dependentes.', dependencies });
+    const deletedAt = now(); const deleted = { ...table, deletedAt, deletedReason: 'exclusao_controlada' }; const sourcePath = table.documento?.path ? path.join(ROOT, table.documento.path) : null;
+    if (sourcePath) { const archiveName = `${table.id}_${path.basename(sourcePath)}`; const archivePath = path.join(ROOT, 'pdf', 'excluidos', archiveName); try { await fs.rename(sourcePath, archivePath); deleted.documento = { ...table.documento, path: `pdf/excluidos/${archiveName}`, storedName: archiveName }; } catch (error) { if (error.code !== 'ENOENT') return send(res, 500, { error: 'A tabela não foi excluída porque o PDF não pôde ser arquivado.', detail: error.message }); } }
+    empreendimento.tabelas = (empreendimento.tabelas || []).filter((item) => item.id !== table.id); empreendimento.tabelasExcluidas = empreendimento.tabelasExcluidas || []; empreendimento.tabelasExcluidas.unshift(deleted); empreendimento.updatedAt = now(); log(data, 'tabela_excluida_controladamente', { empreendimentoId: id, tabelaId: table.id, dependencias: 0 }); await writeData(data); return send(res, 200, { deletedId: table.id, archived: Boolean(sourcePath) });
+  }
+  if (method === 'POST' && parts[5] === 'validar') { if (table.status !== 'pending_validation') return send(res, 409, { error: 'Versões confirmadas são imutáveis. Crie uma cópia editável para registrar uma nova alteração.' }); const payload = parseJson(await body(req)); if (!Array.isArray(payload.unidades)) return send(res, 422, { error: 'Informe as unidades validadas.' }); try { table.unidades = normalizeReviewedUnits(empreendimento, table.unidades, payload.unidades); } catch (error) { return send(res, 422, { error: error.message }); } rebuildTableDerived(empreendimento, table); const criticalAlerts = (table.alertas || []).filter((alert) => alert.nivel === 'critico'); if (criticalAlerts.length && !payload.confirmarAlertasCriticos) return send(res, 409, { error: 'Existem alertas críticos pendentes. Confirme explicitamente os valores antes de concluir.', criticalAlerts, table });
+    if (table.documento?.path) { const finalName = `${sanitize(empreendimento.nome)}_${table.validityDate}_${sanitize(table.name)}.pdf`; const sourcePath = path.join(ROOT, table.documento.path); const targetPath = path.join(ROOT, 'pdf', 'cadastrados', `${table.id}_${finalName}`);
+      try { await fs.rename(sourcePath, targetPath); table.documento.storedName = path.basename(targetPath); table.documento.path = `pdf/cadastrados/${path.basename(targetPath)}`; } catch (error) { log(data, 'processamento_falhou', { empreendimentoId: id, tabelaId: table.id, motivo: `Não foi possível concluir o cadastro do PDF: ${error.message}` }); await writeData(data); return send(res, 500, { error: 'Os dados foram revisados, mas o PDF não pôde ser movido para cadastrados.', detail: error.message }); } }
+    table.status = 'registered'; table.validatedAt = now(); table.regrasComerciais = payload.regrasComerciais ?? table.regrasComerciais; table.observacoes = payload.observacoes ?? table.observacoes; rebuildTableDerived(empreendimento, table); syncPhysicalUnits(empreendimento, table); learnMappings(data, table.normalizacao || { campos: [] }); empreendimento.updatedAt = now(); log(data, 'validacao_concluida', { empreendimentoId: id, tabelaId: table.id, unidades: table.unidades.length }); if (table.documento?.storedName) log(data, 'pdf_cadastrado', { empreendimentoId: id, tabelaId: table.id, arquivo: table.documento.storedName }); await writeData(data); return send(res, 200, table); }
   return send(res, 404, { error: 'Rota não encontrada.' });
 }
 
