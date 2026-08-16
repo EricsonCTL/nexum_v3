@@ -77,3 +77,14 @@ function logoutCTI() {
   clearCTIUser();
   window.location.href = pageUrl('index.html');
 }
+
+function mountNexumFooter() {
+  if (!getCTIUser() || document.body.classList.contains('map-page') || document.querySelector('.app-statusbar')) return;
+  const footer = document.createElement('footer');
+  footer.className = 'app-statusbar app-global-footer';
+  footer.innerHTML = '<p>© Ericson Tenório 2026. Todos os direitos reservados.</p>';
+  document.body.append(footer);
+}
+
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mountNexumFooter, { once: true });
+else mountNexumFooter();
