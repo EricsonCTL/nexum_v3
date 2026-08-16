@@ -1,0 +1,6 @@
+regra,valor,unidade,origem
+entrada_minima,10,percentual,derivado_da_tabela_existente
+prazo_maximo,60,meses,derivado_da_tabela_existente
+intercalada_minima,200000,centavos,derivado_da_tabela_existente
+parcelas_intercaladas_36,3,quantidade,derivado_da_tabela_existente
+parcelas_intercaladas_60,5,quantidade,derivado_da_tabela_existente

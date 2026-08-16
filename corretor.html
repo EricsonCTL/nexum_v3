@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTI Investlar · Lotes e Tabelas</title>
+  <style>
+    :root {
+      --blue: #191d24;
+      --blue-d: #191d24;
+      --red: #e30613;
+      --gold: #c99a17;
+      --gold2: #f0c044;
+      --green: #15803d;
+      --ink: #14213d;
+      --muted: #667085;
+      --paper: #f7f5f1;
+      --line: rgba(21,32,51,.12);
+      --white: #fff;
+      --shadow: 0 18px 40px rgba(25,29,36,.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, "Segoe UI", system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+      font-size: 14px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+    }
+
+    .nav img {
+      width: min(420px, 46vw);
+      max-width: 48vw;
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    .nav-spacer { flex: 1; }
+    .nav-pill {
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: .78rem;
+      white-space: nowrap;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 8px 11px;
+      font-weight: 800;
+      cursor: pointer;
+      background: var(--blue-d);
+      color: #fff;
+      min-height: 36px;
+    }
+
+    .btn.secondary { background: #fff; color: var(--ink); border: 1px solid var(--line); }
+    .btn.gold { background: var(--gold); color: #fff; }
+    .btn.red { background: var(--red); }
+    .btn.ghost { background: #fff; color: var(--blue-d); border: 1px solid var(--line); }
+    .btn:disabled { opacity: .48; cursor: not-allowed; }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 14px 42px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .hero {
+      background:
+        linear-gradient(90deg, rgba(25,29,36,.95) 0%, rgba(25,29,36,.78) 56%, rgba(25,29,36,.25) 100%),
+        url("https://images.unsplash.com/photo-1773215023063-e662ea91a69c?auto=format&fit=crop&fm=jpg&q=70&w=1800") center/cover no-repeat;
+      color: #fff;
+      border-radius: 8px;
+      padding: 18px;
+      display: grid;
+      gap: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero h1 { font-size: clamp(1.35rem, 4vw, 2rem); line-height: 1.15; }
+    .hero p { color: rgba(255,255,255,.74); max-width: 720px; line-height: 1.55; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 8px;
+      padding: 11px;
+    }
+
+    .stat strong { display: block; font-size: 1.15rem; }
+    .stat span { color: rgba(255,255,255,.68); font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; }
+
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-head {
+      padding: 14px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .panel-head h2 { font-size: 1rem; color: var(--blue-d); }
+    .panel-head .meta { color: var(--muted); font-size: .86rem; margin-left: auto; }
+
+    .filters {
+      display: grid;
+      grid-template-columns: 1.4fr .8fr .8fr;
+      gap: 10px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfaf7;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      min-height: 34px;
+      padding: 7px 10px;
+      font: inherit;
+      background: #fff;
+      color: var(--ink);
+    }
+
+    label {
+      display: grid;
+      gap: 3px;
+      color: var(--muted);
+      font-size: .68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    th {
+      background: #f1eadb;
+      color: var(--muted);
+      font-size: .72rem;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    td { padding: 11px 12px; border-bottom: 1px solid var(--line); }
+    td.num, th.num { text-align: right; }
+    tbody tr { cursor: pointer; }
+    tbody tr:hover td, tbody tr.active td { background: #fbf3df; }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 10px;
+    }
+
+    .unit-card, .proposal-card {
+      padding: 11px;
+      display: grid;
+      gap: 9px;
+    }
+
+    .unit-title {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .unit-title h2, .proposal-card h2 {
+      font-size: 1rem;
+      line-height: 1.15;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      border-radius: 999px;
+      background: rgba(21,128,61,.1);
+      color: var(--green);
+      font-weight: 800;
+      padding: 4px 8px;
+      font-size: .7rem;
+    }
+
+    .price {
+      font-size: clamp(1.35rem, 4vw, 1.8rem);
+      line-height: 1;
+      font-weight: 900;
+      color: var(--blue-d);
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .mini {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      background: #fbfaf7;
+    }
+
+    .mini span { display: block; color: var(--muted); font-size: .66rem; margin-bottom: 2px; }
+    .mini strong { font-size: .82rem; }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+    }
+
+    .errors {
+      display: none;
+      background: #fff1f2;
+      border: 1px solid rgba(227,6,19,.18);
+      color: #9f1239;
+      border-radius: 8px;
+      padding: 8px;
+      line-height: 1.35;
+    }
+
+    .errors.show { display: block; }
+    .summary {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      display: grid;
+      gap: 5px;
+      background: #fbfaf7;
+    }
+    .summary-row { display: flex; justify-content: space-between; gap: 12px; font-size: .85rem; }
+    .summary-row strong { text-align: right; }
+
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .notice {
+      background: #fff7ed;
+      color: #9a3412;
+      border: 1px solid #fed7aa;
+      border-radius: 8px;
+      padding: 8px 10px;
+      line-height: 1.32;
+      font-size: .76rem;
+    }
+
+    body.modal-open { overflow: hidden; }
+
+    .unit-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      background: rgba(25,29,36,.62);
+      backdrop-filter: blur(6px);
+    }
+
+    .unit-modal.open { display: flex; }
+
+    .modal-shell {
+      width: min(1120px, 100%);
+      max-height: calc(100vh - 24px);
+      overflow: auto;
+      background: var(--paper);
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 12px;
+      box-shadow: 0 28px 80px rgba(0,0,0,.28);
+      position: relative;
+      padding: 10px;
+    }
+
+    .modal-close {
+      position: sticky;
+      top: 0;
+      margin-left: auto;
+      z-index: 2;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.05rem;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(25,29,36,.12);
+    }
+
+    .modal-shell .detail-grid { margin-top: -34px; padding-top: 34px; }
+
+    .print-proposal { display: none; }
+
+    @media (max-width: 820px) {
+      .nav { min-height: 58px; flex-wrap: wrap; }
+      .nav img { width: min(260px, 58vw); }
+      .nav-pill { display: none; }
+      .nav-spacer { display: none; }
+      .nav .btn { padding: 9px 11px; font-size: .82rem; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .filters, .detail-grid, .form-grid { grid-template-columns: 1fr; }
+      .panel-head .meta { margin-left: 0; width: 100%; }
+      table { min-width: 620px; font-size: 12px; }
+      .mini-grid { grid-template-columns: 1fr; }
+      .unit-modal { padding: 10px; align-items: flex-end; }
+      .modal-shell { max-height: calc(100vh - 20px); border-radius: 14px 14px 0 0; padding: 10px; }
+      .modal-shell .detail-grid { margin-top: -34px; padding-top: 38px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      header, .hero, .panel.table-panel, .proposal-card, .unit-card, .unit-modal, .notice.screen-only { display: none !important; }
+      main { padding: 0; max-width: none; }
+      .print-proposal {
+        display: block;
+        color: #111;
+        padding: 24px;
+        font-family: Arial, sans-serif;
+      }
+      .print-proposal img { width: 230px; margin-bottom: 24px; }
+      .print-proposal h1 { font-size: 22px; margin-bottom: 8px; }
+      .print-proposal table { min-width: 0; margin: 18px 0; }
+      .print-proposal th, .print-proposal td { font-size: 12px; border: 1px solid #ddd; }
+      .print-note { margin-top: 18px; font-size: 12px; color: #555; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <img src="cti_logo.png" alt="CTI Investlar">
+      <div class="nav-spacer"></div>
+      <span class="nav-pill" id="user-pill">Corretor</span>
+      <button class="btn secondary" onclick="window.location.href='quintas-galeria.html'">Apresentação</button>
+      <button class="btn secondary" onclick="window.location.href='empreendimentos.html'">Voltar</button>
+      <button class="btn red" onclick="logoutCTI()">Sair</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Lotes e Tabelas</h1>
+        <p>Consulta comercial do Quintas da Mata. Clique em um lote para abrir a unidade e montar a proposta em janela.</p>
+      </div>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="panel table-panel">
+      <div class="panel-head">
+        <h2>Quintas da Mata</h2>
+        <span class="meta" id="table-meta">Carregando tabela...</span>
+      </div>
+      <div class="filters">
+        <label>Buscar
+          <input id="search" type="search" placeholder="Quadra ou lote">
+        </label>
+        <label>Quadra
+          <select id="quadra-filter"></select>
+        </label>
+        <label>Ordenar
+          <select id="sort-filter">
+            <option value="valor-asc">Menor valor</option>
+            <option value="valor-desc">Maior valor</option>
+            <option value="quadra">Quadra/lote</option>
+            <option value="m2-desc">Maior área</option>
+          </select>
+        </label>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Quadra</th>
+              <th>Lote</th>
+              <th class="num">Área</th>
+              <th class="num">Preço atual</th>
+              <th class="num">Entrada padrão</th>
+              <th class="num">60x padrão</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="unit-modal" id="unit-modal" aria-hidden="true">
+      <div class="modal-shell" role="dialog" aria-modal="true" aria-labelledby="unit-title">
+        <button class="modal-close" id="modal-close" type="button" aria-label="Fechar">×</button>
+        <section class="detail-grid">
+          <article class="panel unit-card" id="unit-card">
+            <div class="unit-title">
+              <div>
+                <span class="badge">Disponível</span>
+                <h2 id="unit-title">Selecione um lote</h2>
+              </div>
+              <button class="btn ghost" id="open-table-btn" type="button">Abrir tabela completa</button>
+            </div>
+            <div class="price" id="unit-price">--</div>
+            <div class="mini-grid" id="unit-metrics"></div>
+            <div class="notice screen-only">Disponibilidade, valores e condições comerciais precisam ser confirmados pela Investlar antes da reserva.</div>
+          </article>
+
+          <article class="panel proposal-card">
+            <h2>Proposta comercial</h2>
+            <div class="form-grid">
+              <label>Cliente
+                <input id="client-name" type="text" placeholder="Nome do cliente">
+              </label>
+              <label>Corretor
+                <input id="broker-name" type="text" placeholder="Nome do corretor">
+              </label>
+              <label>Entrada
+                <input id="entrada" type="number" min="0" step="100">
+              </label>
+              <label>Prazo
+                <select id="prazo">
+                  <option value="12">12 meses</option>
+                  <option value="24">24 meses</option>
+                  <option value="36">36 meses</option>
+                  <option value="60" selected>60 meses</option>
+                </select>
+              </label>
+              <label>Intercaladas
+                <select id="intercaladas">
+                  <option value="0">Sem intercaladas</option>
+                  <option value="3">3 intercaladas</option>
+                  <option value="5" selected>5 intercaladas</option>
+                </select>
+              </label>
+              <label>Valor da intercalada
+                <input id="valor-intercalada" type="number" min="0" step="100" value="2000">
+              </label>
+            </div>
+            <div class="errors" id="errors"></div>
+            <div class="summary" id="summary"></div>
+            <div class="actions">
+              <button class="btn" id="print-btn" type="button" disabled>Gerar PDF</button>
+              <button class="btn ghost" id="share-btn" type="button" disabled>Compartilhar</button>
+            </div>
+            <div class="notice">Os dados digitados ficam apenas nesta sessão da tela e não são salvos no projeto.</div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <section class="print-proposal" id="print-proposal"></section>
+  </main>
+
+  <script src="auth.js"></script>
+  <script src="cti-data-loader.js"></script>
+  <script>
+    const user = requireCTIUser(['ADMIN', 'BROKER']);
+    if (user) document.getElementById('user-pill').textContent = `${user.name} · ${user.roleLabel}`;
+
+    const state = {
+      rows: [],
+      filtered: [],
+      selected: null,
+      limits: null,
+      proposal: null
+    };
+
+    const els = {
+      stats: document.getElementById('stats'),
+      meta: document.getElementById('table-meta'),
+      rows: document.getElementById('rows'),
+      search: document.getElementById('search'),
+      quadra: document.getElementById('quadra-filter'),
+      sort: document.getElementById('sort-filter'),
+      title: document.getElementById('unit-title'),
+      price: document.getElementById('unit-price'),
+      metrics: document.getElementById('unit-metrics'),
+      entrada: document.getElementById('entrada'),
+      prazo: document.getElementById('prazo'),
+      intercaladas: document.getElementById('intercaladas'),
+      valorIntercalada: document.getElementById('valor-intercalada'),
+      clientName: document.getElementById('client-name'),
+      brokerName: document.getElementById('broker-name'),
+      errors: document.getElementById('errors'),
+      summary: document.getElementById('summary'),
+      print: document.getElementById('print-btn'),
+      share: document.getElementById('share-btn'),
+      printProposal: document.getElementById('print-proposal'),
+      modal: document.getElementById('unit-modal'),
+      modalClose: document.getElementById('modal-close')
+    };
+
+    function renderStats() {
+      const total = state.rows.length;
+      const valores = state.rows.map((row) => row.valor);
+      const menor = Math.min(...valores);
+      const maior = Math.max(...valores);
+      const quadras = new Set(state.rows.map((row) => row.quadra)).size;
+      els.stats.innerHTML = `
+        <div class="stat"><strong>${total}</strong><span>Lotes disponíveis</span></div>
+        <div class="stat"><strong>${quadras}</strong><span>Quadras</span></div>
+        <div class="stat"><strong>${formatBRL(menor)}</strong><span>Menor preço</span></div>
+        <div class="stat"><strong>${formatBRL(maior)}</strong><span>Maior preço</span></div>
+      `;
+    }
+
+    function renderQuadras() {
+      const quadras = [...new Set(state.rows.map((row) => row.quadra))].sort();
+      els.quadra.innerHTML = '<option value="">Todas</option>' + quadras.map((q) => `<option value="${q}">${q}</option>`).join('');
+    }
+
+    function applyFilters() {
+      const term = els.search.value.trim().toLowerCase();
+      const q = els.quadra.value;
+      state.filtered = state.rows.filter((row) => {
+        const key = `${row.quadra} lote ${row.lote}`.toLowerCase();
+        return (!term || key.includes(term)) && (!q || row.quadra === q);
+      });
+
+      const sort = els.sort.value;
+      state.filtered.sort((a, b) => {
+        if (sort === 'valor-desc') return b.valor - a.valor;
+        if (sort === 'm2-desc') return b.m2 - a.m2;
+        if (sort === 'quadra') return a.quadra.localeCompare(b.quadra) || a.lote - b.lote;
+        return a.valor - b.valor;
+      });
+      renderRows();
+    }
+
+    function renderRows() {
+      els.meta.textContent = `${state.filtered.length} de ${state.rows.length} lotes disponíveis`;
+      els.rows.innerHTML = state.filtered.map((row) => {
+        const active = state.selected && row.quadra === state.selected.quadra && row.lote === state.selected.lote;
+        return `<tr class="${active ? 'active' : ''}" data-key="${row.quadra}_${row.lote}">
+          <td>${row.quadra}</td>
+          <td>${row.lote}</td>
+          <td class="num">${formatArea(row.m2)}</td>
+          <td class="num">${formatBRL(row.valor)}</td>
+          <td class="num">${formatBRL(row.entrada)}</td>
+          <td class="num">${formatBRL(row.p60i || row.p60)}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    function openUnitModal() {
+      els.modal.classList.add('open');
+      els.modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+      setTimeout(() => els.clientName.focus(), 60);
+    }
+
+    function closeUnitModal() {
+      els.modal.classList.remove('open');
+      els.modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    }
+
+    function selectRow(row, openModal = true) {
+      state.selected = row;
+      els.title.textContent = `${row.quadra} · Lote ${row.lote}`;
+      els.price.textContent = formatBRL(row.valor);
+      els.metrics.innerHTML = `
+        <div class="mini"><span>Área</span><strong>${formatArea(row.m2)}</strong></div>
+        <div class="mini"><span>Entrada padrão</span><strong>${formatBRL(row.entrada)}</strong></div>
+        <div class="mini"><span>Condição padrão</span><strong>60x de ${formatBRL(row.p60i || row.p60)}</strong></div>
+      `;
+      els.entrada.value = row.entrada.toFixed(2);
+      els.prazo.value = '60';
+      els.intercaladas.value = row.p60i_inter ? '5' : '0';
+      els.valorIntercalada.value = row.p60i_inter || 0;
+      recalcProposal();
+      renderRows();
+      if (openModal) openUnitModal();
+    }
+
+    function recalcProposal() {
+      if (!state.selected || !state.limits) {
+        els.summary.innerHTML = '<span>Selecione um lote para calcular.</span>';
+        return;
+      }
+
+      const proposal = calculateProposal(state.selected, {
+        entrada: Number(els.entrada.value),
+        prazo: Number(els.prazo.value),
+        intercaladas: Number(els.intercaladas.value),
+        valorIntercalada: Number(els.valorIntercalada.value)
+      }, state.limits);
+      state.proposal = proposal;
+
+      els.errors.classList.toggle('show', !proposal.valid);
+      els.errors.innerHTML = proposal.errors.join('<br>');
+      els.summary.innerHTML = `
+        <div class="summary-row"><span>Valor do lote</span><strong>${formatBRL(fromCents(proposal.valorCentavos))}</strong></div>
+        <div class="summary-row"><span>Entrada</span><strong>${formatBRL(fromCents(proposal.entradaCentavos))}</strong></div>
+        <div class="summary-row"><span>Intercaladas</span><strong>${proposal.intercaladas}x de ${formatBRL(fromCents(proposal.valorIntercaladaCentavos))}</strong></div>
+        <div class="summary-row"><span>Saldo parcelado</span><strong>${formatBRL(fromCents(proposal.saldoCentavos))}</strong></div>
+        <div class="summary-row"><span>Parcela mensal</span><strong>${proposal.prazo}x de ${formatBRL(fromCents(proposal.parcelaCentavos))}</strong></div>
+      `;
+      els.print.disabled = !proposal.valid;
+      els.share.disabled = !proposal.valid;
+    }
+
+    function buildPrintProposal() {
+      const row = state.selected;
+      const proposal = state.proposal;
+      const cliente = els.clientName.value.trim() || 'Cliente nao informado';
+      const corretor = els.brokerName.value.trim() || 'Corretor nao informado';
+      els.printProposal.innerHTML = `
+        <img src="cti_logo.png" alt="CTI Investlar">
+        <h1>Proposta comercial</h1>
+        <p><strong>Empreendimento:</strong> Quintas da Mata</p>
+        <p><strong>Unidade:</strong> ${row.quadra} · Lote ${row.lote} · ${formatArea(row.m2)}</p>
+        <p><strong>Cliente:</strong> ${cliente}</p>
+        <p><strong>Corretor:</strong> ${corretor}</p>
+        <table>
+          <tbody>
+            <tr><th>Valor do lote</th><td>${formatBRL(fromCents(proposal.valorCentavos))}</td></tr>
+            <tr><th>Entrada</th><td>${formatBRL(fromCents(proposal.entradaCentavos))}</td></tr>
+            <tr><th>Intercaladas</th><td>${proposal.intercaladas}x de ${formatBRL(fromCents(proposal.valorIntercaladaCentavos))}</td></tr>
+            <tr><th>Saldo parcelado</th><td>${formatBRL(fromCents(proposal.saldoCentavos))}</td></tr>
+            <tr><th>Parcela mensal</th><td>${proposal.prazo}x de ${formatBRL(fromCents(proposal.parcelaCentavos))}</td></tr>
+          </tbody>
+        </table>
+        <p class="print-note">Disponibilidade, valores e condições comerciais precisam ser confirmados pela Investlar. Proposta demonstrativa gerada pelo CTI Investlar.</p>
+      `;
+    }
+
+    function shareProposal() {
+      if (!state.selected || !state.proposal || !state.proposal.valid) return;
+      const row = state.selected;
+      const proposal = state.proposal;
+      const text = `CTI Investlar - Proposta ${row.quadra} Lote ${row.lote}\nValor: ${formatBRL(fromCents(proposal.valorCentavos))}\nEntrada: ${formatBRL(fromCents(proposal.entradaCentavos))}\n${proposal.prazo}x de ${formatBRL(fromCents(proposal.parcelaCentavos))}\nDisponibilidade e condicoes sujeitas a confirmacao.`;
+      if (navigator.share) {
+        navigator.share({ title: 'Proposta CTI Investlar', text }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(text);
+        alert('Resumo da proposta copiado.');
+      }
+    }
+
+    function bindEvents() {
+      [els.search, els.quadra, els.sort].forEach((el) => el.addEventListener('input', applyFilters));
+      [els.entrada, els.prazo, els.intercaladas, els.valorIntercalada].forEach((el) => el.addEventListener('input', recalcProposal));
+      els.rows.addEventListener('click', (event) => {
+        const tr = event.target.closest('tr[data-key]');
+        if (!tr) return;
+        const row = state.filtered.find((item) => `${item.quadra}_${item.lote}` === tr.dataset.key);
+        if (row) selectRow(row, true);
+      });
+      els.modalClose.addEventListener('click', closeUnitModal);
+      els.modal.addEventListener('click', (event) => {
+        if (event.target === els.modal) closeUnitModal();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && els.modal.classList.contains('open')) closeUnitModal();
+      });
+      document.getElementById('open-table-btn').addEventListener('click', () => {
+        window.location.href = 'tabela.html';
+      });
+      els.print.addEventListener('click', () => {
+        buildPrintProposal();
+        window.print();
+      });
+      els.share.addEventListener('click', shareProposal);
+    }
+
+    async function init() {
+      try {
+        const [limits, rows] = await Promise.all([loadCommercialLimits(), loadTabelaRows()]);
+        state.limits = limits;
+        state.rows = rows;
+        state.filtered = [...rows];
+        renderStats();
+        renderQuadras();
+        bindEvents();
+        applyFilters();
+        selectRow(rows[0], false);
+      } catch (error) {
+        els.meta.textContent = 'Erro ao carregar os dados comerciais.';
+        els.rows.innerHTML = `<tr><td colspan="6">${error.message}</td></tr>`;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
