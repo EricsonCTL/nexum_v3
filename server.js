@@ -39,7 +39,7 @@ const UNIT_STATUSES = ['Disponível', 'Vendida', 'Bloqueada', 'Reservada', 'Indi
 function normalizeDataModel(data) {
   data.version = Math.max(Number(data.version || 1), 2); data.dicionario = data.dicionario || []; data.sequences = data.sequences || {}; data.empreendimentos = data.empreendimentos || [];
   for (const empreendimento of data.empreendimentos) {
-    empreendimento.unidades = empreendimento.unidades || []; empreendimento.tabelasExcluidas = empreendimento.tabelasExcluidas || [];
+    empreendimento.unidades = empreendimento.unidades || []; empreendimento.tabelasExcluidas = empreendimento.tabelasExcluidas || []; empreendimento.tabelaPadraoTipo = empreendimento.tabelaPadraoTipo || null;
     for (const table of empreendimento.tabelas || []) {
       table.tipoTabela = table.tipoTabela || canonicalTableType(table.name); table.tipoTabelaLabel = table.tipoTabelaLabel || TABLE_TYPE_LABELS[table.tipoTabela] || 'Outro';
       table.manualReviewRequired = table.manualReviewRequired ?? (!(table.unidades || []).length && !String(table.extracao?.texto || '').replace(/\f/g, '').trim());
@@ -300,11 +300,22 @@ function soldStatusTransitions(previous, current) {
   const prior = new Map((previous?.unidades || []).map((unit) => [unit.chave, normalizeUnitStatus(unit.situacaoExtraida)]));
   return (current?.unidades || []).filter((unit) => normalizeUnitStatus(unit.situacaoExtraida) === 'Vendida' && prior.get(unit.chave) !== 'Vendida');
 }
+function generalInventoryTable(empreendimento, reference) {
+  if (!reference) return null;
+  const catalog = new Map((reference.unidades || []).map((unit) => [unit.chave, { ...unit, situacaoExtraida: normalizeUnitStatus(unit.situacaoExtraida) }]));
+  const tables = sortTables(empreendimento.tabelas || []);
+  for (const table of tables) for (const unit of table.unidades || []) {
+    const existing = catalog.get(unit.chave);
+    if (existing) catalog.set(unit.chave, { ...existing, situacaoExtraida: normalizeUnitStatus(unit.situacaoExtraida), statusGeralOriginadoEm: table.id });
+    else catalog.set(unit.chave, { ...unit, situacaoExtraida: normalizeUnitStatus(unit.situacaoExtraida), statusGeralOriginadoEm: table.id, origemLeitura: unit.origemLeitura || 'nova_em_modalidade' });
+  }
+  return { ...reference, unidades: [...catalog.values()], nomeVisao: 'Saldo disponível geral', isGeneralInventory: true };
+}
 function buildRadar(empreendimento) {
   // Indicadores decisórios nunca usam uma versão ainda em validação.
   // O empreendimento pode aparecer no mapa desde já, mas VGV, IVV e vendas
   // só passam a refletir uma tabela após a confirmação explícita.
-  const allTables = [...(empreendimento.tabelas || [])].sort((a, b) => a.validityDate.localeCompare(b.validityDate) || a.createdAt.localeCompare(b.createdAt)); const registeredTables = allTables.filter((table) => table.status === 'registered'); const latest = registeredTables.at(-1) || null; const tables = latest ? registeredTables.filter((table) => table.tipoTabela === latest.tipoTabela) : []; const previous = tables.at(-2) || null;
+  const allTables = [...(empreendimento.tabelas || [])].sort((a, b) => a.validityDate.localeCompare(b.validityDate) || a.createdAt.localeCompare(b.createdAt)); const registeredTables = allTables.filter((table) => table.status === 'registered'); const referenceTables = empreendimento.tabelaPadraoTipo ? registeredTables.filter((table) => table.tipoTabela === empreendimento.tabelaPadraoTipo) : []; const reference = referenceTables.at(-1) || null; const latest = generalInventoryTable(empreendimento, reference) || registeredTables.at(-1) || null; const tables = reference ? referenceTables : (latest ? registeredTables.filter((table) => table.tipoTabela === latest.tipoTabela) : []); const previous = tables.at(-2) || null;
   const current = tableMetrics(latest); const prior = tableMetrics(previous); const removedDetails = removalDetails(previous, latest, latest?.classificacoesRemocao || {}); const removals = removalSummary(removedDetails); const salesByStatus = soldStatusTransitions(previous, latest); const rawComparison = comparisonMetrics(previous, latest); const returned = latest?.comparacao?.retornadas?.length || 0; const comparison = { ...rawComparison, added: Math.max(0, rawComparison.added - returned), returned, removedPending: removals.pendentes, salesConfirmed: removals.vendidas + salesByStatus.length, salesByStatus: salesByStatus.map((unit) => unit.chave), removals };
   const keys = new Set([...(latest?.unidades || []), ...(previous?.unidades || [])].map((unit) => unit.quadra || 'Sem bloco'));
   const byBlock = [...keys].sort().map((block) => {
@@ -388,6 +399,12 @@ async function api(req, res, pathname) {
   }
   if (parts[3] !== 'tabelas' || !parts[4]) return send(res, 404, { error: 'Rota não encontrada.' });
   const tableId = parts[4]; const table = (empreendimento.tabelas || []).find((item) => item.id === tableId); if (!table) return send(res, 404, { error: 'Tabela não encontrada.' });
+  if (method === 'POST' && parts[5] === 'definir-padrao') {
+    if (table.status !== 'registered') return send(res, 409, { error: 'Confirme a tabela antes de defini-la como padrão do empreendimento.' });
+    empreendimento.tabelaPadraoTipo = table.tipoTabela; empreendimento.tabelaPadraoTableId = table.id; empreendimento.updatedAt = now();
+    log(data, 'tabela_padrao_definida', { empreendimentoId: id, tabelaId: table.id, tipoTabela: table.tipoTabela }); await writeData(data);
+    return send(res, 200, { tabelaPadraoTipo: empreendimento.tabelaPadraoTipo, tabelaPadraoTableId: empreendimento.tabelaPadraoTableId });
+  }
   if (method === 'POST' && parts[5] === 'reprocessar') {
     if (table.status !== 'pending_validation') return send(res, 409, { error: 'Apenas tabelas pendentes podem ser reprocessadas. Versões confirmadas preservam sua extração histórica.' });
     if (!table.documento?.path) return send(res, 409, { error: 'Esta versão foi criada manualmente e não possui PDF para reprocessar.' });
