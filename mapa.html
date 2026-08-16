@@ -41,6 +41,7 @@ document.querySelectorAll('.territory-radius').forEach(node=>node.remove());cons
 <script>
 /* Camada final do mapa: o raio é uma lente de leitura, não um filtro destrutivo. */
 const finalFilterBase=mapFilteredBase;
+let radiusPortfolio=[];
 filtered=function(){
   finalFilterBase();
   const start=document.getElementById('filter-start')?.value||'';
@@ -54,6 +55,28 @@ filtered=function(){
     const ticketMatches=!ticket||(ticket==='ate-500'&&average<=500000)||(ticket==='500-800'&&average>500000&&average<=800000)||(ticket==='800-1200'&&average>800000&&average<=1200000)||(ticket==='acima-1200'&&average>1200000);
     return (!start||item.latestTable?.validityDate>=start)&&(!end||item.latestTable?.validityDate<=end)&&(!bairro||item.bairro===bairro)&&(!tipo||item.tipo===tipo)&&(!padrao||item.padrao===padrao)&&ticketMatches;
   });
+  radiusPortfolio=radiusScope?visibleRadar.filter(item=>hasCoordinates(item)&&kmDistance(radiusScope.lat,radiusScope.lng,item.latitude,item.longitude)<=radiusScope.km):visibleRadar;
+};
+const renderScopeForRadius=renderScope;
+renderScope=function(){
+  const mapPortfolio=visibleRadar;
+  visibleRadar=radiusPortfolio;
+  renderScopeForRadius();
+  visibleRadar=mapPortfolio;
+};
+const renderBarsForRadius=renderBars;
+renderBars=function(){
+  const mapPortfolio=visibleRadar;
+  visibleRadar=radiusPortfolio;
+  renderBarsForRadius();
+  visibleRadar=mapPortfolio;
+};
+const renderListForRadius=renderList;
+renderList=function(){
+  const mapPortfolio=visibleRadar;
+  visibleRadar=radiusPortfolio;
+  renderListForRadius();
+  visibleRadar=mapPortfolio;
 };
 const baseMarkerIcon=markerIcon;
 markerIcon=function(item){
