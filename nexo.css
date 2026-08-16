@@ -185,7 +185,7 @@ main{padding:24px 0 40px}.pagehead{display:flex;justify-content:space-between;al
 
 /* A área de interesse preserva o contexto do portfólio: fora do raio, apenas atenua. */
 .topbar .nav .map-filter-trigger{position:static;z-index:auto;order:-1;margin-right:8px;border-radius:6px;padding:7px 11px;background:#fff;color:#173a67;font-size:11px}
-.nexo-pin.is-outside-radius{opacity:.5;filter:grayscale(.72);transform:rotate(-45deg) scale(.88)}
+.nexo-pin.is-outside-radius{opacity:.7;filter:grayscale(.5);transform:rotate(-45deg) scale(.92)}
 .nexo-pin.is-outside-radius.is-selected{opacity:1;filter:none}
 .radius-pin{width:42px;height:42px;border-width:4px;background:#193f78;font-size:22px;box-shadow:0 6px 18px rgba(8,35,77,.38)}
 .territory-radius .radius-control #radius-locate{min-height:32px;margin:0;padding:6px 11px;white-space:nowrap}
