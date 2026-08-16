@@ -5,6 +5,7 @@
 <section class="territory-layout"><aside class="territory-sidebar"><section class="territory-card territory-command"><div class="territory-card-head"><h1>Portfólio no mapa</h1><button class="text-button" id="clear-search" type="button">Limpar busca</button></div><p>Selecione um empreendimento para ver disponibilidade, vendas e reajustes confirmados.</p><div class="territory-scope" id="scope"><div><span>Empreendimentos</span><strong>—</strong></div><div><span>Unidades em tabela</span><strong>—</strong></div><div><span>Disponíveis</span><strong>—</strong></div></div></section><section class="territory-card territory-reading"><div class="territory-card-head"><h2>Leitura do portfólio</h2><span class="mono" id="portfolio-tag">—</span></div><div class="territory-reading-list" id="portfolio-reading"><div class="reading-item"><span>Carregando indicadores</span><strong>—</strong></div></div></section><section class="territory-card territory-ranking"><div class="territory-card-head"><h2>Disponibilidade</h2><span class="mono" id="available-total">—</span></div><div id="bars" class="territory-bars"></div></section><section class="territory-list-wrap"><div class="territory-list-head"><h2>Empreendimentos</h2><span id="sidebar-meta">—</span></div><div id="list" class="territory-list"></div></section></aside><section class="territory-map-frame"><div id="map" class="territory-map"><div class="loading">Carregando mapa…</div></div><div class="map-summary" id="map-summary" aria-live="polite"></div></section></section></main>
 <footer class="app-statusbar"><div><span>Radar imobiliário</span><strong id="footer-period">Tabelas confirmadas</strong></div><div><span>Empreendimentos</span><strong id="footer-enterprises">—</strong></div><div><span>Unidades em tabela</span><strong id="footer-units">—</strong></div><div><span>Disponíveis</span><strong id="footer-available">—</strong></div><div><span>Vendas no período</span><strong id="footer-sales">—</strong></div><p>© NEXUM Radar Imobiliário</p></footer>
 <script src="auth.js"></script><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script>
+var id=true;
 requireCTIUser(['ADMIN','BROKER']);
 const mapEl=document.getElementById('map'),listEl=document.getElementById('list'),barsEl=document.getElementById('bars'),meta=document.getElementById('meta'),sideMeta=document.getElementById('sidebar-meta'),summaryEl=document.getElementById('map-summary');
 let radar=[],visibleRadar=[],map=null,markers=new Map(),selectedId=null;
@@ -35,4 +36,53 @@ function installRadiusPanel(){const body=document.querySelector('#map-filters .m
 const filteredWithRadius=filtered;filtered=function(){filteredWithRadius();if(radiusScope)visibleRadar=visibleRadar.filter(item=>hasCoordinates(item)&&kmDistance(radiusScope.lat,radiusScope.lng,item.latitude,item.longitude)<=radiusScope.km)};const renderMapWithRadius=renderMap;renderMap=function(){renderMapWithRadius();if(!map)return;map.on('click',e=>{radiusScope={lat:e.latlng.lat,lng:e.latlng.lng,km:Math.min(30,Math.max(.2,Number(document.getElementById('radius-km')?.value||2))),name:document.getElementById('radius-name')?.value||'Ponto selecionado'};const feedback=document.getElementById('radius-feedback');if(feedback)feedback.textContent=`Raio ativo: ${radiusScope.km} km.`;render()});if(radiusScope){L.circle([radiusScope.lat,radiusScope.lng],{radius:radiusScope.km*1000,color:'#0aa68f',weight:2,dashArray:'7 7',fillColor:'#0aa68f',fillOpacity:.08}).addTo(map);L.marker([radiusScope.lat,radiusScope.lng],{icon:L.divIcon({className:'radius-pin-wrap',html:'<span class="radius-pin">⌖</span>',iconSize:[36,36],iconAnchor:[18,18]})}).addTo(map);map.fitBounds(L.circle([radiusScope.lat,radiusScope.lng],{radius:radiusScope.km*1000}).getBounds(),{padding:[48,48],maxZoom:14})}};installRadiusPanel();if(id)load();
 const radiusControl=document.querySelector('#map-filters .radius-control');if(radiusControl){const radiusCard=document.createElement('section');radiusCard.className='territory-card territory-radius';radiusCard.innerHTML='<div class="territory-card-head"><h2>Análise de entorno</h2><button class="text-button" id="inline-clear-radius" type="button">Limpar raio</button></div>';radiusCard.append(radiusControl);document.querySelector('.territory-sidebar').prepend(radiusCard);document.getElementById('inline-clear-radius').onclick=()=>document.getElementById('clear-radius').click();}
 const radiusFields=document.querySelector('.territory-radius .radius-control');if(radiusFields&&!document.getElementById('radius-address')){document.getElementById('radius-km').closest('label').insertAdjacentHTML('afterend','<label class="radius-address">Endereço<input id="radius-address" readonly placeholder="Preenchido pelo CEP"></label>');const locateButton=document.getElementById('radius-form');locateButton.onclick=async()=>{const cep=document.getElementById('radius-cep').value.replace(/\D/g,'');if(cep.length!==8)return document.getElementById('radius-feedback').textContent='Informe um CEP válido.';try{document.getElementById('radius-feedback').textContent='Consultando endereço…';const via=await fetch(`https://viacep.com.br/ws/${cep}/json/`).then(r=>r.json());if(via.erro)throw Error('CEP não encontrado.');const address=[via.logradouro,via.bairro,via.localidade,via.uf].filter(Boolean).join(' · ');document.getElementById('radius-address').value=address;const q=encodeURIComponent([via.logradouro,via.bairro,via.localidade,via.uf,'Brasil'].filter(Boolean).join(', '));const geo=await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q=${q}`).then(r=>r.json());if(!geo[0])throw Error('Endereço localizado, mas sem coordenada no mapa.');radiusScope={lat:Number(geo[0].lat),lng:Number(geo[0].lon),km:Math.min(30,Math.max(.2,Number(document.getElementById('radius-km').value||2))),name:document.getElementById('radius-name').value||via.bairro||cep};document.getElementById('radius-feedback').textContent=`Pin criado: ${address} · ${radiusScope.km} km.`;render()}catch(e){document.getElementById('radius-feedback').textContent=e.message}}}
+document.querySelectorAll('.territory-radius').forEach(node=>node.remove());const radiusPanel=document.createElement('section');radiusPanel.className='territory-card territory-radius';radiusPanel.innerHTML='<div class="territory-card-head"><h2>Análise de entorno</h2><button class="text-button" id="radius-clear" type="button">Limpar raio</button></div><div class="radius-control"><label>Nome<input id="radius-name-live" placeholder="Empreendimento"></label><label>CEP<input id="radius-cep-live" inputmode="numeric" maxlength="9" placeholder="58400-000"></label><label>Raio km<input id="radius-km-live" type="number" min="0.2" max="30" step="0.1" value="2"></label><button class="button teal" id="radius-locate" type="button">Localizar</button><label class="radius-address">Endereço<input id="radius-address-live" readonly placeholder="Preenchido pelo CEP"></label><small id="radius-feedback-live">Sem raio ativo. Clique no mapa ou informe um CEP.</small></div>';document.querySelector('.territory-sidebar').prepend(radiusPanel);document.getElementById('radius-clear').onclick=()=>{radiusScope=null;document.getElementById('radius-feedback-live').textContent='Sem raio ativo.';render()};document.getElementById('radius-locate').onclick=async()=>{const cep=document.getElementById('radius-cep-live').value.replace(/\D/g,'');if(cep.length!==8)return document.getElementById('radius-feedback-live').textContent='Informe um CEP válido.';try{const via=await fetch(`https://viacep.com.br/ws/${cep}/json/`).then(r=>r.json());if(via.erro)throw Error('CEP não encontrado.');const address=[via.logradouro,via.bairro,via.localidade,via.uf].filter(Boolean).join(' · ');document.getElementById('radius-address-live').value=address;const q=encodeURIComponent([via.logradouro,via.bairro,via.localidade,via.uf,'Brasil'].filter(Boolean).join(', '));const geo=await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q=${q}`).then(r=>r.json());if(!geo[0])throw Error('Endereço localizado, mas sem coordenada.');radiusScope={lat:Number(geo[0].lat),lng:Number(geo[0].lon),km:Math.min(30,Math.max(.2,Number(document.getElementById('radius-km-live').value||2))),name:document.getElementById('radius-name-live').value||via.bairro||cep};document.getElementById('radius-feedback-live').textContent=`Pin criado: ${address} · ${radiusScope.km} km.`;render()}catch(e){document.getElementById('radius-feedback-live').textContent=e.message}};
+</script>
+<script>
+/* Camada final do mapa: o raio é uma lente de leitura, não um filtro destrutivo. */
+const finalFilterBase=mapFilteredBase;
+filtered=function(){
+  finalFilterBase();
+  const start=document.getElementById('filter-start')?.value||'';
+  const end=document.getElementById('filter-end')?.value||'';
+  const bairro=document.getElementById('filter-bairro')?.value||'';
+  const tipo=document.getElementById('filter-type')?.value||'';
+  const padrao=document.getElementById('filter-pattern')?.value||'';
+  const ticket=document.getElementById('filter-ticket')?.value||'';
+  visibleRadar=visibleRadar.filter(item=>{
+    const average=Number(item.current?.averagePrice||0);
+    const ticketMatches=!ticket||(ticket==='ate-500'&&average<=500000)||(ticket==='500-800'&&average>500000&&average<=800000)||(ticket==='800-1200'&&average>800000&&average<=1200000)||(ticket==='acima-1200'&&average>1200000);
+    return (!start||item.latestTable?.validityDate>=start)&&(!end||item.latestTable?.validityDate<=end)&&(!bairro||item.bairro===bairro)&&(!tipo||item.tipo===tipo)&&(!padrao||item.padrao===padrao)&&ticketMatches;
+  });
+};
+const baseMarkerIcon=markerIcon;
+markerIcon=function(item){
+  const icon=baseMarkerIcon(item);
+  if(radiusScope&&hasCoordinates(item)&&kmDistance(radiusScope.lat,radiusScope.lng,item.latitude,item.longitude)>radiusScope.km)icon.options.html=icon.options.html.replace('nexo-pin','nexo-pin is-outside-radius');
+  return icon;
+};
+const ticketReference=document.getElementById('filter-pattern')?.closest('label');
+if(ticketReference&&!document.getElementById('filter-ticket')){
+  ticketReference.insertAdjacentHTML('afterend','<label>Faixa de ticket médio<select id="filter-ticket"><option value="">Todas</option><option value="ate-500">Até R$ 500 mil</option><option value="500-800">R$ 500 mil a R$ 800 mil</option><option value="800-1200">R$ 800 mil a R$ 1,2 mi</option><option value="acima-1200">Acima de R$ 1,2 mi</option></select></label>');
+  document.getElementById('filter-ticket').onchange=render;
+}
+const filterHeaderButton=document.getElementById('open-filters');
+const filterHeader=document.querySelector('.topbar .nav');
+if(filterHeaderButton&&filterHeader)filterHeader.prepend(filterHeaderButton);
+renderMap=function(){
+  if(map){map.remove();map=null;}
+  renderMapWithRadius();
+  if(!map)return;
+  if(radiusScope){
+    L.circle([radiusScope.lat,radiusScope.lng],{radius:radiusScope.km*1000,color:'#193f78',weight:2,dashArray:'7 7',fillColor:'#193f78',fillOpacity:.08}).addTo(map);
+    L.marker([radiusScope.lat,radiusScope.lng],{icon:L.divIcon({className:'radius-pin-wrap',html:'<span class="radius-pin">⌖</span>',iconSize:[44,44],iconAnchor:[22,22]})}).addTo(map);
+  }
+  map.on('click',event=>{
+    const km=Math.min(30,Math.max(.2,Number(document.getElementById('radius-km-live')?.value||2)));
+    radiusScope={lat:event.latlng.lat,lng:event.latlng.lng,km,name:document.getElementById('radius-name-live')?.value||'Área de interesse'};
+    const feedback=document.getElementById('radius-feedback-live');
+    if(feedback)feedback.textContent=`Pin criado no mapa · raio de ${km} km.`;
+    render();
+  });
+};
 </script></body></html>
