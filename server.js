@@ -10,13 +10,18 @@ const ROOT = __dirname;
 const DATA_DIR = path.join(ROOT, 'data');
 const DATA_FILE = path.join(DATA_DIR, 'nexo-radar.json');
 const PDF_DIRS = ['entrada', 'processando', 'cadastrados', 'erro', 'excluidos'].map((name) => path.join(ROOT, 'pdf', name));
+const ENTERPRISE_IMAGE_DIR = path.join(ROOT, 'img_empreendimentos');
+const DEFAULT_ENTERPRISE_IMAGES = {
+  'LETS BELA VISTA - INC': 'img_empreendimentos/LETS BELA VISTA - INC.png',
+  'ZuHaus Club Residence': 'img_empreendimentos/ZuHaus Club Residence.jpg'
+};
 // A aplicação local é acessada pelo endereço padrão do usuário.
 const PORT = Number(process.env.PORT || 3000);
-const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.pdf': 'application/pdf', '.csv': 'text/csv; charset=utf-8', '.md': 'text/markdown; charset=utf-8' };
+const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.pdf': 'application/pdf', '.csv': 'text/csv; charset=utf-8', '.md': 'text/markdown; charset=utf-8' };
 
 async function ensureStorage() {
   await fs.mkdir(DATA_DIR, { recursive: true });
-  await Promise.all(PDF_DIRS.map((dir) => fs.mkdir(dir, { recursive: true })));
+  await Promise.all([...PDF_DIRS, ENTERPRISE_IMAGE_DIR].map((dir) => fs.mkdir(dir, { recursive: true })));
   try { await fs.access(DATA_FILE); } catch (_) {
     await writeData({ version: 1, sequences: { empreendimento: 0, tabela: 0, unidade: 0 }, empreendimentos: [], dicionario: [], logs: [] });
   }
@@ -56,6 +61,7 @@ function normalizeDataModel(data) {
   return data;
 }
 function sanitize(value) { return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_|_$/g, '').slice(0, 96) || 'sem_nome'; }
+function enterpriseImage(empreendimento) { return empreendimento.imagem || (DEFAULT_ENTERPRISE_IMAGES[empreendimento.nome] ? { path: DEFAULT_ENTERPRISE_IMAGES[empreendimento.nome], source: 'asset_inicial' } : null); }
 function log(data, event, detail = {}) { data.logs.unshift({ id: crypto.randomUUID(), event, at: now(), ...detail }); data.logs = data.logs.slice(0, 500); }
 function send(res, status, body) { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8' }); res.end(JSON.stringify(body)); }
 function body(req, limit = 28 * 1024 * 1024) { return new Promise((resolve, reject) => { const chunks = []; let size = 0; req.on('data', (chunk) => { size += chunk.length; if (size > limit) { reject(new Error('Arquivo excede 28 MB.')); req.destroy(); } else chunks.push(chunk); }); req.on('end', () => resolve(Buffer.concat(chunks))); req.on('error', reject); }); }
@@ -325,13 +331,13 @@ function buildRadar(empreendimento) {
   });
   const timeline = tables.map((table, index) => ({ id: table.id, name: table.name, validityDate: table.validityDate, ...tableMetrics(table), comparison: index ? comparisonMetrics(tables[index - 1], table) : null }));
   return {
-    id: empreendimento.id, nome: empreendimento.nome, construtora: empreendimento.construtora || '', tipo: empreendimento.tipo || 'Outro', padrao: empreendimento.padrao || 'Outro', endereco: empreendimento.endereco, numero: empreendimento.numero, bairro: empreendimento.bairro, cidade: empreendimento.cidade, estado: empreendimento.estado, cep: empreendimento.cep,
+    id: empreendimento.id, nome: empreendimento.nome, construtora: empreendimento.construtora || '', tipo: empreendimento.tipo || 'Outro', padrao: empreendimento.padrao || 'Outro', imagem: enterpriseImage(empreendimento), endereco: empreendimento.endereco, numero: empreendimento.numero, bairro: empreendimento.bairro, cidade: empreendimento.cidade, estado: empreendimento.estado, cep: empreendimento.cep,
     latitude: empreendimento.latitude ?? null, longitude: empreendimento.longitude ?? null, geocodeStatus: empreendimento.geocodeStatus || null, geocodeLabel: empreendimento.geocodeLabel || null,
     tableCount: allTables.length, registeredTableCount: registeredTables.length, pendingTableCount: allTables.filter((table) => table.status === 'pending_validation').length, latestTable: latest ? { id: latest.id, name: latest.name, validityDate: latest.validityDate, tipoTabela: latest.tipoTabela, tipoTabelaLabel: latest.tipoTabelaLabel } : null, previousTable: previous ? { id: previous.id, name: previous.name, validityDate: previous.validityDate } : null,
     current, previous: prior, comparison, removedDetails, vgvDelta: current.vgv - prior.vgv, vgvDeltaPercent: prior.vgv ? (current.vgv - prior.vgv) / prior.vgv : null, byBlock, timeline, tiposTabela: [...new Map(registeredTables.map((table) => [table.tipoTabela, table.tipoTabelaLabel || TABLE_TYPE_LABELS[table.tipoTabela] || 'Outro'])).entries()].map(([id, label]) => ({ id, label }))
   };
 }
-function publicEmpreendimento(empreendimento) { const tables = empreendimento.tabelas || []; const latest = [...tables].sort((a, b) => b.validityDate.localeCompare(a.validityDate))[0]; return { ...empreendimento, unidades: projectedPhysicalUnits(empreendimento), tableCount: tables.length, latestTable: latest ? { id: latest.id, name: latest.name, validityDate: latest.validityDate, status: latest.status } : null }; }
+function publicEmpreendimento(empreendimento) { const tables = empreendimento.tabelas || []; const latest = [...tables].sort((a, b) => b.validityDate.localeCompare(a.validityDate))[0]; return { ...empreendimento, imagem: enterpriseImage(empreendimento), unidades: projectedPhysicalUnits(empreendimento), tableCount: tables.length, latestTable: latest ? { id: latest.id, name: latest.name, validityDate: latest.validityDate, status: latest.status } : null }; }
 async function geocode(empreendimento) {
   const cep = String(empreendimento.cep || '').replace(/\D/g, '');
   // CEP é a âncora territorial do empreendimento. O logradouro só refina o
@@ -366,6 +372,17 @@ async function api(req, res, pathname) {
   const id = parts[2]; if (!id) return send(res, 404, { error: 'Rota não encontrada.' }); const data = await readData(); const empreendimento = data.empreendimentos.find((item) => item.id === id); if (!empreendimento) return send(res, 404, { error: 'Empreendimento não encontrado.' });
   if (method === 'GET' && parts[3] === 'radar') return send(res, 200, buildRadar(empreendimento));
   if (method === 'POST' && parts[3] === 'geocodificar') { const result = await geocode(empreendimento); empreendimento.latitude = result.latitude; empreendimento.longitude = result.longitude; empreendimento.geocodeStatus = result.source || 'automatic'; empreendimento.geocodeLabel = result.label; empreendimento.updatedAt = now(); log(data, 'empreendimento_geocodificado', { empreendimentoId: id, latitude: result.latitude, longitude: result.longitude, source: empreendimento.geocodeStatus }); await writeData(data); return send(res, 200, { latitude: result.latitude, longitude: result.longitude, label: result.label, source: empreendimento.geocodeStatus }); }
+  if (method === 'POST' && parts[3] === 'imagem' && parts.length === 4) {
+    const { file } = parseMultipart(await body(req, 8 * 1024 * 1024), req.headers['content-type'] || '');
+    if (!file) return send(res, 422, { error: 'Selecione uma imagem de capa.' });
+    const extensionByType = { 'image/jpeg': '.jpg', 'image/png': '.png', 'image/webp': '.webp' }; const extension = extensionByType[file.type] || path.extname(file.name || '').toLowerCase();
+    if (!['.jpg', '.jpeg', '.png', '.webp'].includes(extension) || (file.type && !extensionByType[file.type])) return send(res, 422, { error: 'Use uma imagem JPG, PNG ou WEBP.' });
+    const storedName = `${id}_${Date.now()}_${crypto.randomUUID()}${extension === '.jpeg' ? '.jpg' : extension}`;
+    await fs.writeFile(path.join(ENTERPRISE_IMAGE_DIR, storedName), file.buffer);
+    empreendimento.imagem = { path: `img_empreendimentos/${storedName}`, originalName: file.name, mimeType: file.type || MIME[extension], uploadedAt: now() };
+    empreendimento.updatedAt = now(); log(data, 'imagem_empreendimento_atualizada', { empreendimentoId: id, arquivo: file.name }); await writeData(data);
+    return send(res, 201, { imagem: empreendimento.imagem });
+  }
   if (method === 'GET' && parts.length === 3) return send(res, 200, publicEmpreendimento(empreendimento));
   if (method === 'PUT' && parts.length === 3) { const payload = parseJson(await body(req)); const latitude = Number(payload.latitude); const longitude = Number(payload.longitude); const requestedGeocodeStatus = ['automatic', 'cep', 'manual'].includes(payload.geocodeStatus) ? payload.geocodeStatus : null; Object.assign(empreendimento, { ...payload, latitude: Number.isFinite(latitude) ? latitude : null, longitude: Number.isFinite(longitude) ? longitude : null, geocodeStatus: Number.isFinite(latitude) && Number.isFinite(longitude) ? (requestedGeocodeStatus || empreendimento.geocodeStatus || 'manual') : null, id: empreendimento.id, tabelas: empreendimento.tabelas, updatedAt: now() }); log(data, 'empreendimento_atualizado', { empreendimentoId: id }); await writeData(data); return send(res, 200, publicEmpreendimento(empreendimento)); }
   // Compatibilidade de leitura: evita que telas em cache peçam a coleção de
