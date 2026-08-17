@@ -140,6 +140,7 @@ if(ticketReference&&!document.getElementById('filter-ticket')){
 const filterHeaderButton=document.getElementById('open-filters');
 const filterHeader=document.querySelector('.topbar .nav');
 if(filterHeaderButton&&filterHeader)filterHeader.prepend(filterHeaderButton);
+if(new URLSearchParams(location.search).has('filtros'))filterHeaderButton?.click();
 const liveRadiusKm=document.getElementById('radius-km-live');
 liveRadiusKm?.addEventListener('input',()=>{
   const km=Math.min(30,Math.max(.2,Number(liveRadiusKm.value||2)));
