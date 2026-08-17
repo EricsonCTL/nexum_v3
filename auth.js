@@ -128,13 +128,11 @@ function enhanceNexumNavigationV2() {
   search.innerHTML = '<span aria-hidden="true">⌕</span><input type="search" placeholder="Buscar" aria-label="Busca global de empreendimentos"><section class="nav-global-results" hidden role="listbox"></section>';
   const notifications = document.createElement('button'); notifications.type = 'button'; notifications.className = 'nav-notifications'; notifications.setAttribute('aria-label', 'Notificações'); notifications.title = 'Notificações'; notifications.innerHTML = '<span aria-hidden="true">♧</span><i class="sr-only">Notificações</i>';
   const mapFilters = document.getElementById('open-filters');
-  const filters = mapFilters || document.createElement('a'); filters.classList.add('nav-filters');
-  if (!mapFilters) { filters.href = `${pageUrl('mapa.html')}?filtros=1`; filters.textContent = 'Filtros'; }
-  else { filters.textContent = 'Filtros'; }
   const profile = document.createElement('button'); profile.type = 'button'; profile.className = 'nav-profile'; profile.title = `Sair como ${user.name}`;
   profile.innerHTML = `<b>${escape(String(user.name || 'U').trim().slice(0, 1).toUpperCase())}</b><span><strong>${escape(user.name || 'Usuário')}</strong><small>Sair</small></span>`;
   profile.onclick = () => logoutCTI();
-  nav.replaceChildren(home, portfolio, mapLink, analytics, search, notifications, filters, profile); nav.dataset.nexumHeader = 'ready';
+  nav.replaceChildren(home, portfolio, mapLink, analytics, search, notifications, profile); nav.dataset.nexumHeader = 'ready';
+  if (mapFilters && document.body.classList.contains('map-page')) document.querySelector('.territory-map-frame')?.append(mapFilters);
   const trigger = portfolio.querySelector('.nav-enterprise-trigger'), panel = portfolio.querySelector('.enterprise-nav-panel'), portfolioInput = portfolio.querySelector('input'), portfolioResults = portfolio.querySelector('.enterprise-nav-results');
   const globalInput = search.querySelector('input'), globalResults = search.querySelector('.nav-global-results'); let records = [];
   const resultMarkup = (items) => items.length ? items.map((item) => `<a role="option" href="${pageUrl('empreendimento.html')}?id=${encodeURIComponent(item.id)}"><strong>${escape(item.nome)}</strong><span>${escape([item.bairro,item.cidade,item.estado].filter(Boolean).join(' · ') || 'Abrir cadastro')}</span></a>`).join('') : '<p>Nenhum empreendimento encontrado.</p>';
