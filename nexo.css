@@ -315,3 +315,6 @@ body.map-page{display:block;height:100vh!important;overflow:hidden}.map-page .to
 
 /* Filtro oficial: SVG linear integrado ao mesmo sistema visual do sino. */
 .nav-filter-icon{color:#c8fffa!important}.nav-filter-icon svg{display:block;width:21px;height:21px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.18));transition:filter .16s ease,transform .16s ease}.nav-filter-icon:hover svg{filter:drop-shadow(0 0 7px rgba(78,248,234,.72));transform:translateY(-1px)}
+
+/* A busca é o único elemento delimitado: navegação, filtro, sino e perfil ficam soltos. */
+.topbar .nav .nav-enterprise-trigger,.topbar .nav .nav-filter-icon,.topbar .nav .nav-notifications,.topbar .nav .nav-profile{border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}.topbar .nav .nav-enterprise-trigger:hover,.topbar .nav .nav-filter-icon:hover,.topbar .nav .nav-notifications:hover,.topbar .nav .nav-profile:hover{border:0!important;background:transparent!important}.topbar .nav .nav-profile{padding-right:0!important;padding-left:5px!important}.topbar .nav .nav-profile>b{box-shadow:0 0 0 1px rgba(155,247,239,.18)}
