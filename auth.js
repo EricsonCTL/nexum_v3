@@ -111,6 +111,42 @@ function enhanceNexumNavigation() {
   fetch('/api/empreendimentos').then((response) => response.ok ? response.json() : Promise.reject()).then((data) => { records = data; draw(); }).catch(() => { results.innerHTML = '<p>Não foi possível carregar os empreendimentos.</p>'; });
 }
 
-function mountNexumShell() { mountNexumFooter(); enhanceNexumNavigation(); }
+function enhanceNexumNavigationV2() {
+  const user = getCTIUser(); const nav = document.querySelector('.topbar .nav');
+  if (!user || document.body.classList.contains('login-page') || !nav || nav.dataset.nexumHeader === 'ready') return;
+  const enterpriseLink = [...nav.querySelectorAll('a')].find((link) => /empreendimentos\.html(?:$|[?#])/.test(link.getAttribute('href') || ''));
+  const mapLink = [...nav.querySelectorAll('a')].find((link) => /mapa\.html(?:$|[?#])/.test(link.getAttribute('href') || ''));
+  if (!enterpriseLink || !mapLink) return;
+  const currentId = new URLSearchParams(location.search).get('id');
+  const isHome = /empreendimentos\.html$/.test(location.pathname) || location.pathname.endsWith('/');
+  const escape = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[char]));
+  const home = document.createElement('a'); home.href = pageUrl('empreendimentos.html'); home.className = isHome ? 'active nav-home-link' : 'nav-home-link'; home.innerHTML = '<span aria-hidden="true">⌂</span> Início';
+  const portfolio = document.createElement('div'); portfolio.className = 'enterprise-nav-menu nav-portfolio-menu';
+  portfolio.innerHTML = `<button class="nav-enterprise-trigger ${isHome ? '' : 'active'}" type="button" aria-expanded="false">Portfólio <span>⌄</span></button><section class="enterprise-nav-panel" hidden><div class="enterprise-nav-search"><input type="search" placeholder="Buscar empreendimento" aria-label="Buscar empreendimento"><a class="button teal" href="${pageUrl('empreendimento.html')}?novo=1">+ Novo</a></div><div class="enterprise-nav-results" role="listbox"><p>Carregando empreendimentos…</p></div></section>`;
+  const analytics = document.createElement('a'); analytics.className = 'nav-analytics'; analytics.href = currentId ? `${pageUrl('radar.html')}?id=${encodeURIComponent(currentId)}` : pageUrl('empreendimentos.html'); analytics.textContent = 'Analytics';
+  const search = document.createElement('div'); search.className = 'nav-global-search';
+  search.innerHTML = '<span aria-hidden="true">⌕</span><input type="search" placeholder="Buscar" aria-label="Busca global de empreendimentos"><section class="nav-global-results" hidden role="listbox"></section>';
+  const notifications = document.createElement('button'); notifications.type = 'button'; notifications.className = 'nav-notifications'; notifications.setAttribute('aria-label', 'Notificações'); notifications.title = 'Notificações'; notifications.innerHTML = '<span aria-hidden="true">♧</span><i class="sr-only">Notificações</i>';
+  const mapFilters = document.getElementById('open-filters');
+  const filters = mapFilters || document.createElement('a'); filters.classList.add('nav-filters');
+  if (!mapFilters) { filters.href = `${pageUrl('mapa.html')}?filtros=1`; filters.textContent = 'Filtros'; }
+  else { filters.textContent = 'Filtros'; }
+  const profile = document.createElement('button'); profile.type = 'button'; profile.className = 'nav-profile'; profile.title = `Sair como ${user.name}`;
+  profile.innerHTML = `<b>${escape(String(user.name || 'U').trim().slice(0, 1).toUpperCase())}</b><span><strong>${escape(user.name || 'Usuário')}</strong><small>Sair</small></span>`;
+  profile.onclick = () => logoutCTI();
+  nav.replaceChildren(home, portfolio, mapLink, analytics, search, notifications, filters, profile); nav.dataset.nexumHeader = 'ready';
+  const trigger = portfolio.querySelector('.nav-enterprise-trigger'), panel = portfolio.querySelector('.enterprise-nav-panel'), portfolioInput = portfolio.querySelector('input'), portfolioResults = portfolio.querySelector('.enterprise-nav-results');
+  const globalInput = search.querySelector('input'), globalResults = search.querySelector('.nav-global-results'); let records = [];
+  const resultMarkup = (items) => items.length ? items.map((item) => `<a role="option" href="${pageUrl('empreendimento.html')}?id=${encodeURIComponent(item.id)}"><strong>${escape(item.nome)}</strong><span>${escape([item.bairro,item.cidade,item.estado].filter(Boolean).join(' · ') || 'Abrir cadastro')}</span></a>`).join('') : '<p>Nenhum empreendimento encontrado.</p>';
+  const filtered = (query) => records.filter((item) => `${item.nome} ${item.bairro || ''} ${item.cidade || ''}`.toLocaleLowerCase('pt-BR').includes(query.trim().toLocaleLowerCase('pt-BR')));
+  const drawPortfolio = () => { portfolioResults.innerHTML = resultMarkup(filtered(portfolioInput.value)); };
+  const drawGlobal = () => { globalResults.innerHTML = resultMarkup(filtered(globalInput.value)); globalResults.hidden = false; };
+  trigger.onclick = () => { const open = trigger.getAttribute('aria-expanded') === 'true'; trigger.setAttribute('aria-expanded', String(!open)); panel.hidden = open; if (!open) portfolioInput.focus(); };
+  portfolioInput.oninput = drawPortfolio; globalInput.oninput = drawGlobal; globalInput.onfocus = drawGlobal;
+  document.addEventListener('click', (event) => { if (!portfolio.contains(event.target)) { trigger.setAttribute('aria-expanded', 'false'); panel.hidden = true; } if (!search.contains(event.target)) globalResults.hidden = true; });
+  fetch('/api/empreendimentos').then((response) => response.ok ? response.json() : Promise.reject()).then((data) => { records = data; drawPortfolio(); }).catch(() => { portfolioResults.innerHTML = '<p>Não foi possível carregar os empreendimentos.</p>'; });
+}
+
+function mountNexumShell() { mountNexumFooter(); enhanceNexumNavigationV2(); }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mountNexumShell, { once: true });
 else mountNexumShell();
