@@ -312,3 +312,6 @@ body.map-page{display:block;height:100vh!important;overflow:hidden}.map-page .to
 
 /* Sino oficial: traço teal luminoso, sem badge fictício de notificações. */
 .nav-notifications svg{display:block;width:25px;height:25px;overflow:visible;filter:drop-shadow(0 2px 4px rgba(0,0,0,.18));transition:filter .16s ease,transform .16s ease}.nav-notifications:hover svg{filter:drop-shadow(0 0 7px rgba(78,248,234,.68));transform:translateY(-1px)}
+
+/* Filtro oficial: SVG linear integrado ao mesmo sistema visual do sino. */
+.nav-filter-icon{color:#c8fffa!important}.nav-filter-icon svg{display:block;width:21px;height:21px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.18));transition:filter .16s ease,transform .16s ease}.nav-filter-icon:hover svg{filter:drop-shadow(0 0 7px rgba(78,248,234,.72));transform:translateY(-1px)}
