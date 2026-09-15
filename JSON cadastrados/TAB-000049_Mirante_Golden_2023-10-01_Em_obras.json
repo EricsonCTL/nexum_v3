@@ -1,0 +1,1103 @@
+{
+  "schema": "nexum-skill-json",
+  "schema_version": "3.0",
+  "status_processamento": "REVISAO",
+  "empreendimento": {
+    "nome": "Mirante Golden",
+    "nome_comercial": "Mirante Golden Residence",
+    "incorporadora": "MH Incorporadora",
+    "construtora": "MH Incorporadora",
+    "endereco": {
+      "logradouro": "Rua Antônio Barbosa de Menezes",
+      "numero": 27,
+      "bairro": "Mirante",
+      "cidade": "Campina Grande",
+      "uf": "PB",
+      "cep": null
+    },
+    "fase": "EM_OBRAS",
+    "datas": {
+      "lancamento": "2023-10-01",
+      "precisao_lancamento": "MES_APROXIMADO",
+      "entrega_prevista": "2027-10-01",
+      "precisao_entrega": "MES_APROXIMADO"
+    },
+    "empreendimento_caracteristicas": {
+      "torres": 1,
+      "unidades_totais": 42,
+      "plantas": [
+        62,
+        77,
+        120
+      ],
+      "pavimentos_informados_no_pdf": 15
+    }
+  },
+  "tabela": {
+    "id": "MIRANTE_GOLDEN_LANCAMENTO_2023-10-01",
+    "tipo": "LANCAMENTO",
+    "natureza": "ESTOQUE_INICIAL_SIMULADO",
+    "data_tabela": "2023-10-01",
+    "arquivo_origem": "TABELA MIRANTE GOLDEN.pdf",
+    "unidades_apresentadas": 42,
+    "unidades": [
+      {
+        "apartamento": "101",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 306162.0,
+        "preco": 306162.0,
+        "valorVenda": 306162.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 61232.4,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1913.51,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4592.43,
+          "chaves_percentual": 15,
+          "chaves": 45924.3
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "102",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 306162.0,
+        "preco": 306162.0,
+        "valorVenda": 306162.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 61232.4,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1913.51,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4592.43,
+          "chaves_percentual": 15,
+          "chaves": 45924.3
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "103",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 379610.0,
+        "preco": 379610.0,
+        "valorVenda": 379610.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 75922.0,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2372.56,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5694.15,
+          "chaves_percentual": 15,
+          "chaves": 56941.5
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "104",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 591600.0,
+        "preco": 591600.0,
+        "valorVenda": 591600.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 118320.0,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3697.5,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 8874.0,
+          "chaves_percentual": 15,
+          "chaves": 88740.0
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "201",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 306162.0,
+        "preco": 306162.0,
+        "valorVenda": 306162.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 61232.4,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1913.51,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4592.43,
+          "chaves_percentual": 15,
+          "chaves": 45924.3
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "202",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 306162.0,
+        "preco": 306162.0,
+        "valorVenda": 306162.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 61232.4,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1913.51,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4592.43,
+          "chaves_percentual": 15,
+          "chaves": 45924.3
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "203",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 379610.0,
+        "preco": 379610.0,
+        "valorVenda": 379610.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 75922.0,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2372.56,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5694.15,
+          "chaves_percentual": 15,
+          "chaves": 56941.5
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "204",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 591600.0,
+        "preco": 591600.0,
+        "valorVenda": 591600.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 118320.0,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3697.5,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 8874.0,
+          "chaves_percentual": 15,
+          "chaves": 88740.0
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "301",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 309223.62,
+        "preco": 309223.62,
+        "valorVenda": 309223.62,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 61844.72,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1932.65,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4638.35,
+          "chaves_percentual": 15,
+          "chaves": 46383.54
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "302",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 309223.62,
+        "preco": 309223.62,
+        "valorVenda": 309223.62,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 61844.72,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1932.65,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4638.35,
+          "chaves_percentual": 15,
+          "chaves": 46383.54
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "303",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 383406.1,
+        "preco": 383406.1,
+        "valorVenda": 383406.1,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 76681.22,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2396.29,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5751.09,
+          "chaves_percentual": 15,
+          "chaves": 57510.91
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "304",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 597516.0,
+        "preco": 597516.0,
+        "valorVenda": 597516.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 119503.2,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3734.47,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 8962.74,
+          "chaves_percentual": 15,
+          "chaves": 89627.4
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "401",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 309223.62,
+        "preco": 309223.62,
+        "valorVenda": 309223.62,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 61844.72,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1932.65,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4638.35,
+          "chaves_percentual": 15,
+          "chaves": 46383.54
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "402",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 309223.62,
+        "preco": 309223.62,
+        "valorVenda": 309223.62,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 61844.72,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1932.65,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4638.35,
+          "chaves_percentual": 15,
+          "chaves": 46383.54
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "403",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 383406.1,
+        "preco": 383406.1,
+        "valorVenda": 383406.1,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 76681.22,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2396.29,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5751.09,
+          "chaves_percentual": 15,
+          "chaves": 57510.91
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "404",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 597516.0,
+        "preco": 597516.0,
+        "valorVenda": 597516.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 119503.2,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3734.47,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 8962.74,
+          "chaves_percentual": 15,
+          "chaves": 89627.4
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "501",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 312285.24,
+        "preco": 312285.24,
+        "valorVenda": 312285.24,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 62457.05,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1951.78,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4684.28,
+          "chaves_percentual": 15,
+          "chaves": 46842.79
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "502",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 312285.24,
+        "preco": 312285.24,
+        "valorVenda": 312285.24,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 62457.05,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1951.78,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4684.28,
+          "chaves_percentual": 15,
+          "chaves": 46842.79
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "503",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 387202.2,
+        "preco": 387202.2,
+        "valorVenda": 387202.2,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 77440.44,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2420.01,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5808.03,
+          "chaves_percentual": 15,
+          "chaves": 58080.33
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "504",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 603432.0,
+        "preco": 603432.0,
+        "valorVenda": 603432.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 120686.4,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3771.45,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 9051.48,
+          "chaves_percentual": 15,
+          "chaves": 90514.8
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "601",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 312285.24,
+        "preco": 312285.24,
+        "valorVenda": 312285.24,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 62457.05,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1951.78,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4684.28,
+          "chaves_percentual": 15,
+          "chaves": 46842.79
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "602",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 312285.24,
+        "preco": 312285.24,
+        "valorVenda": 312285.24,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 62457.05,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1951.78,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4684.28,
+          "chaves_percentual": 15,
+          "chaves": 46842.79
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "603",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 387202.2,
+        "preco": 387202.2,
+        "valorVenda": 387202.2,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 77440.44,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2420.01,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5808.03,
+          "chaves_percentual": 15,
+          "chaves": 58080.33
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "604",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 603432.0,
+        "preco": 603432.0,
+        "valorVenda": 603432.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 120686.4,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3771.45,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 9051.48,
+          "chaves_percentual": 15,
+          "chaves": 90514.8
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "701",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 315346.86,
+        "preco": 315346.86,
+        "valorVenda": 315346.86,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 63069.37,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1970.92,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4730.2,
+          "chaves_percentual": 15,
+          "chaves": 47302.03
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "702",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 315346.86,
+        "preco": 315346.86,
+        "valorVenda": 315346.86,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 63069.37,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1970.92,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4730.2,
+          "chaves_percentual": 15,
+          "chaves": 47302.03
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "703",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 390998.3,
+        "preco": 390998.3,
+        "valorVenda": 390998.3,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 78199.66,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2443.74,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5864.97,
+          "chaves_percentual": 15,
+          "chaves": 58649.74
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "704",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 609348.0,
+        "preco": 609348.0,
+        "valorVenda": 609348.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 121869.6,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3808.43,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 9140.22,
+          "chaves_percentual": 15,
+          "chaves": 91402.2
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "801",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 315346.86,
+        "preco": 315346.86,
+        "valorVenda": 315346.86,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 63069.37,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1970.92,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4730.2,
+          "chaves_percentual": 15,
+          "chaves": 47302.03
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "802",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 315346.86,
+        "preco": 315346.86,
+        "valorVenda": 315346.86,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 63069.37,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1970.92,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4730.2,
+          "chaves_percentual": 15,
+          "chaves": 47302.03
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "803",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 390998.3,
+        "preco": 390998.3,
+        "valorVenda": 390998.3,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 78199.66,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2443.74,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5864.97,
+          "chaves_percentual": 15,
+          "chaves": 58649.74
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "804",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 609348.0,
+        "preco": 609348.0,
+        "valorVenda": 609348.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 121869.6,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3808.43,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 9140.22,
+          "chaves_percentual": 15,
+          "chaves": 91402.2
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "901",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 318408.48,
+        "preco": 318408.48,
+        "valorVenda": 318408.48,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 63681.7,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1990.05,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4776.13,
+          "chaves_percentual": 15,
+          "chaves": 47761.27
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "902",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 318408.48,
+        "preco": 318408.48,
+        "valorVenda": 318408.48,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 63681.7,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1990.05,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4776.13,
+          "chaves_percentual": 15,
+          "chaves": 47761.27
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "903",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 394794.4,
+        "preco": 394794.4,
+        "valorVenda": 394794.4,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 78958.88,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2467.47,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5921.92,
+          "chaves_percentual": 15,
+          "chaves": 59219.16
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "904",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 615264.0,
+        "preco": 615264.0,
+        "valorVenda": 615264.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 123052.8,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3845.4,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 9228.96,
+          "chaves_percentual": 15,
+          "chaves": 92289.6
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "1001",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 318408.48,
+        "preco": 318408.48,
+        "valorVenda": 318408.48,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 63681.7,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1990.05,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4776.13,
+          "chaves_percentual": 15,
+          "chaves": 47761.27
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "1002",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 318408.48,
+        "preco": 318408.48,
+        "valorVenda": 318408.48,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 63681.7,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 1990.05,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4776.13,
+          "chaves_percentual": 15,
+          "chaves": 47761.27
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "1003",
+        "area_m2": 77,
+        "tipologia": "2 ou 3 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 394794.4,
+        "preco": 394794.4,
+        "valorVenda": 394794.4,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 78958.88,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2467.47,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 5921.92,
+          "chaves_percentual": 15,
+          "chaves": 59219.16
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "1004",
+        "area_m2": 120,
+        "tipologia": "3 quartos / 2 suítes",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 615264.0,
+        "preco": 615264.0,
+        "valorVenda": 615264.0,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 123052.8,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 3845.4,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 9228.96,
+          "chaves_percentual": 15,
+          "chaves": 92289.6
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "1101",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 330654.96,
+        "preco": 330654.96,
+        "valorVenda": 330654.96,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 66130.99,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2066.59,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4959.82,
+          "chaves_percentual": 15,
+          "chaves": 49598.24
+        },
+        "classificacao_preco": "inferido"
+      },
+      {
+        "apartamento": "1102",
+        "area_m2": 62,
+        "tipologia": "2 quartos / 1 suíte",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 330654.96,
+        "preco": 330654.96,
+        "valorVenda": 330654.96,
+        "fluxo_simulado": {
+          "entrada_percentual": 20,
+          "entrada": 66130.99,
+          "parcelas_mensais_quantidade": 80,
+          "parcelas_mensais_percentual": 50,
+          "parcela_mensal": 2066.59,
+          "intercalares_quantidade": 10,
+          "intercalares_percentual": 15,
+          "intercalar": 4959.82,
+          "chaves_percentual": 15,
+          "chaves": 49598.24
+        },
+        "classificacao_preco": "inferido"
+      }
+    ]
+  },
+  "resumo_comercial": {
+    "total_unidades": 42,
+    "status": {
+      "DISPONIVEL": 42
+    },
+    "valor_total_simulado": 16813356.72,
+    "metodologia_fluxo": "20% entrada + 50% em 80 parcelas mensais + 15% em 10 intercalares semestrais + 15% nas chaves"
+  },
+  "comparacao": {
+    "previousTableId": null,
+    "novas": [],
+    "mantidas": [],
+    "removidas": [],
+    "retornadas": [],
+    "alteracoesValor": [],
+    "alteracoesStatus": [],
+    "alteracoesComerciais": []
+  },
+  "validacoes": [
+    "42 unidades geradas.",
+    "Todos os preços de lançamento são simulados/inferidos, não uma tabela histórica original.",
+    "Os status DISPONIVEL representam uma decisão de reconstrução da fotografia inicial, não prova documental de disponibilidade histórica individual.",
+    "A composição 101-1004 + 1101-1102 foi usada para fechar 42 unidades; a distribuição exata das duas unidades do 11º andar permanece uma hipótese de reconstrução."
+  ],
+  "pendencias": [
+    "Confirmar pelo operador a composição exata das unidades do 11º andar.",
+    "Confirmar a tabela zero simulada antes de tratá-la como fotografia inicial consolidada.",
+    "Não foi localizada, nesta rodada, uma tabela comercial original completa de outubro de 2023 com todas as 42 unidades."
+  ],
+  "auditoria": [
+    {
+      "campo": "data_lancamento",
+      "classificacao": "pesquisado",
+      "valor": "outubro de 2023",
+      "normalizacao": "2023-10-01",
+      "precisao": "PERIODO_APROXIMADO"
+    },
+    {
+      "campo": "unidades_totais",
+      "classificacao": "pesquisado",
+      "valor": 42,
+      "observacao": "Fontes comerciais e relatório de visita técnica informam 42 apartamentos."
+    },
+    {
+      "campo": "precos",
+      "classificacao": "inferido",
+      "origem": "simulacao_autorizada_pelo_operador",
+      "observacao": "Valores baseados nos preços de abertura e na progressão por pavimento fornecida pelo operador."
+    },
+    {
+      "campo": "status_inicial",
+      "classificacao": "inferido",
+      "origem": "simulacao_autorizada_pelo_operador",
+      "observacao": "Todas as 42 unidades foram marcadas como DISPONIVEL para representar o estoque completo do lançamento."
+    }
+  ],
+  "fontes": [
+    {
+      "url": "https://premieimoveis.com.br/empreendimento/16091/mirante-golden",
+      "tipo": "imobiliaria",
+      "sustenta": [
+        "preco_inicial",
+        "tipologias",
+        "endereco/bairro",
+        "lancamento comercial"
+      ],
+      "confianca": "MEDIA"
+    },
+    {
+      "url": "https://pt.scribd.com/document/815644554/Trabalho-Pronto-Daniel-Visita-tecnica",
+      "tipo": "relatorio_de_visita_tecnica",
+      "sustenta": [
+        "42_unidades",
+        "4_unidades_por_andar",
+        "endereco",
+        "MH_Incorporadora",
+        "tipologias"
+      ],
+      "confianca": "MEDIA"
+    },
+    {
+      "url": "https://www.imovelweb.com.br/apartamentos-venda-campina-grande-pb-areac-elevador-2-quartos-ordem-precio-menor.html",
+      "tipo": "portal_imobiliario",
+      "sustenta": [
+        "42_unidades",
+        "endereco",
+        "62m2"
+      ],
+      "confianca": "MEDIA"
+    }
+  ]
+}

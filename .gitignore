@@ -3,3 +3,5 @@ nexo-server.log
 nexo-server-error.log
 __pycache__/
 *.pyc
+dados/corretores/ingestion/.uploads/
+dados/corretores/ingestion/*.tmp

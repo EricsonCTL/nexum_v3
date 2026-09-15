@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="description" content="NEXUM — Radar Imobiliário. Seus dados mostram o que aconteceu. O NEXUM mostra o contexto: mapa, IPD, IVV, VSO, cenários de absorção e Índice NEXUM." />
+<title>NEXUM — Radar Imobiliário</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23081016'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%232dd4bf' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%232dd4bf'/%3E%3C/svg%3E" />
+
+<!-- Fontes do Google -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+
+<style>
+/* =========================================================
+   NEXUM · System Architecture v9 (Ultra Executive Edition)
+========================================================= */
+:root {
+  --paper: #ffffff;
+  --paper-warm: #f7f6f2;
+  --paper-teal: #edf6f5;
+
+  --ink: #0b1419;
+  --ink-2: #364850;
+  --ink-3: #6b7f88;
+
+  --navy: #081621;
+  --navy-light: #0d2232;
+  --navy-grad: linear-gradient(135deg, #050b0e 0%, #081a26 50%, #09373e 100%);
+
+  --hairline: #e2e9ec;
+  --hairline-2: #cedadf;
+
+  --teal: #0d827c;
+  --teal-bright: #2dd4bf;
+  --teal-soft: #70e2d5;
+  --teal-deep: #08635e;
+  --teal-mist: #e2f4f2;
+  
+  --shadow-sm: 0 4px 12px rgba(8, 22, 33, 0.04), 0 1px 3px rgba(8, 22, 33, 0.08);
+  --shadow-md: 0 12px 32px -8px rgba(8, 22, 33, 0.10), 0 4px 12px -4px rgba(8, 22, 33, 0.05);
+  --shadow-fig: 0 40px 90px -30px rgba(8, 35, 45, 0.28), 0 16px 40px -20px rgba(8, 22, 33, 0.12);
+  --shadow-deep: 0 50px 110px -40px rgba(5, 11, 14, 0.75);
+
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --container: 1180px;
+  --header-h: 68px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 20px); }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--sans); font-size: 16px; line-height: 1.7;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+body.no-scroll { overflow: hidden; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+::selection { background: rgba(45, 212, 191, 0.35); }
+
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.015em; margin: 0; }
+h1 { font-size: clamp(38px, 4.8vw, 64px); line-height: 1.05; }
+h2 { font-size: clamp(30px, 3.8vw, 50px); line-height: 1.1; }
+h3 { font-size: 24px; line-height: 1.25; }
+p { margin: 0; }
+
+em.acc { font-style: italic; color: var(--teal); font-weight: 600; }
+
+.container { width: min(calc(100% - 44px), var(--container)); margin-inline: auto; }
+
+/* ---------- Eyebrow ---------- */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  color: var(--teal-deep); font-size: 11px; font-weight: 800;
+  letter-spacing: 0.22em; text-transform: uppercase;
+}
+.eyebrow i { font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 17px; letter-spacing: 0; color: var(--teal); }
+.eyebrow::after { content: ""; width: 32px; height: 1.5px; background: var(--hairline-2); display: inline-block; }
+
+/* ---------- Botões ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 54px; padding: 0 32px; border-radius: 999px;
+  font-size: 15px; font-weight: 700; letter-spacing: 0.01em; white-space: nowrap; cursor: pointer;
+  transition: transform 0.25s var(--ease), background 0.25s, box-shadow 0.25s, color 0.25s;
+}
+.btn svg { width: 18px; height: 18px; flex: none; transition: transform 0.2s var(--ease); }
+.btn:hover svg { transform: translateX(3px); }
+
+.btn-navy { background: var(--navy); color: #fff; box-shadow: 0 16px 36px -12px rgba(8, 22, 33, 0.45); }
+.btn-navy:hover { background: var(--teal-deep); transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(8, 99, 94, 0.5); }
+
+.btn-light { background: #fff; color: var(--navy); box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.4); }
+.btn-light:hover { transform: translateY(-2px); background: var(--teal-mist); box-shadow: 0 20px 42px -10px rgba(0, 0, 0, 0.5); }
+
+.btn-text {
+  min-height: 54px; padding: 0 8px; border-radius: 0;
+  color: var(--ink-2); font-weight: 600; font-size: 14.5px;
+  border-bottom: 1.5px solid var(--hairline-2);
+}
+.btn-text:hover { color: var(--teal-deep); border-color: var(--teal); }
+
+/* =========================================================
+   HEADER
+========================================================= */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(7, 15, 22, 0.92);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: box-shadow 0.25s, border-color 0.25s;
+}
+.header-inner { min-height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: inline-flex; flex-shrink: 0; }
+.brand img { width: 96px; height: auto; mix-blend-mode: screen; filter: drop-shadow(0 2px 8px rgba(45,212,191,0.2)); }
+
+.nav { display: flex; gap: 6px; }
+.nav a {
+  position: relative; display: inline-flex; align-items: center;
+  min-height: 40px; padding: 0 14px; border-radius: 8px;
+  font-size: 13.5px; font-weight: 600; letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.75); transition: color 0.2s, background 0.2s;
+}
+.nav a:hover { color: #fff; background: rgba(255, 255, 255, 0.06); }
+.nav a::after {
+  content: ""; position: absolute; left: 14px; right: 14px; bottom: 4px; height: 2px;
+  border-radius: 2px; background: var(--teal-bright);
+  transform: scaleX(0); transform-origin: left; transition: transform 0.25s var(--ease);
+}
+.nav a:hover::after, .nav a.active::after { transform: scaleX(1); }
+.nav a.active { color: var(--teal-soft); font-weight: 700; }
+
+.header-cta {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 42px; padding: 0 20px; border-radius: 999px;
+  background: linear-gradient(135deg, #2dd4bf, #0f8f88);
+  color: #031815; font-size: 13px; font-weight: 700;
+  box-shadow: 0 8px 24px -8px rgba(45, 212, 191, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.header-cta:hover { transform: translateY(-1px); box-shadow: 0 12px 28px -6px rgba(45, 212, 191, 0.65); }
+
+.menu-btn {
+  display: none; width: 44px; height: 44px; padding: 0;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px; color: #fff; cursor: pointer;
+  align-items: center; justify-content: center; flex: none;
+}
+
+/* ---------- Drawer Mobile ---------- */
+.drawer-backdrop {
+  position: fixed; inset: 0; z-index: 190; background: rgba(3, 8, 11, 0.65);
+  backdrop-filter: blur(4px); opacity: 0; visibility: hidden;
+  transition: opacity 0.3s var(--ease), visibility 0.3s;
+}
+.drawer-backdrop.open { opacity: 1; visibility: visible; }
+
+.drawer {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 200;
+  width: min(340px, 86vw); display: flex; flex-direction: column;
+  background: var(--navy-grad); border-left: 1px solid rgba(255, 255, 255, 0.12);
+  transform: translateX(102%); visibility: hidden;
+  transition: transform 0.35s var(--ease), visibility 0.35s;
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.6);
+}
+.drawer.open { transform: translateX(0); visibility: visible; }
+.drawer-head {
+  min-height: var(--header-h); display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.drawer-logo { width: 90px; mix-blend-mode: screen; }
+.drawer-close {
+  width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px;
+  color: #fff; cursor: pointer; flex: none;
+}
+.drawer-nav { display: flex; flex-direction: column; padding: 12px 10px; flex: 1; }
+.drawer-nav a {
+  display: flex; align-items: center; min-height: 54px; padding: 0 16px; border-radius: 10px;
+  color: rgba(255, 255, 255, 0.85); font-size: 15.5px; font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.drawer-nav a.active { color: var(--teal-soft); background: rgba(45, 212, 191, 0.1); font-weight: 700; }
+.drawer-foot { padding: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.drawer-cta {
+  width: 100%; min-height: 52px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  background: linear-gradient(135deg, #2dd4bf, #0f8f88); color: #04211d; font-weight: 700; font-size: 15px; border-radius: 12px;
+}
+.drawer-phone { margin-top: 14px; text-align: center; font-size: 13px; color: rgba(255, 255, 255, 0.55); }
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+.hero { position: relative; padding: 84px 0 80px; overflow: hidden; background: var(--paper); }
+
+.hero-map {
+  position: absolute; top: -5%; right: -8%;
+  width: min(1060px, 94vw); pointer-events: none; z-index: 0;
+  opacity: 0.55; filter: saturate(0.85);
+  -webkit-mask-image: radial-gradient(ellipse 60% 60% at 55% 45%, #000 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 60% 60% at 55% 45%, #000 30%, transparent 75%);
+  will-change: transform;
+}
+.hero-map img {
+  width: 100%; animation: drift 24s ease-in-out infinite alternate; will-change: transform;
+}
+@keyframes drift {
+  from { transform: translate3d(0,0,0) scale(1); }
+  to { transform: translate3d(-18px, -24px, 0) scale(1.04); }
+}
+
+.hero::after {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: linear-gradient(90deg, var(--paper) 0%, rgba(255, 255, 255, 0.92) 28%, rgba(255, 255, 255, 0.35) 52%, transparent 72%);
+}
+
+.hero-inner { position: relative; z-index: 1; max-width: 880px; }
+.hero .eyebrow { margin-bottom: 16px; }
+.hero h1 { margin-bottom: 18px; color: var(--ink); }
+.hero-sub { max-width: 640px; font-size: 17.5px; color: var(--ink-2); margin-bottom: 22px; line-height: 1.65; }
+
+.hero-statement {
+  max-width: 640px; margin-bottom: 30px; padding: 22px 28px;
+  background: rgba(226, 244, 242, 0.85); border-left: 4px solid var(--teal);
+  border-radius: 0 18px 18px 0;
+  font-family: var(--serif); font-style: italic; font-weight: 600;
+  font-size: clamp(19px, 2.5vw, 24px); line-height: 1.4; color: var(--ink);
+}
+.hero-statement b { color: var(--teal-deep); font-weight: 700; font-style: normal; }
+
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+
+/* Grid de Métricas no Hero */
+.hero-metrics {
+  position: relative; z-index: 1; overflow: hidden;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  margin-top: 64px; border-radius: 24px; color: #fff;
+  background: radial-gradient(700px 300px at 15% -20%, rgba(45, 212, 191, 0.22), transparent 65%), var(--navy);
+  box-shadow: 0 32px 70px -30px rgba(8, 22, 33, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hero-metrics > div { padding: 26px 28px; border-left: 1px solid rgba(255, 255, 255, 0.08); }
+.hero-metrics > div:first-child { border-left: 0; }
+.hero-metrics b { display: block; font-family: var(--serif); font-weight: 700; font-size: 26px; line-height: 1.1; margin-bottom: 6px; color: #fff; }
+.hero-metrics span { font-size: 12.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.65); display: block; }
+
+/* =========================================================
+   FIGURE / MEDIA DISPLAY
+========================================================= */
+.figure { margin: 0; position: relative; }
+.media-tag {
+  position: absolute; top: -14px; left: 28px; z-index: 3;
+  background: var(--navy); color: #fff;
+  padding: 8px 18px; border-radius: 99px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+  box-shadow: 0 8px 20px -6px rgba(8, 22, 33, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.media-tag.teal { background: var(--teal-deep); }
+.figure-frame {
+  border-radius: 28px; overflow: hidden; background: #fff;
+  border: 1px solid var(--hairline); box-shadow: var(--shadow-fig);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s;
+}
+.figure-frame:hover { transform: translateY(-4px); box-shadow: 0 50px 120px -30px rgba(8, 35, 45, 0.35); }
+.figure-frame img { width: 100%; display: block; }
+figcaption { margin-top: 18px; font-family: var(--serif); font-style: italic; font-size: 15.5px; color: var(--ink-3); text-align: center; }
+figcaption b { font-style: normal; font-weight: 700; color: var(--teal); letter-spacing: 0.02em; }
+
+[data-parallax] { opacity: 0; transition: opacity 0.9s var(--ease); will-change: transform; }
+[data-parallax].is-visible { opacity: 1; }
+
+/* =========================================================
+   SEÇÕES & CAPÍTULOS
+========================================================= */
+.section { padding: 116px 0; }
+.bg-warm { background: var(--paper-warm); }
+.bg-teal { background: var(--paper-teal); }
+
+.chapter-head { max-width: 860px; margin-bottom: 56px; }
+.chapter-head.center { margin-inline: auto; text-align: center; }
+.chapter-head .eyebrow { margin-bottom: 18px; }
+.chapter-head .lead { font-size: 17.5px; color: var(--ink-2); max-width: 70ch; line-height: 1.65; }
+.chapter-head.center .lead { margin-inline: auto; }
+.chapter-head .lead + .lead { margin-top: 14px; }
+
+.cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 56px; border-top: 1.5px solid var(--hairline-2); }
+.cols > div { padding: 28px 32px 0 0; }
+.cols > div + div { border-left: 1px solid var(--hairline); padding-left: 32px; }
+.cols .k { display: block; font-size: 11px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-deep); margin-bottom: 10px; }
+.cols .k i { font-family: var(--serif); font-style: italic; font-size: 17px; letter-spacing: 0; text-transform: none; color: var(--teal); margin-right: 6px; }
+.cols p { font-size: 14.5px; line-height: 1.7; color: var(--ink-2); }
+
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.panel { padding: 40px; border: 1px solid var(--hairline); border-radius: 28px; background: #fff; box-shadow: var(--shadow-sm); }
+.panel-navy {
+  background: radial-gradient(450px 240px at 85% -10%, rgba(45, 212, 191, 0.2), transparent 65%), var(--navy);
+  border-color: var(--navy); color: #fff;
+  box-shadow: 0 36px 80px -34px rgba(8, 22, 33, 0.6);
+}
+.panel h3 { margin-bottom: 6px; }
+.panel .sub { font-size: 13.5px; color: var(--ink-3); margin-bottom: 22px; }
+.panel-navy .sub { color: rgba(255, 255, 255, 0.6); }
+.hairline-list { list-style: none; margin: 0; padding: 0; }
+.hairline-list li {
+  display: flex; justify-content: space-between; gap: 16px; align-items: center;
+  padding: 14px 0; border-top: 1px solid var(--hairline);
+  font-size: 15px; color: var(--ink-2); font-weight: 500;
+}
+.hairline-list li:first-child { border-top: 0; padding-top: 0; }
+.panel-navy .hairline-list li { border-color: rgba(255, 255, 255, 0.12); color: rgba(255, 255, 255, 0.88); }
+.hairline-list li::after { content: ""; width: 7px; height: 7px; border-radius: 50%; flex: none; background: var(--hairline-2); }
+.panel-navy .hairline-list li::after { background: var(--teal-soft); box-shadow: 0 0 0 4px rgba(112, 226, 213, 0.18); }
+
+.note { max-width: 780px; margin: 54px auto 0; text-align: center; font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.55; color: var(--ink-2); }
+.note b { font-style: normal; color: var(--teal-deep); font-weight: 700; }
+
+/* =========================================================
+   CARD REDE DE CORRETORES (IPD/IPO)
+========================================================= */
+.ipd-card {
+  position: relative; overflow: hidden;
+  border-radius: 36px; color: #fff;
+  padding: clamp(38px, 5.5vw, 72px);
+  background: var(--navy-grad);
+  box-shadow: var(--shadow-deep);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.ipd-rings {
+  position: absolute; inset: 0; pointer-events: none;
+  -webkit-mask-image: radial-gradient(circle at 88% -10%, #000 25%, transparent 70%);
+  mask-image: radial-gradient(circle at 88% -10%, #000 25%, transparent 70%);
+}
+.ipd-rings i { position: absolute; top: 0; right: 0; transform: translate(38%, -38%); border: 1px solid rgba(45, 212, 191, 0.18); border-radius: 50%; }
+.ipd-rings i:nth-child(1) { width: 500px; height: 500px; }
+.ipd-rings i:nth-child(2) { width: 800px; height: 800px; }
+.ipd-rings i:nth-child(3) { width: 1100px; height: 1100px; }
+
+.ipd-card-main { position: relative; z-index: 1; display: flex; align-items: center; gap: clamp(28px, 4vw, 56px); flex-wrap: wrap; }
+
+.ipd-count-block { flex: none; line-height: 1; }
+.ipd-count-eyebrow { display: block; margin-bottom: 12px; font-size: 11px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--teal-soft); }
+.ipd-count .num {
+  display: inline-block; font-family: var(--serif); font-weight: 700;
+  font-size: clamp(76px, 11vw, 150px); letter-spacing: -0.03em; line-height: 1;
+  background: linear-gradient(100deg, #ffffff 15%, #70e2d5 40%, #ffffff 55%, #2dd4bf 75%, #ffffff 90%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: shimmer 6s linear infinite; filter: drop-shadow(0 14px 36px rgba(45, 212, 191, 0.3));
+}
+@keyframes shimmer { to { background-position: -220% 0; } }
+
+.ipd-count-label { flex: 1; min-width: 260px; }
+.ipd-count-label strong { display: block; font-family: var(--serif); font-weight: 600; font-size: clamp(21px, 2.6vw, 28px); line-height: 1.3; margin-bottom: 12px; }
+.ipd-count-label strong em { font-style: italic; color: var(--teal-soft); }
+.ipd-count-label span { font-size: 15.5px; line-height: 1.7; color: rgba(238, 247, 246, 0.72); max-width: 54ch; display: block; }
+
+.ipd-card-strip {
+  position: relative; z-index: 1;
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  margin-top: clamp(32px, 4vw, 52px); padding-top: clamp(22px, 3vw, 32px);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+.ipd-card-strip > div { padding-left: 24px; border-left: 1px solid rgba(255, 255, 255, 0.12); }
+.ipd-card-strip > div:first-child { padding-left: 0; border-left: 0; }
+.ipd-card-strip b { display: block; font-family: var(--serif); font-weight: 700; font-size: clamp(24px, 3.2vw, 36px); line-height: 1.1; margin-bottom: 6px; }
+.ipd-card-strip span { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: rgba(238, 247, 246, 0.55); }
+
+.ipd-tickets {
+  position: relative; z-index: 1;
+  margin-top: clamp(28px, 3.5vw, 44px); padding-top: clamp(22px, 3vw, 30px);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+.ipd-tickets h4 { font-family: var(--sans); font-size: 11px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(238, 247, 246, 0.55); margin: 0 0 18px; }
+.ticket-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.ticket-grid > div {
+  padding: 18px 20px; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: border-color 0.25s, background 0.25s, transform 0.25s;
+}
+.ticket-grid > div:hover { border-color: rgba(112, 226, 213, 0.5); background: rgba(255, 255, 255, 0.08); transform: translateY(-2px); }
+.ticket-grid span { display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: rgba(238, 247, 246, 0.55); margin-bottom: 8px; }
+.ticket-grid b { font-family: var(--serif); font-weight: 700; font-size: clamp(20px, 2.2vw, 26px); color: #fff; line-height: 1.1; }
+
+.ipd-def {
+  display: grid; grid-template-columns: 1fr 1fr; margin-top: 32px;
+  border: 1px solid var(--hairline); border-radius: 30px; overflow: hidden; background: #fff;
+  box-shadow: var(--shadow-md);
+}
+.ipd-def > div { padding: 44px 48px; }
+.ipd-def > div + div { border-left: 1px solid var(--hairline); background: var(--paper-teal); }
+.ipd-def h3 { font-size: 28px; margin-bottom: 10px; }
+.ipd-def h3 small { font-family: var(--sans); font-size: 11px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--teal-deep); display: block; margin-bottom: 10px; }
+.ipd-def p { font-size: 15px; color: var(--ink-2); line-height: 1.7; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 12px; }
+.tags span {
+  padding: 12px 22px; border: 1.5px solid var(--hairline-2); border-radius: 999px;
+  font-size: 13.5px; font-weight: 600; color: var(--ink-2); background: #fff;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.tags span:hover { border-color: var(--teal); color: var(--teal-deep); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(13, 130, 124, 0.12); }
+
+/* ---------- Absorção & Barras ---------- */
+.absorb { margin-top: 56px; padding: 36px 40px; border: 1px solid var(--hairline); border-radius: 26px; background: #fff; box-shadow: var(--shadow-sm); }
+.absorb h3 { font-family: var(--sans); font-size: 12px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 24px; }
+.bar-row { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; margin-bottom: 18px; }
+.bar-row:last-of-type { margin-bottom: 0; }
+.bar-row .lab { font-size: 14px; color: var(--ink-2); }
+.bar-row .lab b { color: var(--ink); font-weight: 700; }
+.bar-track { grid-column: 1 / -1; height: 8px; border-radius: 99px; background: var(--paper-warm); border: 1px solid var(--hairline); overflow: hidden; }
+.bar-track i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--teal), #08635e); }
+.bar-row .val { font-family: var(--serif); font-weight: 700; font-size: 19px; color: var(--teal-deep); }
+.absorb .foot { margin-top: 20px; font-size: 13px; color: var(--ink-3); }
+
+/* ---------- Cenários ---------- */
+.scen { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 56px; }
+.scen article {
+  padding: 36px 38px; border: 1px solid var(--hairline); border-radius: 28px; background: #fff;
+  display: flex; gap: 24px; align-items: flex-start; box-shadow: var(--shadow-sm);
+}
+.scen .letter { font-family: var(--serif); font-style: italic; font-weight: 700; font-size: 38px; color: var(--teal); line-height: 1; flex: none; width: 44px; }
+.scen article.b .letter { color: #d97706; }
+.scen h3 { font-size: 21px; margin-bottom: 8px; }
+.scen p { font-size: 14.5px; color: var(--ink-2); line-height: 1.65; }
+
+/* ---------- Referências Econômicas ---------- */
+.refs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hairline-2); border: 1px solid var(--hairline-2); border-radius: 26px; overflow: hidden; margin-top: 56px; box-shadow: var(--shadow-sm); }
+.refs > div { background: #fff; padding: 26px 28px; transition: background 0.2s; }
+.refs > div:hover { background: #fafafa; }
+.refs b { display: block; font-family: var(--serif); font-weight: 700; font-size: 22px; margin-bottom: 4px; color: var(--navy); }
+.refs span { font-size: 13px; color: var(--ink-3); font-weight: 500; }
+.refs > div:nth-child(6) { background: var(--teal-mist); }
+.refs > div:nth-child(6) b { color: var(--teal-deep); }
+
+/* ---------- Marquee ---------- */
+.marquee {
+  overflow: hidden; border-block: 1.5px solid var(--hairline-2); background: #fff;
+  padding: 22px 0; margin-top: 64px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+.marquee-track { display: flex; gap: 56px; width: max-content; animation: scrollX 38s linear infinite; }
+.marquee-track span { display: flex; align-items: center; gap: 56px; white-space: nowrap; font-family: var(--serif); font-style: italic; font-size: 17px; color: var(--ink-3); }
+.marquee-track span::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--teal-bright); flex: none; }
+@keyframes scrollX { to { transform: translateX(-50%); } }
+
+/* ---------- Shift Pergunta ---------- */
+.shift { padding: 120px 0; text-align: center; background: var(--paper-warm); }
+.shift .eyebrow { margin-bottom: 38px; }
+.q-before { font-family: var(--serif); font-size: clamp(20px, 2.8vw, 28px); color: var(--ink-3); margin-bottom: 26px; }
+.q-before s { text-decoration-color: rgba(13, 130, 124, 0.6); text-decoration-thickness: 2px; }
+.shift-arrow { width: 1.5px; height: 54px; background: var(--hairline-2); margin: 0 auto 26px; position: relative; }
+.shift-arrow::after {
+  content: ""; position: absolute; bottom: 0; left: 50%;
+  width: 9px; height: 9px; border-left: 2px solid var(--teal); border-bottom: 2px solid var(--teal);
+  transform: translateX(-50%) rotate(-45deg);
+}
+.q-after {
+  font-family: var(--serif); font-style: italic; font-weight: 600;
+  font-size: clamp(28px, 4.5vw, 50px); line-height: 1.22;
+  color: var(--ink); max-width: 860px; margin: 0 auto;
+}
+.q-after b { color: var(--teal); font-weight: 700; font-style: normal; }
+.shift-echo {
+  margin: 48px auto 0; max-width: 660px;
+  padding-top: 36px; border-top: 1px solid var(--hairline-2);
+  font-family: var(--serif); font-style: italic;
+  font-size: clamp(20px, 2.6vw, 26px); line-height: 1.45; color: var(--ink-2);
+}
+.shift-echo b { font-style: normal; color: var(--teal-deep); font-weight: 700; }
+
+/* ---------- CTA Final ---------- */
+.cta-section { padding: 100px 0 120px; background: var(--paper-warm); }
+.cta-panel {
+  position: relative; overflow: hidden; text-align: center;
+  padding: clamp(56px, 7vw, 100px) clamp(24px, 5vw, 88px);
+  border-radius: 40px; color: #eef7f6;
+  background: var(--navy-grad);
+  box-shadow: var(--shadow-deep);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.cta-rings {
+  position: absolute; inset: 0; pointer-events: none;
+  -webkit-mask-image: radial-gradient(circle at 50% 0%, #000 30%, transparent 75%);
+  mask-image: radial-gradient(circle at 50% 0%, #000 30%, transparent 75%);
+}
+.cta-rings i { position: absolute; left: 50%; top: 0; transform: translateX(-50%); border: 1px solid rgba(45, 212, 191, 0.16); border-radius: 50%; }
+.cta-rings i:nth-child(1) { width: 540px; height: 540px; }
+.cta-rings i:nth-child(2) { width: 900px; height: 900px; }
+.cta-rings i:nth-child(3) { width: 1260px; height: 1260px; }
+
+.cta-logo { width: 180px; margin: 0 auto 32px; mix-blend-mode: screen; filter: drop-shadow(0 4px 16px rgba(45,212,191,0.3)); }
+.cta-panel .eyebrow { color: var(--teal-soft); margin-bottom: 24px; }
+.cta-panel .eyebrow i { color: var(--teal-soft); }
+.cta-panel .eyebrow::after { background: rgba(238, 247, 246, 0.25); }
+.cta-panel h2 { font-size: clamp(32px, 4.5vw, 54px); color: #fff; margin-bottom: 20px; }
+.cta-panel h2 em { font-style: italic; color: var(--teal-soft); }
+.cta-panel p { max-width: 600px; margin: 0 auto 40px; color: rgba(238, 247, 246, 0.72); font-size: 17px; line-height: 1.65; }
+.cta-phone { margin-top: 28px; font-size: 14px; color: rgba(238, 247, 246, 0.6); }
+.cta-phone b { color: var(--teal-soft); font-weight: 700; }
+
+/* ---------- Footer ---------- */
+footer { background: #060b0e; color: rgba(255, 255, 255, 0.55); border-top: 1px solid rgba(255, 255, 255, 0.08); }
+.footer-inner { padding: 44px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.footer-left { display: flex; align-items: center; gap: 20px; }
+.footer-left img { width: 90px; mix-blend-mode: screen; }
+.footer-tag { font-family: var(--serif); font-style: italic; font-size: 15px; color: rgba(255, 255, 255, 0.6); }
+.footer-right { font-size: 13px; text-align: right; }
+.footer-right a { display: inline-flex; align-items: center; min-height: 44px; color: var(--teal-soft); font-weight: 600; }
+.footer-right a:hover { text-decoration: underline; }
+.footer-right small { display: block; margin-top: 2px; font-size: 12px; color: rgba(255, 255, 255, 0.4); }
+
+/* ---------- Floating WhatsApp ---------- */
+.wa-float {
+  position: fixed; right: 24px; bottom: 24px; z-index: 90;
+  width: 62px; height: 62px; border-radius: 50%; background: #25d366;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 14px 36px rgba(37, 211, 102, 0.45); transition: transform 0.25s var(--ease);
+}
+.wa-float:hover { transform: scale(1.08); }
+.wa-float svg { width: 32px; height: 32px; color: #fff; }
+.wa-float::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid rgba(37, 211, 102, 0.6); animation: ping 2.5s infinite; }
+@keyframes ping { 0% { transform: scale(1); opacity: 0.8; } 80%, 100% { transform: scale(1.6); opacity: 0; } }
+
+/* ---------- Reveal Animation ---------- */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.85s var(--ease), transform 0.85s var(--ease); }
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* =========================================================
+   MEDIA QUERIES (RESPONSIVIDADE AJUSTADA)
+========================================================= */
+@media (min-width: 640px) {
+  .container { width: min(calc(100% - 52px), var(--container)); }
+}
+@media (min-width: 980px) {
+  .container { width: min(calc(100% - 80px), var(--container)); }
+  .section { padding: 130px 0; }
+  .hero { padding: 92px 0 88px; }
+}
+@media (max-width: 920px) {
+  .nav a { padding: 0 10px; font-size: 13px; }
+  .brand img { width: 88px; }
+  .header-cta { padding: 0 16px; }
+}
+
+@media (max-width: 767px) {
+  :root { --header-h: 60px; }
+  .nav, .header-cta { display: none; }
+  .menu-btn { display: inline-flex; }
+  .brand img { width: 84px; }
+
+  .hero { padding: 36px 0 56px; }
+  .hero-map { top: -2%; right: -40%; width: 160vw; opacity: 0.3; }
+  .hero .eyebrow { margin-bottom: 12px; font-size: 10px; }
+  .hero h1 { font-size: 29px; line-height: 1.15; margin-bottom: 14px; }
+  .hero-sub { font-size: 15.5px; line-height: 1.6; margin-bottom: 18px; }
+  .hero-statement { font-size: 18px; padding: 16px 20px; margin-bottom: 24px; }
+  .hero-actions { gap: 12px; }
+  .hero-actions .btn { width: 100%; }
+  .hero-actions .btn-text { border-bottom: 0; min-height: 48px; }
+
+  .hero-metrics { margin-top: 42px; grid-template-columns: 1fr 1fr; border-radius: 20px; }
+  .hero-metrics > div { padding: 18px 20px; }
+  .hero-metrics > div:nth-child(odd) { border-left: 0; }
+  .hero-metrics > div:nth-child(3), .hero-metrics > div:nth-child(4) { border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .hero-metrics b { font-size: 20px; }
+  .hero-metrics span { font-size: 12px; }
+
+  .section { padding: 80px 0; }
+  .chapter-head { margin-bottom: 40px; }
+  .chapter-head .lead { font-size: 16px; }
+
+  .figure { margin-top: 12px; }
+  .media-tag { left: 18px; font-size: 10px; padding: 6px 14px; }
+  .figure-frame { border-radius: 20px; }
+  figcaption { font-size: 14px; margin-top: 14px; padding: 0 10px; }
+
+  .ipd-card { border-radius: 28px; padding: 28px 24px; }
+  .ipd-card-main { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .ipd-count .num { font-size: 68px; }
+  .ipd-count-label strong { font-size: 20px; }
+  .ipd-count-label span { font-size: 14.5px; }
+  .ipd-card-strip { grid-template-columns: 1fr 1fr 1fr; gap: 0; }
+  .ipd-card-strip > div { padding-left: 14px; }
+  .ipd-card-strip > div:first-child { padding-left: 0; }
+  .ipd-card-strip b { font-size: 22px; }
+  .ipd-card-strip span { font-size: 9.5px; }
+
+  .ticket-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .ticket-grid > div { padding: 14px 16px; }
+  .ticket-grid b { font-size: 18px; }
+
+  .ipd-def { grid-template-columns: 1fr; border-radius: 24px; }
+  .ipd-def > div { padding: 32px 28px; }
+  .ipd-def > div + div { border-left: 0; border-top: 1px solid var(--hairline); }
+
+  .duo, .scen { grid-template-columns: 1fr; gap: 20px; }
+  .panel { padding: 30px 26px; }
+  .scen article { padding: 28px 24px; gap: 18px; }
+  .scen .letter { font-size: 32px; width: 36px; }
+
+  .cols { grid-template-columns: 1fr; margin-top: 44px; }
+  .cols > div { padding: 20px 0 0; border-left: 0 !important; }
+  .cols > div + div { border-top: 1px solid var(--hairline); margin-top: 20px; }
+
+  .absorb { padding: 28px 22px; margin-top: 40px; }
+  .refs { grid-template-columns: 1fr 1fr; margin-top: 40px; }
+  .refs > div { padding: 20px; }
+
+  .note { font-size: 18px; margin-top: 40px; }
+  .shift { padding: 90px 0; }
+  .q-after { font-size: 26px; }
+  .shift-echo { font-size: 18px; margin-top: 36px; }
+  
+  .cta-section { padding: 72px 0 84px; }
+  .cta-logo { width: 150px; }
+  .cta-panel p { font-size: 15.5px; }
+  .cta-panel .btn { width: 100%; }
+
+  footer .footer-inner { padding: 32px 0; }
+  .footer-right { text-align: left; }
+}
+
+@media (max-width: 400px) {
+  .hero h1 { font-size: 25px; }
+  .refs { grid-template-columns: 1fr; }
+  .ipd-count .num { font-size: 58px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  [data-parallax] { opacity: 1; transition: none; }
+  .hero-map img, .wa-float::before, .marquee-track, .ipd-count .num { animation: none; }
+  .ipd-count .num { background: linear-gradient(100deg, #fff, #70e2d5); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .figure-frame, .tags span, .btn, .header-cta, .drawer, .drawer-backdrop { transition: none; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =======================================================
+     HEADER
+======================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand" aria-label="NEXUM — início">
+      <img src="nexum-logo.png" alt="NEXUM — Radar Imobiliário" />
+    </a>
+    <nav class="nav" aria-label="Navegação Principal">
+      <a href="#inicio">Início</a>
+      <a href="#nexum">O NEXUM</a>
+      <a href="#territorio">Território</a>
+      <a href="#performance">Indicadores</a>
+      <a href="#reajustes">Reajustes</a>
+      <a href="#movimento">Movimento</a>
+    </nav>
+    <a class="header-cta js-wa" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.7 9.7 0 0 1-4.94-1.35l-.35-.21-3.67.96.98-3.58-.23-.37a9.66 9.66 0 0 1-1.48-5.16c0-5.35 4.35-9.7 9.71-9.7a9.63 9.63 0 0 1 6.86 2.85 9.63 9.63 0 0 1 2.84 6.86c0 5.35-4.36 9.7-9.71 9.7zm8.26-17.96A11.52 11.52 0 0 0 12.04.5C5.8.5.72 5.58.72 11.81c0 2 .52 3.95 1.51 5.68L.6 23.5l6.15-1.61a11.3 11.3 0 0 0 5.29 1.35h.01c6.23 0 11.31-5.08 11.31-11.31 0-3.02-1.18-5.86-3.32-8z"/></svg>
+      Agendar Demonstração
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Drawer Mobile -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Menu de Navegação">
+  <div class="drawer-head">
+    <img src="nexum-logo.png" alt="NEXUM" class="drawer-logo" />
+    <button class="drawer-close" id="drawerClose" aria-label="Fechar menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="#inicio">Início</a>
+    <a href="#nexum">O NEXUM</a>
+    <a href="#territorio">Território</a>
+    <a href="#performance">Indicadores</a>
+    <a href="#reajustes">Reajustes</a>
+    <a href="#movimento">Movimento</a>
+  </nav>
+  <div class="drawer-foot">
+    <a class="drawer-cta js-wa" href="#">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.7 9.7 0 0 1-4.94-1.35l-.35-.21-3.67.96.98-3.58-.23-.37a9.66 9.66 0 0 1-1.48-5.16c0-5.35 4.35-9.7 9.71-9.7a9.63 9.63 0 0 1 6.86 2.85 9.63 9.63 0 0 1 2.84 6.86c0 5.35-4.36 9.7-9.71 9.7zm8.26-17.96A11.52 11.52 0 0 0 12.04.5C5.8.5.72 5.58.72 11.81c0 2 .52 3.95 1.51 5.68L.6 23.5l6.15-1.61a11.3 11.3 0 0 0 5.29 1.35h.01c6.23 0 11.31-5.08 11.31-11.31 0-3.02-1.18-5.86-3.32-8z"/></svg>
+      Falar via WhatsApp
+    </a>
+    <p class="drawer-phone">(82) 98145-7117</p>
+  </div>
+</aside>
+
+<main>
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-map" id="heroMap" aria-hidden="true">
+      <img src="mapa03.png" alt="" loading="eager" />
+    </div>
+
+    <div class="container">
+      <div class="hero-inner reveal">
+        <span class="eyebrow"><i>NEXUM</i> Radar Imobiliário</span>
+        <h1>Veja o mercado <em class="acc">além</em> da sua própria carteira.</h1>
+        <p class="hero-sub">
+          O NEXUM conecta empreendimentos, estoque, vendas, preços, demanda, oferta
+          e movimentação dos corretores para colocar cada projeto dentro do cenário real do mercado.
+        </p>
+        <div class="hero-statement">
+          "Seus dados mostram o que aconteceu.
+          <b>O NEXUM mostra o contexto.</b>"
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-navy js-wa" href="#">
+            Agendar uma apresentação
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-text" href="#nexum">Conhecer a Plataforma ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-metrics reveal">
+        <div><b>14.048</b><span>registros validados na rede de corretores alimentam o radar</span></div>
+        <div><b>IPD · IPO</b><span>pressão de demanda e oferta organizada no território</span></div>
+        <div><b>IVV · VSO</b><span>velocidade de vendas e absorção com contexto real de mercado</span></div>
+        <div><b>Índice NEXUM</b><span>INCC, CUB, IPCA, IGP-M, FipeZap e a sua carteira</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FIGURA 01
+  ====================================================== -->
+  <section style="padding: 30px 0 90px;">
+    <div class="container">
+      <figure class="figure" data-parallax="0.26">
+        <span class="media-tag">Visão Geral</span>
+        <div class="figure-frame">
+          <img src="01.png" alt="Visão inicial do NEXUM — Radar Imobiliário" fetchpriority="high" />
+        </div>
+        <figcaption><b>Fig. 01</b> — Visão geral da plataforma: a inteligência do mercado em um só lugar.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       01 · O NEXUM
+  ====================================================== -->
+  <section class="section bg-warm" id="nexum">
+    <div class="container">
+
+      <div class="chapter-head center reveal">
+        <span class="eyebrow"><i>01</i> O problema que o NEXUM resolve</span>
+        <h2>O que acontece <em class="acc">fora</em> da sua carteira também importa.</h2>
+        <p class="lead" style="margin-top: 18px;">
+          Uma incorporadora conhece profundamente seus próprios números. Mas existe uma camada viva do mercado que acontece da porta para fora — e é exatamente essa camada que nenhum CRM interno consegue capturar.
+        </p>
+      </div>
+
+      <div class="duo">
+        <article class="panel reveal">
+          <h3>Dentro da empresa</h3>
+          <p class="sub">O que você já acompanha rotineiramente</p>
+          <ul class="hairline-list">
+            <li>Vendas, receita e ticket médio</li>
+            <li>Estoque próprio e tabelas de preço</li>
+            <li>Performance da equipe comercial</li>
+            <li>Investimento em campanhas de mídia</li>
+            <li>Custos operacionais e indicadores internos</li>
+          </ul>
+        </article>
+
+        <article class="panel panel-navy reveal">
+          <h3>Fora da empresa</h3>
+          <p class="sub">O que nenhum CRM consegue mostrar sozinho</p>
+          <ul class="hairline-list">
+            <li>Onde estão os concorrentes e o estoque deles</li>
+            <li>Qual a real velocidade com que o mercado vende</li>
+            <li>Onde a força de vendas parceira está atuando</li>
+            <li>Onde surgem novos sinais regionais de demanda</li>
+            <li>Como os preços estão se movimentando ao redor</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="note reveal">É a sobreposição inteligente dessas duas camadas que transforma <b>dados isolados em decisão estratégica.</b></p>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       02 · A CARTEIRA
+  ====================================================== -->
+  <section class="section" id="carteira">
+    <div class="container">
+
+      <div class="chapter-head reveal">
+        <span class="eyebrow"><i>02</i> A carteira</span>
+        <h2>Uma base estruturada <em class="acc">de empreendimentos.</em></h2>
+      </div>
+
+      <figure class="figure" data-parallax="0.08">
+        <span class="media-tag">Empreendimentos</span>
+        <div class="figure-frame">
+          <img src="02.png" alt="Carteira de empreendimentos cadastrada no NEXUM" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 02</b> — Carteira, estoque e performance integrados em uma única visão visual.</figcaption>
+      </figure>
+
+      <div class="cols reveal">
+        <div>
+          <span class="k"><i>a.</i> Base Única</span>
+          <p>Todos os empreendimentos centralizados em uma mesma perspectiva de mercado, padronizados para análise comparada.</p>
+        </div>
+        <div>
+          <span class="k"><i>b.</i> Tabelas Vivas</span>
+          <p>Métricas históricas atualizadas continuamente para acompanhar a evolução real de estoque, lançamentos e preços.</p>
+        </div>
+        <div>
+          <span class="k"><i>c.</i> Análise Comparável</span>
+          <p>Sua carteira pode ser comparada por segmento, tipologia, região geográfica e padrão de acabamento.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       03 · TERRITÓRIO
+  ====================================================== -->
+  <section class="section bg-teal" id="territorio">
+    <div class="container">
+
+      <div class="chapter-head center reveal">
+        <span class="eyebrow"><i>03</i> Inteligência Territorial</span>
+        <h2>Não basta saber a localização do imóvel. <em class="acc">É preciso entender a dinâmica do entorno.</em></h2>
+        <p class="lead" style="margin-top: 18px;">
+          O NEXUM permite mapear o entorno, confrontar lançamentos e delimitar raios de influência para mensurar oferta, demanda e competição direta dentro do mesmo território.
+        </p>
+      </div>
+
+      <figure class="figure" data-parallax="0.08">
+        <span class="media-tag teal">Mapa · Raio de Influência</span>
+        <div class="figure-frame">
+          <img src="04.png" alt="Mapa do NEXUM com raio de influência e análise do entorno" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 03</b> — Mapa espacial, raio de influência e leitura microterritorial de mercado.</figcaption>
+      </figure>
+
+      <div class="cols reveal">
+        <div>
+          <span class="k"><i>a.</i> Oferta Territorial</span>
+          <p>Mapeamento exato de concorrentes, volume de estoque remanescente e sua distribuição por bairro.</p>
+        </div>
+        <div>
+          <span class="k"><i>b.</i> Demanda Viva</span>
+          <p>Identificação de micro-regiões onde a procura ganha tração — ou para onde está migrating.</p>
+        </div>
+        <div>
+          <span class="k"><i>c.</i> Raio Personalizado</span>
+          <p>Delimite polígonos e raios de análise específicos para isolar o ecossistema exato do seu projeto.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       04 · REDE DE CORRETORES
+  ====================================================== -->
+  <section class="section" id="ipd">
+    <div class="container">
+
+      <div class="chapter-head reveal">
+        <span class="eyebrow"><i>04</i> Rede de Corretores</span>
+        <h2>Para onde a <em class="acc">força de vendas</em> está direcionando o mercado?</h2>
+      </div>
+
+      <div class="ipd-card reveal" id="ipdCard">
+        <div class="ipd-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+
+        <div class="ipd-card-main">
+          <div class="ipd-count-block">
+            <span class="ipd-count-eyebrow">Total · Registros no Recorte</span>
+            <div class="ipd-count" aria-label="14.048 registros no recorte">
+              <span class="num" data-count="14048">0</span>
+            </div>
+          </div>
+          <div class="ipd-count-label">
+            <strong>registros validados na rede de corretores <em>alimentam o radar.</em></strong>
+            <span>
+              O NEXUM capta sinais de oferta e procura nessas interações e os traduz geograficamente: onde os corretores estão concentrando esforços, onde há clientes dispostos a comprar e quais regiões apresentam tendências de expansão ou retração.
+            </span>
+          </div>
+        </div>
+
+        <div class="ipd-card-strip">
+          <div><b>10.295</b><span>Oferta · Registros</span></div>
+          <div><b>3.694</b><span>Demanda · Registros</span></div>
+          <div><b>32</b><span>Bairros Monitorados</span></div>
+        </div>
+
+        <div class="ipd-tickets">
+          <h4>Ticket médio observado na rede</h4>
+          <div class="ticket-grid">
+            <div><span>Vendas · Oferta</span><b>R$ 339.222</b></div>
+            <div><span>Compras · Demanda</span><b>R$ 260.978</b></div>
+            <div><span>Locação · Oferta</span><b>R$ 1.758</b></div>
+            <div><span>Locação · Demanda</span><b>R$ 1.557</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ipd-def reveal">
+        <div>
+          <h3><small>Índice · Demanda</small>IPD</h3>
+          <p>Mapeia a pressão real de procura comercial. Permite enxergar onde estão os compradores ativos e qual o perfil de imóvel desejado.</p>
+        </div>
+        <div>
+          <h3><small>Índice · Oferta</small>IPO</h3>
+          <p>Mapeia a pressão de oferta da força de vendas, revelando onde o estoque está superconcentrado ou escasso.</p>
+        </div>
+      </div>
+
+      <div class="tags reveal" style="margin-top: 30px; justify-content: center;">
+        <span>Onde os corretores atuam</span>
+        <span>Regiões com clientes ativos</span>
+        <span>Concentração de demanda</span>
+        <span>Movimentação de oferta</span>
+        <span>Tendências de valorização</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       05 · INDICADORES
+  ====================================================== -->
+  <section class="section bg-warm" id="performance">
+    <div class="container">
+
+      <div class="chapter-head reveal">
+        <span class="eyebrow"><i>05</i> Performance</span>
+        <h2>Velocidade de vendas <em class="acc">contextualizada.</em></h2>
+        <p class="lead" style="margin-top: 18px;">
+          O NEXUM traduz alterações em tabelas de preços e unidades em indicadores operacionais límpidos para mensurar a absorção real de cada projeto.
+        </p>
+      </div>
+
+      <figure class="figure" data-parallax="0.08">
+        <span class="media-tag">Indicadores · IVV &amp; VSO</span>
+        <div class="figure-frame">
+          <img src="05.png" alt="Indicadores de desempenho e velocidade de vendas do NEXUM" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 04</b> — IVV, VSO e leitura comparada do portfólio comercial.</figcaption>
+      </figure>
+
+      <div class="cols reveal">
+        <div>
+          <span class="k"><i>a.</i> IVV</span>
+          <p>Índice de Velocidade de Vendas: a quantidade média de unidades comercializadas por período determinado.</p>
+        </div>
+        <div>
+          <span class="k"><i>b.</i> VSO</span>
+          <p>Vendas Sobre Oferta: a proporção de vendas em relação ao estoque total disponível, equalizando projetos de portes distintos.</p>
+        </div>
+        <div>
+          <span class="k"><i>c.</i> Benchmark</span>
+          <p>Sua performance é constantemente avaliada contra a média observada no mercado ao redor.</p>
+        </div>
+      </div>
+
+      <div class="absorb reveal">
+        <h3>Volume idêntico de vendas, realidades operacionais distintas</h3>
+        <div class="bar-row">
+          <span class="lab"><b>10 vendas</b> em um empreendimento com 50 unidades disponíveis</span>
+          <span class="val">20% VSO</span>
+          <span class="bar-track"><i style="width:62%"></i></span>
+        </div>
+        <div class="bar-row">
+          <span class="lab"><b>10 vendas</b> em um empreendimento com 100 unidades disponíveis</span>
+          <span class="val">10% VSO</span>
+          <span class="bar-track"><i style="width:31%; opacity:.65"></i></span>
+        </div>
+        <p class="foot">O VSO é o métrico que torna ritmos de empreendimentos diferentes diretamente comparáveis no mesmo dashboard.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       06 · CENÁRIO DE ABSORÇÃO
+  ====================================================== -->
+  <section class="section" id="cenarios">
+    <div class="container">
+
+      <div class="chapter-head center reveal">
+        <span class="eyebrow"><i>06</i> Projeção de Absorção</span>
+        <h2>O IVV atual não conta sozinho <em class="acc">o futuro do seu estoque.</em></h2>
+        <p class="lead" style="margin-top: 18px;">
+          Um empreendimento pode apresentar excelente ritmo no lançamento, mas essa velocidade tende a desacelerar conforme as melhores unidades são vendidas. O NEXUM projeta o tempo de esgotamento sob dois cenários simultâneos: <strong>IVV Constante</strong> e <strong>IVV com Desaceleração Progressiva</strong>.
+        </p>
+      </div>
+
+      <div class="scen">
+        <article class="reveal">
+          <span class="letter">A</span>
+          <div>
+            <h3>Cenário Linear (IVV Fixo)</h3>
+            <p>Projeta a exaustão do estoque assumindo que o ritmo de vendas atual se manterá inalterado até a última unidade.</p>
+          </div>
+        </article>
+        <article class="b reveal">
+          <span class="letter">B</span>
+          <div>
+            <h3>Cenário Realista (Desaceleração)</h3>
+            <p>Calcula a absorção considerando a perda de velocidade natural com a maturação e diminuição de opções no espelho.</p>
+          </div>
+        </article>
+      </div>
+
+      <figure class="figure" data-parallax="0.08">
+        <span class="media-tag teal">Curvas de Projeção</span>
+        <div class="figure-frame">
+          <img src="08.png" alt="Projeção de absorção comparando IVV fixo e IVV projetado com desaceleração" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 05</b> — Comparativo entre absorção em ritmo constante vs. desaceleração progressiva.</figcaption>
+      </figure>
+
+      <p class="note reveal">
+        Não se trata de uma previsão inflexível, mas de um <b>modelo de sensibilidade</b> para dimensionar a exposição de caixa e identificar o momento ideal para ações comerciais.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       07 · REAJUSTES
+  ====================================================== -->
+  <section class="section bg-warm" id="reajustes">
+    <div class="container">
+
+      <div class="chapter-head reveal">
+        <span class="eyebrow"><i>07</i> Pressão Econômica</span>
+        <h2>O preço de tabela exige <em class="acc">respaldo macroeconômico.</em></h2>
+        <p class="lead" style="margin-top: 18px;">
+          O NEXUM cruza os principais indicadores macroeconômicos com o preço praticado no seu portfólio, permitindo avaliar se seus reajustes acompanham a inflação, o custo construtivo ou a valorização da região.
+        </p>
+      </div>
+
+      <figure class="figure" data-parallax="0.08">
+        <span class="media-tag">Índice NEXUM</span>
+        <div class="figure-frame">
+          <img src="06.png" alt="Janela de indicadores econômicos e referências de reajuste do NEXUM" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 06</b> — Painel do Índice NEXUM: acompanhamento de pressão de custos sobre a tabela.</figcaption>
+      </figure>
+
+      <div class="refs reveal">
+        <div><b>INCC</b><span>Custo da Construção</span></div>
+        <div><b>CUB</b><span>Custo Unitário Básico</span></div>
+        <div><b>IPCA</b><span>Inflação Oficial</span></div>
+        <div><b>IGP-M</b><span>Indexador de Mercado</span></div>
+        <div><b>FipeZap</b><span>Termômetro Imobiliário</span></div>
+        <div><b>NEXUM</b><span>Sua Carteira Real</span></div>
+      </div>
+
+      <p class="note reveal">
+        O objetivo não é impor um preço estático, mas fornecer uma <b>bussola precisa</b> para reajustes de tabela seguros e competitivos.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       08 · MOVIMENTO
+  ====================================================== -->
+  <section class="section" id="movimento">
+    <div class="container">
+
+      <div class="chapter-head center reveal">
+        <span class="eyebrow"><i>08</i> Mercado em Movimento</span>
+        <h2>O mercado imobiliário não é estático. <em class="acc">É uma dinâmica contínua.</em></h2>
+        <p class="lead" style="margin-top: 18px;">
+          Analisar dados ao longo do tempo expõe como oferta, demanda, vendas e locações interagem, revelando a trajetória real do mercado regional.
+        </p>
+      </div>
+
+      <figure class="figure" data-parallax="0.08">
+        <span class="media-tag teal">Linha do Tempo · Operações</span>
+        <div class="figure-frame">
+          <img src="07.png" alt="Timeline de mercado do NEXUM: operações ao longo do tempo" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 07</b> — Comportamento histórico de vendas, estoques e locação no tempo.</figcaption>
+      </figure>
+
+      <div class="cols reveal">
+        <div>
+          <span class="k"><i>a.</i> Trajetória</span>
+          <p>O histórico transacional deixa de ser mero arquivo e passa a orientar a tomada de decisão.</p>
+        </div>
+        <div>
+          <span class="k"><i>b.</i> Sazonalidade</span>
+          <p>Identificação clara de picos de interesse, inflexões de mercado e ciclos de compra.</p>
+        </div>
+        <div>
+          <span class="k"><i>c.</i> Direção</span>
+          <p>O comportamento dos últimos meses aponta os caminhos mais promissores para novos lançamentos.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="marquee reveal" aria-hidden="true">
+      <div class="marquee-track">
+        <span>O mercado imobiliário não é estático</span><span>Empreendimentos entram e saem</span><span>Estoques mudam</span><span>Velocidades aceleram e desaceleram</span><span>Corretores mudam de foco</span><span>A demanda se desloca</span><span>Os preços se ajustam</span>
+        <span>O mercado imobiliário não é estático</span><span>Empreendimentos entram e saem</span><span>Estoques mudam</span><span>Velocidades aceleram e desaceleram</span><span>Corretores mudam de foco</span><span>A demanda se desloca</span><span>Os preços se ajustam</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       MUDANÇA DE PARADIGMA
+  ====================================================== -->
+  <section class="shift">
+    <div class="container">
+      <span class="eyebrow reveal"><i>→</i> A mudança de perspectiva</span>
+      <p class="q-before reveal"><s>"Quantas unidades minha empresa vendeu este mês?"</s></p>
+      <div class="shift-arrow reveal" aria-hidden="true"></div>
+      <p class="q-after reveal">
+        "Como minha performance se posiciona <b>diante do mercado real ao meu redor?</b>"
+      </p>
+      <p class="shift-echo reveal">
+        "Seus dados mostram o que aconteceu.
+        <b>O NEXUM mostra o contexto.</b>"
+      </p>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       CTA FINAL
+  ====================================================== -->
+  <section class="cta-section" id="contato">
+    <div class="container">
+      <div class="cta-panel reveal">
+        <div class="cta-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img class="cta-logo" src="nexum-logo.png" alt="NEXUM — Radar Imobiliário" loading="lazy" />
+        <span class="eyebrow"><i>NEXUM</i> Radar Imobiliário</span>
+        <h2>Enxergue sua carteira <em>com a clareza que o mercado exige.</em></h2>
+        <p>
+          Agende uma sessão executiva de demonstração e descubra como conectar a inteligência territorial do NEXUM à estratégia do seu próximo empreendimento.
+        </p>
+        <a class="btn btn-light js-wa" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.7 9.7 0 0 1-4.94-1.35l-.35-.21-3.67.96.98-3.58-.23-.37a9.66 9.66 0 0 1-1.48-5.16c0-5.35 4.35-9.7 9.71-9.7a9.63 9.63 0 0 1 6.86 2.85 9.63 9.63 0 0 1 2.84 6.86c0 5.35-4.36 9.7-9.71 9.7zm8.26-17.96A11.52 11.52 0 0 0 12.04.5C5.8.5.72 5.58.72 11.81c0 2 .52 3.95 1.51 5.68L.6 23.5l6.15-1.61a11.3 11.3 0 0 0 5.29 1.35h.01c6.23 0 11.31-5.08 11.31-11.31 0-3.02-1.18-5.86-3.32-8z"/></svg>
+          Solicitar Apresentação Exclusiva
+        </a>
+        <p class="cta-phone">Contato direto com Ericson Tenório · WhatsApp <b>(82) 98145-7117</b></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =======================================================
+     FOOTER
+======================================================== -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img src="nexum-logo.png" alt="NEXUM — Radar Imobiliário" />
+      <span class="footer-tag">Veja o mercado além da sua própria carteira.</span>
+    </div>
+    <div class="footer-right">
+      <a class="js-wa" href="#">(82) 98145-7117 · Atendimento via WhatsApp</a>
+      <small>© <span id="year">2026</span> Ericson Tenório — NEXUM Radar Imobiliário. Todos os direitos reservados.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- Botão WhatsApp Flutuante -->
+<a class="wa-float js-wa" href="#" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.7 9.7 0 0 1-4.94-1.35l-.35-.21-3.67.96.98-3.58-.23-.37a9.66 9.66 0 0 1-1.48-5.16c0-5.35 4.35-9.7 9.71-9.7a9.63 9.63 0 0 1 6.86 2.85 9.63 9.63 0 0 1 2.84 6.86c0 5.35-4.36 9.7-9.71 9.7zm8.26-17.96A11.52 11.52 0 0 0 12.04.5C5.8.5.72 5.58.72 11.81c0 2 .52 3.95 1.51 5.68L.6 23.5l6.15-1.61a11.3 11.3 0 0 0 5.29 1.35h.01c6.23 0 11.31-5.08 11.31-11.31 0-3.02-1.18-5.86-3.32-8z"/></svg>
+</a>
+
+<!-- =======================================================
+     SCRIPTS DE INTEGRAÇÃO E ANIMAÇÃO
+======================================================== -->
+<script>
+/* ---------- Integração Dinâmica WhatsApp ---------- */
+const WA_URL = "https://wa.me/5582981457117?text=" + 
+  encodeURIComponent("Olá! Gostaria de agendar uma apresentação executiva do NEXUM — Radar Imobiliário.");
+
+document.querySelectorAll(".js-wa").forEach(el => {
+  el.href = WA_URL;
+  el.target = "_blank";
+  el.rel = "noopener noreferrer";
+});
+
+/* ---------- Site Header: Sombra no Scroll ---------- */
+const headerEl = document.getElementById("siteHeader");
+addEventListener("scroll", () => {
+  headerEl.style.boxShadow = scrollY > 20 
+    ? "0 16px 40px -16px rgba(3, 8, 11, 0.8)" 
+    : "none";
+}, { passive: true });
+
+/* ---------- Drawer Mobile ---------- */
+const menuBtn     = document.getElementById("menuBtn");
+const drawer      = document.getElementById("drawer");
+const drawerClose = document.getElementById("drawerClose");
+const drawerBg    = document.getElementById("drawerBackdrop");
+
+function openDrawer() {
+  drawer.classList.add("open");
+  drawerBg.classList.add("open");
+  drawer.setAttribute("aria-hidden", "false");
+  menuBtn.setAttribute("aria-expanded", "true");
+  document.body.classList.add("no-scroll");
+  drawerClose.focus();
+}
+
+function closeDrawer() {
+  drawer.classList.remove("open");
+  drawerBg.classList.remove("open");
+  drawer.setAttribute("aria-hidden", "true");
+  menuBtn.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("no-scroll");
+  menuBtn.focus();
+}
+
+menuBtn.addEventListener("click", openDrawer);
+drawerClose.addEventListener("click", closeDrawer);
+drawerBg.addEventListener("click", closeDrawer);
+
+addEventListener("keydown", e => {
+  if (e.key === "Escape" && drawer.classList.contains("open")) closeDrawer();
+});
+
+drawer.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", closeDrawer);
+});
+
+/* ---------- Scroll Spy (Navegação Ativa) ---------- */
+const navLinks = [...document.querySelectorAll(".nav a")];
+function setActive(id) {
+  navLinks.forEach(link => {
+    link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+  });
+}
+
+const spyObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) setActive(e.target.id);
+  });
+}, { rootMargin: "-30% 0px -60% 0px" });
+
+["inicio", "nexum", "territorio", "performance", "reajustes", "movimento"].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) spyObserver.observe(el);
+});
+
+/* ---------- Elements Reveal Observer ---------- */
+const revealEls = document.querySelectorAll(".reveal, [data-parallax]");
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add("is-visible");
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+  
+  revealEls.forEach(el => revealObserver.observe(el));
+} else {
+  revealEls.forEach(el => el.classList.add("is-visible"));
+}
+
+/* ---------- Engine Parallax Amortecido ---------- */
+const isReducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const pxItems = [...document.querySelectorAll("[data-parallax]")].map(el => ({
+  el,
+  speed: parseFloat(el.dataset.parallax) || 0.1,
+  top: 0,
+  height: 1
+}));
+const heroMap = document.getElementById("heroMap");
+
+function getElementTop(el) {
+  let y = 0;
+  while (el) { y += el.offsetTop; el = el.offsetParent; }
+  return y;
+}
+
+function measureLayout() {
+  pxItems.forEach(item => {
+    item.top = getElementTop(item.el);
+    item.height = item.el.offsetHeight || 1;
+  });
+}
+measureLayout();
+addEventListener("load", measureLayout);
+addEventListener("resize", measureLayout);
+
+if (!isReducedMotion) {
+  let currentScroll = scrollY;
+  
+  (function renderLoop() {
+    currentScroll += (scrollY - currentScroll) * 0.12;
+    if (Math.abs(scrollY - currentScroll) < 0.1) currentScroll = scrollY;
+
+    if (heroMap && currentScroll < innerHeight * 1.5) {
+      heroMap.style.transform = `translate3d(0, ${(currentScroll * 0.16).toFixed(1)}px, 0)`;
+    }
+
+    const vh = innerHeight;
+    for (const item of pxItems) {
+      const progress = (currentScroll + vh - item.top) / (vh + item.height);
+      const clamped = Math.min(Math.max(progress, 0), 1);
+      const translateY = (0.5 - clamped) * item.speed * vh;
+      item.el.style.transform = `translate3d(0, ${translateY.toFixed(1)}px, 0)`;
+    }
+
+    requestAnimationFrame(renderLoop);
+  })();
+}
+
+/* ---------- Animação do Contador de Registros (14.048) ---------- */
+const numberFormat = new Intl.NumberFormat("pt-BR");
+const easeOutExpo = t => t >= 1 ? 1 : 1 - Math.pow(2, -10 * t);
+
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    counterObserver.unobserve(entry.target);
+    
+    const el = entry.target;
+    const targetValue = +el.dataset.count;
+    const duration = 2500;
+    const startTime = performance.now() + 300;
+    const cardParent = el.closest(".ipd-card");
+
+    const updateCounter = currentTime => {
+      const elapsed = currentTime - startTime;
+      if (elapsed < 0) { requestAnimationFrame(updateCounter); return; }
+      
+      const progress = Math.min(elapsed / duration, 1);
+      const currentValue = Math.round(targetValue * easeOutExpo(progress));
+      el.textContent = numberFormat.format(currentValue);
+
+      if (progress < 1) {
+        requestAnimationFrame(updateCounter);
+      } else if (cardParent) {
+        cardParent.classList.add("done");
+      }
+    };
+    requestAnimationFrame(updateCounter);
+  });
+}, { threshold: 0.4 });
+
+document.querySelectorAll("[data-count]").forEach(el => counterObserver.observe(el));
+
+/* ---------- Atualização Automática do Ano ---------- */
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

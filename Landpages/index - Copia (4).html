@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="description" content="NEXUM — Radar Imobiliário. Seus dados mostram o que aconteceu. O NEXUM mostra o contexto: mapa, IPD, IVV, VSO, cenários de absorção e Índice NEXUM." />
+<title>NEXUM — Radar Imobiliário</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1216'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%232dd4bf' stroke-width='1.4'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%232dd4bf'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* =========================================================
+   NEXUM · Editorial Executivo — v8
+   Base v4 + menu novo + parallax
+========================================================= */
+:root{
+  --paper:#ffffff;
+  --paper-warm:#f6f4ef;
+  --paper-teal:#eaf4f3;
+
+  --ink:#0f1b21;
+  --ink-2:#3f525a;
+  --ink-3:#798b92;
+
+  --navy:#0d2231;
+  --navy-2:#123347;
+
+  --hairline:#e4ebed;
+  --hairline-2:#d6e1e3;
+
+  --teal:#0f8f88;
+  --teal-bright:#2dd4bf;
+  --teal-soft:#7de3d8;
+  --teal-deep:#0a6e69;
+  --teal-mist:#e3f2f0;
+  --blue:#3b82f6;
+
+  --header-grad:linear-gradient(100deg,#070d13 0%,#0b2334 48%,#0d4a52 100%);
+  --shadow-sm:0 2px 6px rgba(15,30,36,.05),0 8px 22px -12px rgba(15,30,36,.10);
+  --shadow-md:0 6px 18px -8px rgba(15,30,36,.12),0 20px 46px -22px rgba(15,30,36,.16);
+  --shadow-fig:0 48px 110px -46px rgba(15,45,52,.34),0 16px 38px -20px rgba(15,30,36,.16);
+  --shadow-deep:0 60px 120px -50px rgba(11,18,22,.65);
+
+  --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+  --container:1160px;
+  --header-h:60px;
+  --ease:cubic-bezier(.22,.7,.3,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 14px)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+body.no-scroll{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+::selection{background:rgba(45,212,191,.32)}
+button:focus-visible,a:focus-visible{outline:3px solid var(--teal-bright);outline-offset:4px}
+
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(38px,4.8vw,62px);line-height:1.03}
+h2{font-size:clamp(30px,4vw,52px);line-height:1.08}
+h3{font-size:22px;line-height:1.3}
+p{margin:0}
+
+em.acc{font-style:italic;color:var(--teal);font-weight:600}
+
+.container{width:min(calc(100% - 40px),var(--container));margin-inline:auto}
+
+/* ---------- Eyebrow ---------- */
+.eyebrow{
+  display:inline-flex;align-items:baseline;gap:12px;
+  color:var(--teal-deep);font-size:11px;font-weight:700;
+  letter-spacing:.24em;text-transform:uppercase;
+}
+.eyebrow i{font-family:var(--serif);font-style:italic;font-weight:600;font-size:17px;letter-spacing:0;color:var(--teal)}
+.eyebrow::after{content:"";width:34px;height:1.5px;background:var(--hairline-2);align-self:center}
+
+/* ---------- Botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:52px;padding:0 30px;border-radius:999px;
+  font-size:15px;font-weight:600;white-space:nowrap;cursor:pointer;
+  transition:transform .2s var(--ease),background .2s,box-shadow .2s,color .2s;
+}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-navy{background:var(--navy);color:#fff;box-shadow:0 18px 40px -16px rgba(13,34,49,.55)}
+.btn-navy:hover{background:var(--teal-deep);transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--navy);box-shadow:0 18px 44px -18px rgba(0,0,0,.6)}
+.btn-light:hover{transform:translateY(-2px);background:var(--teal-mist)}
+.btn-text{
+  min-height:52px;padding:0 4px;border-radius:0;
+  color:var(--ink-2);font-weight:600;font-size:14.5px;
+  border-bottom:1.5px solid var(--hairline-2);
+}
+.btn-text:hover{color:var(--teal-deep);border-color:var(--teal)}
+
+/* =========================================================
+   HEADER — sempre escuro (logo funciona nativamente)
+========================================================= */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:var(--header-grad);
+  transition:box-shadow .25s;
+}
+.scroll-progress{position:fixed;top:0;left:0;z-index:300;width:100%;height:3px;pointer-events:none;background:rgba(255,255,255,.08)}
+.scroll-progress i{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--teal-bright),#8ff4e8);box-shadow:0 0 12px rgba(45,212,191,.7);transition:width .08s linear}
+.header-inner{min-height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:inline-flex;flex-shrink:0}
+.brand img{width:92px;height:auto;mix-blend-mode:screen}
+.nav{display:flex;gap:8px}
+.nav a{
+  position:relative;display:inline-flex;align-items:center;
+  min-height:44px;padding:0 11px;
+  font-size:13px;font-weight:600;letter-spacing:.03em;
+  color:rgba(255,255,255,.72);transition:color .18s;
+}
+.nav a:hover{color:var(--teal-soft)}
+.nav a::after{
+  content:"";position:absolute;left:11px;right:11px;bottom:8px;height:2px;
+  border-radius:2px;
+  background:linear-gradient(90deg,var(--teal-bright),var(--teal-soft));
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .3s var(--ease);
+}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1)}
+.nav a.active{color:var(--teal-soft)}
+
+.header-cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:42px;padding:0 18px;border-radius:10px;
+  background:linear-gradient(135deg,#2dd4bf,#0f8f88);
+  color:#04211d;font-size:12.5px;font-weight:700;
+  box-shadow:0 10px 26px -10px rgba(45,212,191,.55);
+  transition:transform .18s,box-shadow .18s;
+}
+.header-cta:hover{transform:translateY(-1px);box-shadow:0 14px 30px -10px rgba(45,212,191,.65)}
+
+.menu-btn{
+  display:none;width:48px;height:48px;padding:0;
+  background:transparent;border:1px solid rgba(255,255,255,.28);
+  border-radius:11px;color:#fff;cursor:pointer;
+  align-items:center;justify-content:center;flex:none;
+}
+
+/* ---------- Drawer mobile ---------- */
+.drawer-backdrop{
+  position:fixed;inset:0;z-index:190;background:rgba(4,10,14,.55);
+  backdrop-filter:blur(2px);opacity:0;visibility:hidden;
+  transition:opacity .3s var(--ease),visibility .3s;
+}
+.drawer-backdrop.open{opacity:1;visibility:visible}
+.drawer{
+  position:fixed;top:0;right:0;bottom:0;z-index:200;
+  width:min(330px,86vw);
+  display:flex;flex-direction:column;
+  background:linear-gradient(165deg,#0a141b 0%,#0b2334 70%,#0d4a52 130%);
+  transform:translateX(102%);visibility:hidden;
+  transition:transform .34s var(--ease),visibility .34s;
+  box-shadow:-30px 0 70px rgba(0,0,0,.45);
+}
+.drawer.open{transform:translateX(0);visibility:visible}
+.drawer-head{
+  min-height:var(--header-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 18px;border-bottom:1px solid rgba(255,255,255,.10);
+}
+.drawer-logo{width:88px;mix-blend-mode:screen}
+.drawer-close{
+  width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;
+  background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:11px;
+  color:#fff;cursor:pointer;flex:none;
+}
+.drawer-nav{display:flex;flex-direction:column;padding:10px 8px;flex:1}
+.drawer-nav a{
+  display:flex;align-items:center;min-height:56px;padding:0 14px;
+  color:rgba(255,255,255,.85);font-size:15.5px;font-weight:600;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.drawer-nav a.active{color:var(--teal-soft)}
+.drawer-nav a:last-child{border-bottom:0}
+.drawer-foot{padding:16px 18px 26px;border-top:1px solid rgba(255,255,255,.10)}
+.drawer-cta{
+  width:100%;min-height:52px;
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:linear-gradient(135deg,#2dd4bf,#0f8f88);
+  color:#04211d;font-weight:700;font-size:15px;border-radius:12px;
+}
+.drawer-phone{margin-top:12px;text-align:center;font-size:13px;color:rgba(255,255,255,.55)}
+
+/* =========================================================
+   HERO — mapa estilizado ao fundo (com parallax)
+========================================================= */
+.hero{position:relative;padding:58px 0 62px;overflow:hidden;background:var(--paper)}
+.hero-dark{min-height:620px;display:flex;align-items:center;background:linear-gradient(110deg,#071118 0%,#0b2331 54%,#0d4a52 130%);color:#fff}
+.hero-dark .hero-map{opacity:.34;mix-blend-mode:screen}
+.hero.hero-dark::after{background:linear-gradient(90deg,rgba(7,17,24,.98) 0%,rgba(7,17,24,.86) 35%,rgba(7,17,24,.24) 66%,transparent 100%)}
+.hero-dark .eyebrow{color:var(--teal-soft)}
+.hero-dark .eyebrow i{color:var(--teal-soft)}
+.hero-dark .eyebrow::after{background:rgba(255,255,255,.25)}
+.hero-dark h1{color:#fff;max-width:620px}
+.hero-dark .hero-sub{color:rgba(238,247,246,.74);max-width:600px}
+.hero-dark .btn-text{color:rgba(255,255,255,.78);border-color:rgba(255,255,255,.28)}
+.hero-dark .btn-text:hover{color:var(--teal-soft);border-color:var(--teal-soft)}
+.evidence-strip{position:relative;z-index:4;background:#fff;border-bottom:1px solid var(--hairline);box-shadow:0 18px 40px -30px rgba(15,30,36,.35)}
+.evidence-inner{display:grid;grid-template-columns:repeat(4,1fr);padding:26px 0}
+.evidence-inner>div{padding:0 24px;border-left:1px solid var(--hairline)}
+.evidence-inner>div:first-child{border-left:0;padding-left:0}
+.evidence-inner b{display:block;font-family:var(--serif);font-size:24px;line-height:1.1;color:var(--navy);margin-bottom:7px}
+.evidence-inner span{display:block;color:var(--ink-3);font-size:11.5px;line-height:1.5}
+.arrival-figure{position:relative;z-index:3;padding:74px 0 112px;background:linear-gradient(180deg,#fff 0%,var(--paper-warm) 100%)}
+.arrival-figure .figure-frame{box-shadow:0 42px 100px -42px rgba(13,34,49,.38),0 18px 36px -24px rgba(15,30,36,.18)}
+.context-line{display:flex;align-items:center;justify-content:center;gap:18px;margin:56px auto 0;color:var(--teal-deep);font-family:var(--serif);font-size:22px;font-style:italic}
+.context-line i{width:42px;height:1px;background:var(--teal-soft)}
+.context-synthesis{padding:124px 0 132px;background:var(--navy);color:#fff;overflow:hidden}
+.context-synthesis .eyebrow{color:var(--teal-soft)}
+.context-synthesis .eyebrow i{color:var(--teal-soft)}
+.context-synthesis .eyebrow::after{background:rgba(255,255,255,.25)}
+.context-synthesis h2{color:#fff}
+.context-synthesis .lead{color:rgba(238,247,246,.68)}
+.signal-orbit{position:relative;width:min(760px,100%);height:520px;margin:32px auto 0}
+.orbit-core{position:absolute;left:50%;top:50%;z-index:2;display:grid;place-items:center;width:170px;height:170px;margin:-85px;border:1px solid rgba(125,227,216,.8);border-radius:50%;background:radial-gradient(circle,rgba(45,212,191,.28),rgba(13,34,49,.94) 68%);box-shadow:0 0 0 14px rgba(45,212,191,.035),0 0 70px rgba(45,212,191,.16);font-family:var(--serif);font-size:16px;letter-spacing:.14em;text-align:center;color:#fff}
+.orbit-line{position:absolute;left:50%;top:50%;border:1px solid rgba(125,227,216,.17);border-radius:50%;transform:translate(-50%,-50%);animation:orbitPulse 8s ease-in-out infinite}
+.orbit-line-a{width:300px;height:300px}.orbit-line-b{width:470px;height:360px;transform:translate(-50%,-50%) rotate(28deg)}.orbit-line-c{width:660px;height:480px;transform:translate(-50%,-50%) rotate(-25deg)}
+.orbit-signal{position:absolute;z-index:3;padding:8px 12px;border:1px solid rgba(125,227,216,.22);border-radius:999px;background:rgba(7,18,25,.72);color:rgba(238,247,246,.8);font-size:12px;letter-spacing:.04em;animation:signalFloat 6s ease-in-out infinite}
+.s1{top:8%;left:35%}.s2{top:18%;right:12%;animation-delay:.8s}.s3{top:45%;right:0;animation-delay:1.4s}.s4{bottom:13%;right:17%;animation-delay:2s}.s5{bottom:3%;left:39%;animation-delay:2.6s}.s6{bottom:18%;left:9%;animation-delay:1.1s}.s7{top:46%;left:0;animation-delay:1.8s}.s8{top:18%;left:12%;animation-delay:2.4s}.s9{bottom:31%;right:37%;animation-delay:3s}
+@keyframes orbitPulse{0%,100%{opacity:.48;transform:translate(-50%,-50%) scale(.98)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.02)}}
+@keyframes signalFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.synthesis-close{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;font-family:var(--serif);font-style:italic;font-size:24px;color:rgba(238,247,246,.72)}
+.synthesis-close strong{font-style:normal;color:var(--teal-soft);font-weight:600}
+
+/* Mapa: wrapper recebe o PARALLAX (JS); img mantém a deriva (CSS) */
+.hero-map{
+  position:absolute;top:-6%;right:-10%;
+  width:min(1020px,92vw);
+  pointer-events:none;z-index:0;
+  opacity:.5;
+  filter:saturate(.9);
+  -webkit-mask-image:radial-gradient(ellipse 55% 58% at 55% 45%,#000 28%,transparent 74%);
+  mask-image:radial-gradient(ellipse 55% 58% at 55% 45%,#000 28%,transparent 74%);
+  will-change:transform;
+}
+.hero-map img{
+  width:100%;
+  animation:drift 22s ease-in-out infinite alternate;
+  will-change:transform;
+}
+.hero-surface{
+  position:absolute;z-index:1;right:-2%;top:27%;width:min(590px,47vw);
+  perspective:1200px;pointer-events:none;will-change:transform;
+}
+.hero-surface::before{content:"";position:absolute;inset:12% -8% -18%;border-radius:50%;background:rgba(45,212,191,.22);filter:blur(42px);transform:translateZ(-50px)}
+.hero-surface img{
+  position:relative;width:100%;border:1px solid rgba(255,255,255,.72);border-radius:18px;
+  box-shadow:0 42px 90px -30px rgba(9,35,44,.52),0 18px 30px -20px rgba(9,35,44,.3);
+  transform:rotateY(-14deg) rotateX(4deg) rotateZ(1deg);opacity:.8;
+  filter:saturate(.92) contrast(1.02);animation:surfaceFloat 9s ease-in-out infinite;
+}
+.hero-surface::after{content:"VISÃO GERAL · NEXUM";position:absolute;right:8%;bottom:-28px;padding:8px 13px;border:1px solid rgba(15,143,136,.22);border-radius:999px;background:rgba(255,255,255,.86);color:var(--teal-deep);font-size:10px;font-weight:700;letter-spacing:.14em;box-shadow:var(--shadow-sm)}
+@keyframes surfaceFloat{0%,100%{transform:rotateY(-14deg) rotateX(4deg) rotateZ(1deg) translate3d(0,0,0)}50%{transform:rotateY(-11deg) rotateX(3deg) rotateZ(1deg) translate3d(-8px,-12px,0)}}
+@keyframes mobileSurfaceFloat{0%,100%{transform:rotateY(-8deg) rotateX(2deg) rotateZ(1deg) translate3d(0,0,0)}50%{transform:rotateY(-6deg) rotateX(1deg) rotateZ(1deg) translate3d(-5px,-7px,0)}}
+@keyframes mobileMetricIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes drift{
+  from{transform:translate3d(0,0,0) scale(1)}
+  to{transform:translate3d(-16px,-22px,0) scale(1.04)}
+}
+/* Véu suave à esquerda para blindar a leitura do título */
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(90deg,var(--paper) 0%,rgba(255,255,255,.86) 26%,rgba(255,255,255,.35) 48%,transparent 68%);
+}
+@media (min-width:980px){
+  .hero::after{background:linear-gradient(90deg,var(--paper) 0%,rgba(255,255,255,.9) 24%,rgba(255,255,255,.4) 46%,transparent 64%)}
+}
+
+.hero-inner{position:relative;z-index:3;max-width:650px}
+.hero .eyebrow{margin-bottom:14px}
+.hero h1{margin-bottom:14px}
+.hero-sub{max-width:620px;font-size:17px;color:var(--ink-2);margin-bottom:18px}
+.hero-statement{
+  max-width:620px;margin-bottom:26px;padding:20px 26px;
+  background:rgba(227,242,240,.92);border-left:3px solid var(--teal);
+  border-radius:0 16px 16px 0;
+  font-family:var(--serif);font-style:italic;font-weight:600;
+  font-size:clamp(19px,2.4vw,24px);line-height:1.4;color:var(--ink);
+}
+.hero-statement b{color:var(--teal-deep);font-weight:700}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+
+.hero-metrics{
+  position:relative;z-index:3;overflow:hidden;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  margin-top:38px;border-radius:22px;color:#fff;
+  background:radial-gradient(620px 260px at 12% -20%,rgba(45,212,191,.20),transparent 60%),var(--navy);
+  box-shadow:0 34px 80px -38px rgba(13,34,49,.55);
+}
+.hero-metrics>div{padding:24px 26px;border-left:1px solid rgba(255,255,255,.10)}
+.hero-metrics>div:first-child{border-left:0}
+.hero-metrics b{display:block;font-family:var(--serif);font-weight:600;font-size:24px;line-height:1.1;margin-bottom:6px;color:#fff}
+.hero-metrics b i{font-style:italic;color:var(--teal-soft)}
+.hero-metrics span{font-size:12.5px;line-height:1.55;color:rgba(255,255,255,.62)}
+.duo .reveal:nth-child(2),.scen .reveal:nth-child(2){transition-delay:.12s}
+.cols.reveal{transition-delay:.08s}
+
+/* =========================================================
+   VITRINE DE FIGURA
+========================================================= */
+.figure{margin:0;position:relative}
+.media-tag{
+  position:absolute;top:-13px;left:26px;z-index:3;
+  background:var(--navy);color:#fff;
+  padding:7px 16px;border-radius:99px;
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  box-shadow:0 8px 20px -8px rgba(13,34,49,.5);
+}
+.media-tag.teal{background:var(--teal-deep)}
+.figure-frame{
+  border-radius:26px;overflow:hidden;background:#fff;
+  border:1px solid var(--hairline);box-shadow:var(--shadow-fig);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+}
+.figure-frame:hover{transform:translateY(-4px);box-shadow:0 38px 80px -34px rgba(15,45,52,.42),0 18px 38px -20px rgba(15,30,36,.2)}
+.figure-frame::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 20%,rgba(255,255,255,.22) 42%,transparent 58%);transform:translateX(-130%);transition:transform .7s var(--ease)}
+.figure-frame{position:relative}
+.figure-frame:hover::after{transform:translateX(130%)}
+.figure-frame img{width:100%}
+figcaption{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:15px;color:var(--ink-3);text-align:center}
+figcaption b{font-style:normal;font-weight:600;color:var(--teal);letter-spacing:.02em}
+
+/* ---------- Faixas de profundidade entre capítulos ---------- */
+.depth-band{
+  position:relative;isolation:isolate;min-height:360px;display:grid;place-items:center;
+  overflow:hidden;color:#fff;text-align:center;
+  background-color:var(--navy);background-image:linear-gradient(90deg,rgba(7,18,25,.9),rgba(9,48,57,.52)),url('mapa_02.png');
+  background-position:center;background-size:cover;background-attachment:fixed;
+}
+.depth-band::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 50% 44%,transparent 0 18%,rgba(6,17,23,.28) 72%)}
+.depth-band-content{width:min(calc(100% - 40px),760px);padding:60px 0}
+.depth-band .eyebrow{color:var(--teal-soft);justify-content:center}
+.depth-band .eyebrow i{color:var(--teal-soft)}
+.depth-band .eyebrow::after{background:rgba(255,255,255,.28)}
+.depth-band h2{margin-top:18px;color:#fff;text-wrap:balance}
+.depth-band p{max-width:600px;margin:18px auto 0;color:rgba(238,247,246,.72);font-size:16px}
+.depth-band .depth-index{display:block;margin-top:30px;color:var(--teal-soft);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.depth-band.alt{background-image:linear-gradient(90deg,rgba(7,18,25,.86),rgba(13,57,64,.58)),url('mapa.png');background-position:center 58%}
+
+/* ★ Figuras com parallax: fade via CSS, transform via JS */
+[data-parallax]{
+  opacity:0;
+  transition:opacity .9s var(--ease);
+  will-change:transform;
+}
+[data-parallax].is-visible{opacity:1}
+
+/* =========================================================
+   SEÇÕES / CAPÍTULOS
+========================================================= */
+.section{padding:110px 0}
+.bg-warm{background:var(--paper-warm)}
+.bg-teal{background:var(--paper-teal)}
+
+.chapter-head{max-width:840px;margin-bottom:52px}
+.chapter-head.center{margin-inline:auto;text-align:center}
+.chapter-head .eyebrow{margin-bottom:18px}
+.chapter-head .lead{font-size:17px;color:var(--ink-2);max-width:68ch}
+.chapter-head.center .lead{margin-inline:auto}
+.chapter-head .lead+.lead{margin-top:12px}
+
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;border-top:1.5px solid var(--hairline-2)}
+.cols>div{padding:26px 30px 0 0}
+.cols>div+div{border-left:1px solid var(--hairline);padding-left:30px}
+.cols .k{display:block;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:9px}
+.cols .k i{font-family:var(--serif);font-style:italic;font-size:16px;letter-spacing:0;text-transform:none;color:var(--teal);margin-right:6px}
+.cols p{font-size:14.5px;line-height:1.65;color:var(--ink-2)}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{padding:36px;border:1px solid var(--hairline);border-radius:26px;background:#fff;box-shadow:var(--shadow-sm)}
+.panel-navy{
+  background:radial-gradient(420px 220px at 85% -10%,rgba(45,212,191,.18),transparent 60%),var(--navy);
+  border-color:var(--navy);color:#fff;
+  box-shadow:0 34px 70px -34px rgba(13,34,49,.55);
+}
+.panel h3{margin-bottom:6px}
+.panel .sub{font-size:13px;color:var(--ink-3);margin-bottom:20px}
+.panel-navy .sub{color:rgba(255,255,255,.55)}
+.hairline-list{list-style:none;margin:0;padding:0}
+.hairline-list li{
+  display:flex;justify-content:space-between;gap:16px;align-items:center;
+  padding:13px 0;border-top:1px solid var(--hairline);
+  font-size:14.5px;color:var(--ink-2);
+}
+.hairline-list li:first-child{border-top:0;padding-top:0}
+.panel-navy .hairline-list li{border-color:rgba(255,255,255,.12);color:rgba(255,255,255,.85)}
+.hairline-list li::after{content:"";width:7px;height:7px;border-radius:50%;flex:none;background:var(--hairline-2)}
+.panel-navy .hairline-list li::after{background:var(--teal-soft);box-shadow:0 0 0 3px rgba(125,227,216,.15)}
+
+.note{max-width:760px;margin:50px auto 0;text-align:center;font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.55;color:var(--ink-2)}
+.note b{font-style:normal;color:var(--teal-deep);font-weight:600}
+
+/* =========================================================
+   ★ CARD DA REDE DE CORRETORES
+========================================================= */
+.ipd-card{
+  position:relative;overflow:hidden;
+  border-radius:32px;color:#fff;
+  padding:clamp(36px,5.5vw,68px);
+  background:
+    radial-gradient(900px 420px at 88% -20%,rgba(45,212,191,.24),transparent 62%),
+    radial-gradient(600px 300px at -10% 110%,rgba(59,130,246,.14),transparent 60%),
+    linear-gradient(120deg,#0a141b 0%,#0d2231 55%,#0d4a52 135%);
+  box-shadow:var(--shadow-deep);
+}
+.ipd-rings{position:absolute;inset:0;pointer-events:none;
+  -webkit-mask-image:radial-gradient(circle at 88% -10%,#000 25%,transparent 68%);
+  mask-image:radial-gradient(circle at 88% -10%,#000 25%,transparent 68%);
+}
+.ipd-rings i{position:absolute;top:0;right:0;transform:translate(38%,-38%);border:1px solid rgba(45,212,191,.16);border-radius:50%}
+.ipd-rings i:nth-child(1){width:480px;height:480px}
+.ipd-rings i:nth-child(2){width:760px;height:760px}
+.ipd-rings i:nth-child(3){width:1040px;height:1040px}
+.ipd-card-main{position:relative;z-index:1;display:flex;align-items:center;gap:clamp(24px,4vw,52px);flex-wrap:wrap}
+
+.ipd-count-block{flex:none;line-height:1}
+.ipd-count-eyebrow{
+  display:block;margin-bottom:12px;
+  font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--teal-soft);
+}
+.ipd-count .num{
+  display:inline-block;
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(76px,11vw,148px);
+  letter-spacing:-.03em;line-height:1;
+  background:linear-gradient(100deg,#ffffff 15%,#7de3d8 38%,#ffffff 52%,#5eead4 75%,#ffffff 90%);
+  background-size:220% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shimmer 5.5s linear infinite;
+  filter:drop-shadow(0 12px 34px rgba(45,212,191,.25));
+}
+@keyframes shimmer{to{background-position:-220% 0}}
+.ipd-card.done .ipd-count-block{animation:settle .55s var(--ease)}
+@keyframes settle{0%{transform:scale(1)}45%{transform:scale(1.03)}100%{transform:scale(1)}}
+
+.ipd-count-label{flex:1;min-width:240px}
+.ipd-count-label strong{
+  display:block;font-family:var(--serif);font-weight:600;
+  font-size:clamp(20px,2.6vw,27px);line-height:1.3;margin-bottom:10px;
+}
+.ipd-count-label strong em{font-style:italic;color:var(--teal-soft)}
+.ipd-count-label span{font-size:15px;line-height:1.65;color:rgba(238,247,246,.66);max-width:52ch;display:block}
+
+.ipd-card-strip{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  margin-top:clamp(30px,4vw,48px);padding-top:clamp(20px,3vw,30px);
+  border-top:1px solid rgba(255,255,255,.14);
+}
+.ipd-card-strip>div{padding-left:22px;border-left:1px solid rgba(255,255,255,.12)}
+.ipd-card-strip>div:first-child{padding-left:0;border-left:0}
+.ipd-card-strip b{
+  display:block;font-family:var(--serif);font-weight:700;
+  font-size:clamp(24px,3.2vw,34px);line-height:1.1;margin-bottom:5px;
+}
+.ipd-card-strip span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:rgba(238,247,246,.5)}
+
+.ipd-tickets{
+  position:relative;z-index:1;
+  margin-top:clamp(26px,3.5vw,40px);
+  padding-top:clamp(20px,3vw,28px);
+  border-top:1px solid rgba(255,255,255,.14);
+}
+.ipd-tickets h4{
+  font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:rgba(238,247,246,.5);margin:0 0 16px;
+}
+.ticket-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ticket-grid>div{
+  padding:16px 18px;border:1px solid rgba(255,255,255,.12);border-radius:14px;
+  background:rgba(255,255,255,.045);
+  transition:border-color .2s,background .2s;
+}
+.ticket-grid>div:hover{border-color:rgba(125,227,216,.4);background:rgba(255,255,255,.07)}
+.ticket-grid span{
+  display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  font-weight:600;color:rgba(238,247,246,.5);margin-bottom:7px;
+}
+.ticket-grid b{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(19px,2.2vw,25px);color:#fff;line-height:1.1;
+}
+
+.ipd-def{
+  display:grid;grid-template-columns:1fr 1fr;margin-top:28px;
+  border:1px solid var(--hairline);border-radius:28px;overflow:hidden;background:#fff;
+  box-shadow:var(--shadow-md);
+}
+.ipd-def>div{padding:42px 44px}
+.ipd-def>div+div{border-left:1px solid var(--hairline);background:var(--paper-teal)}
+.ipd-def h3{font-size:27px;margin-bottom:8px}
+.ipd-def h3 small{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-deep);display:block;margin-bottom:10px}
+.ipd-def p{font-size:14.5px;color:var(--ink-2);line-height:1.7}
+
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags span{
+  padding:11px 20px;border:1.5px solid var(--hairline-2);border-radius:999px;
+  font-size:13px;font-weight:600;color:var(--ink-2);background:#fff;
+  transition:border-color .2s,color .2s,transform .2s;
+}
+.tags span:hover{border-color:var(--teal);color:var(--teal-deep);transform:translateY(-2px)}
+
+/* Barras de absorção */
+.absorb{margin-top:52px;padding:34px 38px;border:1px solid var(--hairline);border-radius:24px;background:#fff;box-shadow:var(--shadow-sm)}
+.absorb h3{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:22px}
+.bar-row{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;margin-bottom:16px}
+.bar-row:last-of-type{margin-bottom:0}
+.bar-row .lab{font-size:13.5px;color:var(--ink-2)}
+.bar-row .lab b{color:var(--ink)}
+.bar-track{grid-column:1/-1;height:6px;border-radius:99px;background:var(--paper-warm);border:1px solid var(--hairline);overflow:hidden}
+.bar-track i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--teal),#0b6f92)}
+.bar-row .val{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--teal-deep)}
+.absorb .foot{margin-top:18px;font-size:12.5px;color:var(--ink-3)}
+
+/* Cenários */
+.scen{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:56px}
+.scen article{
+  padding:34px 36px;border:1px solid var(--hairline);border-radius:26px;background:#fff;
+  display:flex;gap:22px;align-items:flex-start;box-shadow:var(--shadow-sm);
+}
+.scen .letter{font-family:var(--serif);font-style:italic;font-weight:700;font-size:36px;color:var(--teal);line-height:1;flex:none;width:44px}
+.scen article.b .letter{color:#b45309}
+.scen h3{font-size:20px;margin-bottom:7px}
+.scen p{font-size:14px;color:var(--ink-2);line-height:1.65}
+
+/* Referências */
+.refs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);border:1px solid var(--hairline);border-radius:24px;overflow:hidden;margin-top:52px;box-shadow:var(--shadow-sm)}
+.refs>div{background:#fff;padding:24px 26px}
+.refs b{display:block;font-family:var(--serif);font-weight:700;font-size:20px;margin-bottom:3px;color:var(--navy)}
+.refs span{font-size:12.5px;color:var(--ink-3)}
+.refs>div:nth-child(6){background:var(--teal-mist)}
+.refs>div:nth-child(6) b{color:var(--teal-deep)}
+
+/* Marquee */
+.marquee{
+  overflow:hidden;border-block:1.5px solid var(--hairline-2);background:#fff;
+  padding:20px 0;margin-top:60px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
+}
+.marquee-track{display:flex;gap:52px;width:max-content;animation:scrollX 36s linear infinite}
+.marquee-track span{display:flex;align-items:center;gap:52px;white-space:nowrap;font-family:var(--serif);font-style:italic;font-size:16px;color:var(--ink-3)}
+.marquee-track span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal-bright);flex:none}
+@keyframes scrollX{to{transform:translateX(-50%)}}
+
+/* Troca de pergunta */
+.shift{padding:110px 0;text-align:center;background:var(--paper-warm)}
+.shift .eyebrow{margin-bottom:36px}
+.q-before{font-family:var(--serif);font-size:clamp(19px,2.8vw,27px);color:var(--ink-3);margin-bottom:24px}
+.q-before s{text-decoration-color:rgba(15,143,136,.55);text-decoration-thickness:1.5px}
+.shift-arrow{width:1.5px;height:50px;background:var(--hairline-2);margin:0 auto 24px;position:relative}
+.shift-arrow::after{
+  content:"";position:absolute;bottom:0;left:50%;
+  width:8px;height:8px;border-left:1.5px solid var(--teal);border-bottom:1.5px solid var(--teal);
+  transform:translateX(-50%) rotate(-45deg);
+}
+.q-after{
+  font-family:var(--serif);font-style:italic;font-weight:600;
+  font-size:clamp(26px,4.4vw,48px);line-height:1.24;
+  color:var(--ink);max-width:840px;margin:0 auto;
+}
+.q-after b{color:var(--teal);font-weight:700}
+.shift-echo{
+  margin:44px auto 0;max-width:640px;
+  padding-top:34px;border-top:1px solid var(--hairline-2);
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(19px,2.6vw,25px);line-height:1.45;color:var(--ink-2);
+}
+.shift-echo b{font-style:normal;color:var(--teal-deep);font-weight:700}
+
+/* CTA final */
+.cta-section{padding:96px 0 110px;background:var(--paper-warm)}
+.cta-panel{
+  position:relative;overflow:hidden;text-align:center;
+  padding:clamp(52px,7vw,96px) clamp(22px,5vw,84px);
+  border-radius:36px;color:#eef7f6;
+  background:radial-gradient(900px 420px at 50% -10%,rgba(45,212,191,.20),transparent 60%),var(--header-grad);
+  box-shadow:var(--shadow-deep);
+}
+.cta-rings{position:absolute;inset:0;pointer-events:none;
+  -webkit-mask-image:radial-gradient(circle at 50% 0%,#000 30%,transparent 72%);
+  mask-image:radial-gradient(circle at 50% 0%,#000 30%,transparent 72%);
+}
+.cta-rings i{position:absolute;left:50%;top:0;transform:translateX(-50%);border:1px solid rgba(45,212,191,.15);border-radius:50%}
+.cta-rings i:nth-child(1){width:520px;height:520px}
+.cta-rings i:nth-child(2){width:860px;height:860px}
+.cta-rings i:nth-child(3){width:1200px;height:1200px}
+.cta-logo{width:170px;margin:0 auto 30px;mix-blend-mode:screen}
+.cta-panel .eyebrow{color:var(--teal-soft);margin-bottom:22px}
+.cta-panel .eyebrow i{color:var(--teal-soft)}
+.cta-panel .eyebrow::after{background:rgba(238,247,246,.22)}
+.cta-panel h2{font-size:clamp(30px,4.4vw,52px);color:#fff;margin-bottom:18px}
+.cta-panel h2 em{font-style:italic;color:var(--teal-soft)}
+.cta-panel p{max-width:580px;margin:0 auto 38px;color:rgba(238,247,246,.68);font-size:16.5px}
+.cta-phone{margin-top:26px;font-size:13.5px;color:rgba(238,247,246,.5)}
+.cta-phone b{color:var(--teal-soft);font-weight:600}
+
+/* Footer */
+footer{background:#0a1218;color:rgba(255,255,255,.55)}
+.footer-inner{padding:40px 0;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.footer-left{display:flex;align-items:center;gap:18px}
+.footer-left img{width:86px;mix-blend-mode:screen}
+.footer-tag{font-family:var(--serif);font-style:italic;font-size:15px;color:rgba(255,255,255,.55)}
+.footer-right{font-size:13px;text-align:right}
+.footer-right a{display:inline-flex;align-items:center;min-height:48px;color:var(--teal-soft);font-weight:600}
+.footer-right a:hover{text-decoration:underline}
+.footer-right small{display:block;margin-top:2px;font-size:12px;color:rgba(255,255,255,.35)}
+
+/* WhatsApp flutuante */
+.wa-float{
+  position:fixed;right:20px;bottom:20px;z-index:90;
+  width:60px;height:60px;border-radius:50%;background:#25d366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 14px 34px rgba(37,211,102,.45);transition:transform .2s var(--ease);
+}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(37,211,102,.55);animation:ping 2.4s infinite}
+@keyframes ping{0%{transform:scale(1);opacity:.7}80%,100%{transform:scale(1.55);opacity:0}}
+
+/* Reveal (elementos SEM parallax) */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.is-visible{opacity:1;transform:none}
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+@media (min-width:640px){
+  .container{width:min(calc(100% - 48px),var(--container))}
+}
+@media (min-width:980px){
+  .container{width:min(calc(100% - 72px),var(--container))}
+  .section{padding:124px 0}
+  .hero{padding:58px 0 62px}
+  .hero-dark{min-height:620px}
+  .hero h1{max-width:620px}
+}
+@media (max-width:920px){
+  .nav a{padding:0 8px;font-size:12.5px}
+  .nav{gap:2px}
+  .brand img{width:84px}
+  .header-cta{padding:0 14px}
+}
+
+/* ---------- MOBILE < 768px ---------- */
+@media (max-width:767px){
+  :root{--header-h:56px}
+  .nav{display:none}
+  .header-cta{display:none}
+  .menu-btn{display:inline-flex}
+  .brand img{width:82px}
+
+  .hero{padding:42px 0 44px}
+  .hero-dark{min-height:0;align-items:flex-start;padding-bottom:54px}
+  .hero.hero-dark::after{background:linear-gradient(180deg,rgba(7,17,24,.98) 0%,rgba(7,17,24,.9) 62%,rgba(7,17,24,.76) 100%)}
+  .hero-dark .hero-sub{color:rgba(238,247,246,.86)}
+  .hero-map{top:-4%;right:-38%;width:150vw;opacity:.26}
+  .hero-surface{top:48%;right:-36%;width:126vw;opacity:.2}
+  .hero-surface img{transform:rotateY(-8deg) rotateX(2deg) rotateZ(1deg);animation:mobileSurfaceFloat 7s ease-in-out infinite}
+  .hero-surface::after{right:25%;bottom:-24px;font-size:8px}
+  .hero .eyebrow{margin-bottom:10px;font-size:10px}
+  .hero .eyebrow i{font-size:15px}
+  .hero h1{font-size:27px;line-height:1.12;margin-bottom:12px;letter-spacing:-.015em}
+  .hero-sub{font-size:15px;line-height:1.6;margin-bottom:16px;max-width:100%}
+  .hero-statement{font-size:17.5px;padding:14px 18px;margin-bottom:20px}
+  .hero-actions{gap:10px}
+  .hero-actions .btn{width:100%}
+  .hero-actions .btn-text{border-bottom:0;min-height:48px}
+
+  .hero-metrics{margin-top:28px;grid-template-columns:1fr 1fr;border-radius:18px}
+  .hero-metrics>div{padding:16px 18px}
+  .hero-metrics>div:nth-child(odd){border-left:0}
+  .hero-metrics>div:nth-child(3),.hero-metrics>div:nth-child(4){border-top:1px solid rgba(255,255,255,.10)}
+  .hero-metrics b{font-size:18px}
+  .hero-metrics span{font-size:11.5px}
+  .evidence-inner{grid-template-columns:1fr 1fr;gap:20px 0;padding:24px 0}
+  .evidence-inner>div{padding:0 16px;border-left:1px solid var(--hairline)}
+  .evidence-inner>div:nth-child(odd){border-left:0;padding-left:0}
+  .evidence-inner>div:nth-child(n+3){padding-top:18px;border-top:1px solid var(--hairline)}
+  .evidence-inner b{font-size:20px}
+  .evidence-inner span{font-size:10.5px}
+  .arrival-figure{padding:48px 0 70px}
+  .context-line{gap:8px;font-size:16px;flex-wrap:wrap;margin-top:38px}
+  .context-line i{width:18px}
+  .context-synthesis{padding:76px 0 84px}
+  .signal-orbit{height:430px;margin-top:20px}
+  .orbit-core{width:126px;height:126px;margin:-63px;font-size:11px}
+  .orbit-line-a{width:210px;height:210px}.orbit-line-b{width:330px;height:250px}.orbit-line-c{width:460px;height:340px}
+  .orbit-signal{padding:6px 8px;font-size:9px}
+  .s1{top:4%;left:28%}.s2{top:18%;right:0}.s3{top:43%;right:-2%}.s4{bottom:13%;right:3%}.s5{bottom:0;left:31%}.s6{bottom:18%;left:0}.s7{top:44%;left:-2%}.s8{top:18%;left:0}.s9{bottom:30%;right:31%}
+  .synthesis-close{font-size:19px}
+  .hero-metrics.is-visible>div{animation:mobileMetricIn .65s var(--ease) both}
+  .hero-metrics.is-visible>div:nth-child(2){animation-delay:.08s}
+  .hero-metrics.is-visible>div:nth-child(3){animation-delay:.16s}
+  .hero-metrics.is-visible>div:nth-child(4){animation-delay:.24s}
+  .figure-frame:active{transform:scale(.985)}
+
+  .section{padding:72px 0}
+  .chapter-head{margin-bottom:36px}
+  .chapter-head .lead{font-size:15.5px}
+
+  .figure{margin-top:10px}
+  .media-tag{left:18px;font-size:10px;padding:6px 13px}
+  .figure-frame{border-radius:18px}
+  figcaption{font-size:13.5px;margin-top:12px;padding:0 8px}
+
+  .ipd-card{border-radius:24px}
+  .ipd-card-main{flex-direction:column;align-items:flex-start;gap:16px}
+  .ipd-count .num{font-size:64px}
+  .ipd-count-eyebrow{margin-bottom:8px;font-size:10px}
+  .ipd-count-label strong{font-size:19px}
+  .ipd-count-label span{font-size:14px}
+  .ipd-card-strip{grid-template-columns:1fr 1fr 1fr;gap:0}
+  .ipd-card-strip>div{padding-left:14px}
+  .ipd-card-strip>div:first-child{padding-left:0}
+  .ipd-card-strip b{font-size:21px}
+  .ipd-card-strip span{font-size:9.5px;letter-spacing:.05em}
+
+  .ipd-tickets h4{margin-bottom:12px}
+  .ticket-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .ticket-grid>div{padding:13px 14px}
+  .ticket-grid b{font-size:18px}
+
+  .ipd-def{grid-template-columns:1fr}
+  .ipd-def>div{padding:28px 26px}
+  .ipd-def>div+div{border-left:0;border-top:1px solid var(--hairline)}
+
+  .duo,.scen{grid-template-columns:1fr;gap:16px}
+  .panel{padding:26px 24px}
+  .scen article{padding:24px 22px;gap:16px}
+  .scen .letter{font-size:30px;width:36px}
+
+  .cols{grid-template-columns:1fr;margin-top:40px;border-top-width:1.5px}
+  .cols>div{padding:18px 0 0;border-left:0!important}
+  .cols>div+div{border-top:1px solid var(--hairline);margin-top:18px}
+
+  .tags span{padding:12px 16px;min-height:44px;display:inline-flex;align-items:center}
+
+  .absorb{padding:24px 20px;margin-top:36px}
+  .bar-row{grid-template-columns:1fr auto;gap:10px}
+  .bar-row .val{font-size:15px}
+
+  .refs{grid-template-columns:1fr 1fr;margin-top:36px;border-radius:18px}
+  .refs>div{padding:18px}
+
+  .note{font-size:17px;margin-top:36px}
+  .shift{padding:80px 0}
+  .q-after{font-size:24px}
+  .shift-echo{font-size:17.5px;margin-top:34px}
+  .cta-section{padding:64px 0 76px}
+  .cta-logo{width:140px}
+  .cta-panel p{font-size:15px}
+  .cta-panel .btn{width:100%}
+
+  footer .footer-inner{padding:30px 0}
+  .footer-right{text-align:left}
+}
+
+@media (max-width:400px){
+  .hero h1{font-size:24px}
+  .refs{grid-template-columns:1fr}
+  .ipd-count .num{font-size:56px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  [data-parallax]{opacity:1;transition:none}
+  .hero-map img,.wa-float::before,.marquee-track,
+  .panel-navy .hairline-list li::after,.ipd-count .num{animation:none}
+  .ipd-count .num{background:linear-gradient(100deg,#fff,#7de3d8);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .figure-frame,.tags span,.btn,.header-cta,.drawer,.drawer-backdrop{transition:none}
+  .hero-surface img,.orbit-line,.orbit-signal{animation:none}
+}
+@media (max-width:767px){
+  .depth-band{min-height:300px;background-attachment:scroll;background-position:center}
+  .depth-band-content{padding:44px 0}
+  .depth-band h2{font-size:30px}
+  .depth-band p{font-size:14.5px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="scroll-progress" aria-hidden="true"><i id="scrollProgress"></i></div>
+
+<!-- =======================================================
+     HEADER
+======================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand" aria-label="NEXUM — início">
+      <img src="nexum-logo.png" alt="NEXUM — Radar Imobiliário" />
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#inicio">Início</a>
+      <a href="#nexum">O Nexum</a>
+      <a href="#territorio">Território</a>
+      <a href="#performance">Indicadores</a>
+      <a href="#reajustes">Reajustes</a>
+      <a href="#movimento">Movimento</a>
+    </nav>
+    <a class="header-cta js-wa" href="#">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.7 9.7 0 0 1-4.94-1.35l-.35-.21-3.67.96.98-3.58-.23-.37a9.66 9.66 0 0 1-1.48-5.16c0-5.35 4.35-9.7 9.71-9.7a9.63 9.63 0 0 1 6.86 2.85 9.63 9.63 0 0 1 2.84 6.86c0 5.35-4.36 9.7-9.71 9.7zm8.26-17.96A11.52 11.52 0 0 0 12.04.5C5.8.5.72 5.58.72 11.81c0 2 .52 3.95 1.51 5.68L.6 23.5l6.15-1.61a11.3 11.3 0 0 0 5.29 1.35h.01c6.23 0 11.31-5.08 11.31-11.31 0-3.02-1.18-5.86-3.32-8z"/></svg>
+      Fale conosco
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Drawer mobile -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Menu de navegação">
+  <div class="drawer-head">
+    <img src="nexum-logo.png" alt="NEXUM" class="drawer-logo" />
+    <button class="drawer-close" id="drawerClose" aria-label="Fechar menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="#inicio">Início</a>
+    <a href="#nexum">O Nexum</a>
+    <a href="#territorio">Território</a>
+    <a href="#performance">Indicadores</a>
+    <a href="#reajustes">Reajustes</a>
+    <a href="#movimento">Movimento</a>
+  </nav>
+  <div class="drawer-foot">
+    <a class="drawer-cta js-wa" href="#">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.7 9.7 0 0 1-4.94-1.35l-.35-.21-3.67.96.98-3.58-.23-.37a9.66 9.66 0 0 1-1.48-5.16c0-5.35 4.35-9.7 9.71-9.7a9.63 9.63 0 0 1 6.86 2.85 9.63 9.63 0 0 1 2.84 6.86c0 5.35-4.36 9.7-9.71 9.7zm8.26-17.96A11.52 11.52 0 0 0 12.04.5C5.8.5.72 5.58.72 11.81c0 2 .52 3.95 1.51 5.68L.6 23.5l6.15-1.61a11.3 11.3 0 0 0 5.29 1.35h.01c6.23 0 11.31-5.08 11.31-11.31 0-3.02-1.18-5.86-3.32-8z"/></svg>
+      Falar no WhatsApp
+    </a>
+    <p class="drawer-phone">(82) 98145-7117</p>
+  </div>
+</aside>
+
+<main>
+
+  <!-- =====================================================
+       HERO — mapa ao fundo (parallax) + métricas
+  ====================================================== -->
+  <section class="hero hero-dark" id="inicio">
+    <div class="hero-map" id="heroMap" aria-hidden="true">
+      <img src="mapa03.png" alt="" loading="eager" />
+    </div>
+    <div class="hero-surface" id="heroSurface" aria-hidden="true">
+      <img src="01.png" alt="" loading="eager" />
+    </div>
+
+    <div class="container">
+      <div class="hero-inner reveal">
+        <span class="eyebrow"><i>NEXUM</i> Radar Imobiliário</span>
+        <h1>O mercado em uma só <em class="acc">leitura.</em></h1>
+        <p class="hero-sub">
+          O NEXUM conecta empreendimentos, estoque, vendas, preços, demanda, oferta
+          e movimentação dos corretores para colocar cada empreendimento dentro do
+          cenário real do mercado.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-navy js-wa" href="#">
+            Agendar uma apresentação
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-text" href="#nexum">Conhecer o NEXUM ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="evidence-strip" aria-label="Sinais que compõem o radar">
+    <div class="container evidence-inner reveal">
+      <div><b>14.048</b><span>registros validados na rede de corretores alimentam o radar</span></div>
+      <div><b>IPD · IPO</b><span>pressão de demanda e oferta organizada no território</span></div>
+      <div><b>IVV · VSO</b><span>velocidade de vendas e absorção, com contexto de mercado</span></div>
+      <div><b>Índice NEXUM</b><span>INCC, CUB, IPCA, IGP-M, FipeZap e a carteira</span></div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FIG. 01 — emerge em parallax
+  ====================================================== -->
+  <section class="arrival-figure">
+    <div class="container">
+      <figure class="figure" data-parallax="0.26">
+        <span class="media-tag">Visão geral</span>
+        <div class="figure-frame">
+          <img src="01.png" alt="Visão inicial do NEXUM — Radar Imobiliário" fetchpriority="high" />
+        </div>
+        <figcaption><b>Fig. 01</b> — A plataforma reúne o mercado em uma só leitura.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="depth-band" aria-label="Transição para a inteligência territorial">
+    <div class="depth-band-content reveal">
+      <span class="eyebrow"><i>Entre os dados</i> e a decisão</span>
+      <h2>O contexto aparece quando o mercado começa a se mover.</h2>
+      <p>Uma leitura mais profunda combina território, estoque e comportamento comercial em uma mesma perspectiva.</p>
+      <span class="depth-index">NEXUM · inteligência que atravessa a tela</span>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       01 · O NEXUM — o problema que resolve
+  ====================================================== -->
+  <section class="section bg-warm" id="nexum">
+    <div class="container">
+
+      <div class="chapter-head center reveal">
+        <span class="eyebrow"><i>01</i> A camada de contexto</span>
+        <h2>O NEXUM acrescenta a leitura do mercado que acontece ao redor dos seus números.</h2>
+        <p class="lead" style="margin-top:16px">
+          Uma incorporadora conhece profundamente sua operação. O NEXUM relaciona esse conhecimento
+          ao território, aos empreendimentos próximos e ao movimento que dá sentido a cada indicador.
+        </p>
+      </div>
+
+      <div class="context-line reveal">
+        <span>Empreendimento</span><i></i><span>Território</span><i></i><span>Mercado</span><i></i><span>Movimento</span>
+      </div>
+
+      <p class="note reveal">O NEXUM não substitui a leitura interna. Ele acrescenta a camada externa que posiciona <b>cada número no mercado em que ele acontece.</b></p>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       02 · A CARTEIRA
+  ====================================================== -->
+  <section class="section" id="carteira">
+    <div class="container">
+
+      <div class="chapter-head reveal">
+        <span class="eyebrow"><i>02</i> Base estruturada</span>
+        <h2>O radar começa antes do mapa.</h2>
+        <p class="lead" style="margin-top:16px">Empreendimentos, estoque, vendas, preços, segmentos, localização e histórico organizados em uma mesma base de leitura.</p>
+      </div>
+
+      <figure class="figure" data-parallax="0.07">
+        <span class="media-tag">Empreendimentos</span>
+        <div class="figure-frame">
+          <img src="02.png" alt="Carteira de empreendimentos cadastrada no NEXUM" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 02</b> — Carteira, estoque e performance em uma única visão.</figcaption>
+      </figure>
+
+      <p class="note reveal">Uma base comum torna possível comparar produtos diferentes sem perder <b>a história de cada empreendimento.</b></p>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       03 · TERRITÓRIO
+  ====================================================== -->
+  <section class="section bg-teal" id="territorio">
+    <div class="container">
+
+      <div class="chapter-head center reveal">
+        <span class="eyebrow"><i>03</i> Inteligência territorial</span>
+        <h2>Não basta saber onde está o empreendimento. <em class="acc">É preciso entender o que existe ao redor.</em></h2>
+        <p class="lead" style="margin-top:16px">
+          Concorrentes, estoque, oferta, demanda e velocidade de vendas podem ser analisados dentro de uma área de influência.
+        </p>
+      </div>
+
+      <figure class="figure" data-parallax="0.07">
+        <span class="media-tag teal">Mapa · Raio de influência</span>
+        <div class="figure-frame">
+          <img src="04.png" alt="Mapa do NEXUM com raio de influência e análise do entorno" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 03</b> — Mapa, raio de influência e leitura territorial do mercado.</figcaption>
+      </figure>
+
+      <p class="note reveal">Um empreendimento não compete com a cidade inteira. Compete com <b>o mercado que existe ao seu redor.</b></p>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       04 · REDE DE CORRETORES
+  ====================================================== -->
+  <section class="section" id="ipd">
+    <div class="container">
+
+      <div class="chapter-head reveal">
+        <span class="eyebrow"><i>04</i> Rede de corretores</span>
+        <h2>O mercado tem outra camada. <em class="acc">Onde a força de vendas está se movendo?</em></h2>
+      </div>
+
+      <div class="ipd-card reveal" id="ipdCard">
+        <div class="ipd-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+
+        <div class="ipd-card-main">
+          <div class="ipd-count-block">
+            <span class="ipd-count-eyebrow">Total · registros no recorte</span>
+            <div class="ipd-count" aria-label="14.048 registros no recorte">
+              <span class="num" data-count="14048">0</span>
+            </div>
+          </div>
+          <div class="ipd-count-label">
+            <strong>14.048 registros validados na rede de corretores <em>alimentam o radar.</em></strong>
+            <span>
+              Esses registros revelam sinais de procura, oferta, localização e deslocamento da atividade comercial no território.
+            </span>
+          </div>
+        </div>
+
+        <div class="ipd-card-strip">
+          <div><b>10.295</b><span>Oferta · registros no recorte</span></div>
+          <div><b>3.694</b><span>Demanda · registros no recorte</span></div>
+          <div><b>32</b><span>Bairros monitorados</span></div>
+        </div>
+
+        <div class="ipd-tickets">
+          <h4>Ticket médio observado na rede</h4>
+          <div class="ticket-grid">
+            <div><span>Vendas · Oferta</span><b>R$ 339.222</b></div>
+            <div><span>Compras · Demanda</span><b>R$ 260.978</b></div>
+            <div><span>Locação · Oferta</span><b>R$ 1.758</b></div>
+            <div><span>Locação · Demanda</span><b>R$ 1.557</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ipd-def reveal">
+        <div>
+          <h3><small>Índice · Pressão de Demanda</small>IPD</h3>
+          <p>Onde a procura concentra força e como essa pressão se distribui no território.</p>
+        </div>
+        <div>
+          <h3><small>Índice · Pressão de Oferta</small>IPO</h3>
+          <p>Onde a oferta se movimenta e como ela se relaciona ao estoque disponível.</p>
+        </div>
+      </div>
+
+      <div class="tags reveal" style="margin-top:26px;justify-content:center">
+        <span>Onde os corretores estão atuando</span>
+        <span>Onde há clientes procurando imóveis</span>
+        <span>Quais regiões concentram demanda</span>
+        <span>Onde há oferta sendo movimentada</span>
+        <span>Onde esses sinais crescem ou recuam</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       05 · INDICADORES
+  ====================================================== -->
+  <section class="section bg-warm" id="performance">
+    <div class="container">
+
+      <div class="chapter-head reveal">
+        <span class="eyebrow"><i>05</i> Velocidade de vendas</span>
+        <h2>Vender 10 unidades diz pouco sem saber <em class="acc">o que acontece ao redor.</em></h2>
+        <p class="lead" style="margin-top:16px">
+          IVV e VSO ganham outra leitura quando relacionados a estoque, idade do empreendimento, concorrentes, região e demanda.
+        </p>
+      </div>
+
+      <figure class="figure" data-parallax="0.07">
+        <span class="media-tag">Indicadores · IVV &amp; VSO</span>
+        <div class="figure-frame">
+          <img src="05.png" alt="Indicadores de desempenho e velocidade de vendas do NEXUM" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 04</b> — Velocidade de vendas observada dentro do mercado ao redor.</figcaption>
+      </figure>
+
+      <div class="cols reveal">
+        <div>
+          <span class="k"><i>a.</i> IVV</span>
+          <p>Velocidade média de vendas em unidades por período — o ritmo de cada empreendimento.</p>
+        </div>
+        <div>
+          <span class="k"><i>b.</i> VSO</span>
+          <p>Relação entre vendas e estoque disponível. Permite comparar empreendimentos de tamanhos diferentes.</p>
+        </div>
+        <div>
+          <span class="k"><i>c.</i> Comparação</span>
+          <p>O desempenho é sempre observado diante do comportamento do mercado ao redor.</p>
+        </div>
+      </div>
+
+      <div class="absorb reveal">
+        <h3>O mesmo volume pode representar ritmos diferentes</h3>
+        <div class="bar-row">
+          <span class="lab"><b>10 vendas</b> em empreendimento com 50 unidades disponíveis</span>
+          <span class="val">20% de absorção</span>
+          <span class="bar-track"><i style="width:62%"></i></span>
+        </div>
+        <div class="bar-row">
+          <span class="lab"><b>10 vendas</b> em empreendimento com 100 unidades disponíveis</span>
+          <span class="val">10% de absorção</span>
+          <span class="bar-track"><i style="width:31%;opacity:.65"></i></span>
+        </div>
+        <p class="foot">O VSO relaciona vendas e estoque para tornar ritmos diferentes comparáveis.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       06 · CENÁRIO DE ABSORÇÃO
+  ====================================================== -->
+  <section class="section" id="cenarios">
+    <div class="container">
+
+      <div class="chapter-head center reveal">
+        <span class="eyebrow"><i>06</i> Cenário de absorção</span>
+        <h2>O IVV atual não conta sozinho <em class="acc">a história do estoque.</em></h2>
+        <p class="lead" style="margin-top:16px">
+          Um ritmo observado hoje não precisa permanecer constante durante toda a vida comercial do empreendimento.
+        </p>
+      </div>
+
+      <div class="scen">
+        <article class="reveal">
+          <span class="letter">A</span>
+          <div>
+            <h3>IVV fixo</h3>
+            <p>O IVV atual se mantém ao longo do tempo até o fim do estoque — a linha reta da continuidade.</p>
+          </div>
+        </article>
+        <article class="b reveal">
+          <span class="letter">B</span>
+          <div>
+            <h3>IVV projetado</h3>
+            <p>A velocidade desacelera progressivamente conforme o empreendimento amadurece.</p>
+          </div>
+        </article>
+      </div>
+
+      <figure class="figure" data-parallax="0.07">
+        <span class="media-tag teal">Projeção de absorção</span>
+        <div class="figure-frame">
+          <img src="08.png" alt="Projeção de absorção comparando IVV fixo e IVV projetado com desaceleração" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 05</b> — IVV fixo × IVV com desaceleração progressiva.</figcaption>
+      </figure>
+
+      <p class="note reveal">
+        A leitura coloca lado a lado <b>IVV atual, IVV projetado e estoque remanescente</b> para dimensionar cenários de absorção.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       07 · REAJUSTES
+  ====================================================== -->
+  <section class="section bg-warm" id="reajustes">
+    <div class="container">
+
+      <div class="chapter-head reveal">
+        <span class="eyebrow"><i>07</i> Pressão econômica e de mercado</span>
+        <h2>O reajuste da tabela também é <em class="acc">um movimento de mercado.</em></h2>
+        <p class="lead" style="margin-top:16px">
+          O NEXUM coloca lado a lado custo de obra, pressão econômica, referências imobiliárias e os reajustes efetivamente praticados na carteira.
+        </p>
+      </div>
+
+      <figure class="figure" data-parallax="0.07">
+        <span class="media-tag">Índice NEXUM</span>
+        <div class="figure-frame">
+          <img src="06.png" alt="Janela de indicadores econômicos e referências de reajuste do NEXUM" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 06</b> — Índice NEXUM: custo e pressão econômica sobre o reajuste.</figcaption>
+      </figure>
+
+      <div class="refs reveal">
+        <div><b>INCC</b><span>Custo da construção</span></div>
+        <div><b>CUB</b><span>Custo unitário básico</span></div>
+        <div><b>IPCA</b><span>Inflação</span></div>
+        <div><b>IGP-M</b><span>Referência econômica</span></div>
+        <div><b>FipeZap</b><span>Referência imobiliária</span></div>
+        <div><b>NEXUM</b><span>Comportamento da sua carteira</span></div>
+      </div>
+
+      <p class="note reveal">
+        Não existe um "preço correto" isolado. Existe uma <b>referência contextual</b> para observar como o reajuste praticado se posiciona.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       08 · MOVIMENTO
+  ====================================================== -->
+  <section class="section" id="movimento">
+    <div class="container">
+
+      <div class="chapter-head center reveal">
+        <span class="eyebrow"><i>08</i> Mercado em movimento</span>
+        <h2>O mercado não é uma fotografia. <em class="acc">É movimento.</em></h2>
+        <p class="lead" style="margin-top:16px">
+          Oferta muda. Demanda muda. Corretores mudam de direção. Empreendimentos aceleram e desaceleram. Preços se movimentam.
+        </p>
+      </div>
+
+      <figure class="figure" data-parallax="0.07">
+        <span class="media-tag teal">Rede de corretores · Timeline</span>
+        <div class="figure-frame">
+          <img src="07.png" alt="Timeline de mercado do NEXUM: operações ao longo do tempo" loading="lazy" />
+        </div>
+        <figcaption><b>Fig. 07</b> — Demanda, oferta, vendas e locação ao longo do tempo.</figcaption>
+      </figure>
+
+      <div class="cols reveal">
+        <div>
+          <span class="k"><i>a.</i> Histórico</span>
+          <p>O histórico mostra como o mercado chegou até aqui.</p>
+        </div>
+        <div>
+          <span class="k"><i>b.</i> Padrões</span>
+          <p>Ritmos, ciclos e mudanças de rota ficam visíveis.</p>
+        </div>
+        <div>
+          <span class="k"><i>c.</i> Direção</span>
+          <p>A trajetória ajuda a observar para onde os sinais se deslocam.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="marquee reveal" aria-hidden="true">
+      <div class="marquee-track">
+        <span>O mercado imobiliário não é estático</span><span>Empreendimentos entram e saem</span><span>Estoques mudam</span><span>Velocidades aceleram e desaceleram</span><span>Corretores mudam de região</span><span>A demanda se desloca</span><span>Os preços se ajustam</span>
+        <span>O mercado imobiliário não é estático</span><span>Empreendimentos entram e saem</span><span>Estoques mudam</span><span>Velocidades aceleram e desaceleram</span><span>Corretores mudam de região</span><span>A demanda se desloca</span><span>Os preços se ajustam</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="context-synthesis">
+    <div class="container">
+      <div class="chapter-head center reveal">
+        <span class="eyebrow"><i>Síntese</i> A leitura do mercado</span>
+        <h2>O NEXUM <em class="acc">mostra o contexto.</em></h2>
+        <p class="lead">Não são indicadores isolados. É a relação entre eles.</p>
+      </div>
+      <div class="signal-orbit reveal" aria-label="Relação entre os sinais do NEXUM">
+        <div class="orbit-line orbit-line-a"></div><div class="orbit-line orbit-line-b"></div><div class="orbit-line orbit-line-c"></div>
+        <div class="orbit-core">EMPREENDIMENTO</div>
+        <span class="orbit-signal s1">Concorrência</span><span class="orbit-signal s2">Estoque</span><span class="orbit-signal s3">IVV · VSO</span>
+        <span class="orbit-signal s4">Oferta</span><span class="orbit-signal s5">Demanda</span><span class="orbit-signal s6">Corretores</span>
+        <span class="orbit-signal s7">Território</span><span class="orbit-signal s8">Preços</span><span class="orbit-signal s9">Tempo</span>
+      </div>
+      <div class="synthesis-close reveal">
+        <strong>O NEXUM conecta os sinais.</strong>
+        <span>É dessa sobreposição que surge a leitura do mercado.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       CTA FINAL
+  ====================================================== -->
+  <section class="cta-section" id="contato">
+    <div class="container">
+      <div class="cta-panel reveal">
+        <div class="cta-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img class="cta-logo" src="nexum-logo.png" alt="NEXUM — Radar Imobiliário" loading="lazy" />
+        <span class="eyebrow"><i>NEXUM</i> Radar Imobiliário</span>
+        <h2>O mercado em uma só <em>leitura.</em></h2>
+        <p>
+          Conheça como o NEXUM posiciona seus empreendimentos dentro do mercado que acontece ao redor deles.
+        </p>
+        <a class="btn btn-light js-wa" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.7 9.7 0 0 1-4.94-1.35l-.35-.21-3.67.96.98-3.58-.23-.37a9.66 9.66 0 0 1-1.48-5.16c0-5.35 4.35-9.7 9.71-9.7a9.63 9.63 0 0 1 6.86 2.85 9.63 9.63 0 0 1 2.84 6.86c0 5.35-4.36 9.7-9.71 9.7zm8.26-17.96A11.52 11.52 0 0 0 12.04.5C5.8.5.72 5.58.72 11.81c0 2 .52 3.95 1.51 5.68L.6 23.5l6.15-1.61a11.3 11.3 0 0 0 5.29 1.35h.01c6.23 0 11.31-5.08 11.31-11.31 0-3.02-1.18-5.86-3.32-8z"/></svg>
+          Agendar uma apresentação
+        </a>
+        <p class="cta-phone">Atendimento direto com Ericson Tenório · WhatsApp <b>(82) 98145-7117</b></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =======================================================
+     FOOTER
+======================================================== -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img src="nexum-logo.png" alt="NEXUM — Radar Imobiliário" />
+      <span class="footer-tag">O mercado em uma só leitura.</span>
+    </div>
+    <div class="footer-right">
+      <a class="js-wa" href="#">(82) 98145-7117 · WhatsApp</a>
+      <small>© <span id="year">2026</span> Ericson Tenório — NEXUM Radar Imobiliário. Todos os direitos reservados.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a class="wa-float js-wa" href="#" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.7 9.7 0 0 1-4.94-1.35l-.35-.21-3.67.96.98-3.58-.23-.37a9.66 9.66 0 0 1-1.48-5.16c0-5.35 4.35-9.7 9.71-9.7a9.63 9.63 0 0 1 6.86 2.85 9.63 9.63 0 0 1 2.84 6.86c0 5.35-4.36 9.7-9.71 9.7zm8.26-17.96A11.52 11.52 0 0 0 12.04.5C5.8.5.72 5.58.72 11.81c0 2 .52 3.95 1.51 5.68L.6 23.5l6.15-1.61a11.3 11.3 0 0 0 5.29 1.35h.01c6.23 0 11.31-5.08 11.31-11.31 0-3.02-1.18-5.86-3.32-8z"/></svg>
+</a>
+
+<script>
+/* =======================================================
+   WHATSAPP
+======================================================== */
+const WA_URL = "https://wa.me/5582981457117?text=" +
+  encodeURIComponent("Olá! Gostaria de conhecer o NEXUM — Radar Imobiliário.");
+
+document.querySelectorAll(".js-wa").forEach(a => {
+  a.href = WA_URL;
+  a.target = "_blank";
+  a.rel = "noopener";
+});
+
+/* ---------- Header: sombra ao rolar ---------- */
+const headerEl = document.getElementById("siteHeader");
+const scrollProgress = document.getElementById("scrollProgress");
+const heroSurface = document.getElementById("heroSurface");
+function updateScrollProgress(){
+  const max = document.documentElement.scrollHeight - innerHeight;
+  if (scrollProgress) scrollProgress.style.width = (max > 0 ? scrollY / max * 100 : 0).toFixed(2) + "%";
+}
+addEventListener("scroll", updateScrollProgress, { passive: true });
+addEventListener("resize", updateScrollProgress);
+updateScrollProgress();
+addEventListener("scroll", () => {
+  headerEl.style.boxShadow = scrollY > 12
+    ? "0 14px 40px -18px rgba(4,12,16,.6)"
+    : "none";
+}, { passive: true });
+
+/* ---------- Drawer mobile ---------- */
+const menuBtn      = document.getElementById("menuBtn");
+const drawer       = document.getElementById("drawer");
+const drawerClose  = document.getElementById("drawerClose");
+const drawerBg     = document.getElementById("drawerBackdrop");
+
+function openDrawer(){
+  drawer.classList.add("open");
+  drawerBg.classList.add("open");
+  drawer.setAttribute("aria-hidden","false");
+  menuBtn.setAttribute("aria-expanded","true");
+  document.body.classList.add("no-scroll");
+  drawerClose.focus();
+}
+function closeDrawer(returnFocus = true){
+  drawer.classList.remove("open");
+  drawerBg.classList.remove("open");
+  drawer.setAttribute("aria-hidden","true");
+  menuBtn.setAttribute("aria-expanded","false");
+  document.body.classList.remove("no-scroll");
+  if (returnFocus) menuBtn.focus();
+}
+menuBtn.addEventListener("click", openDrawer);
+drawerClose.addEventListener("click", closeDrawer);
+drawerBg.addEventListener("click", closeDrawer);
+addEventListener("keydown", e => {
+  if (e.key === "Escape" && drawer.classList.contains("open")) closeDrawer();
+});
+drawer.querySelectorAll("a").forEach(a =>
+  a.addEventListener("click", () => closeDrawer(false))
+);
+
+/* ---------- Scroll-spy ---------- */
+const navLinks = [...document.querySelectorAll(".nav a")];
+function setActive(id){
+  navLinks.forEach(l =>
+    l.classList.toggle("active", l.getAttribute("href") === "#" + id)
+  );
+}
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
+}, { rootMargin: "-35% 0px -60% 0px" });
+
+["inicio","nexum","territorio","performance","reajustes","movimento"]
+  .forEach(id => {
+    const el = document.getElementById(id);
+    if (el) spy.observe(el);
+  });
+
+/* ---------- Reveal on scroll ---------- */
+const revealEls = document.querySelectorAll(".reveal, [data-parallax]");
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add("is-visible");
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+  revealEls.forEach(el => io.observe(el));
+} else {
+  revealEls.forEach(el => el.classList.add("is-visible"));
+}
+
+/* =======================================================
+   ★ PARALLAX — suavizado com lerp + rAF
+   - #heroMap: o mapa sobe mais devagar que o scroll
+   - [data-parallax]: figuras emergem em profundidade
+     (Fig. 01 = 0.26 forte · demais = 0.07 sutil)
+======================================================== */
+const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const pxItems = [...document.querySelectorAll("[data-parallax]")].map(el => ({
+  el,
+  speed: parseFloat(el.dataset.parallax) || .1,
+  top: 0,
+  h: 1
+}));
+const heroMap = document.getElementById("heroMap");
+
+/* posição de layout (imune a transforms) */
+function docTop(el){
+  let y = 0;
+  while (el) { y += el.offsetTop; el = el.offsetParent; }
+  return y;
+}
+function measurePx(){
+  pxItems.forEach(o => {
+    o.top = docTop(o.el);
+    o.h   = o.el.offsetHeight || 1;
+  });
+}
+measurePx();
+addEventListener("load", measurePx);
+addEventListener("resize", measurePx);
+
+if (!reducedMotion) {
+  let cur = scrollY;
+  (function loop(){
+    /* suavização: a câmera "persegue" o scroll */
+    cur += (scrollY - cur) * 0.12;
+    if (Math.abs(scrollY - cur) < 0.1) cur = scrollY;
+
+    /* Mapa do hero — parallax clássico */
+    if (heroMap && cur < innerHeight * 1.4) {
+      heroMap.style.transform =
+        "translate3d(0," + (cur * 0.18).toFixed(1) + "px,0)";
+    }
+    if (heroSurface && cur < innerHeight * 1.25) {
+      heroSurface.style.transform =
+        "translate3d(0," + (cur * -0.08).toFixed(1) + "px,0)";
+    }
+
+    /* Figuras — emergem de baixo e continuam subindo devagar */
+    const vh = innerHeight;
+    for (const o of pxItems) {
+      const p = (cur + vh - o.top) / (vh + o.h);   /* 0 → 1 */
+      const c = Math.min(Math.max(p, 0), 1);
+      const y = (0.5 - c) * o.speed * vh;
+      o.el.style.transform = "translate3d(0," + y.toFixed(1) + "px,0)";
+    }
+
+    requestAnimationFrame(loop);
+  })();
+}
+
+/* =======================================================
+   CONTADOR — Total 14.048
+======================================================== */
+const nf = new Intl.NumberFormat("pt-BR");
+const easeOutExpo = t => t >= 1 ? 1 : 1 - Math.pow(2, -10 * t);
+
+const cIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    cIO.unobserve(e.target);
+    const el     = e.target;
+    const target = +el.dataset.count;
+    const dur    = 2400;
+    const delay  = 350;
+    const t0     = performance.now() + delay;
+    const card   = el.closest(".ipd-card");
+
+    const tick = now => {
+      const elapsed = now - t0;
+      if (elapsed < 0) { requestAnimationFrame(tick); return; }
+      const p = Math.min(elapsed / dur, 1);
+      el.textContent = nf.format(Math.round(target * easeOutExpo(p)));
+      if (p < 1) {
+        requestAnimationFrame(tick);
+      } else if (card) {
+        card.classList.add("done");
+      }
+    };
+    requestAnimationFrame(tick);
+  });
+}, { threshold: 0.4 });
+document.querySelectorAll("[data-count]").forEach(el => cIO.observe(el));
+
+/* ---------- Ano automático ---------- */
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

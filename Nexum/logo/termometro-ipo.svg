@@ -1,0 +1,9 @@
+<svg width="190" height="300" viewBox="0 0 190 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ipo-title">
+  <title id="ipo-title">Termômetro IPO</title>
+  <defs><linearGradient id="thermometerGradientIPO" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ef1b1b"/><stop offset="48%" stop-color="#ffcc00"/><stop offset="52%" stop-color="#ffcc00"/><stop offset="100%" stop-color="#087cff"/></linearGradient></defs>
+  <text x="15" y="25" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#ff8a00">IPO</text>
+  <rect x="23" y="78" width="15" height="170" rx="7.5" fill="url(#thermometerGradientIPO)" stroke="#111827" stroke-width="1.5"/>
+  <circle cx="30.5" cy="248" r="10" fill="#087cff" stroke="#111827" stroke-width="1.5"/>
+  <g font-family="Arial,sans-serif" font-size="12" fill="#172033"><text x="58" y="83">100%</text><text x="58" y="128">50%</text><text x="58" y="173">0%</text><text x="58" y="218">-50%</text><text x="58" y="252">-100%</text></g>
+  <g stroke="#9ca3af" stroke-width="1"><line x1="43" y1="82" x2="50" y2="82"/><line x1="43" y1="127" x2="50" y2="127"/><line x1="43" y1="172" x2="50" y2="172"/><line x1="43" y1="217" x2="50" y2="217"/><line x1="43" y1="247" x2="50" y2="247"/></g>
+</svg>

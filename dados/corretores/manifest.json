@@ -1,0 +1,20 @@
+{
+  "project": "Investlar Market Intelligence",
+  "version": "0.2.0",
+  "generated_at": "2026-07-03T08:47:40-03:00",
+  "source": "whatsapp_export",
+  "batch_id": "2026_07_03_whatsapp_cg",
+  "source_hash": "4665749183e3f1545bfe38b1ddfebd8b0e3d58def572e2fdbf698d21265da85e",
+  "source_file": "Conversa do WhatsApp com Construindo Parceria CG.txt",
+  "period_start": "2025-01-08",
+  "period_end": "2026-05-03",
+  "total_messages": 75668,
+  "total_system_messages": 723,
+  "total_media_messages": 35880,
+  "total_vcf_files": 282,
+  "total_contacts_vcf": 286,
+  "total_blocks": 32011,
+  "total_opportunities": 21662,
+  "extractor_version": "ruleset_0.1",
+  "total_valid_opportunities": 7508
+}

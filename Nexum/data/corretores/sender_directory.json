@@ -1,0 +1,6197 @@
+[
+  {
+    "sender_id": "snd_0001",
+    "raw_sender": "+55 83 9689-2163",
+    "nome_corretor": "558396892163",
+    "telefone_corretor": "558396892163",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0002",
+    "raw_sender": "Danyele Caldas",
+    "nome_corretor": "Danyele Caldas",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0003",
+    "raw_sender": "+55 83 8680-8109",
+    "nome_corretor": "558386808109",
+    "telefone_corretor": "558386808109",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0004",
+    "raw_sender": "+55 83 9976-5079",
+    "nome_corretor": "558399765079",
+    "telefone_corretor": "558399765079",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0005",
+    "raw_sender": "+55 83 9999-1363",
+    "nome_corretor": "558399991363",
+    "telefone_corretor": "558399991363",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0006",
+    "raw_sender": "+55 83 8855-9523",
+    "nome_corretor": "558388559523",
+    "telefone_corretor": "558388559523",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0007",
+    "raw_sender": "Welbson Cavalcante | Corretor de Imóveis",
+    "nome_corretor": "Welbson Cavalcante | Corretor de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0008",
+    "raw_sender": "+55 83 8866-0083",
+    "nome_corretor": "558388660083",
+    "telefone_corretor": "558388660083",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0009",
+    "raw_sender": "+55 83 9962-0284",
+    "nome_corretor": "558399620284",
+    "telefone_corretor": "558399620284",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0010",
+    "raw_sender": "+55 83 9636-9510",
+    "nome_corretor": "558396369510",
+    "telefone_corretor": "558396369510",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0011",
+    "raw_sender": "+55 83 9927-8223",
+    "nome_corretor": "558399278223",
+    "telefone_corretor": "558399278223",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0012",
+    "raw_sender": "+55 83 8839-9393",
+    "nome_corretor": "558388399393",
+    "telefone_corretor": "558388399393",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0013",
+    "raw_sender": "Pablo Franco",
+    "nome_corretor": "Pablo Franco",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0014",
+    "raw_sender": "𝓖𝓮𝓸𝓿𝓪𝓷𝓮 𝓼𝓪𝓷𝓽𝓸𝓼",
+    "nome_corretor": "𝓖𝓮𝓸𝓿𝓪𝓷𝓮 𝓼𝓪𝓷𝓽𝓸𝓼",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0015",
+    "raw_sender": "+55 83 9159-1942",
+    "nome_corretor": "558391591942",
+    "telefone_corretor": "558391591942",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0016",
+    "raw_sender": "Valeria Luna",
+    "nome_corretor": "Valeria Luna",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0017",
+    "raw_sender": "Marcia Ferreira | Corretora de imóveis",
+    "nome_corretor": "Marcia Ferreira | Corretora de imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0018",
+    "raw_sender": "+55 83 8814-9550",
+    "nome_corretor": "558388149550",
+    "telefone_corretor": "558388149550",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0019",
+    "raw_sender": "+55 83 9835-7858",
+    "nome_corretor": "558398357858",
+    "telefone_corretor": "558398357858",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0020",
+    "raw_sender": "+55 83 8760-2035",
+    "nome_corretor": "558387602035",
+    "telefone_corretor": "558387602035",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0021",
+    "raw_sender": "+55 83 8807-0733",
+    "nome_corretor": "558388070733",
+    "telefone_corretor": "558388070733",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0022",
+    "raw_sender": "Elton",
+    "nome_corretor": "Elton",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0023",
+    "raw_sender": "Romenique Nascimento, Corretor de Imóveis e Avaliador  CRECI9158 CNAI 33732",
+    "nome_corretor": "Romenique Nascimento, Corretor de Imóveis e Avaliador  CRECI9158 CNAI 33732",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0024",
+    "raw_sender": "+55 83 8775-2152",
+    "nome_corretor": "558387752152",
+    "telefone_corretor": "558387752152",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0025",
+    "raw_sender": "+55 83 8233-4395",
+    "nome_corretor": "Cristina Corretora",
+    "telefone_corretor": "558382334395",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0026",
+    "raw_sender": "+55 83 8139-3311",
+    "nome_corretor": "558381393311",
+    "telefone_corretor": "558381393311",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0027",
+    "raw_sender": "+55 83 8642-5570",
+    "nome_corretor": "558386425570",
+    "telefone_corretor": "558386425570",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0028",
+    "raw_sender": "+55 83 8738-8742",
+    "nome_corretor": "558387388742",
+    "telefone_corretor": "558387388742",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0029",
+    "raw_sender": "+55 83 9968-9452",
+    "nome_corretor": "558399689452",
+    "telefone_corretor": "558399689452",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0030",
+    "raw_sender": "Wallace/corretor de imóveis 3565",
+    "nome_corretor": "Wallace/corretor de imóveis 3565",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0031",
+    "raw_sender": "+55 83 8748-1646",
+    "nome_corretor": "558387481646",
+    "telefone_corretor": "558387481646",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0032",
+    "raw_sender": "+55 83 8801-0006",
+    "nome_corretor": "558388010006",
+    "telefone_corretor": "558388010006",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0033",
+    "raw_sender": "+55 83 8829-8582",
+    "nome_corretor": "558388298582",
+    "telefone_corretor": "558388298582",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0034",
+    "raw_sender": "+55 83 9983-7590",
+    "nome_corretor": "558399837590",
+    "telefone_corretor": "558399837590",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0035",
+    "raw_sender": "+55 83 9608-9693",
+    "nome_corretor": "558396089693",
+    "telefone_corretor": "558396089693",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0036",
+    "raw_sender": "Antonio Vieira",
+    "nome_corretor": "Antonio Vieira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0037",
+    "raw_sender": "+55 83 8899-5936",
+    "nome_corretor": "558388995936",
+    "telefone_corretor": "558388995936",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0038",
+    "raw_sender": "+55 83 8787-3339",
+    "nome_corretor": "558387873339",
+    "telefone_corretor": "558387873339",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0039",
+    "raw_sender": "+55 83 8202-9389",
+    "nome_corretor": "558382029389",
+    "telefone_corretor": "558382029389",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0040",
+    "raw_sender": "+55 83 8745-8361",
+    "nome_corretor": "558387458361",
+    "telefone_corretor": "558387458361",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0041",
+    "raw_sender": "+55 83 8632-3108",
+    "nome_corretor": "558386323108",
+    "telefone_corretor": "558386323108",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0042",
+    "raw_sender": "+55 83 8634-0106",
+    "nome_corretor": "Adson Leandro Campina Grande",
+    "telefone_corretor": "558386340106",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0043",
+    "raw_sender": "+55 83 8118-1247",
+    "nome_corretor": "558381181247",
+    "telefone_corretor": "558381181247",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0044",
+    "raw_sender": "Renata Miguel",
+    "nome_corretor": "Renata Miguel",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0045",
+    "raw_sender": "+55 83 8862-5551",
+    "nome_corretor": "558388625551",
+    "telefone_corretor": "558388625551",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0046",
+    "raw_sender": "+55 83 8195-4446",
+    "nome_corretor": "558381954446",
+    "telefone_corretor": "558381954446",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0047",
+    "raw_sender": "+55 83 8873-8389",
+    "nome_corretor": "558388738389",
+    "telefone_corretor": "558388738389",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0048",
+    "raw_sender": "+55 83 8719-9737",
+    "nome_corretor": "558387199737",
+    "telefone_corretor": "558387199737",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0049",
+    "raw_sender": "+55 83 8176-1648",
+    "nome_corretor": "558381761648",
+    "telefone_corretor": "558381761648",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0050",
+    "raw_sender": "+55 83 9989-5933",
+    "nome_corretor": "Henrique Brandão Corretor",
+    "telefone_corretor": "558399895933",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0051",
+    "raw_sender": "+55 83 9187-4141",
+    "nome_corretor": "558391874141",
+    "telefone_corretor": "558391874141",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0052",
+    "raw_sender": "+55 83 9871-7292",
+    "nome_corretor": "558398717292",
+    "telefone_corretor": "558398717292",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0053",
+    "raw_sender": "+55 83 9855-1115",
+    "nome_corretor": "558398551115",
+    "telefone_corretor": "558398551115",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0054",
+    "raw_sender": "Karla Prata",
+    "nome_corretor": "Karla Prata",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0055",
+    "raw_sender": "Vera Investlar Vera Lucia",
+    "nome_corretor": "Vera Investlar Vera Lucia",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0056",
+    "raw_sender": "+55 83 9311-9162",
+    "nome_corretor": "558393119162",
+    "telefone_corretor": "558393119162",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0057",
+    "raw_sender": "+55 83 9827-3428",
+    "nome_corretor": "558398273428",
+    "telefone_corretor": "558398273428",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0058",
+    "raw_sender": "Cícera Corretora",
+    "nome_corretor": "Cícera Corretora",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0059",
+    "raw_sender": "aciolejunior corretor",
+    "nome_corretor": "aciolejunior corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0060",
+    "raw_sender": "+55 83 8811-3022",
+    "nome_corretor": "558388113022",
+    "telefone_corretor": "558388113022",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0061",
+    "raw_sender": "+55 83 8848-1781",
+    "nome_corretor": "558388481781",
+    "telefone_corretor": "558388481781",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0062",
+    "raw_sender": "+55 83 8646-5422",
+    "nome_corretor": "558386465422",
+    "telefone_corretor": "558386465422",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0063",
+    "raw_sender": "+55 83 8673-0076",
+    "nome_corretor": "558386730076",
+    "telefone_corretor": "558386730076",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0064",
+    "raw_sender": "+55 83 8777-7019",
+    "nome_corretor": "558387777019",
+    "telefone_corretor": "558387777019",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0065",
+    "raw_sender": "+55 83 9365-0990",
+    "nome_corretor": "558393650990",
+    "telefone_corretor": "558393650990",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0066",
+    "raw_sender": "+55 83 8855-7540",
+    "nome_corretor": "558388557540",
+    "telefone_corretor": "558388557540",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0067",
+    "raw_sender": "Nathalia Albuquerque",
+    "nome_corretor": "Nathalia Albuquerque",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0068",
+    "raw_sender": "+55 83 9131-9249",
+    "nome_corretor": "558391319249",
+    "telefone_corretor": "558391319249",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0069",
+    "raw_sender": "+55 83 9169-6350",
+    "nome_corretor": "558391696350",
+    "telefone_corretor": "558391696350",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0070",
+    "raw_sender": "Maria Eduarda Corretora De Imóveis",
+    "nome_corretor": "Maria Eduarda Corretora De Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0071",
+    "raw_sender": "+55 83 8820-0220",
+    "nome_corretor": "558388200220",
+    "telefone_corretor": "558388200220",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0072",
+    "raw_sender": "+55 83 8845-6229",
+    "nome_corretor": "558388456229",
+    "telefone_corretor": "558388456229",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0073",
+    "raw_sender": "+55 83 8802-6622",
+    "nome_corretor": "558388026622",
+    "telefone_corretor": "558388026622",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0074",
+    "raw_sender": "+55 83 9851-7809",
+    "nome_corretor": "558398517809",
+    "telefone_corretor": "558398517809",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0075",
+    "raw_sender": "+55 83 9626-4748",
+    "nome_corretor": "558396264748",
+    "telefone_corretor": "558396264748",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0076",
+    "raw_sender": "+55 83 8810-7272",
+    "nome_corretor": "558388107272",
+    "telefone_corretor": "558388107272",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0077",
+    "raw_sender": "+55 83 8735-0460",
+    "nome_corretor": "558387350460",
+    "telefone_corretor": "558387350460",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0078",
+    "raw_sender": "+55 83 8897-3713",
+    "nome_corretor": "558388973713",
+    "telefone_corretor": "558388973713",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0079",
+    "raw_sender": "+55 83 9679-8781",
+    "nome_corretor": "558396798781",
+    "telefone_corretor": "558396798781",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0080",
+    "raw_sender": "+55 83 8692-9730",
+    "nome_corretor": "Everton Silva Lima",
+    "telefone_corretor": "558386929730",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0081",
+    "raw_sender": "+55 83 8620-4004",
+    "nome_corretor": "558386204004",
+    "telefone_corretor": "558386204004",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0082",
+    "raw_sender": "+55 83 8661-1196",
+    "nome_corretor": "558386611196",
+    "telefone_corretor": "558386611196",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0083",
+    "raw_sender": "+55 83 8153-0343",
+    "nome_corretor": "558381530343",
+    "telefone_corretor": "558381530343",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0084",
+    "raw_sender": "+55 83 9878-8551",
+    "nome_corretor": "558398788551",
+    "telefone_corretor": "558398788551",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0085",
+    "raw_sender": "+55 83 8852-8174",
+    "nome_corretor": "558388528174",
+    "telefone_corretor": "558388528174",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0086",
+    "raw_sender": "+55 83 9809-1684",
+    "nome_corretor": "558398091684",
+    "telefone_corretor": "558398091684",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0087",
+    "raw_sender": "Carlos Almeida Imóveis",
+    "nome_corretor": "Carlos Almeida Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0088",
+    "raw_sender": "+55 83 9909-4744",
+    "nome_corretor": "558399094744",
+    "telefone_corretor": "558399094744",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0089",
+    "raw_sender": "Corretora Elizangela",
+    "nome_corretor": "Corretora Elizangela",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0090",
+    "raw_sender": "+55 83 8744-8632",
+    "nome_corretor": "558387448632",
+    "telefone_corretor": "558387448632",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0091",
+    "raw_sender": "+55 83 9362-9229",
+    "nome_corretor": "558393629229",
+    "telefone_corretor": "558393629229",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0092",
+    "raw_sender": "Dayanne nascimento",
+    "nome_corretor": "Dayanne nascimento",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0093",
+    "raw_sender": "Antonio Siqueira - Corretor De Imóveis",
+    "nome_corretor": "Antonio Siqueira - Corretor De Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0094",
+    "raw_sender": "+55 83 9341-8603",
+    "nome_corretor": "558393418603",
+    "telefone_corretor": "558393418603",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0095",
+    "raw_sender": "+55 83 9196-6851",
+    "nome_corretor": "558391966851",
+    "telefone_corretor": "558391966851",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0096",
+    "raw_sender": "+55 83 9874-6078",
+    "nome_corretor": "558398746078",
+    "telefone_corretor": "558398746078",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0097",
+    "raw_sender": "+55 83 8873-2171",
+    "nome_corretor": "558388732171",
+    "telefone_corretor": "558388732171",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0098",
+    "raw_sender": "Klairton Oliveira",
+    "nome_corretor": "Klairton Oliveira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0099",
+    "raw_sender": "+55 83 9854-7089",
+    "nome_corretor": "558398547089",
+    "telefone_corretor": "558398547089",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0100",
+    "raw_sender": "+55 83 8724-1969",
+    "nome_corretor": "558387241969",
+    "telefone_corretor": "558387241969",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0101",
+    "raw_sender": "Claudia Pontes",
+    "nome_corretor": "Claudia Pontes",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0102",
+    "raw_sender": "Jennifer Araújo",
+    "nome_corretor": "Jennifer Araújo",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0103",
+    "raw_sender": "+55 83 8702-0703",
+    "nome_corretor": "558387020703",
+    "telefone_corretor": "558387020703",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0104",
+    "raw_sender": "+55 83 8889-6640",
+    "nome_corretor": "558388896640",
+    "telefone_corretor": "558388896640",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0105",
+    "raw_sender": "+55 83 9655-9516",
+    "nome_corretor": "558396559516",
+    "telefone_corretor": "558396559516",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0106",
+    "raw_sender": "+55 83 9965-9181",
+    "nome_corretor": "558399659181",
+    "telefone_corretor": "558399659181",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0107",
+    "raw_sender": "+55 83 8816-3502",
+    "nome_corretor": "558388163502",
+    "telefone_corretor": "558388163502",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0108",
+    "raw_sender": "Cainã Laurindo - Corretor de Imóveis",
+    "nome_corretor": "Cainã Laurindo - Corretor de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0109",
+    "raw_sender": "+55 83 9979-0891",
+    "nome_corretor": "558399790891",
+    "telefone_corretor": "558399790891",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0110",
+    "raw_sender": "Corretora Michele Luna",
+    "nome_corretor": "Corretora Michele Luna",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0111",
+    "raw_sender": "Construtora Terra",
+    "nome_corretor": "Construtora Terra",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0112",
+    "raw_sender": "+55 83 8780-2459",
+    "nome_corretor": "558387802459",
+    "telefone_corretor": "558387802459",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0113",
+    "raw_sender": "+55 83 9107-5934",
+    "nome_corretor": "558391075934",
+    "telefone_corretor": "558391075934",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0114",
+    "raw_sender": "Polyanna Souza",
+    "nome_corretor": "Polyanna Souza",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0115",
+    "raw_sender": "+55 83 8656-3145",
+    "nome_corretor": "558386563145",
+    "telefone_corretor": "558386563145",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0116",
+    "raw_sender": "Lays Vieira Corretora",
+    "nome_corretor": "Lays Vieira Corretora",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0117",
+    "raw_sender": "+55 83 8879-2734",
+    "nome_corretor": "558388792734",
+    "telefone_corretor": "558388792734",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0118",
+    "raw_sender": "+55 83 9417-5644",
+    "nome_corretor": "558394175644",
+    "telefone_corretor": "558394175644",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0119",
+    "raw_sender": "Corretora Luciana Porto",
+    "nome_corretor": "Corretora Luciana Porto",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0120",
+    "raw_sender": "+55 83 8846-2073",
+    "nome_corretor": "558388462073",
+    "telefone_corretor": "558388462073",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0121",
+    "raw_sender": "iara Magna",
+    "nome_corretor": "iara Magna",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0122",
+    "raw_sender": "Monalisa Oliveira Creci 14214",
+    "nome_corretor": "Monalisa Oliveira Creci 14214",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0123",
+    "raw_sender": "Cecilia Araujo",
+    "nome_corretor": "Cecilia Araujo",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0124",
+    "raw_sender": "André Lacet",
+    "nome_corretor": "André Lacet",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0125",
+    "raw_sender": "Jr junior",
+    "nome_corretor": "Jr junior",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0126",
+    "raw_sender": "+55 83 9409-7939",
+    "nome_corretor": "558394097939",
+    "telefone_corretor": "558394097939",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0127",
+    "raw_sender": "+55 83 8848-5012",
+    "nome_corretor": "558388485012",
+    "telefone_corretor": "558388485012",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0128",
+    "raw_sender": "David Kelven.",
+    "nome_corretor": "David Kelven.",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0129",
+    "raw_sender": "+55 83 9108-7670",
+    "nome_corretor": "558391087670",
+    "telefone_corretor": "558391087670",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0130",
+    "raw_sender": "+55 83 8899-0404",
+    "nome_corretor": "558388990404",
+    "telefone_corretor": "558388990404",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0131",
+    "raw_sender": "+55 83 9962-0851",
+    "nome_corretor": "558399620851",
+    "telefone_corretor": "558399620851",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0132",
+    "raw_sender": "+55 83 8817-1394",
+    "nome_corretor": "558388171394",
+    "telefone_corretor": "558388171394",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0133",
+    "raw_sender": "+55 83 8770-5579",
+    "nome_corretor": "558387705579",
+    "telefone_corretor": "558387705579",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0134",
+    "raw_sender": "+55 83 8690-4205",
+    "nome_corretor": "558386904205",
+    "telefone_corretor": "558386904205",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0135",
+    "raw_sender": "+55 83 9982-4340",
+    "nome_corretor": "558399824340",
+    "telefone_corretor": "558399824340",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0136",
+    "raw_sender": "+55 83 9138-0214",
+    "nome_corretor": "558391380214",
+    "telefone_corretor": "558391380214",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0137",
+    "raw_sender": "Tatiany Galdino Corretora",
+    "nome_corretor": "Tatiany Galdino Corretora",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0138",
+    "raw_sender": "Meire - Souza Cruz Imóveis e Negócios",
+    "nome_corretor": "Meire - Souza Cruz Imóveis e Negócios",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0139",
+    "raw_sender": "+55 83 8678-6095",
+    "nome_corretor": "558386786095",
+    "telefone_corretor": "558386786095",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0140",
+    "raw_sender": "+55 83 8809-3717",
+    "nome_corretor": "558388093717",
+    "telefone_corretor": "558388093717",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0141",
+    "raw_sender": "+55 83 9641-4730",
+    "nome_corretor": "558396414730",
+    "telefone_corretor": "558396414730",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0142",
+    "raw_sender": "+55 83 8817-6471",
+    "nome_corretor": "558388176471",
+    "telefone_corretor": "558388176471",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0143",
+    "raw_sender": "+55 83 8844-5270",
+    "nome_corretor": "558388445270",
+    "telefone_corretor": "558388445270",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0144",
+    "raw_sender": "+55 83 9321-1942",
+    "nome_corretor": "558393211942",
+    "telefone_corretor": "558393211942",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0145",
+    "raw_sender": "+55 83 8159-8777",
+    "nome_corretor": "558381598777",
+    "telefone_corretor": "558381598777",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0146",
+    "raw_sender": "+55 83 8600-0456",
+    "nome_corretor": "558386000456",
+    "telefone_corretor": "558386000456",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0147",
+    "raw_sender": "+55 83 8751-5077",
+    "nome_corretor": "558387515077",
+    "telefone_corretor": "558387515077",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0148",
+    "raw_sender": "+55 83 9800-3527",
+    "nome_corretor": "558398003527",
+    "telefone_corretor": "558398003527",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0149",
+    "raw_sender": "+55 83 9960-9858",
+    "nome_corretor": "558399609858",
+    "telefone_corretor": "558399609858",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0150",
+    "raw_sender": "+55 83 9623-6474",
+    "nome_corretor": "558396236474",
+    "telefone_corretor": "558396236474",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0151",
+    "raw_sender": "+55 83 9915-9595",
+    "nome_corretor": "558399159595",
+    "telefone_corretor": "558399159595",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0152",
+    "raw_sender": "Lucas Veríssimo - Corretor de Imóveis",
+    "nome_corretor": "Lucas Veríssimo - Corretor de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0153",
+    "raw_sender": "+55 83 9619-0220",
+    "nome_corretor": "558396190220",
+    "telefone_corretor": "558396190220",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0154",
+    "raw_sender": "+55 83 9373-2077",
+    "nome_corretor": "558393732077",
+    "telefone_corretor": "558393732077",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0155",
+    "raw_sender": "+55 83 8818-1764",
+    "nome_corretor": "558388181764",
+    "telefone_corretor": "558388181764",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0156",
+    "raw_sender": "corretora Simone Alves",
+    "nome_corretor": "corretora Simone Alves",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0157",
+    "raw_sender": "+55 83 9992-9599",
+    "nome_corretor": "558399929599",
+    "telefone_corretor": "558399929599",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0158",
+    "raw_sender": "+55 83 8786-9540",
+    "nome_corretor": "558387869540",
+    "telefone_corretor": "558387869540",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0159",
+    "raw_sender": "+55 83 8800-5010",
+    "nome_corretor": "558388005010",
+    "telefone_corretor": "558388005010",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0160",
+    "raw_sender": "+55 83 8788-0766",
+    "nome_corretor": "558387880766",
+    "telefone_corretor": "558387880766",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0161",
+    "raw_sender": "+55 83 9610-7474",
+    "nome_corretor": "558396107474",
+    "telefone_corretor": "558396107474",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0162",
+    "raw_sender": "+55 83 8663-7249",
+    "nome_corretor": "558386637249",
+    "telefone_corretor": "558386637249",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0163",
+    "raw_sender": "+55 83 8717-2020",
+    "nome_corretor": "558387172020",
+    "telefone_corretor": "558387172020",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0164",
+    "raw_sender": "𝔽𝕒𝕓𝕚𝕒𝕟𝕠 ℙ𝕠𝕣𝕥𝕠",
+    "nome_corretor": "𝔽𝕒𝕓𝕚𝕒𝕟𝕠 ℙ𝕠𝕣𝕥𝕠",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0165",
+    "raw_sender": "+55 83 9981-6801",
+    "nome_corretor": "558399816801",
+    "telefone_corretor": "558399816801",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0166",
+    "raw_sender": "+55 83 8889-5852",
+    "nome_corretor": "558388895852",
+    "telefone_corretor": "558388895852",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0167",
+    "raw_sender": "+55 83 9613-3469",
+    "nome_corretor": "558396133469",
+    "telefone_corretor": "558396133469",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0168",
+    "raw_sender": "+55 83 8659-7884",
+    "nome_corretor": "558386597884",
+    "telefone_corretor": "558386597884",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0169",
+    "raw_sender": "Lenilson Rodrigues",
+    "nome_corretor": "Lenilson Rodrigues",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0170",
+    "raw_sender": "Thiago L Ferreira",
+    "nome_corretor": "Thiago L Ferreira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0171",
+    "raw_sender": "+55 83 9993-5235",
+    "nome_corretor": "558399935235",
+    "telefone_corretor": "558399935235",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0172",
+    "raw_sender": "+55 83 9653-9220",
+    "nome_corretor": "558396539220",
+    "telefone_corretor": "558396539220",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0173",
+    "raw_sender": "Tatiana lima",
+    "nome_corretor": "Tatiana lima",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0174",
+    "raw_sender": "+55 83 8204-8943",
+    "nome_corretor": "558382048943",
+    "telefone_corretor": "558382048943",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0175",
+    "raw_sender": "Sofertas Imóveis",
+    "nome_corretor": "Sofertas Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0176",
+    "raw_sender": "+55 83 9146-6787",
+    "nome_corretor": "558391466787",
+    "telefone_corretor": "558391466787",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0177",
+    "raw_sender": "+55 83 9650-3969",
+    "nome_corretor": "558396503969",
+    "telefone_corretor": "558396503969",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0178",
+    "raw_sender": "+55 83 9641-9197",
+    "nome_corretor": "558396419197",
+    "telefone_corretor": "558396419197",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0179",
+    "raw_sender": "+55 83 9187-2160",
+    "nome_corretor": "558391872160",
+    "telefone_corretor": "558391872160",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0180",
+    "raw_sender": "+55 83 9173-3030",
+    "nome_corretor": "558391733030",
+    "telefone_corretor": "558391733030",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0181",
+    "raw_sender": "+55 83 8817-3271",
+    "nome_corretor": "558388173271",
+    "telefone_corretor": "558388173271",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0182",
+    "raw_sender": "+55 83 9913-0872",
+    "nome_corretor": "558399130872",
+    "telefone_corretor": "558399130872",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0183",
+    "raw_sender": "Marina Niely",
+    "nome_corretor": "Marina Niely",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0184",
+    "raw_sender": "Jonatha Felix",
+    "nome_corretor": "Jonatha Felix",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0185",
+    "raw_sender": "Darlene Oliveira",
+    "nome_corretor": "Darlene Oliveira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0186",
+    "raw_sender": "+55 83 8109-0453",
+    "nome_corretor": "558381090453",
+    "telefone_corretor": "558381090453",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0187",
+    "raw_sender": "Valéria Mendonça Corretora",
+    "nome_corretor": "Valéria Mendonça Corretora",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0188",
+    "raw_sender": "+55 83 9988-9569",
+    "nome_corretor": "558399889569",
+    "telefone_corretor": "558399889569",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0189",
+    "raw_sender": "+55 83 9670-5208",
+    "nome_corretor": "558396705208",
+    "telefone_corretor": "558396705208",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0190",
+    "raw_sender": "Jamércio Colaço",
+    "nome_corretor": "Jamércio Colaço",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0191",
+    "raw_sender": "+55 83 8862-4871",
+    "nome_corretor": "558388624871",
+    "telefone_corretor": "558388624871",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0192",
+    "raw_sender": "Fabio Investy",
+    "nome_corretor": "Fabio Investy",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0193",
+    "raw_sender": "+55 83 8650-6220",
+    "nome_corretor": "558386506220",
+    "telefone_corretor": "558386506220",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0194",
+    "raw_sender": "+55 83 9617-1757",
+    "nome_corretor": "558396171757",
+    "telefone_corretor": "558396171757",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0195",
+    "raw_sender": "+55 83 8700-9367",
+    "nome_corretor": "558387009367",
+    "telefone_corretor": "558387009367",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0196",
+    "raw_sender": "+55 83 8905-0948",
+    "nome_corretor": "558389050948",
+    "telefone_corretor": "558389050948",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0197",
+    "raw_sender": "+55 83 9418-9539",
+    "nome_corretor": "558394189539",
+    "telefone_corretor": "558394189539",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0198",
+    "raw_sender": "Adriana Clementino",
+    "nome_corretor": "Adriana Clementino",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0199",
+    "raw_sender": "Diego Quintas Da Mata",
+    "nome_corretor": "Diego Quintas Da Mata",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0200",
+    "raw_sender": "+55 83 8836-7317",
+    "nome_corretor": "558388367317",
+    "telefone_corretor": "558388367317",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0201",
+    "raw_sender": "Wanderson Corretor",
+    "nome_corretor": "Wanderson Corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0202",
+    "raw_sender": "+55 83 8639-9066",
+    "nome_corretor": "558386399066",
+    "telefone_corretor": "558386399066",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0203",
+    "raw_sender": "+55 83 8695-7756",
+    "nome_corretor": "558386957756",
+    "telefone_corretor": "558386957756",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0204",
+    "raw_sender": "+55 83 8876-9279",
+    "nome_corretor": "558388769279",
+    "telefone_corretor": "558388769279",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0205",
+    "raw_sender": "Carlos Ribeiro",
+    "nome_corretor": "Carlos Ribeiro",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0206",
+    "raw_sender": "+55 83 9850-9739",
+    "nome_corretor": "558398509739",
+    "telefone_corretor": "558398509739",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0207",
+    "raw_sender": "+55 81 9147-7800",
+    "nome_corretor": "558191477800",
+    "telefone_corretor": "558191477800",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0208",
+    "raw_sender": "+55 83 8841-0712",
+    "nome_corretor": "Jacson Corretor",
+    "telefone_corretor": "558388410712",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0209",
+    "raw_sender": "Rita de Cássia Mafra",
+    "nome_corretor": "Rita de Cássia Mafra",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0210",
+    "raw_sender": "João Luiz Almeida",
+    "nome_corretor": "João Luiz Almeida",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0211",
+    "raw_sender": "+55 83 8863-8049",
+    "nome_corretor": "558388638049",
+    "telefone_corretor": "558388638049",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0212",
+    "raw_sender": "+55 83 8715-4269",
+    "nome_corretor": "558387154269",
+    "telefone_corretor": "558387154269",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0213",
+    "raw_sender": "+55 83 9641-0570",
+    "nome_corretor": "558396410570",
+    "telefone_corretor": "558396410570",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0214",
+    "raw_sender": "+55 83 9989-2558",
+    "nome_corretor": "558399892558",
+    "telefone_corretor": "558399892558",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0215",
+    "raw_sender": "+55 83 9811-9914",
+    "nome_corretor": "558398119914",
+    "telefone_corretor": "558398119914",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0216",
+    "raw_sender": "+55 83 9913-2164",
+    "nome_corretor": "558399132164",
+    "telefone_corretor": "558399132164",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0217",
+    "raw_sender": "+55 83 9174-0115",
+    "nome_corretor": "558391740115",
+    "telefone_corretor": "558391740115",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0218",
+    "raw_sender": "+55 83 9908-0889",
+    "nome_corretor": "558399080889",
+    "telefone_corretor": "558399080889",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0219",
+    "raw_sender": "+55 83 8752-2325",
+    "nome_corretor": "558387522325",
+    "telefone_corretor": "558387522325",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0220",
+    "raw_sender": "+55 83 9661-1862",
+    "nome_corretor": "558396611862",
+    "telefone_corretor": "558396611862",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0221",
+    "raw_sender": "Malvina Eufrázio",
+    "nome_corretor": "Malvina Eufrázio",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0222",
+    "raw_sender": "+55 83 8840-0444",
+    "nome_corretor": "558388400444",
+    "telefone_corretor": "558388400444",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0223",
+    "raw_sender": "+55 83 9158-1617",
+    "nome_corretor": "558391581617",
+    "telefone_corretor": "558391581617",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0224",
+    "raw_sender": "+55 83 9646-4077",
+    "nome_corretor": "558396464077",
+    "telefone_corretor": "558396464077",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0225",
+    "raw_sender": "Débora Carvalho - Corretora de Imóveis",
+    "nome_corretor": "Débora Carvalho - Corretora de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0226",
+    "raw_sender": "+55 83 8844-4739",
+    "nome_corretor": "558388444739",
+    "telefone_corretor": "558388444739",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0227",
+    "raw_sender": "Diego Rodrigues",
+    "nome_corretor": "Diego Rodrigues",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0228",
+    "raw_sender": "+55 83 8861-5422",
+    "nome_corretor": "558388615422",
+    "telefone_corretor": "558388615422",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0229",
+    "raw_sender": "Pedro Junior",
+    "nome_corretor": "Pedro Junior",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0230",
+    "raw_sender": "+55 83 9641-1117",
+    "nome_corretor": "558396411117",
+    "telefone_corretor": "558396411117",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0231",
+    "raw_sender": "+55 83 9657-2575",
+    "nome_corretor": "558396572575",
+    "telefone_corretor": "558396572575",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0232",
+    "raw_sender": "+55 83 8716-9419",
+    "nome_corretor": "558387169419",
+    "telefone_corretor": "558387169419",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0233",
+    "raw_sender": "+55 83 9952-9269",
+    "nome_corretor": "558399529269",
+    "telefone_corretor": "558399529269",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0234",
+    "raw_sender": "+55 83 9974-8434",
+    "nome_corretor": "558399748434",
+    "telefone_corretor": "558399748434",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0235",
+    "raw_sender": "Montenegro",
+    "nome_corretor": "Montenegro",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0236",
+    "raw_sender": "+55 83 8881-0969",
+    "nome_corretor": "558388810969",
+    "telefone_corretor": "558388810969",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0237",
+    "raw_sender": "+55 83 8728-0898",
+    "nome_corretor": "558387280898",
+    "telefone_corretor": "558387280898",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0238",
+    "raw_sender": "+55 83 9118-3728",
+    "nome_corretor": "558391183728",
+    "telefone_corretor": "558391183728",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0239",
+    "raw_sender": "Falcao Corretor",
+    "nome_corretor": "Falcao Corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0240",
+    "raw_sender": "+55 83 8894-2735",
+    "nome_corretor": "558388942735",
+    "telefone_corretor": "558388942735",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0241",
+    "raw_sender": "+55 83 8884-2754",
+    "nome_corretor": "558388842754",
+    "telefone_corretor": "558388842754",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0242",
+    "raw_sender": "+55 83 8802-3310",
+    "nome_corretor": "558388023310",
+    "telefone_corretor": "558388023310",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0243",
+    "raw_sender": "+55 83 8124-3284",
+    "nome_corretor": "558381243284",
+    "telefone_corretor": "558381243284",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0244",
+    "raw_sender": "Naldo Lima Corretor de Imóveis",
+    "nome_corretor": "Naldo Lima Corretor de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0245",
+    "raw_sender": "+55 83 8866-9092",
+    "nome_corretor": "558388669092",
+    "telefone_corretor": "558388669092",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0246",
+    "raw_sender": "Corretora De Imóveis Wênia Santos Creci PB12630f",
+    "nome_corretor": "Corretora De Imóveis Wênia Santos Creci PB12630f",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0247",
+    "raw_sender": "Gilvânia Nascimento",
+    "nome_corretor": "Gilvânia Nascimento",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0248",
+    "raw_sender": "+55 83 8863-4550",
+    "nome_corretor": "558388634550",
+    "telefone_corretor": "558388634550",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0249",
+    "raw_sender": "Campina Imóveis",
+    "nome_corretor": "Campina Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0250",
+    "raw_sender": "+55 83 9800-6844",
+    "nome_corretor": "558398006844",
+    "telefone_corretor": "558398006844",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0251",
+    "raw_sender": "+55 83 8822-6360",
+    "nome_corretor": "558388226360",
+    "telefone_corretor": "558388226360",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0252",
+    "raw_sender": "+55 83 9832-1661",
+    "nome_corretor": "558398321661",
+    "telefone_corretor": "558398321661",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0253",
+    "raw_sender": "+55 83 8799-7186",
+    "nome_corretor": "558387997186",
+    "telefone_corretor": "558387997186",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0254",
+    "raw_sender": "Adriana Chagas",
+    "nome_corretor": "Adriana Chagas",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0255",
+    "raw_sender": "+55 83 8898-0504",
+    "nome_corretor": "558388980504",
+    "telefone_corretor": "558388980504",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0256",
+    "raw_sender": "+55 83 8145-4990",
+    "nome_corretor": "558381454990",
+    "telefone_corretor": "558381454990",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0257",
+    "raw_sender": "+55 83 8817-0326",
+    "nome_corretor": "558388170326",
+    "telefone_corretor": "558388170326",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0258",
+    "raw_sender": "+55 83 8809-9721",
+    "nome_corretor": "Corretora Imobiliaria",
+    "telefone_corretor": "558388099721",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0259",
+    "raw_sender": "+55 83 9861-9607",
+    "nome_corretor": "558398619607",
+    "telefone_corretor": "558398619607",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0260",
+    "raw_sender": "+55 83 8627-9044",
+    "nome_corretor": "558386279044",
+    "telefone_corretor": "558386279044",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0261",
+    "raw_sender": "Kelly Soares",
+    "nome_corretor": "Kelly Soares",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0262",
+    "raw_sender": "+55 83 9804-9890",
+    "nome_corretor": "558398049890",
+    "telefone_corretor": "558398049890",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0263",
+    "raw_sender": "Kamila Tayse Corretora de Imóveis",
+    "nome_corretor": "Kamila Tayse Corretora de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0264",
+    "raw_sender": "+55 83 8836-8196",
+    "nome_corretor": "558388368196",
+    "telefone_corretor": "558388368196",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0265",
+    "raw_sender": "Ary Oliveira",
+    "nome_corretor": "Ary Oliveira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0266",
+    "raw_sender": "+55 83 9628-4637",
+    "nome_corretor": "558396284637",
+    "telefone_corretor": "558396284637",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0267",
+    "raw_sender": "+55 83 8640-0050",
+    "nome_corretor": "558386400050",
+    "telefone_corretor": "558386400050",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0268",
+    "raw_sender": "+55 83 8770-2233",
+    "nome_corretor": "558387702233",
+    "telefone_corretor": "558387702233",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0269",
+    "raw_sender": "Dôra Alves",
+    "nome_corretor": "Dôra Alves",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0270",
+    "raw_sender": "Rony Dantas",
+    "nome_corretor": "Rony Dantas",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0271",
+    "raw_sender": "+55 83 9911-6620",
+    "nome_corretor": "558399116620",
+    "telefone_corretor": "558399116620",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0272",
+    "raw_sender": "+55 83 8861-3176",
+    "nome_corretor": "558388613176",
+    "telefone_corretor": "558388613176",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0273",
+    "raw_sender": "Wilson Neto",
+    "nome_corretor": "Wilson Neto",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0274",
+    "raw_sender": "Lena Fausto",
+    "nome_corretor": "Lena Fausto",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0275",
+    "raw_sender": "+55 83 8755-7797",
+    "nome_corretor": "558387557797",
+    "telefone_corretor": "558387557797",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0276",
+    "raw_sender": "+55 83 8667-4077",
+    "nome_corretor": "558386674077",
+    "telefone_corretor": "558386674077",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0277",
+    "raw_sender": "[Corretor] Gleyce Kelly",
+    "nome_corretor": "[Corretor] Gleyce Kelly",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0278",
+    "raw_sender": "+55 83 8844-1480",
+    "nome_corretor": "558388441480",
+    "telefone_corretor": "558388441480",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0279",
+    "raw_sender": "+55 83 9632-2472",
+    "nome_corretor": "558396322472",
+    "telefone_corretor": "558396322472",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0280",
+    "raw_sender": "+55 83 9629-0710",
+    "nome_corretor": "558396290710",
+    "telefone_corretor": "558396290710",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0281",
+    "raw_sender": "+55 83 8901-0659",
+    "nome_corretor": "558389010659",
+    "telefone_corretor": "558389010659",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0282",
+    "raw_sender": "+55 83 9963-4644",
+    "nome_corretor": "558399634644",
+    "telefone_corretor": "558399634644",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0283",
+    "raw_sender": "+55 83 9106-2684",
+    "nome_corretor": "558391062684",
+    "telefone_corretor": "558391062684",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0284",
+    "raw_sender": "+55 83 8874-0335",
+    "nome_corretor": "558388740335",
+    "telefone_corretor": "558388740335",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0285",
+    "raw_sender": "+55 83 8800-2993",
+    "nome_corretor": "558388002993",
+    "telefone_corretor": "558388002993",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0286",
+    "raw_sender": "+55 83 8736-1429",
+    "nome_corretor": "558387361429",
+    "telefone_corretor": "558387361429",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0287",
+    "raw_sender": "+55 83 8752-9899",
+    "nome_corretor": "558387529899",
+    "telefone_corretor": "558387529899",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0288",
+    "raw_sender": "+55 83 9886-7706",
+    "nome_corretor": "558398867706",
+    "telefone_corretor": "558398867706",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0289",
+    "raw_sender": "+55 83 8852-7247",
+    "nome_corretor": "558388527247",
+    "telefone_corretor": "558388527247",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0290",
+    "raw_sender": "Tony Corretor",
+    "nome_corretor": "Tony Corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0291",
+    "raw_sender": "Girlane Melo",
+    "nome_corretor": "Girlane Melo",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0292",
+    "raw_sender": "+55 83 8874-0775",
+    "nome_corretor": "558388740775",
+    "telefone_corretor": "558388740775",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0293",
+    "raw_sender": "+55 83 8183-0377",
+    "nome_corretor": "558381830377",
+    "telefone_corretor": "558381830377",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0294",
+    "raw_sender": "+55 83 8660-6565",
+    "nome_corretor": "558386606565",
+    "telefone_corretor": "558386606565",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0295",
+    "raw_sender": "+55 83 9135-8832",
+    "nome_corretor": "558391358832",
+    "telefone_corretor": "558391358832",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0296",
+    "raw_sender": "+55 83 8727-4206",
+    "nome_corretor": "558387274206",
+    "telefone_corretor": "558387274206",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0297",
+    "raw_sender": "+55 83 8799-1973",
+    "nome_corretor": "558387991973",
+    "telefone_corretor": "558387991973",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0298",
+    "raw_sender": "Rafael Corretor e Estrategista Digital",
+    "nome_corretor": "Rafael Corretor e Estrategista Digital",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0299",
+    "raw_sender": "+55 83 9333-2663",
+    "nome_corretor": "558393332663",
+    "telefone_corretor": "558393332663",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0300",
+    "raw_sender": "𝘔𝘢𝘶𝘳𝘪𝘤𝘪𝘰 𝘪𝘮𝘰𝘷𝘦𝘪𝘴",
+    "nome_corretor": "𝘔𝘢𝘶𝘳𝘪𝘤𝘪𝘰 𝘪𝘮𝘰𝘷𝘦𝘪𝘴",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0301",
+    "raw_sender": "+55 83 9972-5327",
+    "nome_corretor": "558399725327",
+    "telefone_corretor": "558399725327",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0302",
+    "raw_sender": "+55 83 9977-2796",
+    "nome_corretor": "558399772796",
+    "telefone_corretor": "558399772796",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0303",
+    "raw_sender": "GILBRAN MARQUES CORRETOR",
+    "nome_corretor": "GILBRAN MARQUES CORRETOR",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0304",
+    "raw_sender": "+55 83 9945-3090",
+    "nome_corretor": "558399453090",
+    "telefone_corretor": "558399453090",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0305",
+    "raw_sender": "+55 83 9107-1350",
+    "nome_corretor": "558391071350",
+    "telefone_corretor": "558391071350",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0306",
+    "raw_sender": "+55 83 8800-3884",
+    "nome_corretor": "558388003884",
+    "telefone_corretor": "558388003884",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0307",
+    "raw_sender": "+55 83 8872-3661",
+    "nome_corretor": "558388723661",
+    "telefone_corretor": "558388723661",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0308",
+    "raw_sender": "+55 83 8828-9090",
+    "nome_corretor": "558388289090",
+    "telefone_corretor": "558388289090",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0309",
+    "raw_sender": "+55 83 9831-4904",
+    "nome_corretor": "558398314904",
+    "telefone_corretor": "558398314904",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0310",
+    "raw_sender": "+55 83 9848-5185",
+    "nome_corretor": "558398485185",
+    "telefone_corretor": "558398485185",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0311",
+    "raw_sender": "+55 83 9318-8967",
+    "nome_corretor": "558393188967",
+    "telefone_corretor": "558393188967",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0312",
+    "raw_sender": "+55 83 9111-0473",
+    "nome_corretor": "558391110473",
+    "telefone_corretor": "558391110473",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0313",
+    "raw_sender": "+55 83 8768-9223",
+    "nome_corretor": "558387689223",
+    "telefone_corretor": "558387689223",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0314",
+    "raw_sender": "+55 83 8190-7601",
+    "nome_corretor": "558381907601",
+    "telefone_corretor": "558381907601",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0315",
+    "raw_sender": "+55 83 8153-4474",
+    "nome_corretor": "558381534474",
+    "telefone_corretor": "558381534474",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0316",
+    "raw_sender": "Analuisa Morais",
+    "nome_corretor": "Analuisa Morais",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0317",
+    "raw_sender": "+55 83 9372-3654",
+    "nome_corretor": "558393723654",
+    "telefone_corretor": "558393723654",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0318",
+    "raw_sender": "+55 83 8805-0344",
+    "nome_corretor": "558388050344",
+    "telefone_corretor": "558388050344",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0319",
+    "raw_sender": "+55 83 8871-8548",
+    "nome_corretor": "558388718548",
+    "telefone_corretor": "558388718548",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0320",
+    "raw_sender": "+55 83 8808-2082",
+    "nome_corretor": "558388082082",
+    "telefone_corretor": "558388082082",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0321",
+    "raw_sender": "+55 83 8630-9608",
+    "nome_corretor": "558386309608",
+    "telefone_corretor": "558386309608",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0322",
+    "raw_sender": "+55 83 8749-1629",
+    "nome_corretor": "558387491629",
+    "telefone_corretor": "558387491629",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0323",
+    "raw_sender": "Cloves Corretor Mais",
+    "nome_corretor": "Cloves Corretor Mais",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0324",
+    "raw_sender": "+55 83 8799-8666",
+    "nome_corretor": "558387998666",
+    "telefone_corretor": "558387998666",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0325",
+    "raw_sender": "+55 83 8678-9230",
+    "nome_corretor": "558386789230",
+    "telefone_corretor": "558386789230",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0326",
+    "raw_sender": "+55 83 8107-0067",
+    "nome_corretor": "558381070067",
+    "telefone_corretor": "558381070067",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0327",
+    "raw_sender": "+55 81 9481-9309",
+    "nome_corretor": "558194819309",
+    "telefone_corretor": "558194819309",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0328",
+    "raw_sender": "+55 83 9173-0672",
+    "nome_corretor": "558391730672",
+    "telefone_corretor": "558391730672",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0329",
+    "raw_sender": "Felipe Gomes",
+    "nome_corretor": "Felipe Gomes",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0330",
+    "raw_sender": "Willian Dantas Imóveis",
+    "nome_corretor": "Willian Dantas Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0331",
+    "raw_sender": "+55 83 8770-5745",
+    "nome_corretor": "558387705745",
+    "telefone_corretor": "558387705745",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0332",
+    "raw_sender": "Misael",
+    "nome_corretor": "Misael",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0333",
+    "raw_sender": "Helder Misael",
+    "nome_corretor": "Helder Misael",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0334",
+    "raw_sender": "+55 83 9332-4569",
+    "nome_corretor": "558393324569",
+    "telefone_corretor": "558393324569",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0335",
+    "raw_sender": "+55 83 9971-4080",
+    "nome_corretor": "558399714080",
+    "telefone_corretor": "558399714080",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0336",
+    "raw_sender": "+55 83 9416-6700",
+    "nome_corretor": "558394166700",
+    "telefone_corretor": "558394166700",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0337",
+    "raw_sender": "Ivo Corretor",
+    "nome_corretor": "Ivo Corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0338",
+    "raw_sender": "+55 83 9934-6734",
+    "nome_corretor": "558399346734",
+    "telefone_corretor": "558399346734",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0339",
+    "raw_sender": "+55 83 9169-9515",
+    "nome_corretor": "558391699515",
+    "telefone_corretor": "558391699515",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0340",
+    "raw_sender": "+55 83 8615-0852",
+    "nome_corretor": "558386150852",
+    "telefone_corretor": "558386150852",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0341",
+    "raw_sender": "+55 83 8882-6059",
+    "nome_corretor": "558388826059",
+    "telefone_corretor": "558388826059",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0342",
+    "raw_sender": "+55 83 9909-7892",
+    "nome_corretor": "558399097892",
+    "telefone_corretor": "558399097892",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0343",
+    "raw_sender": "+55 83 8823-8718",
+    "nome_corretor": "558388238718",
+    "telefone_corretor": "558388238718",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0344",
+    "raw_sender": "Bene Eglisom/Domo Imobiliária Creci 1496J",
+    "nome_corretor": "Bene Eglisom/Domo Imobiliária Creci 1496J",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0345",
+    "raw_sender": "+55 83 9922-1352",
+    "nome_corretor": "558399221352",
+    "telefone_corretor": "558399221352",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0346",
+    "raw_sender": "+55 83 9104-4422",
+    "nome_corretor": "558391044422",
+    "telefone_corretor": "558391044422",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0347",
+    "raw_sender": "+55 83 9909-7020",
+    "nome_corretor": "558399097020",
+    "telefone_corretor": "558399097020",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0348",
+    "raw_sender": "Aldemir Barbosa Corretor",
+    "nome_corretor": "Aldemir Barbosa Corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0349",
+    "raw_sender": "+55 83 8804-4593",
+    "nome_corretor": "558388044593",
+    "telefone_corretor": "558388044593",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0350",
+    "raw_sender": "Danyelli Leandro",
+    "nome_corretor": "Danyelli Leandro",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0351",
+    "raw_sender": "+55 83 2154-7400",
+    "nome_corretor": "558321547400",
+    "telefone_corretor": "558321547400",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0352",
+    "raw_sender": "+55 83 9971-2559",
+    "nome_corretor": "558399712559",
+    "telefone_corretor": "558399712559",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0353",
+    "raw_sender": "+55 83 9840-1945",
+    "nome_corretor": "558398401945",
+    "telefone_corretor": "558398401945",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0354",
+    "raw_sender": "+55 83 8800-4538",
+    "nome_corretor": "558388004538",
+    "telefone_corretor": "558388004538",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0355",
+    "raw_sender": "+55 83 9628-1966",
+    "nome_corretor": "558396281966",
+    "telefone_corretor": "558396281966",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0356",
+    "raw_sender": "Luiz Eloim",
+    "nome_corretor": "Luiz Eloim",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0357",
+    "raw_sender": "+55 83 9905-4082",
+    "nome_corretor": "558399054082",
+    "telefone_corretor": "558399054082",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0358",
+    "raw_sender": "+55 83 9888-8641",
+    "nome_corretor": "558398888641",
+    "telefone_corretor": "558398888641",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0359",
+    "raw_sender": "+55 83 8141-4373",
+    "nome_corretor": "558381414373",
+    "telefone_corretor": "558381414373",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0360",
+    "raw_sender": "+55 83 8167-8620",
+    "nome_corretor": "558381678620",
+    "telefone_corretor": "558381678620",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0361",
+    "raw_sender": "+55 83 9686-3336",
+    "nome_corretor": "558396863336",
+    "telefone_corretor": "558396863336",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0362",
+    "raw_sender": "+55 83 8620-9471",
+    "nome_corretor": "558386209471",
+    "telefone_corretor": "558386209471",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0363",
+    "raw_sender": "+55 83 9953-8710",
+    "nome_corretor": "558399538710",
+    "telefone_corretor": "558399538710",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0364",
+    "raw_sender": "Guilherme Barros",
+    "nome_corretor": "Guilherme Barros",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0365",
+    "raw_sender": "+55 83 8717-8529",
+    "nome_corretor": "558387178529",
+    "telefone_corretor": "558387178529",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0366",
+    "raw_sender": "+55 83 8783-4279",
+    "nome_corretor": "558387834279",
+    "telefone_corretor": "558387834279",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0367",
+    "raw_sender": "+55 83 8825-5566",
+    "nome_corretor": "558388255566",
+    "telefone_corretor": "558388255566",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0368",
+    "raw_sender": "+55 83 8194-1762",
+    "nome_corretor": "558381941762",
+    "telefone_corretor": "558381941762",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0369",
+    "raw_sender": "+55 83 8700-6570",
+    "nome_corretor": "558387006570",
+    "telefone_corretor": "558387006570",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0370",
+    "raw_sender": "Miguel Jr Corretor",
+    "nome_corretor": "Miguel Jr Corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0371",
+    "raw_sender": "+55 83 9309-2074",
+    "nome_corretor": "558393092074",
+    "telefone_corretor": "558393092074",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0372",
+    "raw_sender": "+55 83 8892-5770",
+    "nome_corretor": "558388925770",
+    "telefone_corretor": "558388925770",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0373",
+    "raw_sender": "+55 83 8703-1720",
+    "nome_corretor": "558387031720",
+    "telefone_corretor": "558387031720",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0374",
+    "raw_sender": "Mateus Souza",
+    "nome_corretor": "Mateus Souza",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0375",
+    "raw_sender": "+55 83 9665-1001",
+    "nome_corretor": "558396651001",
+    "telefone_corretor": "558396651001",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0376",
+    "raw_sender": "+55 83 8817-4734",
+    "nome_corretor": "558388174734",
+    "telefone_corretor": "558388174734",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0377",
+    "raw_sender": "+55 83 8883-1113",
+    "nome_corretor": "558388831113",
+    "telefone_corretor": "558388831113",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0378",
+    "raw_sender": "iagoqueiroz corretor de Imóveis",
+    "nome_corretor": "iagoqueiroz corretor de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0379",
+    "raw_sender": "+55 83 8750-0456",
+    "nome_corretor": "558387500456",
+    "telefone_corretor": "558387500456",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0380",
+    "raw_sender": "+55 83 9624-8805",
+    "nome_corretor": "558396248805",
+    "telefone_corretor": "558396248805",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0381",
+    "raw_sender": "Arthur Portella Corretor de Imóveis",
+    "nome_corretor": "Arthur Portella Corretor de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0382",
+    "raw_sender": "+55 83 9953-4774",
+    "nome_corretor": "558399534774",
+    "telefone_corretor": "558399534774",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0383",
+    "raw_sender": "+55 83 9133-7828",
+    "nome_corretor": "558391337828",
+    "telefone_corretor": "558391337828",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0384",
+    "raw_sender": "+55 83 8879-3138",
+    "nome_corretor": "558388793138",
+    "telefone_corretor": "558388793138",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0385",
+    "raw_sender": "+55 83 8601-1068",
+    "nome_corretor": "558386011068",
+    "telefone_corretor": "558386011068",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0386",
+    "raw_sender": "Reny Oliveira Corretor Imóveis",
+    "nome_corretor": "Reny Oliveira Corretor Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0387",
+    "raw_sender": "Emerson Lima",
+    "nome_corretor": "Emerson Lima",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0388",
+    "raw_sender": "+55 83 8800-2074",
+    "nome_corretor": "558388002074",
+    "telefone_corretor": "558388002074",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0389",
+    "raw_sender": "Ruan - Corretor de imóveis",
+    "nome_corretor": "Ruan - Corretor de imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0390",
+    "raw_sender": "Marcos Rodrigues",
+    "nome_corretor": "Marcos Rodrigues",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0391",
+    "raw_sender": "+55 83 9382-4010",
+    "nome_corretor": "558393824010",
+    "telefone_corretor": "558393824010",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0392",
+    "raw_sender": "Florisa Torres",
+    "nome_corretor": "Florisa Torres",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0393",
+    "raw_sender": "+55 83 9610-8531",
+    "nome_corretor": "558396108531",
+    "telefone_corretor": "558396108531",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0394",
+    "raw_sender": "+55 83 8701-0400",
+    "nome_corretor": "558387010400",
+    "telefone_corretor": "558387010400",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0395",
+    "raw_sender": "Marcos Rodrigues Outro",
+    "nome_corretor": "Marcos Rodrigues Outro",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0396",
+    "raw_sender": "+55 83 8605-8454",
+    "nome_corretor": "558386058454",
+    "telefone_corretor": "558386058454",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0397",
+    "raw_sender": "Adriana Alsines",
+    "nome_corretor": "Adriana Alsines",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0398",
+    "raw_sender": "Ronaldo Lacerda",
+    "nome_corretor": "Ronaldo Lacerda",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0399",
+    "raw_sender": "+55 83 8629-0506",
+    "nome_corretor": "558386290506",
+    "telefone_corretor": "558386290506",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0400",
+    "raw_sender": "+55 83 8608-3380",
+    "nome_corretor": "558386083380",
+    "telefone_corretor": "558386083380",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0401",
+    "raw_sender": "+55 83 9907-3292",
+    "nome_corretor": "558399073292",
+    "telefone_corretor": "558399073292",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0402",
+    "raw_sender": "+55 83 8798-2530",
+    "nome_corretor": "558387982530",
+    "telefone_corretor": "558387982530",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0403",
+    "raw_sender": "+55 83 8886-8682",
+    "nome_corretor": "558388868682",
+    "telefone_corretor": "558388868682",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0404",
+    "raw_sender": "+55 83 8785-4517",
+    "nome_corretor": "558387854517",
+    "telefone_corretor": "558387854517",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0405",
+    "raw_sender": "+55 83 9337-3834",
+    "nome_corretor": "558393373834",
+    "telefone_corretor": "558393373834",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0406",
+    "raw_sender": "+55 83 8881-9396",
+    "nome_corretor": "558388819396",
+    "telefone_corretor": "558388819396",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0407",
+    "raw_sender": "+55 83 9822-8005",
+    "nome_corretor": "558398228005",
+    "telefone_corretor": "558398228005",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0408",
+    "raw_sender": "+55 83 8844-3272",
+    "nome_corretor": "558388443272",
+    "telefone_corretor": "558388443272",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0409",
+    "raw_sender": "+55 83 9625-0838",
+    "nome_corretor": "558396250838",
+    "telefone_corretor": "558396250838",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0410",
+    "raw_sender": "Ricardocsilva",
+    "nome_corretor": "Ricardocsilva",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0411",
+    "raw_sender": "+55 83 8793-4625",
+    "nome_corretor": "558387934625",
+    "telefone_corretor": "558387934625",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0412",
+    "raw_sender": "Oscar Nascimento",
+    "nome_corretor": "Oscar Nascimento",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0413",
+    "raw_sender": "Tallita Morgana Corretora De Imoveis",
+    "nome_corretor": "Tallita Morgana Corretora De Imoveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0414",
+    "raw_sender": "+55 83 9318-2525",
+    "nome_corretor": "558393182525",
+    "telefone_corretor": "558393182525",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0415",
+    "raw_sender": "Lucilia Dias Corretora",
+    "nome_corretor": "Lucilia Dias Corretora",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0416",
+    "raw_sender": "+55 83 9396-5070",
+    "nome_corretor": "558393965070",
+    "telefone_corretor": "558393965070",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0417",
+    "raw_sender": "+55 83 9372-2955",
+    "nome_corretor": "558393722955",
+    "telefone_corretor": "558393722955",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0418",
+    "raw_sender": "+55 83 8886-0555",
+    "nome_corretor": "558388860555",
+    "telefone_corretor": "558388860555",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0419",
+    "raw_sender": "Garibaldi",
+    "nome_corretor": "Garibaldi",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0420",
+    "raw_sender": "Dayane Delmiro",
+    "nome_corretor": "Dayane Delmiro",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0421",
+    "raw_sender": "+55 83 8661-3490",
+    "nome_corretor": "558386613490",
+    "telefone_corretor": "558386613490",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0422",
+    "raw_sender": "+55 83 9912-7560",
+    "nome_corretor": "558399127560",
+    "telefone_corretor": "558399127560",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0423",
+    "raw_sender": "+55 83 8111-1872",
+    "nome_corretor": "558381111872",
+    "telefone_corretor": "558381111872",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0424",
+    "raw_sender": "+55 83 9946-3825",
+    "nome_corretor": "558399463825",
+    "telefone_corretor": "558399463825",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0425",
+    "raw_sender": "+55 83 8860-0390",
+    "nome_corretor": "558388600390",
+    "telefone_corretor": "558388600390",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0426",
+    "raw_sender": "+55 83 9624-0971",
+    "nome_corretor": "558396240971",
+    "telefone_corretor": "558396240971",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0427",
+    "raw_sender": "+55 83 9137-2012",
+    "nome_corretor": "558391372012",
+    "telefone_corretor": "558391372012",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0428",
+    "raw_sender": "+55 83 9978-6175",
+    "nome_corretor": "558399786175",
+    "telefone_corretor": "558399786175",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0429",
+    "raw_sender": "+55 83 8747-6348",
+    "nome_corretor": "558387476348",
+    "telefone_corretor": "558387476348",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0430",
+    "raw_sender": "+55 83 8650-1295",
+    "nome_corretor": "558386501295",
+    "telefone_corretor": "558386501295",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0431",
+    "raw_sender": "+55 83 8173-2626",
+    "nome_corretor": "558381732626",
+    "telefone_corretor": "558381732626",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0432",
+    "raw_sender": "+55 83 9332-5798",
+    "nome_corretor": "558393325798",
+    "telefone_corretor": "558393325798",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0433",
+    "raw_sender": "+55 83 9988-9670",
+    "nome_corretor": "558399889670",
+    "telefone_corretor": "558399889670",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0434",
+    "raw_sender": "+55 83 9352-8443",
+    "nome_corretor": "558393528443",
+    "telefone_corretor": "558393528443",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0435",
+    "raw_sender": "+55 83 8620-5607",
+    "nome_corretor": "558386205607",
+    "telefone_corretor": "558386205607",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0436",
+    "raw_sender": "+55 83 8180-8363",
+    "nome_corretor": "558381808363",
+    "telefone_corretor": "558381808363",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0437",
+    "raw_sender": "+55 83 9830-9703",
+    "nome_corretor": "558398309703",
+    "telefone_corretor": "558398309703",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0438",
+    "raw_sender": "+55 83 8750-1994",
+    "nome_corretor": "558387501994",
+    "telefone_corretor": "558387501994",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0439",
+    "raw_sender": "+55 83 9637-8357",
+    "nome_corretor": "558396378357",
+    "telefone_corretor": "558396378357",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0440",
+    "raw_sender": "+55 83 9634-2146",
+    "nome_corretor": "558396342146",
+    "telefone_corretor": "558396342146",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0441",
+    "raw_sender": "+55 83 9102-0343",
+    "nome_corretor": "558391020343",
+    "telefone_corretor": "558391020343",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0442",
+    "raw_sender": "+55 83 8208-8439",
+    "nome_corretor": "558382088439",
+    "telefone_corretor": "558382088439",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0443",
+    "raw_sender": "+55 83 8811-5391",
+    "nome_corretor": "558388115391",
+    "telefone_corretor": "558388115391",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0444",
+    "raw_sender": "+55 83 9686-2016",
+    "nome_corretor": "558396862016",
+    "telefone_corretor": "558396862016",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0445",
+    "raw_sender": "+55 83 9382-2530",
+    "nome_corretor": "558393822530",
+    "telefone_corretor": "558393822530",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0446",
+    "raw_sender": "+55 83 8611-8968",
+    "nome_corretor": "558386118968",
+    "telefone_corretor": "558386118968",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0447",
+    "raw_sender": "+55 83 9172-6211",
+    "nome_corretor": "558391726211",
+    "telefone_corretor": "558391726211",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0448",
+    "raw_sender": "+55 83 8863-3199",
+    "nome_corretor": "558388633199",
+    "telefone_corretor": "558388633199",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0449",
+    "raw_sender": "+55 83 9615-2019",
+    "nome_corretor": "558396152019",
+    "telefone_corretor": "558396152019",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0450",
+    "raw_sender": "+55 83 9940-6256",
+    "nome_corretor": "558399406256",
+    "telefone_corretor": "558399406256",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0451",
+    "raw_sender": "+55 83 9869-4430",
+    "nome_corretor": "558398694430",
+    "telefone_corretor": "558398694430",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0452",
+    "raw_sender": "+55 83 8825-7000",
+    "nome_corretor": "558388257000",
+    "telefone_corretor": "558388257000",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0453",
+    "raw_sender": "Murilo Batista",
+    "nome_corretor": "Murilo Batista",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0454",
+    "raw_sender": "Muniz Corretor",
+    "nome_corretor": "Muniz Corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0455",
+    "raw_sender": "+55 83 8808-0013",
+    "nome_corretor": "558388080013",
+    "telefone_corretor": "558388080013",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0456",
+    "raw_sender": "+55 83 8800-2317",
+    "nome_corretor": "558388002317",
+    "telefone_corretor": "558388002317",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0457",
+    "raw_sender": "Lueberton - agente imobiliário",
+    "nome_corretor": "Lueberton - agente imobiliário",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0458",
+    "raw_sender": "Leyla Mafra - Corretora De Imoveis",
+    "nome_corretor": "Leyla Mafra - Corretora De Imoveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0459",
+    "raw_sender": "+55 83 8790-8140",
+    "nome_corretor": "558387908140",
+    "telefone_corretor": "558387908140",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0460",
+    "raw_sender": "+55 83 9861-0597",
+    "nome_corretor": "558398610597",
+    "telefone_corretor": "558398610597",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0461",
+    "raw_sender": "+55 83 8117-5091",
+    "nome_corretor": "558381175091",
+    "telefone_corretor": "558381175091",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0462",
+    "raw_sender": "Tadeu Vendas Construtora Rocha",
+    "nome_corretor": "Tadeu Vendas Construtora Rocha",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0463",
+    "raw_sender": "+55 83 9653-9563",
+    "nome_corretor": "558396539563",
+    "telefone_corretor": "558396539563",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0464",
+    "raw_sender": "+55 83 9684-9016",
+    "nome_corretor": "558396849016",
+    "telefone_corretor": "558396849016",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0465",
+    "raw_sender": "Rildimar Oliveira",
+    "nome_corretor": "Rildimar Oliveira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0466",
+    "raw_sender": "+55 83 9105-5240",
+    "nome_corretor": "558391055240",
+    "telefone_corretor": "558391055240",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0467",
+    "raw_sender": "+55 83 8816-1763",
+    "nome_corretor": "558388161763",
+    "telefone_corretor": "558388161763",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0468",
+    "raw_sender": "+55 83 9972-9843",
+    "nome_corretor": "558399729843",
+    "telefone_corretor": "558399729843",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0469",
+    "raw_sender": "Emerson",
+    "nome_corretor": "Emerson",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0470",
+    "raw_sender": "+55 83 8838-4511",
+    "nome_corretor": "558388384511",
+    "telefone_corretor": "558388384511",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0471",
+    "raw_sender": "+55 83 8872-5088",
+    "nome_corretor": "558388725088",
+    "telefone_corretor": "558388725088",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0472",
+    "raw_sender": "+55 83 9695-9530",
+    "nome_corretor": "558396959530",
+    "telefone_corretor": "558396959530",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0473",
+    "raw_sender": "+55 83 8142-5166",
+    "nome_corretor": "558381425166",
+    "telefone_corretor": "558381425166",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0474",
+    "raw_sender": "Alersson Alves",
+    "nome_corretor": "Alersson Alves",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0475",
+    "raw_sender": "+55 83 9347-6836",
+    "nome_corretor": "558393476836",
+    "telefone_corretor": "558393476836",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0476",
+    "raw_sender": "+55 83 8174-0176",
+    "nome_corretor": "558381740176",
+    "telefone_corretor": "558381740176",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0477",
+    "raw_sender": "+55 83 8868-3265",
+    "nome_corretor": "558388683265",
+    "telefone_corretor": "558388683265",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0478",
+    "raw_sender": "+55 83 8616-4827",
+    "nome_corretor": "558386164827",
+    "telefone_corretor": "558386164827",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0479",
+    "raw_sender": "+55 83 8700-9038",
+    "nome_corretor": "558387009038",
+    "telefone_corretor": "558387009038",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0480",
+    "raw_sender": "+55 83 8155-0527",
+    "nome_corretor": "Nilvan Corresp. CEF WD",
+    "telefone_corretor": "558381550527",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0481",
+    "raw_sender": "+55 83 8155-1313",
+    "nome_corretor": "558381551313",
+    "telefone_corretor": "558381551313",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0482",
+    "raw_sender": "João Pedro",
+    "nome_corretor": "João Pedro",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0483",
+    "raw_sender": "Corretora Aline Ferreira",
+    "nome_corretor": "Corretora Aline Ferreira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0484",
+    "raw_sender": "+55 83 9629-9682",
+    "nome_corretor": "558396299682",
+    "telefone_corretor": "558396299682",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0485",
+    "raw_sender": "+55 31 9809-0267",
+    "nome_corretor": "553198090267",
+    "telefone_corretor": "553198090267",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0486",
+    "raw_sender": "+55 83 9601-5887",
+    "nome_corretor": "558396015887",
+    "telefone_corretor": "558396015887",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0487",
+    "raw_sender": "+55 83 9144-0649",
+    "nome_corretor": "558391440649",
+    "telefone_corretor": "558391440649",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0488",
+    "raw_sender": "+55 83 8136-4110",
+    "nome_corretor": "558381364110",
+    "telefone_corretor": "558381364110",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0489",
+    "raw_sender": "+55 83 9354-6869",
+    "nome_corretor": "558393546869",
+    "telefone_corretor": "558393546869",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0490",
+    "raw_sender": "+55 83 8740-9191",
+    "nome_corretor": "558387409191",
+    "telefone_corretor": "558387409191",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0491",
+    "raw_sender": "Corretor De Imoveis - Anderson Amarante",
+    "nome_corretor": "Corretor De Imoveis - Anderson Amarante",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0492",
+    "raw_sender": "+55 83 9691-2981",
+    "nome_corretor": "558396912981",
+    "telefone_corretor": "558396912981",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0493",
+    "raw_sender": "+55 83 9114-1319",
+    "nome_corretor": "558391141319",
+    "telefone_corretor": "558391141319",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0494",
+    "raw_sender": "+55 83 8873-0408",
+    "nome_corretor": "558388730408",
+    "telefone_corretor": "558388730408",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0495",
+    "raw_sender": "+55 83 9137-0204",
+    "nome_corretor": "558391370204",
+    "telefone_corretor": "558391370204",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0496",
+    "raw_sender": "+55 83 8843-9940",
+    "nome_corretor": "Ambrósio Pereira",
+    "telefone_corretor": "558388439940",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0497",
+    "raw_sender": "Walisson Andrade - Corretor de Imóveis",
+    "nome_corretor": "Walisson Andrade - Corretor de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0498",
+    "raw_sender": "+55 83 8788-5555",
+    "nome_corretor": "558387885555",
+    "telefone_corretor": "558387885555",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0499",
+    "raw_sender": "Janaína Freitas",
+    "nome_corretor": "Janaína Freitas",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0500",
+    "raw_sender": "Isaac Alves",
+    "nome_corretor": "Isaac Alves",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0501",
+    "raw_sender": "+55 83 8836-0125",
+    "nome_corretor": "558388360125",
+    "telefone_corretor": "558388360125",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0502",
+    "raw_sender": "+55 81 8799-3416",
+    "nome_corretor": "558187993416",
+    "telefone_corretor": "558187993416",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0503",
+    "raw_sender": "Myrtes Freire Corretora de imóveis",
+    "nome_corretor": "Myrtes Freire Corretora de imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0504",
+    "raw_sender": "+55 83 9946-2575",
+    "nome_corretor": "558399462575",
+    "telefone_corretor": "558399462575",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0505",
+    "raw_sender": "+55 83 8701-2379",
+    "nome_corretor": "558387012379",
+    "telefone_corretor": "558387012379",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0506",
+    "raw_sender": "+55 83 9674-9584",
+    "nome_corretor": "558396749584",
+    "telefone_corretor": "558396749584",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0507",
+    "raw_sender": "+55 83 9980-3165",
+    "nome_corretor": "558399803165",
+    "telefone_corretor": "558399803165",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0508",
+    "raw_sender": "+55 83 9992-5759",
+    "nome_corretor": "558399925759",
+    "telefone_corretor": "558399925759",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0509",
+    "raw_sender": "+55 83 9600-8392",
+    "nome_corretor": "558396008392",
+    "telefone_corretor": "558396008392",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0510",
+    "raw_sender": "+55 83 9926-7089",
+    "nome_corretor": "558399267089",
+    "telefone_corretor": "558399267089",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0511",
+    "raw_sender": "+55 83 9349-2525",
+    "nome_corretor": "558393492525",
+    "telefone_corretor": "558393492525",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0512",
+    "raw_sender": "+55 83 9668-0123",
+    "nome_corretor": "558396680123",
+    "telefone_corretor": "558396680123",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0513",
+    "raw_sender": "Klécia Martins",
+    "nome_corretor": "Klécia Martins",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0514",
+    "raw_sender": "Paulo Junior Silva Corretor de imóveis",
+    "nome_corretor": "Paulo Junior Silva Corretor de imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0515",
+    "raw_sender": "Camila Pontes",
+    "nome_corretor": "Camila Pontes",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0516",
+    "raw_sender": "+55 83 9123-4046",
+    "nome_corretor": "558391234046",
+    "telefone_corretor": "558391234046",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0517",
+    "raw_sender": "+55 83 9978-0694",
+    "nome_corretor": "558399780694",
+    "telefone_corretor": "558399780694",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0518",
+    "raw_sender": "+55 83 8703-4847",
+    "nome_corretor": "558387034847",
+    "telefone_corretor": "558387034847",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0519",
+    "raw_sender": "LINEAR// MR CONSTRUÇÕES",
+    "nome_corretor": "LINEAR// MR CONSTRUÇÕES",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0520",
+    "raw_sender": "Jussara Nunes",
+    "nome_corretor": "Jussara Nunes",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0521",
+    "raw_sender": "Cláudio César",
+    "nome_corretor": "Cláudio César",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0522",
+    "raw_sender": "+55 83 8819-7446",
+    "nome_corretor": "558388197446",
+    "telefone_corretor": "558388197446",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0523",
+    "raw_sender": "+55 83 9629-0921",
+    "nome_corretor": "558396290921",
+    "telefone_corretor": "558396290921",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0524",
+    "raw_sender": "+55 83 9340-2784",
+    "nome_corretor": "558393402784",
+    "telefone_corretor": "558393402784",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0525",
+    "raw_sender": "+55 83 9812-7276",
+    "nome_corretor": "558398127276",
+    "telefone_corretor": "558398127276",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0526",
+    "raw_sender": "+55 83 8700-3831",
+    "nome_corretor": "558387003831",
+    "telefone_corretor": "558387003831",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0527",
+    "raw_sender": "+55 83 8811-4270",
+    "nome_corretor": "558388114270",
+    "telefone_corretor": "558388114270",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0528",
+    "raw_sender": "+55 83 8836-3233",
+    "nome_corretor": "558388363233",
+    "telefone_corretor": "558388363233",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0529",
+    "raw_sender": "Antonio Bras",
+    "nome_corretor": "Antonio Bras",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0530",
+    "raw_sender": "+55 83 8876-2760",
+    "nome_corretor": "558388762760",
+    "telefone_corretor": "558388762760",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0531",
+    "raw_sender": "ANDRE DE DEUS ATAIDE",
+    "nome_corretor": "ANDRE DE DEUS ATAIDE",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0532",
+    "raw_sender": "+55 83 8743-6969",
+    "nome_corretor": "558387436969",
+    "telefone_corretor": "558387436969",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0533",
+    "raw_sender": "+55 83 8225-2918",
+    "nome_corretor": "558382252918",
+    "telefone_corretor": "558382252918",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0534",
+    "raw_sender": "+55 83 9999-4960",
+    "nome_corretor": "558399994960",
+    "telefone_corretor": "558399994960",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0535",
+    "raw_sender": "+55 83 8695-3184",
+    "nome_corretor": "558386953184",
+    "telefone_corretor": "558386953184",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0536",
+    "raw_sender": "+55 83 9309-2812",
+    "nome_corretor": "558393092812",
+    "telefone_corretor": "558393092812",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0537",
+    "raw_sender": "+55 83 9600-2033",
+    "nome_corretor": "558396002033",
+    "telefone_corretor": "558396002033",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0538",
+    "raw_sender": "+55 83 8682-0813",
+    "nome_corretor": "558386820813",
+    "telefone_corretor": "558386820813",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0539",
+    "raw_sender": "+55 83 9896-2856",
+    "nome_corretor": "558398962856",
+    "telefone_corretor": "558398962856",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0540",
+    "raw_sender": "+55 83 9816-4832",
+    "nome_corretor": "558398164832",
+    "telefone_corretor": "558398164832",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0541",
+    "raw_sender": "+55 83 9640-8225",
+    "nome_corretor": "558396408225",
+    "telefone_corretor": "558396408225",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0542",
+    "raw_sender": "+55 83 9814-0767",
+    "nome_corretor": "558398140767",
+    "telefone_corretor": "558398140767",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0543",
+    "raw_sender": "+55 83 9986-1756",
+    "nome_corretor": "558399861756",
+    "telefone_corretor": "558399861756",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0544",
+    "raw_sender": "+55 83 8833-9974",
+    "nome_corretor": "558388339974",
+    "telefone_corretor": "558388339974",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0545",
+    "raw_sender": "+55 83 8610-3255",
+    "nome_corretor": "558386103255",
+    "telefone_corretor": "558386103255",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0546",
+    "raw_sender": "Blacktie Formaturas",
+    "nome_corretor": "Blacktie Formaturas",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0547",
+    "raw_sender": "+55 83 8809-3485",
+    "nome_corretor": "558388093485",
+    "telefone_corretor": "558388093485",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0548",
+    "raw_sender": "+55 83 9153-1645",
+    "nome_corretor": "558391531645",
+    "telefone_corretor": "558391531645",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0549",
+    "raw_sender": "Cezár Lopes",
+    "nome_corretor": "Cezár Lopes",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0550",
+    "raw_sender": "+55 83 8853-3561",
+    "nome_corretor": "558388533561",
+    "telefone_corretor": "558388533561",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0551",
+    "raw_sender": "Julio Oliveira corretor",
+    "nome_corretor": "Julio Oliveira corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0552",
+    "raw_sender": "+55 83 9810-1566",
+    "nome_corretor": "558398101566",
+    "telefone_corretor": "558398101566",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0553",
+    "raw_sender": "+55 83 9603-1818",
+    "nome_corretor": "558396031818",
+    "telefone_corretor": "558396031818",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0554",
+    "raw_sender": "+55 83 8622-7033",
+    "nome_corretor": "558386227033",
+    "telefone_corretor": "558386227033",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0555",
+    "raw_sender": "+55 83 9312-4109",
+    "nome_corretor": "558393124109",
+    "telefone_corretor": "558393124109",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0556",
+    "raw_sender": "+55 83 8895-0274",
+    "nome_corretor": "558388950274",
+    "telefone_corretor": "558388950274",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0557",
+    "raw_sender": "+55 83 8852-1727",
+    "nome_corretor": "558388521727",
+    "telefone_corretor": "558388521727",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0558",
+    "raw_sender": "+55 83 8610-9050",
+    "nome_corretor": "558386109050",
+    "telefone_corretor": "558386109050",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0559",
+    "raw_sender": "+55 83 8152-6547",
+    "nome_corretor": "558381526547",
+    "telefone_corretor": "558381526547",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0560",
+    "raw_sender": "+55 83 8884-3986",
+    "nome_corretor": "558388843986",
+    "telefone_corretor": "558388843986",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0561",
+    "raw_sender": "+55 83 8167-4053",
+    "nome_corretor": "558381674053",
+    "telefone_corretor": "558381674053",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0562",
+    "raw_sender": "Vânia Pontes Flat Marinas 113",
+    "nome_corretor": "Vânia Pontes Flat Marinas 113",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0563",
+    "raw_sender": "+55 83 9314-8832",
+    "nome_corretor": "558393148832",
+    "telefone_corretor": "558393148832",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0564",
+    "raw_sender": "Imóveis",
+    "nome_corretor": "Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0565",
+    "raw_sender": "+55 83 9624-9090",
+    "nome_corretor": "558396249090",
+    "telefone_corretor": "558396249090",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0566",
+    "raw_sender": "Fagner Gregório Corretor de Imóveis",
+    "nome_corretor": "Fagner Gregório Corretor de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0567",
+    "raw_sender": "+55 83 8730-7032",
+    "nome_corretor": "558387307032",
+    "telefone_corretor": "558387307032",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0568",
+    "raw_sender": "+55 83 8610-6436",
+    "nome_corretor": "558386106436",
+    "telefone_corretor": "558386106436",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0569",
+    "raw_sender": "+55 83 8725-1088",
+    "nome_corretor": "558387251088",
+    "telefone_corretor": "558387251088",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0570",
+    "raw_sender": "+55 83 9171-1217",
+    "nome_corretor": "558391711217",
+    "telefone_corretor": "558391711217",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0571",
+    "raw_sender": "Camila Oliveira Corretora 9826-F",
+    "nome_corretor": "Camila Oliveira Corretora 9826-F",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0572",
+    "raw_sender": "+55 83 9148-1162",
+    "nome_corretor": "558391481162",
+    "telefone_corretor": "558391481162",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0573",
+    "raw_sender": "+55 83 8640-3423",
+    "nome_corretor": "558386403423",
+    "telefone_corretor": "558386403423",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0574",
+    "raw_sender": "+55 83 9616-9856",
+    "nome_corretor": "558396169856",
+    "telefone_corretor": "558396169856",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0575",
+    "raw_sender": "+55 83 8714-2140",
+    "nome_corretor": "558387142140",
+    "telefone_corretor": "558387142140",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0576",
+    "raw_sender": "Ricardo Paulo Vovô Rico",
+    "nome_corretor": "Ricardo Paulo Vovô Rico",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0577",
+    "raw_sender": "Desconhecido",
+    "nome_corretor": "Desconhecido",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0578",
+    "raw_sender": "+55 83 9983-4401",
+    "nome_corretor": "558399834401",
+    "telefone_corretor": "558399834401",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0579",
+    "raw_sender": "Jailda Albuquerque",
+    "nome_corretor": "Jailda Albuquerque",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0580",
+    "raw_sender": "+55 83 8158-3314",
+    "nome_corretor": "558381583314",
+    "telefone_corretor": "558381583314",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0581",
+    "raw_sender": "+55 11 91671-8383",
+    "nome_corretor": "5511916718383",
+    "telefone_corretor": "5511916718383",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0582",
+    "raw_sender": "socorrochaves38",
+    "nome_corretor": "socorrochaves38",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0583",
+    "raw_sender": "+55 83 9612-5558",
+    "nome_corretor": "558396125558",
+    "telefone_corretor": "558396125558",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0584",
+    "raw_sender": "+55 83 8884-8082",
+    "nome_corretor": "Henrique Nunes Nunes",
+    "telefone_corretor": "558388848082",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0585",
+    "raw_sender": "+55 83 92001-3374",
+    "nome_corretor": "5583920013374",
+    "telefone_corretor": "5583920013374",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0586",
+    "raw_sender": "+55 83 8660-9625",
+    "nome_corretor": "558386609625",
+    "telefone_corretor": "558386609625",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0587",
+    "raw_sender": "+55 83 8727-9979",
+    "nome_corretor": "558387279979",
+    "telefone_corretor": "558387279979",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0588",
+    "raw_sender": "+55 83 9927-0899",
+    "nome_corretor": "558399270899",
+    "telefone_corretor": "558399270899",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0589",
+    "raw_sender": "+55 83 8830-0103",
+    "nome_corretor": "558388300103",
+    "telefone_corretor": "558388300103",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0590",
+    "raw_sender": "+55 83 8127-4866",
+    "nome_corretor": "Mickael Despachante",
+    "telefone_corretor": "558381274866",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0591",
+    "raw_sender": "+55 83 9827-1350",
+    "nome_corretor": "558398271350",
+    "telefone_corretor": "558398271350",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0592",
+    "raw_sender": "+55 83 9307-1411",
+    "nome_corretor": "558393071411",
+    "telefone_corretor": "558393071411",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0593",
+    "raw_sender": "Ítalo Gomes",
+    "nome_corretor": "Ítalo Gomes",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0594",
+    "raw_sender": "Alisson",
+    "nome_corretor": "Alisson",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0595",
+    "raw_sender": "+55 83 9918-3995",
+    "nome_corretor": "558399183995",
+    "telefone_corretor": "558399183995",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0596",
+    "raw_sender": "+55 83 8878-2106",
+    "nome_corretor": "558388782106",
+    "telefone_corretor": "558388782106",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0597",
+    "raw_sender": "Karla Constutora E Corretora de Imoveis Creci PB 14495F",
+    "nome_corretor": "Karla Constutora E Corretora de Imoveis Creci PB 14495F",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0598",
+    "raw_sender": "ANDREA SOUSA  Agente imobiliário",
+    "nome_corretor": "ANDREA SOUSA  Agente imobiliário",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0599",
+    "raw_sender": "+55 83 9837-0550",
+    "nome_corretor": "558398370550",
+    "telefone_corretor": "558398370550",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0600",
+    "raw_sender": "+55 83 8806-9412",
+    "nome_corretor": "558388069412",
+    "telefone_corretor": "558388069412",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0601",
+    "raw_sender": "+55 83 9124-8859",
+    "nome_corretor": "558391248859",
+    "telefone_corretor": "558391248859",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0602",
+    "raw_sender": "+55 83 8623-2691",
+    "nome_corretor": "558386232691",
+    "telefone_corretor": "558386232691",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0603",
+    "raw_sender": "+55 83 9163-0274",
+    "nome_corretor": "558391630274",
+    "telefone_corretor": "558391630274",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0604",
+    "raw_sender": "+55 83 8865-2134",
+    "nome_corretor": "558388652134",
+    "telefone_corretor": "558388652134",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0605",
+    "raw_sender": "+55 83 9655-7070",
+    "nome_corretor": "558396557070",
+    "telefone_corretor": "558396557070",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0606",
+    "raw_sender": "+55 83 8740-8242",
+    "nome_corretor": "558387408242",
+    "telefone_corretor": "558387408242",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0607",
+    "raw_sender": "+55 83 8789-0405",
+    "nome_corretor": "558387890405",
+    "telefone_corretor": "558387890405",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0608",
+    "raw_sender": "+55 83 9637-1951",
+    "nome_corretor": "558396371951",
+    "telefone_corretor": "558396371951",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0609",
+    "raw_sender": "+55 83 9319-3993",
+    "nome_corretor": "558393193993",
+    "telefone_corretor": "558393193993",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0610",
+    "raw_sender": "+55 83 9141-5445",
+    "nome_corretor": "558391415445",
+    "telefone_corretor": "558391415445",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0611",
+    "raw_sender": "+55 83 9607-5200",
+    "nome_corretor": "558396075200",
+    "telefone_corretor": "558396075200",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0612",
+    "raw_sender": "+55 83 9126-2275",
+    "nome_corretor": "558391262275",
+    "telefone_corretor": "558391262275",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0613",
+    "raw_sender": "+55 83 9607-2598",
+    "nome_corretor": "558396072598",
+    "telefone_corretor": "558396072598",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0614",
+    "raw_sender": "PRIMEIRO PASSO NEGÓCIOS IMOBILIÁRIOS - CRECI 1257-J",
+    "nome_corretor": "PRIMEIRO PASSO NEGÓCIOS IMOBILIÁRIOS - CRECI 1257-J",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0615",
+    "raw_sender": "+55 83 9991-6681",
+    "nome_corretor": "558399916681",
+    "telefone_corretor": "558399916681",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0616",
+    "raw_sender": "+55 83 9954-0403",
+    "nome_corretor": "558399540403",
+    "telefone_corretor": "558399540403",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0617",
+    "raw_sender": "+55 83 8853-4557",
+    "nome_corretor": "558388534557",
+    "telefone_corretor": "558388534557",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0618",
+    "raw_sender": "+55 83 9672-3268",
+    "nome_corretor": "558396723268",
+    "telefone_corretor": "558396723268",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0619",
+    "raw_sender": "+55 83 8767-8668",
+    "nome_corretor": "558387678668",
+    "telefone_corretor": "558387678668",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0620",
+    "raw_sender": "+55 83 9418-1620",
+    "nome_corretor": "558394181620",
+    "telefone_corretor": "558394181620",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0621",
+    "raw_sender": "+55 83 9976-2786",
+    "nome_corretor": "558399762786",
+    "telefone_corretor": "558399762786",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0622",
+    "raw_sender": "+55 83 8862-4274",
+    "nome_corretor": "558388624274",
+    "telefone_corretor": "558388624274",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0623",
+    "raw_sender": "+55 81 9388-2767",
+    "nome_corretor": "558193882767",
+    "telefone_corretor": "558193882767",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0624",
+    "raw_sender": "+55 83 9912-1920",
+    "nome_corretor": "558399121920",
+    "telefone_corretor": "558399121920",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0625",
+    "raw_sender": "+55 83 8896-2767",
+    "nome_corretor": "558388962767",
+    "telefone_corretor": "558388962767",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0626",
+    "raw_sender": "+55 83 9125-9578",
+    "nome_corretor": "558391259578",
+    "telefone_corretor": "558391259578",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0627",
+    "raw_sender": "+55 83 9917-1427",
+    "nome_corretor": "558399171427",
+    "telefone_corretor": "558399171427",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0628",
+    "raw_sender": "Adriana Andrade Corretora de Imóveis",
+    "nome_corretor": "Adriana Andrade Corretora de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0629",
+    "raw_sender": "+55 83 8771-2660",
+    "nome_corretor": "558387712660",
+    "telefone_corretor": "558387712660",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0630",
+    "raw_sender": "+55 83 9800-1774",
+    "nome_corretor": "558398001774",
+    "telefone_corretor": "558398001774",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0631",
+    "raw_sender": "+55 83 9406-5129",
+    "nome_corretor": "558394065129",
+    "telefone_corretor": "558394065129",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0632",
+    "raw_sender": "Marcos Lacerda",
+    "nome_corretor": "Marcos Lacerda",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0633",
+    "raw_sender": "DAIANNY OLIVEIRA",
+    "nome_corretor": "DAIANNY OLIVEIRA",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0634",
+    "raw_sender": "Ramon Mariz",
+    "nome_corretor": "Ramon Mariz",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0635",
+    "raw_sender": "+55 83 8698-8586",
+    "nome_corretor": "558386988586",
+    "telefone_corretor": "558386988586",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0636",
+    "raw_sender": "+55 83 8822-2622",
+    "nome_corretor": "558388222622",
+    "telefone_corretor": "558388222622",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0637",
+    "raw_sender": "Marcos Campello",
+    "nome_corretor": "Marcos Campello",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0638",
+    "raw_sender": "+55 83 9334-3131",
+    "nome_corretor": "Rodolfo Freire",
+    "telefone_corretor": "558393343131",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0639",
+    "raw_sender": "+55 83 8102-1996",
+    "nome_corretor": "558381021996",
+    "telefone_corretor": "558381021996",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0640",
+    "raw_sender": "+55 83 8743-5610",
+    "nome_corretor": "Anderson Rocha corretor CRECI 16294 F",
+    "telefone_corretor": "558387435610",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0641",
+    "raw_sender": "+55 83 9611-7983",
+    "nome_corretor": "558396117983",
+    "telefone_corretor": "558396117983",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0642",
+    "raw_sender": "+55 83 9844-7118",
+    "nome_corretor": "558398447118",
+    "telefone_corretor": "558398447118",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0643",
+    "raw_sender": "+55 83 8856-8871",
+    "nome_corretor": "558388568871",
+    "telefone_corretor": "558388568871",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0644",
+    "raw_sender": "+55 83 9856-1056",
+    "nome_corretor": "558398561056",
+    "telefone_corretor": "558398561056",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0645",
+    "raw_sender": "Investlar",
+    "nome_corretor": "Investlar",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0646",
+    "raw_sender": "+55 83 9807-7672",
+    "nome_corretor": "João Paulo Corretor",
+    "telefone_corretor": "558398077672",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0647",
+    "raw_sender": "+55 83 9817-1024",
+    "nome_corretor": "558398171024",
+    "telefone_corretor": "558398171024",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0648",
+    "raw_sender": "+55 83 8703-0678",
+    "nome_corretor": "558387030678",
+    "telefone_corretor": "558387030678",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0649",
+    "raw_sender": "Walbenia Rocha",
+    "nome_corretor": "Walbenia Rocha",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0650",
+    "raw_sender": "+55 83 9983-7818",
+    "nome_corretor": "558399837818",
+    "telefone_corretor": "558399837818",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0651",
+    "raw_sender": "+55 83 9197-9883",
+    "nome_corretor": "558391979883",
+    "telefone_corretor": "558391979883",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0652",
+    "raw_sender": "+55 83 8156-5286",
+    "nome_corretor": "558381565286",
+    "telefone_corretor": "558381565286",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0653",
+    "raw_sender": "+55 83 8809-7373",
+    "nome_corretor": "558388097373",
+    "telefone_corretor": "558388097373",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0654",
+    "raw_sender": "+55 83 8856-5205",
+    "nome_corretor": "558388565205",
+    "telefone_corretor": "558388565205",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0655",
+    "raw_sender": "Bruno Weslley Araújo",
+    "nome_corretor": "Bruno Weslley Araújo",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0656",
+    "raw_sender": "+55 83 8612-8019",
+    "nome_corretor": "558386128019",
+    "telefone_corretor": "558386128019",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0657",
+    "raw_sender": "+55 83 8889-1717",
+    "nome_corretor": "558388891717",
+    "telefone_corretor": "558388891717",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0658",
+    "raw_sender": "+55 83 8717-2945",
+    "nome_corretor": "558387172945",
+    "telefone_corretor": "558387172945",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0659",
+    "raw_sender": "+55 83 8712-2322",
+    "nome_corretor": "558387122322",
+    "telefone_corretor": "558387122322",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0660",
+    "raw_sender": "+55 83 9613-6182",
+    "nome_corretor": "558396136182",
+    "telefone_corretor": "558396136182",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0661",
+    "raw_sender": "Samuel Alcantara",
+    "nome_corretor": "Samuel Alcantara",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0662",
+    "raw_sender": "+55 83 8608-0226",
+    "nome_corretor": "Corretor Silas Renato",
+    "telefone_corretor": "558386080226",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0663",
+    "raw_sender": "+55 83 9188-3532",
+    "nome_corretor": "558391883532",
+    "telefone_corretor": "558391883532",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0664",
+    "raw_sender": "+55 83 8810-4701",
+    "nome_corretor": "558388104701",
+    "telefone_corretor": "558388104701",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0665",
+    "raw_sender": "+55 83 9416-5425",
+    "nome_corretor": "558394165425",
+    "telefone_corretor": "558394165425",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0666",
+    "raw_sender": "Romário Tavares",
+    "nome_corretor": "Romário Tavares",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0667",
+    "raw_sender": "Wanderley Peixoto",
+    "nome_corretor": "Wanderley Peixoto",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0668",
+    "raw_sender": "+55 83 9604-3344",
+    "nome_corretor": "558396043344",
+    "telefone_corretor": "558396043344",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0669",
+    "raw_sender": "Kelson Videres",
+    "nome_corretor": "Kelson Videres",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0670",
+    "raw_sender": "Tiago Silva",
+    "nome_corretor": "Tiago Silva",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0671",
+    "raw_sender": "+55 83 8834-2564",
+    "nome_corretor": "558388342564",
+    "telefone_corretor": "558388342564",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0672",
+    "raw_sender": "Carlos Carlos Ferreira",
+    "nome_corretor": "Carlos Carlos Ferreira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0673",
+    "raw_sender": "+55 83 8845-9465",
+    "nome_corretor": "558388459465",
+    "telefone_corretor": "558388459465",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0674",
+    "raw_sender": "+55 83 9857-4392",
+    "nome_corretor": "558398574392",
+    "telefone_corretor": "558398574392",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0675",
+    "raw_sender": "+55 83 8848-8565",
+    "nome_corretor": "558388488565",
+    "telefone_corretor": "558388488565",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0676",
+    "raw_sender": "Eliandro Fonseca",
+    "nome_corretor": "Eliandro Fonseca",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0677",
+    "raw_sender": "+55 83 8698-3802",
+    "nome_corretor": "558386983802",
+    "telefone_corretor": "558386983802",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0678",
+    "raw_sender": "Marcos Maia",
+    "nome_corretor": "Marcos Maia",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0679",
+    "raw_sender": "Abraão Maciel Corretor de Imóveis",
+    "nome_corretor": "Abraão Maciel Corretor de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0680",
+    "raw_sender": "+55 83 8760-1083",
+    "nome_corretor": "558387601083",
+    "telefone_corretor": "558387601083",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0681",
+    "raw_sender": "Roseane Santos",
+    "nome_corretor": "Roseane Santos",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0682",
+    "raw_sender": "+55 83 9306-8396",
+    "nome_corretor": "558393068396",
+    "telefone_corretor": "558393068396",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0683",
+    "raw_sender": "+55 83 9186-8852",
+    "nome_corretor": "558391868852",
+    "telefone_corretor": "558391868852",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0684",
+    "raw_sender": "+55 83 8896-9911",
+    "nome_corretor": "558388969911",
+    "telefone_corretor": "558388969911",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0685",
+    "raw_sender": "+55 83 9948-6893",
+    "nome_corretor": "558399486893",
+    "telefone_corretor": "558399486893",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0686",
+    "raw_sender": "‎Monik Cartaxo",
+    "nome_corretor": "‎Monik Cartaxo",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0687",
+    "raw_sender": "+55 83 8844-0223",
+    "nome_corretor": "558388440223",
+    "telefone_corretor": "558388440223",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0688",
+    "raw_sender": "Rosineide Paulino",
+    "nome_corretor": "Rosineide Paulino",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0689",
+    "raw_sender": "+55 83 8738-2730",
+    "nome_corretor": "558387382730",
+    "telefone_corretor": "558387382730",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0690",
+    "raw_sender": "+55 83 9135-1062",
+    "nome_corretor": "558391351062",
+    "telefone_corretor": "558391351062",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0691",
+    "raw_sender": "+55 83 8826-9590",
+    "nome_corretor": "558388269590",
+    "telefone_corretor": "558388269590",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0692",
+    "raw_sender": "+55 83 9398-8569",
+    "nome_corretor": "558393988569",
+    "telefone_corretor": "558393988569",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0693",
+    "raw_sender": "+55 83 8213-8684",
+    "nome_corretor": "558382138684",
+    "telefone_corretor": "558382138684",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0694",
+    "raw_sender": "+55 83 9983-2246",
+    "nome_corretor": "558399832246",
+    "telefone_corretor": "558399832246",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0695",
+    "raw_sender": "+55 83 9931-9508",
+    "nome_corretor": "558399319508",
+    "telefone_corretor": "558399319508",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0696",
+    "raw_sender": "+55 83 9381-5712",
+    "nome_corretor": "558393815712",
+    "telefone_corretor": "558393815712",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0697",
+    "raw_sender": "+55 83 9645-5296",
+    "nome_corretor": "558396455296",
+    "telefone_corretor": "558396455296",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0698",
+    "raw_sender": "+55 83 9689-5220",
+    "nome_corretor": "558396895220",
+    "telefone_corretor": "558396895220",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0699",
+    "raw_sender": "+55 83 9375-3004",
+    "nome_corretor": "558393753004",
+    "telefone_corretor": "558393753004",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0700",
+    "raw_sender": "+55 83 8798-9425",
+    "nome_corretor": "558387989425",
+    "telefone_corretor": "558387989425",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0701",
+    "raw_sender": "+55 83 8742-5055",
+    "nome_corretor": "558387425055",
+    "telefone_corretor": "558387425055",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0702",
+    "raw_sender": "+55 83 9838-3113",
+    "nome_corretor": "558398383113",
+    "telefone_corretor": "558398383113",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0703",
+    "raw_sender": "+55 83 8135-6292",
+    "nome_corretor": "558381356292",
+    "telefone_corretor": "558381356292",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0704",
+    "raw_sender": "+55 83 9864-2721",
+    "nome_corretor": "558398642721",
+    "telefone_corretor": "558398642721",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0705",
+    "raw_sender": "Corretoraassilanemedeiros",
+    "nome_corretor": "Corretoraassilanemedeiros",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0706",
+    "raw_sender": "+55 83 9140-0277",
+    "nome_corretor": "Pablo Higor Corretor Repasse Corretor Repasse",
+    "telefone_corretor": "558391400277",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0707",
+    "raw_sender": "Elane Alves",
+    "nome_corretor": "Elane Alves",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0708",
+    "raw_sender": "+55 83 8805-1150",
+    "nome_corretor": "558388051150",
+    "telefone_corretor": "558388051150",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0709",
+    "raw_sender": "+55 83 9990-0434",
+    "nome_corretor": "558399900434",
+    "telefone_corretor": "558399900434",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0710",
+    "raw_sender": "+55 83 9114-8447",
+    "nome_corretor": "558391148447",
+    "telefone_corretor": "558391148447",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0711",
+    "raw_sender": "+55 83 9865-8826",
+    "nome_corretor": "558398658826",
+    "telefone_corretor": "558398658826",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0712",
+    "raw_sender": "+55 83 8877-5670",
+    "nome_corretor": "558388775670",
+    "telefone_corretor": "558388775670",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0713",
+    "raw_sender": "+55 83 9825-8668",
+    "nome_corretor": "558398258668",
+    "telefone_corretor": "558398258668",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0714",
+    "raw_sender": "+55 83 9158-2968",
+    "nome_corretor": "558391582968",
+    "telefone_corretor": "558391582968",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0715",
+    "raw_sender": "+55 83 8872-3452",
+    "nome_corretor": "558388723452",
+    "telefone_corretor": "558388723452",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0716",
+    "raw_sender": "+55 83 9139-7240",
+    "nome_corretor": "558391397240",
+    "telefone_corretor": "558391397240",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0717",
+    "raw_sender": "Glauber corretor",
+    "nome_corretor": "Glauber corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0718",
+    "raw_sender": "+55 83 8746-1602",
+    "nome_corretor": "558387461602",
+    "telefone_corretor": "558387461602",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0719",
+    "raw_sender": "+55 83 8175-9565",
+    "nome_corretor": "558381759565",
+    "telefone_corretor": "558381759565",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0720",
+    "raw_sender": "Samara Muniz",
+    "nome_corretor": "Samara Muniz",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0721",
+    "raw_sender": "+55 83 8864-5832",
+    "nome_corretor": "558388645832",
+    "telefone_corretor": "558388645832",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0722",
+    "raw_sender": "+55 83 8899-7631",
+    "nome_corretor": "558388997631",
+    "telefone_corretor": "558388997631",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0723",
+    "raw_sender": "+55 83 9960-0365",
+    "nome_corretor": "558399600365",
+    "telefone_corretor": "558399600365",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0724",
+    "raw_sender": "+55 83 8805-5721",
+    "nome_corretor": "558388055721",
+    "telefone_corretor": "558388055721",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0725",
+    "raw_sender": "+55 83 9368-8126",
+    "nome_corretor": "Diego - Esperança Terras Robson",
+    "telefone_corretor": "558393688126",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0726",
+    "raw_sender": "+55 83 8869-2080",
+    "nome_corretor": "558388692080",
+    "telefone_corretor": "558388692080",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0727",
+    "raw_sender": "+55 83 8639-8686",
+    "nome_corretor": "558386398686",
+    "telefone_corretor": "558386398686",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0728",
+    "raw_sender": "Corretora Gerlane Barbosa",
+    "nome_corretor": "Corretora Gerlane Barbosa",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0729",
+    "raw_sender": "+55 83 9335-1421",
+    "nome_corretor": "558393351421",
+    "telefone_corretor": "558393351421",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0730",
+    "raw_sender": "+55 83 8869-9643",
+    "nome_corretor": "558388699643",
+    "telefone_corretor": "558388699643",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0731",
+    "raw_sender": "+55 83 8840-8056",
+    "nome_corretor": "558388408056",
+    "telefone_corretor": "558388408056",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0732",
+    "raw_sender": "Ericson",
+    "nome_corretor": "Ericson",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0733",
+    "raw_sender": "+55 83 8862-2823",
+    "nome_corretor": "558388622823",
+    "telefone_corretor": "558388622823",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0734",
+    "raw_sender": "+55 83 8888-1722",
+    "nome_corretor": "558388881722",
+    "telefone_corretor": "558388881722",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0735",
+    "raw_sender": "+55 83 9991-4352",
+    "nome_corretor": "558399914352",
+    "telefone_corretor": "558399914352",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0736",
+    "raw_sender": "Domus Dei Engenharia",
+    "nome_corretor": "Domus Dei Engenharia",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0737",
+    "raw_sender": "Bonald Oliveira",
+    "nome_corretor": "Bonald Oliveira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0738",
+    "raw_sender": "+55 83 8609-1469",
+    "nome_corretor": "Simone Morais - Corretora Imóveis - LJW",
+    "telefone_corretor": "558386091469",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0739",
+    "raw_sender": "+55 83 8211-4040",
+    "nome_corretor": "558382114040",
+    "telefone_corretor": "558382114040",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0740",
+    "raw_sender": "+55 82 8801-7139",
+    "nome_corretor": "558288017139",
+    "telefone_corretor": "558288017139",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0741",
+    "raw_sender": "+55 83 9655-1753",
+    "nome_corretor": "558396551753",
+    "telefone_corretor": "558396551753",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0742",
+    "raw_sender": "+55 83 9305-8662",
+    "nome_corretor": "558393058662",
+    "telefone_corretor": "558393058662",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0743",
+    "raw_sender": "Jessica Silva Corretora De Imoveis",
+    "nome_corretor": "Jessica Silva Corretora De Imoveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0744",
+    "raw_sender": "+55 83 9959-0708",
+    "nome_corretor": "558399590708",
+    "telefone_corretor": "558399590708",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0745",
+    "raw_sender": "+55 83 8745-7656",
+    "nome_corretor": "558387457656",
+    "telefone_corretor": "558387457656",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0746",
+    "raw_sender": "+55 83 8104-4626",
+    "nome_corretor": "558381044626",
+    "telefone_corretor": "558381044626",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0747",
+    "raw_sender": "+55 83 8647-7769",
+    "nome_corretor": "558386477769",
+    "telefone_corretor": "558386477769",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0748",
+    "raw_sender": "+55 83 8766-6380",
+    "nome_corretor": "558387666380",
+    "telefone_corretor": "558387666380",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0749",
+    "raw_sender": "+55 83 9837-9645",
+    "nome_corretor": "558398379645",
+    "telefone_corretor": "558398379645",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0750",
+    "raw_sender": "+55 83 8825-5890",
+    "nome_corretor": "558388255890",
+    "telefone_corretor": "558388255890",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0751",
+    "raw_sender": "+55 83 8887-1785",
+    "nome_corretor": "558388871785",
+    "telefone_corretor": "558388871785",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0752",
+    "raw_sender": "+55 83 8811-3690",
+    "nome_corretor": "558388113690",
+    "telefone_corretor": "558388113690",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0753",
+    "raw_sender": "+55 83 8740-5320",
+    "nome_corretor": "558387405320",
+    "telefone_corretor": "558387405320",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0754",
+    "raw_sender": "Vanessa Silva Nascimento",
+    "nome_corretor": "Vanessa Silva Nascimento",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0755",
+    "raw_sender": "+55 83 8723-0169",
+    "nome_corretor": "558387230169",
+    "telefone_corretor": "558387230169",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0756",
+    "raw_sender": "MARCIO GOMES - CRECI8323",
+    "nome_corretor": "MARCIO GOMES - CRECI8323",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0757",
+    "raw_sender": "Luanderson Alves",
+    "nome_corretor": "Luanderson Alves",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0758",
+    "raw_sender": "VERA LIMA CORRETORA DE IMÓVEIS",
+    "nome_corretor": "VERA LIMA CORRETORA DE IMÓVEIS",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0759",
+    "raw_sender": "+55 83 9104-6781",
+    "nome_corretor": "558391046781",
+    "telefone_corretor": "558391046781",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0760",
+    "raw_sender": "Luiz Augusto - Imóveis",
+    "nome_corretor": "Luiz Augusto - Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0761",
+    "raw_sender": "Rhuan Ferreira",
+    "nome_corretor": "Rhuan Ferreira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0762",
+    "raw_sender": "Silvia Cirilo Corretora de Imóveis",
+    "nome_corretor": "Silvia Cirilo Corretora de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0763",
+    "raw_sender": "Herieckson Medeiros",
+    "nome_corretor": "Herieckson Medeiros",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0764",
+    "raw_sender": "+55 83 8768-9205",
+    "nome_corretor": "558387689205",
+    "telefone_corretor": "558387689205",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0765",
+    "raw_sender": "+55 83 9192-0870",
+    "nome_corretor": "558391920870",
+    "telefone_corretor": "558391920870",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0766",
+    "raw_sender": "+55 83 9821-3753",
+    "nome_corretor": "558398213753",
+    "telefone_corretor": "558398213753",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0767",
+    "raw_sender": "+55 83 9843-2142",
+    "nome_corretor": "558398432142",
+    "telefone_corretor": "558398432142",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0768",
+    "raw_sender": "+55 83 9120-7709",
+    "nome_corretor": "558391207709",
+    "telefone_corretor": "558391207709",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0769",
+    "raw_sender": "+55 83 9974-4424",
+    "nome_corretor": "558399744424",
+    "telefone_corretor": "558399744424",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0770",
+    "raw_sender": "Luciano Itallo",
+    "nome_corretor": "Luciano Itallo",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0771",
+    "raw_sender": "+55 83 8680-4225",
+    "nome_corretor": "558386804225",
+    "telefone_corretor": "558386804225",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0772",
+    "raw_sender": "+55 83 9834-3322",
+    "nome_corretor": "558398343322",
+    "telefone_corretor": "558398343322",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0773",
+    "raw_sender": "+55 83 9650-9400",
+    "nome_corretor": "558396509400",
+    "telefone_corretor": "558396509400",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0774",
+    "raw_sender": "+55 83 9621-6842",
+    "nome_corretor": "558396216842",
+    "telefone_corretor": "558396216842",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0775",
+    "raw_sender": "Jenilda Alves",
+    "nome_corretor": "Jenilda Alves",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0776",
+    "raw_sender": "+55 83 9332-9964",
+    "nome_corretor": "558393329964",
+    "telefone_corretor": "558393329964",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0777",
+    "raw_sender": "+55 83 8884-3557",
+    "nome_corretor": "558388843557",
+    "telefone_corretor": "558388843557",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0778",
+    "raw_sender": "+55 83 8774-2740",
+    "nome_corretor": "558387742740",
+    "telefone_corretor": "558387742740",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0779",
+    "raw_sender": "+55 83 8869-7163",
+    "nome_corretor": "558388697163",
+    "telefone_corretor": "558388697163",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0780",
+    "raw_sender": "Yuri Araujo",
+    "nome_corretor": "Yuri Araujo",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0781",
+    "raw_sender": "+55 83 8823-3791",
+    "nome_corretor": "558388233791",
+    "telefone_corretor": "558388233791",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0782",
+    "raw_sender": "+55 83 8159-4773",
+    "nome_corretor": "558381594773",
+    "telefone_corretor": "558381594773",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0783",
+    "raw_sender": "Augusto Júnior",
+    "nome_corretor": "Augusto Júnior",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0784",
+    "raw_sender": "+55 83 9876-3003",
+    "nome_corretor": "558398763003",
+    "telefone_corretor": "558398763003",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0785",
+    "raw_sender": "+55 83 9103-1114",
+    "nome_corretor": "558391031114",
+    "telefone_corretor": "558391031114",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0786",
+    "raw_sender": "+55 83 8862-2296",
+    "nome_corretor": "558388622296",
+    "telefone_corretor": "558388622296",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0787",
+    "raw_sender": "+55 83 9115-4651",
+    "nome_corretor": "558391154651",
+    "telefone_corretor": "558391154651",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0788",
+    "raw_sender": "+55 83 9410-1460",
+    "nome_corretor": "Edson Corretor 🏠 🏠",
+    "telefone_corretor": "558394101460",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0789",
+    "raw_sender": "+55 83 9661-8063",
+    "nome_corretor": "558396618063",
+    "telefone_corretor": "558396618063",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0790",
+    "raw_sender": "+55 83 9349-7147",
+    "nome_corretor": "558393497147",
+    "telefone_corretor": "558393497147",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0791",
+    "raw_sender": "+55 83 9359-1998",
+    "nome_corretor": "558393591998",
+    "telefone_corretor": "558393591998",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0792",
+    "raw_sender": "+55 83 9305-6668",
+    "nome_corretor": "558393056668",
+    "telefone_corretor": "558393056668",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0793",
+    "raw_sender": "+55 83 8894-1336",
+    "nome_corretor": "558388941336",
+    "telefone_corretor": "558388941336",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0794",
+    "raw_sender": "+55 83 8695-7447",
+    "nome_corretor": "558386957447",
+    "telefone_corretor": "558386957447",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0795",
+    "raw_sender": "+55 83 9324-2938",
+    "nome_corretor": "558393242938",
+    "telefone_corretor": "558393242938",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0796",
+    "raw_sender": "Silvia Sousa",
+    "nome_corretor": "Silvia Sousa",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0797",
+    "raw_sender": "Wedson Bandeira",
+    "nome_corretor": "Wedson Bandeira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0798",
+    "raw_sender": "+55 83 8706-4294",
+    "nome_corretor": "558387064294",
+    "telefone_corretor": "558387064294",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0799",
+    "raw_sender": "+55 83 9600-0253",
+    "nome_corretor": "558396000253",
+    "telefone_corretor": "558396000253",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0800",
+    "raw_sender": "+55 83 8843-2797",
+    "nome_corretor": "558388432797",
+    "telefone_corretor": "558388432797",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0801",
+    "raw_sender": "+55 83 8889-2428",
+    "nome_corretor": "558388892428",
+    "telefone_corretor": "558388892428",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0802",
+    "raw_sender": "+55 83 9844-1297",
+    "nome_corretor": "558398441297",
+    "telefone_corretor": "558398441297",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0803",
+    "raw_sender": "+55 83 9982-9430",
+    "nome_corretor": "558399829430",
+    "telefone_corretor": "558399829430",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0804",
+    "raw_sender": "+55 83 8728-7991",
+    "nome_corretor": "558387287991",
+    "telefone_corretor": "558387287991",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0805",
+    "raw_sender": "+55 83 8627-0072",
+    "nome_corretor": "558386270072",
+    "telefone_corretor": "558386270072",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0806",
+    "raw_sender": "Italo Travassos",
+    "nome_corretor": "Italo Travassos",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0807",
+    "raw_sender": "+55 83 8728-7709",
+    "nome_corretor": "558387287709",
+    "telefone_corretor": "558387287709",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0808",
+    "raw_sender": "Zélia Garcia",
+    "nome_corretor": "Zélia Garcia",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0809",
+    "raw_sender": "Francisco Santos corretor",
+    "nome_corretor": "Francisco Santos corretor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0810",
+    "raw_sender": "+55 83 9103-5580",
+    "nome_corretor": "558391035580",
+    "telefone_corretor": "558391035580",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0811",
+    "raw_sender": "+55 83 8140-7508",
+    "nome_corretor": "558381407508",
+    "telefone_corretor": "558381407508",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0812",
+    "raw_sender": "+55 83 9382-5167",
+    "nome_corretor": "558393825167",
+    "telefone_corretor": "558393825167",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0813",
+    "raw_sender": "Michele Sousa",
+    "nome_corretor": "Michele Sousa",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0814",
+    "raw_sender": "+55 83 8621-2145",
+    "nome_corretor": "558386212145",
+    "telefone_corretor": "558386212145",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0815",
+    "raw_sender": "Eduardo Carneiro",
+    "nome_corretor": "Eduardo Carneiro",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0816",
+    "raw_sender": "Viviana Moraes Corretora de Imóveis",
+    "nome_corretor": "Viviana Moraes Corretora de Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0817",
+    "raw_sender": "+55 83 9661-0909",
+    "nome_corretor": "558396610909",
+    "telefone_corretor": "558396610909",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0818",
+    "raw_sender": "+55 83 9312-1009",
+    "nome_corretor": "558393121009",
+    "telefone_corretor": "558393121009",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0819",
+    "raw_sender": "+55 83 9915-5624",
+    "nome_corretor": "558399155624",
+    "telefone_corretor": "558399155624",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0820",
+    "raw_sender": "Luan Lima",
+    "nome_corretor": "Luan Lima",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0821",
+    "raw_sender": "Joseane Nóbrega Corretora",
+    "nome_corretor": "Joseane Nóbrega Corretora",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0822",
+    "raw_sender": "+55 83 8638-2252",
+    "nome_corretor": "558386382252",
+    "telefone_corretor": "558386382252",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0823",
+    "raw_sender": "+55 83 9622-0711",
+    "nome_corretor": "558396220711",
+    "telefone_corretor": "558396220711",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0824",
+    "raw_sender": "+55 83 8848-6208",
+    "nome_corretor": "558388486208",
+    "telefone_corretor": "558388486208",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0825",
+    "raw_sender": "+55 83 8747-7732",
+    "nome_corretor": "558387477732",
+    "telefone_corretor": "558387477732",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0826",
+    "raw_sender": "+55 83 9964-2063",
+    "nome_corretor": "558399642063",
+    "telefone_corretor": "558399642063",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0827",
+    "raw_sender": "+55 83 9972-1860",
+    "nome_corretor": "558399721860",
+    "telefone_corretor": "558399721860",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0828",
+    "raw_sender": "+55 83 9663-6689",
+    "nome_corretor": "558396636689",
+    "telefone_corretor": "558396636689",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0829",
+    "raw_sender": "+55 83 8712-2955",
+    "nome_corretor": "558387122955",
+    "telefone_corretor": "558387122955",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0830",
+    "raw_sender": "Windsor",
+    "nome_corretor": "Windsor",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0831",
+    "raw_sender": "+55 83 9909-9904",
+    "nome_corretor": "558399099904",
+    "telefone_corretor": "558399099904",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0832",
+    "raw_sender": "+55 83 8814-0106",
+    "nome_corretor": "558388140106",
+    "telefone_corretor": "558388140106",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0833",
+    "raw_sender": "Jessica Dobu",
+    "nome_corretor": "Jessica Dobu",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0834",
+    "raw_sender": "Gerlani Arruda",
+    "nome_corretor": "Gerlani Arruda",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0835",
+    "raw_sender": "+55 83 8772-8065",
+    "nome_corretor": "558387728065",
+    "telefone_corretor": "558387728065",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0836",
+    "raw_sender": "+55 83 8857-1582",
+    "nome_corretor": "558388571582",
+    "telefone_corretor": "558388571582",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0837",
+    "raw_sender": "+55 83 8711-1696",
+    "nome_corretor": "558387111696",
+    "telefone_corretor": "558387111696",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0838",
+    "raw_sender": "+55 83 8826-8222",
+    "nome_corretor": "558388268222",
+    "telefone_corretor": "558388268222",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0839",
+    "raw_sender": "+55 83 8693-6304",
+    "nome_corretor": "558386936304",
+    "telefone_corretor": "558386936304",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0840",
+    "raw_sender": "+55 83 8824-9569",
+    "nome_corretor": "558388249569",
+    "telefone_corretor": "558388249569",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0841",
+    "raw_sender": "+55 83 9818-5476",
+    "nome_corretor": "558398185476",
+    "telefone_corretor": "558398185476",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0842",
+    "raw_sender": "+55 83 9128-1526",
+    "nome_corretor": "Leandra Taline Corretora Nutricionista",
+    "telefone_corretor": "558391281526",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0843",
+    "raw_sender": "+55 83 8756-0393",
+    "nome_corretor": "558387560393",
+    "telefone_corretor": "558387560393",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0844",
+    "raw_sender": "+55 83 8600-2044",
+    "nome_corretor": "558386002044",
+    "telefone_corretor": "558386002044",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0845",
+    "raw_sender": "Luan André corretor de imóveis",
+    "nome_corretor": "Luan André corretor de imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0846",
+    "raw_sender": "Gabriela Rodrigues",
+    "nome_corretor": "Gabriela Rodrigues",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0847",
+    "raw_sender": "+55 83 8683-7336",
+    "nome_corretor": "558386837336",
+    "telefone_corretor": "558386837336",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0848",
+    "raw_sender": "+55 83 9660-8530",
+    "nome_corretor": "558396608530",
+    "telefone_corretor": "558396608530",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0849",
+    "raw_sender": "+55 83 8836-8774",
+    "nome_corretor": "558388368774",
+    "telefone_corretor": "558388368774",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0850",
+    "raw_sender": "+55 83 8658-5123",
+    "nome_corretor": "558386585123",
+    "telefone_corretor": "558386585123",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0851",
+    "raw_sender": "+55 83 8744-9572",
+    "nome_corretor": "558387449572",
+    "telefone_corretor": "558387449572",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0852",
+    "raw_sender": "+55 83 9625-8918",
+    "nome_corretor": "558396258918",
+    "telefone_corretor": "558396258918",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0853",
+    "raw_sender": "Jônathas Davi Corretor De Imóveis",
+    "nome_corretor": "Jônathas Davi Corretor De Imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0854",
+    "raw_sender": "+55 83 8739-1318",
+    "nome_corretor": "558387391318",
+    "telefone_corretor": "558387391318",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0855",
+    "raw_sender": "Guilherme Monteiro",
+    "nome_corretor": "Guilherme Monteiro",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0856",
+    "raw_sender": "Dina Britto",
+    "nome_corretor": "Dina Britto",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0857",
+    "raw_sender": "Weslley Meira",
+    "nome_corretor": "Weslley Meira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0858",
+    "raw_sender": "+55 83 8901-3627",
+    "nome_corretor": "558389013627",
+    "telefone_corretor": "558389013627",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0859",
+    "raw_sender": "+55 83 8128-4075",
+    "nome_corretor": "558381284075",
+    "telefone_corretor": "558381284075",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0860",
+    "raw_sender": "Wathson Reis",
+    "nome_corretor": "Wathson Reis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0861",
+    "raw_sender": "+55 83 9344-4083",
+    "nome_corretor": "558393444083",
+    "telefone_corretor": "558393444083",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0862",
+    "raw_sender": "+55 83 9371-7478",
+    "nome_corretor": "jonasnogueira176 Corretor",
+    "telefone_corretor": "558393717478",
+    "fonte_nome": "vcf"
+  },
+  {
+    "sender_id": "snd_0863",
+    "raw_sender": "+55 83 9372-3838",
+    "nome_corretor": "558393723838",
+    "telefone_corretor": "558393723838",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0864",
+    "raw_sender": "SeucorretorPB CRECI/PB",
+    "nome_corretor": "SeucorretorPB CRECI/PB",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0865",
+    "raw_sender": "Stefania Trajano",
+    "nome_corretor": "Stefania Trajano",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0866",
+    "raw_sender": "Jairo Limeira",
+    "nome_corretor": "Jairo Limeira",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0867",
+    "raw_sender": "+55 83 3335-7290",
+    "nome_corretor": "558333357290",
+    "telefone_corretor": "558333357290",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0868",
+    "raw_sender": "+55 83 8897-8202",
+    "nome_corretor": "558388978202",
+    "telefone_corretor": "558388978202",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0869",
+    "raw_sender": "+55 83 9904-6086",
+    "nome_corretor": "558399046086",
+    "telefone_corretor": "558399046086",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0870",
+    "raw_sender": "Kelson Sousa",
+    "nome_corretor": "Kelson Sousa",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0871",
+    "raw_sender": "+55 81 8959-4333",
+    "nome_corretor": "558189594333",
+    "telefone_corretor": "558189594333",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0872",
+    "raw_sender": "+55 83 9175-3746",
+    "nome_corretor": "558391753746",
+    "telefone_corretor": "558391753746",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0873",
+    "raw_sender": "Wilson Eduardo corretor de imóveis",
+    "nome_corretor": "Wilson Eduardo corretor de imóveis",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0874",
+    "raw_sender": "Dailson Almeida",
+    "nome_corretor": "Dailson Almeida",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0875",
+    "raw_sender": "Alexandre Mendonça",
+    "nome_corretor": "Alexandre Mendonça",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0876",
+    "raw_sender": "+55 83 9892-1381",
+    "nome_corretor": "558398921381",
+    "telefone_corretor": "558398921381",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0877",
+    "raw_sender": "+55 83 8681-1346",
+    "nome_corretor": "558386811346",
+    "telefone_corretor": "558386811346",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0878",
+    "raw_sender": "+55 83 9972-6378",
+    "nome_corretor": "558399726378",
+    "telefone_corretor": "558399726378",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0879",
+    "raw_sender": "Celia Silva",
+    "nome_corretor": "Celia Silva",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0880",
+    "raw_sender": "+55 83 8842-8624",
+    "nome_corretor": "558388428624",
+    "telefone_corretor": "558388428624",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0881",
+    "raw_sender": "+55 83 9999-6067",
+    "nome_corretor": "558399996067",
+    "telefone_corretor": "558399996067",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0882",
+    "raw_sender": "+55 83 9177-1494",
+    "nome_corretor": "558391771494",
+    "telefone_corretor": "558391771494",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0883",
+    "raw_sender": "+55 83 8709-6557",
+    "nome_corretor": "558387096557",
+    "telefone_corretor": "558387096557",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0884",
+    "raw_sender": "Tony Diniz",
+    "nome_corretor": "Tony Diniz",
+    "telefone_corretor": "",
+    "fonte_nome": "txt"
+  },
+  {
+    "sender_id": "snd_0885",
+    "raw_sender": "+55 83 9975-4342",
+    "nome_corretor": "558399754342",
+    "telefone_corretor": "558399754342",
+    "fonte_nome": "txt"
+  }
+]

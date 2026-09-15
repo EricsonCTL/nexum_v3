@@ -1,0 +1,371 @@
+{
+  "schema": "nexum-skill-json",
+  "schema_version": "2.0",
+  "status_processamento": "CONSOLIDADO",
+  "empreendimento": {
+    "nome": "Residencial Marta Rocha II",
+    "incorporadora": "Pedra Construtora",
+    "construtora": "Pedra Construtora",
+    "endereco": {
+      "logradouro": "Rua Benedito Almeida Carneiro",
+      "numero": "305",
+      "bairro": "Santa Cruz",
+      "cidade": "Campina Grande",
+      "uf": "PB",
+      "cep": null
+    },
+    "coordenadas": {
+      "latitude": null,
+      "longitude": null
+    },
+    "fase": "ENTREGUE",
+    "datas": {
+      "lancamento": "2024-04-01",
+      "entrega_efetiva": "2025-06"
+    },
+    "empreendimento_caracteristicas": {
+      "tipologia": "2 quartos",
+      "vagas_por_unidade": 1,
+      "lazer": [
+        "Piscina",
+        "Área gourmet com churrasqueira",
+        "Playground"
+      ],
+      "observacao": "Dados cadastrais complementados conforme informações fornecidas pelo operador; CEP e coordenadas não confirmados nesta versão."
+    }
+  },
+  "tabela": {
+    "id": "MARTA_ROCHA_II_LANCAMENTO_2024-04-01",
+    "tipo": "LANCAMENTO",
+    "data_tabela": "2024-04-01",
+    "arquivo_origem": "TABELA marta rocha 2 (1).pdf",
+    "unidades_apresentadas": 19,
+    "unidades": [
+      {
+        "apartamento": "Sub solo 001",
+        "unidade_original": "Sub solo 001",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "Moto",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "Sub solo 002",
+        "unidade_original": "Sub solo 002",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "Sub solo 003",
+        "unidade_original": "Sub solo 003",
+        "area_m2": 49.71,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "Térreo 101",
+        "unidade_original": "Térreo 101",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "Térreo 102",
+        "unidade_original": "Térreo 102",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "Térreo 103",
+        "unidade_original": "Térreo 103",
+        "area_m2": 49.18,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "Térreo 104",
+        "unidade_original": "Térreo 104",
+        "area_m2": 48.33,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "OESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 175000.0,
+        "valorVenda": 175000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "201",
+        "unidade_original": "201",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "202",
+        "unidade_original": "202",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "203",
+        "unidade_original": "203",
+        "area_m2": 49.18,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "204",
+        "unidade_original": "204",
+        "area_m2": 48.33,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "OESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 175000.0,
+        "valorVenda": 175000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "301",
+        "unidade_original": "301",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "302",
+        "unidade_original": "302",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "303",
+        "unidade_original": "303",
+        "area_m2": 49.18,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "304",
+        "unidade_original": "304",
+        "area_m2": 48.33,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "OESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 175000.0,
+        "valorVenda": 175000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "401",
+        "unidade_original": "401",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "402",
+        "unidade_original": "402",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "403",
+        "unidade_original": "403",
+        "area_m2": 49.18,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 178000.0,
+        "valorVenda": 178000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      },
+      {
+        "apartamento": "404",
+        "unidade_original": "404",
+        "area_m2": 48.33,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "OESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "preco": 175000.0,
+        "valorVenda": 175000.0,
+        "proveniencia_status": "inferido_por_decisao_do_operador",
+        "proveniencia_preco": "simulacao_autorizada_pelo_operador"
+      }
+    ]
+  },
+  "resumo_comercial": {
+    "total_unidades": 19,
+    "disponiveis": 19,
+    "vendidas": 0,
+    "reservadas": 0,
+    "observacao": "Fotografia-base simulada do lançamento: todas as unidades consideradas disponíveis por decisão explícita do operador."
+  },
+  "validacoes": [
+    {
+      "tipo": "ARRAY_UNIDADES",
+      "resultado": "OK",
+      "detalhe": "tabela.unidades é um array."
+    },
+    {
+      "tipo": "CONTAGEM_UNIDADES",
+      "resultado": "OK",
+      "detalhe": "19 unidades no array e 19 em unidades_apresentadas."
+    },
+    {
+      "tipo": "DUPLICIDADES",
+      "resultado": "OK",
+      "detalhe": "Nenhuma chave de unidade duplicada."
+    }
+  ],
+  "pendencias": [
+    "CEP do Residencial Marta Rocha II não confirmado.",
+    "Latitude e longitude do Residencial Marta Rocha II não confirmadas.",
+    "Os preços de lançamento por unidade são uma simulação autorizada pelo operador, não valores observados na tabela PDF atual."
+  ],
+  "auditoria": [
+    {
+      "campo": "tabela.data_tabela",
+      "classificacao": "confirmado",
+      "valor": "2024-04-01",
+      "observacao": "Data-base de lançamento definida explicitamente pelo operador."
+    },
+    {
+      "campo": "tabela.unidades[].status",
+      "classificacao": "inferido",
+      "valor": "DISPONIVEL",
+      "observacao": "Todas as 19 unidades foram definidas como disponíveis na fotografia inicial por decisão explícita do operador."
+    },
+    {
+      "campo": "tabela.unidades[].preco",
+      "classificacao": "inferido",
+      "observacao": "Simulação: R$ 178.000 para posições Leste/Sul e R$ 175.000 para posição Oeste, conforme cenário fornecido pelo operador."
+    }
+  ],
+  "fontes": [
+    {
+      "tipo": "arquivo_origem",
+      "arquivo": "TABELA marta rocha 2 (1).pdf",
+      "uso": "Identificação das 19 unidades, áreas, vagas e posições."
+    },
+    {
+      "tipo": "decisao_operador",
+      "uso": "Data de lançamento, fotografia inicial com todas as unidades disponíveis e preços simulados de lançamento."
+    }
+  ]
+}

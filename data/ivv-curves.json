@@ -1,0 +1,1782 @@
+{
+  "versions": [
+    {
+      "id": "nexum-ivv-v1.1-positive",
+      "seedKey": "nexum-ivv-v1.1",
+      "label": "NEXUM v1.1 · reduções positivas · tabela 2",
+      "model": "parametrica_segmentada",
+      "number": 1,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T00:00:00.000Z",
+      "createdBy": {
+        "nome": "NEXUM · parâmetros reinicializados"
+      },
+      "validatedAt": "2026-09-14T00:00:00.000Z",
+      "validatedBy": {
+        "nome": "NEXUM · parâmetros reinicializados"
+      },
+      "previousVersionId": null,
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.18,
+            "medio": 0.2,
+            "alto": 0.22
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.18,
+            "medio": 0.2,
+            "alto": 0.22
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.17,
+            "medio": 0.19,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.16,
+            "medio": 0.18,
+            "alto": 0.2
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.17,
+            "alto": 0.19
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.14,
+            "medio": 0.16,
+            "alto": 0.18
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.13,
+            "medio": 0.15,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.16
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.13,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.12,
+            "alto": 0.14
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.09,
+            "medio": 0.11,
+            "alto": 0.13
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "TABELA_APROVADA_2",
+          "rates": {
+            "popular_mcmv": 0.08,
+            "medio": 0.1,
+            "alto": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "id": "c56a38cc-0674-4947-98da-06ea2bc2daf7",
+      "label": "NEXUM · revisão 2",
+      "model": "parametrica_segmentada",
+      "number": 2,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T22:56:52.387Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "nexum-ivv-v1.1-positive",
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.2,
+            "medio": 0.22,
+            "alto": 0.24
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.2,
+            "medio": 0.2,
+            "alto": 0.22
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.18,
+            "medio": 0.19,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.16,
+            "medio": 0.18,
+            "alto": 0.2
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.17,
+            "alto": 0.19
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.14,
+            "medio": 0.16,
+            "alto": 0.18
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.13,
+            "medio": 0.15,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.16
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.13,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.12,
+            "alto": 0.14
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.09,
+            "medio": 0.11,
+            "alto": 0.13
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.08,
+            "medio": 0.1,
+            "alto": 0.12
+          }
+        }
+      ],
+      "validatedAt": "2026-09-14T22:56:52.387Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "e38a42e2-7099-4d14-a5ad-cbf477e7dc3e",
+      "label": "NEXUM · revisão 3",
+      "model": "parametrica_segmentada",
+      "number": 3,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T22:58:32.486Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "c56a38cc-0674-4947-98da-06ea2bc2daf7",
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.24,
+            "medio": 0.26,
+            "alto": 0.28
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.22,
+            "medio": 0.22,
+            "alto": 0.24
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.18,
+            "medio": 0.19,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.16,
+            "medio": 0.18,
+            "alto": 0.2
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.17,
+            "alto": 0.19
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.14,
+            "medio": 0.16,
+            "alto": 0.18
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.13,
+            "medio": 0.15,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.16
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.13,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.12,
+            "alto": 0.14
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.09,
+            "medio": 0.11,
+            "alto": 0.13
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.08,
+            "medio": 0.1,
+            "alto": 0.12
+          }
+        }
+      ],
+      "validatedAt": "2026-09-14T22:58:32.486Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "bce6aa57-7880-401b-af6e-8ef26842a299",
+      "label": "NEXUM · revisão 4",
+      "model": "parametrica_segmentada",
+      "number": 4,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T22:58:37.214Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "e38a42e2-7099-4d14-a5ad-cbf477e7dc3e",
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.24,
+            "medio": 0.26,
+            "alto": 0.28
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.22,
+            "medio": 0.22,
+            "alto": 0.24
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.18,
+            "medio": 0.19,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.16,
+            "medio": 0.18,
+            "alto": 0.2
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.17,
+            "alto": 0.19
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.14,
+            "medio": 0.16,
+            "alto": 0.18
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.13,
+            "medio": 0.15,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.16
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.13,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.12,
+            "alto": 0.14
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.09,
+            "medio": 0.11,
+            "alto": 0.13
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.08,
+            "medio": 0.1,
+            "alto": 0.12
+          }
+        }
+      ],
+      "validatedAt": "2026-09-14T22:58:37.214Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "8e6ac847-649e-4d5d-85d0-eb3b4457514c",
+      "label": "NEXUM · revisão 5",
+      "model": "parametrica_segmentada",
+      "number": 5,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T23:00:37.480Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "bce6aa57-7880-401b-af6e-8ef26842a299",
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.26,
+            "medio": 0.24,
+            "alto": 0.28
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.24,
+            "medio": 0.24,
+            "alto": 0.26
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.2,
+            "medio": 0.21,
+            "alto": 0.23
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.17,
+            "medio": 0.19,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.16,
+            "medio": 0.18,
+            "alto": 0.19
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.16,
+            "alto": 0.18
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.13,
+            "medio": 0.15,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.16
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.13,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.12,
+            "alto": 0.14
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.09,
+            "medio": 0.11,
+            "alto": 0.13
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.08,
+            "medio": 0.1,
+            "alto": 0.12
+          }
+        }
+      ],
+      "validatedAt": "2026-09-14T23:00:37.480Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "081c856d-0ada-496b-990e-e6055642a145",
+      "label": "NEXUM · revisão 6",
+      "model": "parametrica_segmentada",
+      "number": 6,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T23:00:41.206Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "8e6ac847-649e-4d5d-85d0-eb3b4457514c",
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.26,
+            "medio": 0.24,
+            "alto": 0.28
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.24,
+            "medio": 0.24,
+            "alto": 0.26
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.2,
+            "medio": 0.21,
+            "alto": 0.23
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.17,
+            "medio": 0.19,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.16,
+            "medio": 0.18,
+            "alto": 0.19
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.16,
+            "alto": 0.18
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.13,
+            "medio": 0.15,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.16
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.13,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.12,
+            "alto": 0.14
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.09,
+            "medio": 0.11,
+            "alto": 0.13
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.08,
+            "medio": 0.1,
+            "alto": 0.12
+          }
+        }
+      ],
+      "validatedAt": "2026-09-14T23:00:41.206Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "e58b766f-b44a-4a9a-971e-35c461fc03b4",
+      "label": "NEXUM · revisão 7",
+      "model": "parametrica_segmentada",
+      "number": 7,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T23:02:06.242Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "081c856d-0ada-496b-990e-e6055642a145",
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.26,
+            "medio": 0.24,
+            "alto": 0.28
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.24,
+            "medio": 0.24,
+            "alto": 0.26
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.22,
+            "medio": 0.22,
+            "alto": 0.24
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.18,
+            "medio": 0.19,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.17,
+            "medio": 0.18,
+            "alto": 0.19
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.16,
+            "alto": 0.18
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.13,
+            "medio": 0.15,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.13,
+            "alto": 0.14
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.12,
+            "alto": 0.13
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.08,
+            "medio": 0.1,
+            "alto": 0.12
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.07,
+            "medio": 0.09,
+            "alto": 0.1
+          }
+        }
+      ],
+      "validatedAt": "2026-09-14T23:02:06.242Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "812f386a-4ce9-458a-bf05-340550d45fc4",
+      "label": "NEXUM · revisão 8",
+      "model": "parametrica_segmentada",
+      "number": 8,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T23:02:10.886Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "e58b766f-b44a-4a9a-971e-35c461fc03b4",
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.26,
+            "medio": 0.24,
+            "alto": 0.28
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.24,
+            "medio": 0.24,
+            "alto": 0.26
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.22,
+            "medio": 0.22,
+            "alto": 0.24
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.18,
+            "medio": 0.19,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.17,
+            "medio": 0.18,
+            "alto": 0.19
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.16,
+            "alto": 0.18
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.13,
+            "medio": 0.15,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.13,
+            "alto": 0.14
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.12,
+            "alto": 0.13
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.08,
+            "medio": 0.1,
+            "alto": 0.12
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.07,
+            "medio": 0.09,
+            "alto": 0.1
+          }
+        }
+      ],
+      "validatedAt": "2026-09-14T23:02:10.886Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "a1a61d01-fb6c-4cd1-8873-a0542a3e9bce",
+      "label": "NEXUM · revisão 9",
+      "model": "parametrica_segmentada",
+      "number": 9,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T23:02:27.076Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "812f386a-4ce9-458a-bf05-340550d45fc4",
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.26,
+            "medio": 0.24,
+            "alto": 0.28
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.24,
+            "medio": 0.24,
+            "alto": 0.26
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.22,
+            "medio": 0.22,
+            "alto": 0.24
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.18,
+            "medio": 0.19,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.17,
+            "medio": 0.18,
+            "alto": 0.19
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.16,
+            "alto": 0.18
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.13,
+            "medio": 0.15,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.13,
+            "alto": 0.14
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.12,
+            "alto": 0.13
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.08,
+            "medio": 0.1,
+            "alto": 0.12
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.07,
+            "medio": 0.09,
+            "alto": 0.1
+          }
+        }
+      ],
+      "validatedAt": "2026-09-14T23:02:27.076Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "106b3bd5-c274-4223-8730-d0094116f2a5",
+      "label": "NEXUM · revisão 10",
+      "model": "parametrica_segmentada",
+      "number": 10,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T23:04:55.636Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "a1a61d01-fb6c-4cd1-8873-a0542a3e9bce",
+      "metodologia": "Curva NEXUM v1.1 com reduções positivas conforme a tabela aprovada 2. Cada percentual reduz recursivamente o IVV do trimestre anterior; o motor aplica o sinal negativo internamente. Após a última faixa, mantém o IVV resultante, com piso de 1 un./mês.",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.26,
+            "medio": 0.24,
+            "alto": 0.28
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.24,
+            "medio": 0.24,
+            "alto": 0.26
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.23,
+            "medio": 0.23,
+            "alto": 0.25
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.17,
+            "medio": 0.17,
+            "alto": 0.21
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.15,
+            "medio": 0.16,
+            "alto": 0.17
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.14,
+            "medio": 0.15,
+            "alto": 0.16
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.12,
+            "medio": 0.14,
+            "alto": 0.15
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.11,
+            "medio": 0.12,
+            "alto": 0.12
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.1,
+            "medio": 0.11,
+            "alto": 0.12
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.09,
+            "medio": 0.09,
+            "alto": 0.1
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.07,
+            "medio": 0.08,
+            "alto": 0.09
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0.05,
+            "medio": 0.06,
+            "alto": 0.07
+          }
+        }
+      ],
+      "validatedAt": "2026-09-14T23:04:55.636Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    }
+  ],
+  "activeId": "106b3bd5-c274-4223-8730-d0094116f2a5",
+  "events": [
+    {
+      "action": "reinicializacao_reducoes_positivas",
+      "at": "2026-09-14T00:00:00.000Z",
+      "actor": {
+        "nome": "NEXUM · parâmetros reinicializados"
+      },
+      "versionId": "nexum-ivv-v1.1-positive",
+      "previousVersionId": null
+    },
+    {
+      "action": "save",
+      "at": "2026-09-14T22:56:52.387Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "c56a38cc-0674-4947-98da-06ea2bc2daf7",
+      "previousVersionId": "nexum-ivv-v1.1-positive"
+    },
+    {
+      "action": "save",
+      "at": "2026-09-14T22:58:32.486Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "e38a42e2-7099-4d14-a5ad-cbf477e7dc3e",
+      "previousVersionId": "c56a38cc-0674-4947-98da-06ea2bc2daf7"
+    },
+    {
+      "action": "save",
+      "at": "2026-09-14T22:58:37.214Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "bce6aa57-7880-401b-af6e-8ef26842a299",
+      "previousVersionId": "e38a42e2-7099-4d14-a5ad-cbf477e7dc3e"
+    },
+    {
+      "action": "save",
+      "at": "2026-09-14T23:00:37.480Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "8e6ac847-649e-4d5d-85d0-eb3b4457514c",
+      "previousVersionId": "bce6aa57-7880-401b-af6e-8ef26842a299"
+    },
+    {
+      "action": "save",
+      "at": "2026-09-14T23:00:41.206Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "081c856d-0ada-496b-990e-e6055642a145",
+      "previousVersionId": "8e6ac847-649e-4d5d-85d0-eb3b4457514c"
+    },
+    {
+      "action": "save",
+      "at": "2026-09-14T23:02:06.242Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "e58b766f-b44a-4a9a-971e-35c461fc03b4",
+      "previousVersionId": "081c856d-0ada-496b-990e-e6055642a145"
+    },
+    {
+      "action": "save",
+      "at": "2026-09-14T23:02:10.886Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "812f386a-4ce9-458a-bf05-340550d45fc4",
+      "previousVersionId": "e58b766f-b44a-4a9a-971e-35c461fc03b4"
+    },
+    {
+      "action": "save",
+      "at": "2026-09-14T23:02:27.076Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "a1a61d01-fb6c-4cd1-8873-a0542a3e9bce",
+      "previousVersionId": "812f386a-4ce9-458a-bf05-340550d45fc4"
+    },
+    {
+      "action": "save",
+      "at": "2026-09-14T23:04:55.636Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "106b3bd5-c274-4223-8730-d0094116f2a5",
+      "previousVersionId": "a1a61d01-fb6c-4cd1-8873-a0542a3e9bce"
+    }
+  ]
+}

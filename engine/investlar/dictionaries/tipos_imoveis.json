@@ -1,0 +1,42 @@
+[
+  {
+    "tipo_imovel": "APARTAMENTO",
+    "segmento_imovel": "RESIDENCIAL",
+    "termos": ["apartamento", "apto", "ap", "flat", "studio", "kitnet"]
+  },
+  {
+    "tipo_imovel": "CASA",
+    "segmento_imovel": "RESIDENCIAL",
+    "termos": ["casa", "duplex", "triplex", "residencia"]
+  },
+  {
+    "tipo_imovel": "TERRENO_LOTE",
+    "segmento_imovel": "RESIDENCIAL",
+    "termos": ["terreno", "lote", "lotes", "area para construir"]
+  },
+  {
+    "tipo_imovel": "GALPAO",
+    "segmento_imovel": "COMERCIAL",
+    "termos": ["galpao", "deposito", "armazem"]
+  },
+  {
+    "tipo_imovel": "SALA_COMERCIAL",
+    "segmento_imovel": "COMERCIAL",
+    "termos": ["sala comercial", "sala", "consultorio"]
+  },
+  {
+    "tipo_imovel": "PONTO_COMERCIAL",
+    "segmento_imovel": "COMERCIAL",
+    "termos": ["ponto comercial", "loja", "ponto"]
+  },
+  {
+    "tipo_imovel": "PREDIO_COMERCIAL",
+    "segmento_imovel": "COMERCIAL",
+    "termos": ["predio comercial", "predio"]
+  },
+  {
+    "tipo_imovel": "SITIO_CHACARA_FAZENDA",
+    "segmento_imovel": "RURAL",
+    "termos": ["sitio", "chacara", "fazenda", "granja"]
+  }
+]

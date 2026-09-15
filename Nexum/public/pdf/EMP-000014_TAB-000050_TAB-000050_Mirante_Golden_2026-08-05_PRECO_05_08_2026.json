@@ -1,0 +1,197 @@
+{
+  "schema": "nexum-skill-json",
+  "schema_version": "3.0",
+  "status_processamento": "CONSOLIDADO",
+  "empreendimento": {
+    "nome": "Mirante Golden",
+    "nome_comercial": "Mirante Golden Residence",
+    "incorporadora": "MH Incorporadora",
+    "construtora": "MH Incorporadora",
+    "endereco": {
+      "logradouro": "Rua Antônio Barbosa de Menezes",
+      "numero": 27,
+      "bairro": "Mirante",
+      "cidade": "Campina Grande",
+      "uf": "PB",
+      "cep": null
+    },
+    "fase": "EM_OBRAS",
+    "datas": {
+      "lancamento": "2023-10-01",
+      "precisao_lancamento": "MES_APROXIMADO",
+      "entrega_prevista": "2027-10-01",
+      "precisao_entrega": "MES_APROXIMADO"
+    },
+    "empreendimento_caracteristicas": {
+      "torres": 1,
+      "unidades_totais": 42,
+      "plantas": [
+        62,
+        77,
+        120
+      ],
+      "pavimentos_informados_no_pdf": 15
+    }
+  },
+  "tabela": {
+    "id": "MIRANTE_GOLDEN_PRECO_ATUAL_2026-08-05",
+    "tipo": "PRECO_ATUAL",
+    "data_tabela": "2026-08-05",
+    "arquivo_origem": "TABELA MIRANTE GOLDEN.pdf",
+    "unidades_apresentadas": 3,
+    "unidades": [
+      {
+        "apartamento": "803",
+        "area_m2": 62,
+        "tipologia": "2 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONÍVEL",
+        "investimento": 446766.25,
+        "preco": 446766.25,
+        "valorVenda": 446766.25,
+        "condicoes_comerciais": {
+          "entrada": 89353.25,
+          "parcelas_mensais_quantidade": 80,
+          "parcela_mensal": 2792.28,
+          "intercalares_quantidade": 10,
+          "intercalar_semestral": 6701.49,
+          "chaves": 67014.94
+        },
+        "classificacao_preco": "observado",
+        "classificacao_condicoes": "observado"
+      },
+      {
+        "apartamento": "903",
+        "area_m2": 62,
+        "tipologia": "2 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "investimento": 456766.25,
+        "preco": 456766.25,
+        "valorVenda": 456766.25,
+        "condicoes_comerciais": {
+          "entrada": 91353.25,
+          "parcelas_mensais_quantidade": 80,
+          "parcela_mensal": 2854.78,
+          "intercalares_quantidade": 10,
+          "intercalar_semestral": 6851.74,
+          "chaves": 68517.43
+        },
+        "classificacao_preco": "observado",
+        "classificacao_condicoes": "observado"
+      },
+      {
+        "apartamento": "1003",
+        "area_m2": 62,
+        "tipologia": "2 quartos",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONÍVEL",
+        "investimento": 476766.25,
+        "preco": 476766.25,
+        "valorVenda": 476766.25,
+        "condicoes_comerciais": {
+          "entrada": 95355.25,
+          "parcelas_mensais_quantidade": 80,
+          "parcela_mensal": 2979.85,
+          "intercalares_quantidade": 10,
+          "intercalar_semestral": 7151.39,
+          "chaves": 71513.93
+        },
+        "classificacao_preco": "observado",
+        "classificacao_condicoes": "observado"
+      }
+    ]
+  },
+  "resumo_comercial": {
+    "total_unidades_na_tabela": 3,
+    "status": {
+      "DISPONIVEL": 3
+    },
+    "valor_total_estoque_atual": 1380298.75,
+    "observacao": "A tabela contém somente as 3 unidades disponíveis na fotografia de 05/08/2026. As unidades ausentes não foram incluídas nesta fotografia, conforme orientação do operador para que o NEXUM faça o tratamento de comparação."
+  },
+  "comparacao": {
+    "previousTableId": "MIRANTE_GOLDEN_LANCAMENTO_2023-10-01",
+    "novas": [],
+    "mantidas": [],
+    "removidas": [],
+    "retornadas": [],
+    "alteracoesValor": [],
+    "alteracoesStatus": [],
+    "alteracoesComerciais": []
+  },
+  "auditoria": [
+    {
+      "campo": "data_tabela",
+      "classificacao": "confirmado",
+      "valor": "2026-08-05",
+      "observacao": "Data de vigência definida pelo operador como dia 05 do mês passado."
+    },
+    {
+      "campo": "unidades",
+      "classificacao": "observado",
+      "valor": [
+        "803",
+        "903",
+        "1003"
+      ],
+      "observacao": "São as três unidades disponíveis apresentadas na tabela enviada."
+    },
+    {
+      "campo": "precos",
+      "classificacao": "observado",
+      "observacao": "Valores preservados exatamente como aparecem no PDF."
+    },
+    {
+      "campo": "condicoes_comerciais",
+      "classificacao": "observado",
+      "observacao": "Entrada, 80 parcelas mensais, 10 intercalares semestrais e chaves preservados exatamente como aparecem no PDF."
+    },
+    {
+      "campo": "empreendimento",
+      "classificacao": "pesquisado",
+      "observacao": "Identidade, endereço, incorporadora, fase, lançamento, entrega prevista e características complementares foram pesquisados anteriormente."
+    }
+  ],
+  "fontes": [
+    {
+      "identificacao": "TABELA MIRANTE GOLDEN.pdf",
+      "tipo": "documento_fornecido_pelo_operador",
+      "sustenta": [
+        "unidades 803, 903 e 1003",
+        "status",
+        "area",
+        "entrada",
+        "80 parcelas mensais",
+        "10 intercalares semestrais",
+        "chaves",
+        "valor",
+        "registro de incorporação",
+        "15 pavimentos"
+      ],
+      "confianca": "ALTA"
+    },
+    {
+      "url": "https://premieimoveis.com.br/empreendimento/16091/mirante-golden",
+      "tipo": "imobiliaria",
+      "sustenta": [
+        "identidade comercial",
+        "tipologias",
+        "informacoes historicas de lancamento"
+      ],
+      "confianca": "MEDIA"
+    },
+    {
+      "url": "https://mhincorporadora.com.br/",
+      "tipo": "fonte_oficial",
+      "sustenta": [
+        "relacao da MH Incorporadora com o empreendimento"
+      ],
+      "confianca": "ALTA"
+    }
+  ],
+  "pendencias": [
+    "CEP permanece null porque não foi confirmado documentalmente na fonte utilizada.",
+    "A tabela atual contém apenas as 3 unidades disponíveis; as demais unidades não foram declaradas como vendidas neste JSON, cabendo ao mecanismo de comparação do NEXUM tratar as ausências conforme sua regra de negócio."
+  ]
+}

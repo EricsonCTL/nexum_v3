@@ -1,0 +1,2723 @@
+{
+  "diagnostico": {
+    "status": "revisao",
+    "confianca": null,
+    "avisos": [
+      "A modalidade da tabela não foi informada no documento.",
+      "Empreendimento identificado pelo nome do arquivo como 'Lago dos Ipês'; ID atribuído provisoriamente.",
+      "A situação comercial das unidades não consta nas linhas extraídas; portanto não foi inferida.",
+      "Os nomes exatos das parcelas foram preservados de acordo com a estrutura textual extraída; não foram criadas regras financeiras adicionais."
+    ],
+    "erros": []
+  },
+  "empreendimento": {
+    "id": "EMP-000007",
+    "nome": "Lago dos Ipês",
+    "construtora": null,
+    "classificacao": "observado_nome_arquivo"
+  },
+  "construtora": {
+    "nome": null,
+    "classificacao": "não determinado"
+  },
+  "tabelaProcessada": {
+    "id": "TAB-000013",
+    "name": "Tabela Agosto 2026",
+    "validityDate": "2026-08-01",
+    "tipoTabela": null,
+    "tipoTabelaLabel": null,
+    "status": "registered",
+    "documento": {
+      "nome": "Lago dos Ipês_ago_26.pdf",
+      "mimeType": "application/pdf",
+      "sha256": "02c5a452285bc26914ec52409782c4e8f22477f119423f04b46142194c335367",
+      "paginas": 3
+    },
+    "extracao": {
+      "unidadesExtraidas": 71,
+      "linhasComUnidade": 71,
+      "dataReferencia": "08-2026",
+      "jurosPlanoMenorParcelaAm": 0.7974,
+      "entradaPlanosPercentual": 7,
+      "classificacao": "observado"
+    }
+  },
+  "unidades": [
+    {
+      "chave": "EMP-000007::QBL02",
+      "unidade": "QBL02",
+      "agrupadorOriginal": "QBL0",
+      "areaPrivativa": 274.97,
+      "valorM2Extraido": 598.68,
+      "valorExtraido": 164617.69,
+      "valorInterpretado": 164617.69,
+      "valorValidado": null,
+      "valorPublicado": 164617.69,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11523.24,
+          "mensais72_1": 2126.31,
+          "mensais72_2": 1783.36,
+          "anuais6": 4115.44
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11523.24,
+          "mensais120": 1666.34,
+          "mensais180": 1346.15,
+          "mensais240": 1202.66,
+          "anuais20": 2900.39
+        }
+      },
+      "linhaOriginal": "QBL02 274,97 598,68 164.617,69 11.523,24 2.126,31 1.783,36 4.115,44 11.523,24 1.666,34 1.346,15 1.202,66 2.900,39",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QCL20",
+      "unidade": "QCL20",
+      "agrupadorOriginal": "QCL2",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 730.0,
+      "valorExtraido": 145999.95,
+      "valorInterpretado": 145999.95,
+      "valorValidado": null,
+      "valorPublicado": 145999.95,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10220.0,
+          "mensais72_1": 1885.83,
+          "mensais72_2": 1581.67,
+          "anuais6": 3650.0
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10220.0,
+          "mensais120": 1477.88,
+          "mensais180": 1193.91,
+          "mensais240": 1066.64,
+          "anuais20": 2572.36
+        }
+      },
+      "linhaOriginal": "QCL20 200,00 730,00 145.999,95 10.220,00 1.885,83 1.581,67 3.650,00 10.220,00 1.477,88 1.193,91 1.066,64 2.572,36",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QCL27",
+      "unidade": "QCL27",
+      "agrupadorOriginal": "QCL2",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 708.53,
+      "valorExtraido": 141705.21,
+      "valorInterpretado": 141705.21,
+      "valorValidado": null,
+      "valorPublicado": 141705.21,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9919.36,
+          "mensais72_1": 1830.36,
+          "mensais72_2": 1535.14,
+          "anuais6": 3542.63
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9919.36,
+          "mensais120": 1434.41,
+          "mensais180": 1158.79,
+          "mensais240": 1035.27,
+          "anuais20": 2496.7
+        }
+      },
+      "linhaOriginal": "QCL27 200,00 708,53 141.705,21 9.919,36 1.830,36 1.535,14 3.542,63 9.919,36 1.434,41 1.158,79 1.035,27 2.496,70",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QCL29",
+      "unidade": "QCL29",
+      "agrupadorOriginal": "QCL2",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 708.53,
+      "valorExtraido": 141705.21,
+      "valorInterpretado": 141705.21,
+      "valorValidado": null,
+      "valorPublicado": 141705.21,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9919.36,
+          "mensais72_1": 1830.36,
+          "mensais72_2": 1535.14,
+          "anuais6": 3542.63
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9919.36,
+          "mensais120": 1434.41,
+          "mensais180": 1158.79,
+          "mensais240": 1035.27,
+          "anuais20": 2496.7
+        }
+      },
+      "linhaOriginal": "QCL29 200,00 708,53 141.705,21 9.919,36 1.830,36 1.535,14 3.542,63 9.919,36 1.434,41 1.158,79 1.035,27 2.496,70",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QCL35",
+      "unidade": "QCL35",
+      "agrupadorOriginal": "QCL3",
+      "areaPrivativa": 231.79,
+      "valorM2Extraido": 648.41,
+      "valorExtraido": 150294.7,
+      "valorInterpretado": 150294.7,
+      "valorValidado": null,
+      "valorPublicado": 150294.7,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10520.63,
+          "mensais72_1": 1941.31,
+          "mensais72_2": 1628.19,
+          "anuais6": 3757.37
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10520.63,
+          "mensais120": 1521.36,
+          "mensais180": 1229.03,
+          "mensais240": 1098.02,
+          "anuais20": 2648.03
+        }
+      },
+      "linhaOriginal": "QCL35 231,79 648,41 150.294,70 10.520,63 1.941,31 1.628,19 3.757,37 10.520,63 1.521,36 1.229,03 1.098,02 2.648,03",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QDL09",
+      "unidade": "QDL09",
+      "agrupadorOriginal": "QDL0",
+      "areaPrivativa": 184.0,
+      "valorM2Extraido": 661.25,
+      "valorExtraido": 121670.21,
+      "valorInterpretado": 121670.21,
+      "valorValidado": null,
+      "valorPublicado": 121670.21,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8516.91,
+          "mensais72_1": 1571.57,
+          "mensais72_2": 1318.09,
+          "anuais6": 3041.76
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8516.91,
+          "mensais120": 1231.61,
+          "mensais180": 994.95,
+          "mensais240": 888.9,
+          "anuais20": 2143.7
+        }
+      },
+      "linhaOriginal": "QDL09 184,00 661,25 121.670,21 8.516,91 1.571,57 1.318,09 3.041,76 8.516,91 1.231,61 994,95 888,90 2.143,70",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QDL12",
+      "unidade": "QDL12",
+      "agrupadorOriginal": "QDL1",
+      "areaPrivativa": 184.0,
+      "valorM2Extraido": 661.25,
+      "valorExtraido": 121670.21,
+      "valorInterpretado": 121670.21,
+      "valorValidado": null,
+      "valorPublicado": 121670.21,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8516.91,
+          "mensais72_1": 1571.57,
+          "mensais72_2": 1318.09,
+          "anuais6": 3041.76
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8516.91,
+          "mensais120": 1231.61,
+          "mensais180": 994.95,
+          "mensais240": 888.9,
+          "anuais20": 2143.7
+        }
+      },
+      "linhaOriginal": "QDL12 184,00 661,25 121.670,21 8.516,91 1.571,57 1.318,09 3.041,76 8.516,91 1.231,61 994,95 888,90 2.143,70",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QDL18",
+      "unidade": "QDL18",
+      "agrupadorOriginal": "QDL1",
+      "areaPrivativa": 184.0,
+      "valorM2Extraido": 661.25,
+      "valorExtraido": 121670.21,
+      "valorInterpretado": 121670.21,
+      "valorValidado": null,
+      "valorPublicado": 121670.21,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8516.91,
+          "mensais72_1": 1571.57,
+          "mensais72_2": 1318.09,
+          "anuais6": 3041.76
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8516.91,
+          "mensais120": 1231.61,
+          "mensais180": 994.95,
+          "mensais240": 888.9,
+          "anuais20": 2143.7
+        }
+      },
+      "linhaOriginal": "QDL18 184,00 661,25 121.670,21 8.516,91 1.571,57 1.318,09 3.041,76 8.516,91 1.231,61 994,95 888,90 2.143,70",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QDL19",
+      "unidade": "QDL19",
+      "agrupadorOriginal": "QDL1",
+      "areaPrivativa": 184.0,
+      "valorM2Extraido": 661.25,
+      "valorExtraido": 121670.21,
+      "valorInterpretado": 121670.21,
+      "valorValidado": null,
+      "valorPublicado": 121670.21,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8516.91,
+          "mensais72_1": 1571.57,
+          "mensais72_2": 1318.09,
+          "anuais6": 3041.76
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8516.91,
+          "mensais120": 1231.61,
+          "mensais180": 994.95,
+          "mensais240": 888.9,
+          "anuais20": 2143.7
+        }
+      },
+      "linhaOriginal": "QDL19 184,00 661,25 121.670,21 8.516,91 1.571,57 1.318,09 3.041,76 8.516,91 1.231,61 994,95 888,90 2.143,70",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QDL20",
+      "unidade": "QDL20",
+      "agrupadorOriginal": "QDL2",
+      "areaPrivativa": 184.0,
+      "valorM2Extraido": 661.25,
+      "valorExtraido": 121670.21,
+      "valorInterpretado": 121670.21,
+      "valorValidado": null,
+      "valorPublicado": 121670.21,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8516.91,
+          "mensais72_1": 1571.57,
+          "mensais72_2": 1318.09,
+          "anuais6": 3041.76
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8516.91,
+          "mensais120": 1231.61,
+          "mensais180": 994.95,
+          "mensais240": 888.9,
+          "anuais20": 2143.7
+        }
+      },
+      "linhaOriginal": "QDL20 184,00 661,25 121.670,21 8.516,91 1.571,57 1.318,09 3.041,76 8.516,91 1.231,61 994,95 888,90 2.143,70",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QDL21",
+      "unidade": "QDL21",
+      "agrupadorOriginal": "QDL2",
+      "areaPrivativa": 184.0,
+      "valorM2Extraido": 661.25,
+      "valorExtraido": 121670.21,
+      "valorInterpretado": 121670.21,
+      "valorValidado": null,
+      "valorPublicado": 121670.21,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8516.91,
+          "mensais72_1": 1571.57,
+          "mensais72_2": 1318.09,
+          "anuais6": 3041.76
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8516.91,
+          "mensais120": 1231.61,
+          "mensais180": 994.95,
+          "mensais240": 888.9,
+          "anuais20": 2143.7
+        }
+      },
+      "linhaOriginal": "QDL21 184,00 661,25 121.670,21 8.516,91 1.571,57 1.318,09 3.041,76 8.516,91 1.231,61 994,95 888,90 2.143,70",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QDL22",
+      "unidade": "QDL22",
+      "agrupadorOriginal": "QDL2",
+      "areaPrivativa": 180.0,
+      "valorM2Extraido": 707.8,
+      "valorExtraido": 127403.7,
+      "valorInterpretado": 127403.7,
+      "valorValidado": null,
+      "valorPublicado": 127403.7,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8918.26,
+          "mensais72_1": 1645.63,
+          "mensais72_2": 1380.21,
+          "anuais6": 3185.09
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8918.26,
+          "mensais120": 1289.64,
+          "mensais180": 1041.84,
+          "mensais240": 930.78,
+          "anuais20": 2244.72
+        }
+      },
+      "linhaOriginal": "QDL22 180,00 707,80 127.403,70 8.918,26 1.645,63 1.380,21 3.185,09 8.918,26 1.289,64 1.041,84 930,78 2.244,72",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL01",
+      "unidade": "QEL01",
+      "agrupadorOriginal": "QEL0",
+      "areaPrivativa": 288.85,
+      "valorM2Extraido": 629.38,
+      "valorExtraido": 181796.68,
+      "valorInterpretado": 181796.68,
+      "valorValidado": null,
+      "valorPublicado": 181796.68,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 12725.77,
+          "mensais72_1": 2348.21,
+          "mensais72_2": 1969.46,
+          "anuais6": 4544.92
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 12725.77,
+          "mensais120": 1840.23,
+          "mensais180": 1486.63,
+          "mensais240": 1328.17,
+          "anuais20": 3203.07
+        }
+      },
+      "linhaOriginal": "QEL01 288,85 629,38 181.796,68 12.725,77 2.348,21 1.969,46 4.544,92 12.725,77 1.840,23 1.486,63 1.328,17 3.203,07",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL05",
+      "unidade": "QEL05",
+      "agrupadorOriginal": "QEL0",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 644.1,
+      "valorExtraido": 128820.96,
+      "valorInterpretado": 128820.96,
+      "valorValidado": null,
+      "valorPublicado": 128820.96,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9017.47,
+          "mensais72_1": 1663.94,
+          "mensais72_2": 1395.56,
+          "anuais6": 3220.52
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9017.47,
+          "mensais120": 1303.99,
+          "mensais180": 1053.43,
+          "mensais240": 941.14,
+          "anuais20": 2269.69
+        }
+      },
+      "linhaOriginal": "QEL05 200,00 644,10 128.820,96 9.017,47 1.663,94 1.395,56 3.220,52 9.017,47 1.303,99 1.053,43 941,14 2.269,69",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL09",
+      "unidade": "QEL09",
+      "agrupadorOriginal": "QEL0",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 644.1,
+      "valorExtraido": 128820.96,
+      "valorInterpretado": 128820.96,
+      "valorValidado": null,
+      "valorPublicado": 128820.96,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9017.47,
+          "mensais72_1": 1663.94,
+          "mensais72_2": 1395.56,
+          "anuais6": 3220.52
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9017.47,
+          "mensais120": 1303.99,
+          "mensais180": 1053.43,
+          "mensais240": 941.14,
+          "anuais20": 2269.69
+        }
+      },
+      "linhaOriginal": "QEL09 200,00 644,10 128.820,96 9.017,47 1.663,94 1.395,56 3.220,52 9.017,47 1.303,99 1.053,43 941,14 2.269,69",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL11",
+      "unidade": "QEL11",
+      "agrupadorOriginal": "QEL1",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 644.1,
+      "valorExtraido": 128820.96,
+      "valorInterpretado": 128820.96,
+      "valorValidado": null,
+      "valorPublicado": 128820.96,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9017.47,
+          "mensais72_1": 1663.94,
+          "mensais72_2": 1395.56,
+          "anuais6": 3220.52
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9017.47,
+          "mensais120": 1303.99,
+          "mensais180": 1053.43,
+          "mensais240": 941.14,
+          "anuais20": 2269.69
+        }
+      },
+      "linhaOriginal": "QEL11 200,00 644,10 128.820,96 9.017,47 1.663,94 1.395,56 3.220,52 9.017,47 1.303,99 1.053,43 941,14 2.269,69",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL13",
+      "unidade": "QEL13",
+      "agrupadorOriginal": "QEL1",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 644.1,
+      "valorExtraido": 128820.96,
+      "valorInterpretado": 128820.96,
+      "valorValidado": null,
+      "valorPublicado": 128820.96,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9017.47,
+          "mensais72_1": 1663.94,
+          "mensais72_2": 1395.56,
+          "anuais6": 3220.52
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9017.47,
+          "mensais120": 1303.99,
+          "mensais180": 1053.43,
+          "mensais240": 941.14,
+          "anuais20": 2269.69
+        }
+      },
+      "linhaOriginal": "QEL13 200,00 644,10 128.820,96 9.017,47 1.663,94 1.395,56 3.220,52 9.017,47 1.303,99 1.053,43 941,14 2.269,69",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL17",
+      "unidade": "QEL17",
+      "agrupadorOriginal": "QEL1",
+      "areaPrivativa": 499.93,
+      "valorM2Extraido": 509.69,
+      "valorExtraido": 254807.39,
+      "valorInterpretado": 254807.39,
+      "valorValidado": null,
+      "valorPublicado": 254807.39,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 17836.52,
+          "mensais72_1": 3291.26,
+          "mensais72_2": 2760.41,
+          "anuais6": 6370.18
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 17836.52,
+          "mensais120": 2579.28,
+          "mensais180": 2083.67,
+          "mensais240": 1861.57,
+          "anuais20": 4489.44
+        }
+      },
+      "linhaOriginal": "QEL17 499,93 509,69 254.807,39 17.836,52 3.291,26 2.760,41 6.370,18 17.836,52 2.579,28 2.083,67 1.861,57 4.489,44",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL19",
+      "unidade": "QEL19",
+      "agrupadorOriginal": "QEL1",
+      "areaPrivativa": 302.37,
+      "valorM2Extraido": 606.0,
+      "valorExtraido": 183235.42,
+      "valorInterpretado": 183235.42,
+      "valorValidado": null,
+      "valorPublicado": 183235.42,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 12826.48,
+          "mensais72_1": 2366.79,
+          "mensais72_2": 1985.05,
+          "anuais6": 4580.89
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 12826.48,
+          "mensais120": 1854.8,
+          "mensais180": 1498.4,
+          "mensais240": 1338.68,
+          "anuais20": 3228.41
+        }
+      },
+      "linhaOriginal": "QEL19 302,37 606,00 183.235,42 12.826,48 2.366,79 1.985,05 4.580,89 12.826,48 1.854,80 1.498,40 1.338,68 3.228,41",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL20",
+      "unidade": "QEL20",
+      "agrupadorOriginal": "QEL2",
+      "areaPrivativa": 282.22,
+      "valorM2Extraido": 573.18,
+      "valorExtraido": 161761.68,
+      "valorInterpretado": 161761.68,
+      "valorValidado": null,
+      "valorPublicado": 161761.68,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11323.32,
+          "mensais72_1": 2089.42,
+          "mensais72_2": 1752.42,
+          "anuais6": 4044.04
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11323.32,
+          "mensais120": 1637.43,
+          "mensais180": 1322.8,
+          "mensais240": 1181.8,
+          "anuais20": 2850.07
+        }
+      },
+      "linhaOriginal": "QEL20 282,22 573,18 161.761,68 11.323,32 2.089,42 1.752,42 4.044,04 11.323,32 1.637,43 1.322,80 1.181,80 2.850,07",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL21",
+      "unidade": "QEL21",
+      "agrupadorOriginal": "QEL2",
+      "areaPrivativa": 300.1,
+      "valorM2Extraido": 562.85,
+      "valorExtraido": 168912.43,
+      "valorInterpretado": 168912.43,
+      "valorValidado": null,
+      "valorPublicado": 168912.43,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11823.87,
+          "mensais72_1": 2181.79,
+          "mensais72_2": 1829.88,
+          "anuais6": 4222.81
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11823.87,
+          "mensais120": 1709.81,
+          "mensais180": 1381.27,
+          "mensais240": 1234.04,
+          "anuais20": 2976.06
+        }
+      },
+      "linhaOriginal": "QEL21 300,10 562,85 168.912,43 11.823,87 2.181,79 1.829,88 4.222,81 11.823,87 1.709,81 1.381,27 1.234,04 2.976,06",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL24",
+      "unidade": "QEL24",
+      "agrupadorOriginal": "QEL2",
+      "areaPrivativa": 253.49,
+      "valorM2Extraido": 581.64,
+      "valorExtraido": 147438.69,
+      "valorInterpretado": 147438.69,
+      "valorValidado": null,
+      "valorPublicado": 147438.69,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10320.71,
+          "mensais72_1": 1904.42,
+          "mensais72_2": 1597.25,
+          "anuais6": 3685.97
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10320.71,
+          "mensais120": 1492.45,
+          "mensais180": 1205.67,
+          "mensais240": 1077.16,
+          "anuais20": 2597.71
+        }
+      },
+      "linhaOriginal": "QEL24 253,49 581,64 147.438,69 10.320,71 1.904,42 1.597,25 3.685,97 10.320,71 1.492,45 1.205,67 1.077,16 2.597,71",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL28",
+      "unidade": "QEL28",
+      "agrupadorOriginal": "QEL2",
+      "areaPrivativa": 253.49,
+      "valorM2Extraido": 581.64,
+      "valorExtraido": 147438.69,
+      "valorInterpretado": 147438.69,
+      "valorValidado": null,
+      "valorPublicado": 147438.69,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10320.71,
+          "mensais72_1": 1904.42,
+          "mensais72_2": 1597.25,
+          "anuais6": 3685.97
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10320.71,
+          "mensais120": 1492.45,
+          "mensais180": 1205.67,
+          "mensais240": 1077.16,
+          "anuais20": 2597.71
+        }
+      },
+      "linhaOriginal": "QEL28 253,49 581,64 147.438,69 10.320,71 1.904,42 1.597,25 3.685,97 10.320,71 1.492,45 1.205,67 1.077,16 2.597,71",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL30",
+      "unidade": "QEL30",
+      "agrupadorOriginal": "QEL3",
+      "areaPrivativa": 253.49,
+      "valorM2Extraido": 581.64,
+      "valorExtraido": 147438.69,
+      "valorInterpretado": 147438.69,
+      "valorValidado": null,
+      "valorPublicado": 147438.69,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10320.71,
+          "mensais72_1": 1904.42,
+          "mensais72_2": 1597.25,
+          "anuais6": 3685.97
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10320.71,
+          "mensais120": 1492.45,
+          "mensais180": 1205.67,
+          "mensais240": 1077.16,
+          "anuais20": 2597.71
+        }
+      },
+      "linhaOriginal": "QEL30 253,49 581,64 147.438,69 10.320,71 1.904,42 1.597,25 3.685,97 10.320,71 1.492,45 1.205,67 1.077,16 2.597,71",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL31",
+      "unidade": "QEL31",
+      "agrupadorOriginal": "QEL3",
+      "areaPrivativa": 253.49,
+      "valorM2Extraido": 581.64,
+      "valorExtraido": 147438.69,
+      "valorInterpretado": 147438.69,
+      "valorValidado": null,
+      "valorPublicado": 147438.69,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10320.71,
+          "mensais72_1": 1904.42,
+          "mensais72_2": 1597.25,
+          "anuais6": 3685.97
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10320.71,
+          "mensais120": 1492.45,
+          "mensais180": 1205.67,
+          "mensais240": 1077.16,
+          "anuais20": 2597.71
+        }
+      },
+      "linhaOriginal": "QEL31 253,49 581,64 147.438,69 10.320,71 1.904,42 1.597,25 3.685,97 10.320,71 1.492,45 1.205,67 1.077,16 2.597,71",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL32",
+      "unidade": "QEL32",
+      "agrupadorOriginal": "QEL3",
+      "areaPrivativa": 253.49,
+      "valorM2Extraido": 581.64,
+      "valorExtraido": 147438.69,
+      "valorInterpretado": 147438.69,
+      "valorValidado": null,
+      "valorPublicado": 147438.69,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10320.71,
+          "mensais72_1": 1904.42,
+          "mensais72_2": 1597.25,
+          "anuais6": 3685.97
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10320.71,
+          "mensais120": 1492.45,
+          "mensais180": 1205.67,
+          "mensais240": 1077.16,
+          "anuais20": 2597.71
+        }
+      },
+      "linhaOriginal": "QEL32 253,49 581,64 147.438,69 10.320,71 1.904,42 1.597,25 3.685,97 10.320,71 1.492,45 1.205,67 1.077,16 2.597,71",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 1
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL33",
+      "unidade": "QEL33",
+      "agrupadorOriginal": "QEL3",
+      "areaPrivativa": 253.49,
+      "valorM2Extraido": 581.64,
+      "valorExtraido": 147438.69,
+      "valorInterpretado": 147438.69,
+      "valorValidado": null,
+      "valorPublicado": 147438.69,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10320.71,
+          "mensais72_1": 1904.42,
+          "mensais72_2": 1597.25,
+          "anuais6": 3685.97
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10320.71,
+          "mensais120": 1492.45,
+          "mensais180": 1205.67,
+          "mensais240": 1077.16,
+          "anuais20": 2597.71
+        }
+      },
+      "linhaOriginal": "QEL33 253,49 581,64 147.438,69 10.320,71 1.904,42 1.597,25 3.685,97 10.320,71 1.492,45 1.205,67 1.077,16 2.597,71",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL36",
+      "unidade": "QEL36",
+      "agrupadorOriginal": "QEL3",
+      "areaPrivativa": 253.49,
+      "valorM2Extraido": 592.9,
+      "valorExtraido": 150294.7,
+      "valorInterpretado": 150294.7,
+      "valorValidado": null,
+      "valorPublicado": 150294.7,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10520.63,
+          "mensais72_1": 1941.31,
+          "mensais72_2": 1628.19,
+          "anuais6": 3757.37
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10520.63,
+          "mensais120": 1521.36,
+          "mensais180": 1229.03,
+          "mensais240": 1098.02,
+          "anuais20": 2648.03
+        }
+      },
+      "linhaOriginal": "QEL36 253,49 592,90 150.294,70 10.520,63 1.941,31 1.628,19 3.757,37 10.520,63 1.521,36 1.229,03 1.098,02 2.648,03",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL37",
+      "unidade": "QEL37",
+      "agrupadorOriginal": "QEL3",
+      "areaPrivativa": 253.49,
+      "valorM2Extraido": 592.9,
+      "valorExtraido": 150294.7,
+      "valorInterpretado": 150294.7,
+      "valorValidado": null,
+      "valorPublicado": 150294.7,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10520.63,
+          "mensais72_1": 1941.31,
+          "mensais72_2": 1628.19,
+          "anuais6": 3757.37
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10520.63,
+          "mensais120": 1521.36,
+          "mensais180": 1229.03,
+          "mensais240": 1098.02,
+          "anuais20": 2648.03
+        }
+      },
+      "linhaOriginal": "QEL37 253,49 592,90 150.294,70 10.520,63 1.941,31 1.628,19 3.757,37 10.520,63 1.521,36 1.229,03 1.098,02 2.648,03",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL39",
+      "unidade": "QEL39",
+      "agrupadorOriginal": "QEL3",
+      "areaPrivativa": 253.49,
+      "valorM2Extraido": 621.2,
+      "valorExtraido": 157466.93,
+      "valorInterpretado": 157466.93,
+      "valorValidado": null,
+      "valorPublicado": 157466.93,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11022.69,
+          "mensais72_1": 2033.95,
+          "mensais72_2": 1705.89,
+          "anuais6": 3936.67
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11022.69,
+          "mensais120": 1593.96,
+          "mensais180": 1287.68,
+          "mensais240": 1150.42,
+          "anuais20": 2774.4
+        }
+      },
+      "linhaOriginal": "QEL39 253,49 621,20 157.466,93 11.022,69 2.033,95 1.705,89 3.936,67 11.022,69 1.593,96 1.287,68 1.150,42 2.774,40",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QEL40",
+      "unidade": "QEL40",
+      "agrupadorOriginal": "QEL4",
+      "areaPrivativa": 374.14,
+      "valorM2Extraido": 593.06,
+      "valorExtraido": 221888.15,
+      "valorInterpretado": 221888.15,
+      "valorValidado": null,
+      "valorPublicado": 221888.15,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 15532.17,
+          "mensais72_1": 2866.06,
+          "mensais72_2": 2403.79,
+          "anuais6": 5547.2
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 15532.17,
+          "mensais120": 2246.06,
+          "mensais180": 1814.48,
+          "mensais240": 1621.07,
+          "anuais20": 3909.43
+        }
+      },
+      "linhaOriginal": "QEL40 374,14 593,06 221.888,15 15.532,17 2.866,06 2.403,79 5.547,20 15.532,17 2.246,06 1.814,48 1.621,07 3.909,43",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QHL04",
+      "unidade": "QHL04",
+      "agrupadorOriginal": "QHL0",
+      "areaPrivativa": 239.95,
+      "valorM2Extraido": 709.94,
+      "valorExtraido": 170351.17,
+      "valorInterpretado": 170351.17,
+      "valorValidado": null,
+      "valorPublicado": 170351.17,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11924.58,
+          "mensais72_1": 2200.37,
+          "mensais72_2": 1845.47,
+          "anuais6": 4258.78
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11924.58,
+          "mensais120": 1724.38,
+          "mensais180": 1393.04,
+          "mensais240": 1244.55,
+          "anuais20": 3001.41
+        }
+      },
+      "linhaOriginal": "QHL04 239,95 709,94 170.351,17 11.924,58 2.200,37 1.845,47 4.258,78 11.924,58 1.724,38 1.393,04 1.244,55 3.001,41",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QHL08",
+      "unidade": "QHL08",
+      "agrupadorOriginal": "QHL0",
+      "areaPrivativa": 240.0,
+      "valorM2Extraido": 709.8,
+      "valorExtraido": 170351.17,
+      "valorInterpretado": 170351.17,
+      "valorValidado": null,
+      "valorPublicado": 170351.17,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11924.58,
+          "mensais72_1": 2200.37,
+          "mensais72_2": 1845.47,
+          "anuais6": 4258.78
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11924.58,
+          "mensais120": 1724.38,
+          "mensais180": 1393.04,
+          "mensais240": 1244.55,
+          "anuais20": 3001.41
+        }
+      },
+      "linhaOriginal": "QHL08 240,00 709,80 170.351,17 11.924,58 2.200,37 1.845,47 4.258,78 11.924,58 1.724,38 1.393,04 1.244,55 3.001,41",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QHL11",
+      "unidade": "QHL11",
+      "agrupadorOriginal": "QHL1",
+      "areaPrivativa": 232.23,
+      "valorM2Extraido": 696.56,
+      "valorExtraido": 161761.68,
+      "valorInterpretado": 161761.68,
+      "valorValidado": null,
+      "valorPublicado": 161761.68,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11323.32,
+          "mensais72_1": 2089.42,
+          "mensais72_2": 1752.42,
+          "anuais6": 4044.04
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11323.32,
+          "mensais120": 1637.43,
+          "mensais180": 1322.8,
+          "mensais240": 1181.8,
+          "anuais20": 2850.07
+        }
+      },
+      "linhaOriginal": "QHL11 232,23 696,56 161.761,68 11.323,32 2.089,42 1.752,42 4.044,04 11.323,32 1.637,43 1.322,80 1.181,80 2.850,07",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QHL12",
+      "unidade": "QHL12",
+      "agrupadorOriginal": "QHL1",
+      "areaPrivativa": 287.42,
+      "valorM2Extraido": 657.39,
+      "valorExtraido": 188947.43,
+      "valorInterpretado": 188947.43,
+      "valorValidado": null,
+      "valorPublicado": 188947.43,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 13226.32,
+          "mensais72_1": 2440.57,
+          "mensais72_2": 2046.93,
+          "anuais6": 4723.69
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 13226.32,
+          "mensais120": 1912.62,
+          "mensais180": 1545.11,
+          "mensais240": 1380.41,
+          "anuais20": 3329.05
+        }
+      },
+      "linhaOriginal": "QHL12 287,42 657,39 188.947,43 13.226,32 2.440,57 2.046,93 4.723,69 13.226,32 1.912,62 1.545,11 1.380,41 3.329,05",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QHL13",
+      "unidade": "QHL13",
+      "agrupadorOriginal": "QHL1",
+      "areaPrivativa": 296.83,
+      "valorM2Extraido": 636.55,
+      "valorExtraido": 188947.43,
+      "valorInterpretado": 188947.43,
+      "valorValidado": null,
+      "valorPublicado": 188947.43,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 13226.32,
+          "mensais72_1": 2440.57,
+          "mensais72_2": 2046.93,
+          "anuais6": 4723.69
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 13226.32,
+          "mensais120": 1912.62,
+          "mensais180": 1545.11,
+          "mensais240": 1380.41,
+          "anuais20": 3329.05
+        }
+      },
+      "linhaOriginal": "QHL13 296,83 636,55 188.947,43 13.226,32 2.440,57 2.046,93 4.723,69 13.226,32 1.912,62 1.545,11 1.380,41 3.329,05",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QIL16",
+      "unidade": "QIL16",
+      "agrupadorOriginal": "QIL1",
+      "areaPrivativa": 461.04,
+      "valorM2Extraido": 574.43,
+      "valorExtraido": 264835.63,
+      "valorInterpretado": 264835.63,
+      "valorValidado": null,
+      "valorPublicado": 264835.63,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 18538.49,
+          "mensais72_1": 3420.79,
+          "mensais72_2": 2869.05,
+          "anuais6": 6620.89
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 18538.49,
+          "mensais120": 2680.79,
+          "mensais180": 2165.68,
+          "mensais240": 1934.83,
+          "anuais20": 4666.12
+        }
+      },
+      "linhaOriginal": "QIL16 461,04 574,43 264.835,63 18.538,49 3.420,79 2.869,05 6.620,89 18.538,49 2.680,79 2.165,68 1.934,83 4.666,12",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QJL05",
+      "unidade": "QJL05",
+      "agrupadorOriginal": "QJL0",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 698.86,
+      "valorExtraido": 139771.5,
+      "valorInterpretado": 139771.5,
+      "valorValidado": null,
+      "valorPublicado": 139771.5,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9784.01,
+          "mensais72_1": 1805.38,
+          "mensais72_2": 1514.19,
+          "anuais6": 3494.29
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9784.01,
+          "mensais120": 1414.84,
+          "mensais180": 1142.97,
+          "mensais240": 1021.14,
+          "anuais20": 2462.63
+        }
+      },
+      "linhaOriginal": "QJL05 200,00 698,86 139.771,50 9.784,01 1.805,38 1.514,19 3.494,29 9.784,01 1.414,84 1.142,97 1.021,14 2.462,63",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QKL04",
+      "unidade": "QKL04",
+      "agrupadorOriginal": "QKL0",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 701.44,
+      "valorExtraido": 140287.94,
+      "valorInterpretado": 140287.94,
+      "valorValidado": null,
+      "valorPublicado": 140287.94,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9820.16,
+          "mensais72_1": 1812.05,
+          "mensais72_2": 1519.79,
+          "anuais6": 3507.2
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9820.16,
+          "mensais120": 1420.06,
+          "mensais180": 1147.2,
+          "mensais240": 1024.91,
+          "anuais20": 2471.73
+        }
+      },
+      "linhaOriginal": "QKL04 200,00 701,44 140.287,94 9.820,16 1.812,05 1.519,79 3.507,20 9.820,16 1.420,06 1.147,20 1.024,91 2.471,73",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QKL05",
+      "unidade": "QKL05",
+      "agrupadorOriginal": "QKL0",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 701.44,
+      "valorExtraido": 140287.94,
+      "valorInterpretado": 140287.94,
+      "valorValidado": null,
+      "valorPublicado": 140287.94,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9820.16,
+          "mensais72_1": 1812.05,
+          "mensais72_2": 1519.79,
+          "anuais6": 3507.2
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9820.16,
+          "mensais120": 1420.06,
+          "mensais180": 1147.2,
+          "mensais240": 1024.91,
+          "anuais20": 2471.73
+        }
+      },
+      "linhaOriginal": "QKL05 200,00 701,44 140.287,94 9.820,16 1.812,05 1.519,79 3.507,20 9.820,16 1.420,06 1.147,20 1.024,91 2.471,73",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QKL06",
+      "unidade": "QKL06",
+      "agrupadorOriginal": "QKL0",
+      "areaPrivativa": 256.52,
+      "valorM2Extraido": 613.86,
+      "valorExtraido": 157466.93,
+      "valorInterpretado": 157466.93,
+      "valorValidado": null,
+      "valorPublicado": 157466.93,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11022.69,
+          "mensais72_1": 2033.95,
+          "mensais72_2": 1705.89,
+          "anuais6": 3936.67
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11022.69,
+          "mensais120": 1593.96,
+          "mensais180": 1287.68,
+          "mensais240": 1150.42,
+          "anuais20": 2774.4
+        }
+      },
+      "linhaOriginal": "QKL06 256,52 613,86 157.466,93 11.022,69 2.033,95 1.705,89 3.936,67 11.022,69 1.593,96 1.287,68 1.150,42 2.774,40",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QKL07",
+      "unidade": "QKL07",
+      "agrupadorOriginal": "QKL0",
+      "areaPrivativa": 315.53,
+      "valorM2Extraido": 639.66,
+      "valorExtraido": 201831.68,
+      "valorInterpretado": 201831.68,
+      "valorValidado": null,
+      "valorPublicado": 201831.68,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 14128.22,
+          "mensais72_1": 2606.99,
+          "mensais72_2": 2186.51,
+          "anuais6": 5045.79
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 14128.22,
+          "mensais120": 2043.04,
+          "mensais180": 1650.47,
+          "mensais240": 1474.54,
+          "anuais20": 3556.06
+        }
+      },
+      "linhaOriginal": "QKL07 315,53 639,66 201.831,68 14.128,22 2.606,99 2.186,51 5.045,79 14.128,22 2.043,04 1.650,47 1.474,54 3.556,06",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QLL03",
+      "unidade": "QLL03",
+      "agrupadorOriginal": "QLL0",
+      "areaPrivativa": 240.0,
+      "valorM2Extraido": 608.33,
+      "valorExtraido": 145999.95,
+      "valorInterpretado": 145999.95,
+      "valorValidado": null,
+      "valorPublicado": 145999.95,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10220.0,
+          "mensais72_1": 1885.83,
+          "mensais72_2": 1581.67,
+          "anuais6": 3650.0
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10220.0,
+          "mensais120": 1477.88,
+          "mensais180": 1193.91,
+          "mensais240": 1066.64,
+          "anuais20": 2572.36
+        }
+      },
+      "linhaOriginal": "QLL03 240,00 608,33 145.999,95 10.220,00 1.885,83 1.581,67 3.650,00 10.220,00 1.477,88 1.193,91 1.066,64 2.572,36",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QLL04",
+      "unidade": "QLL04",
+      "agrupadorOriginal": "QLL0",
+      "areaPrivativa": 240.0,
+      "valorM2Extraido": 608.33,
+      "valorExtraido": 145999.95,
+      "valorInterpretado": 145999.95,
+      "valorValidado": null,
+      "valorPublicado": 145999.95,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10220.0,
+          "mensais72_1": 1885.83,
+          "mensais72_2": 1581.67,
+          "anuais6": 3650.0
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10220.0,
+          "mensais120": 1477.88,
+          "mensais180": 1193.91,
+          "mensais240": 1066.64,
+          "anuais20": 2572.36
+        }
+      },
+      "linhaOriginal": "QLL04 240,00 608,33 145.999,95 10.220,00 1.885,83 1.581,67 3.650,00 10.220,00 1.477,88 1.193,91 1.066,64 2.572,36",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QLL05",
+      "unidade": "QLL05",
+      "agrupadorOriginal": "QLL0",
+      "areaPrivativa": 251.17,
+      "valorM2Extraido": 592.74,
+      "valorExtraido": 148877.43,
+      "valorInterpretado": 148877.43,
+      "valorValidado": null,
+      "valorPublicado": 148877.43,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10421.42,
+          "mensais72_1": 1923.0,
+          "mensais72_2": 1612.84,
+          "anuais6": 3721.94
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10421.42,
+          "mensais120": 1507.01,
+          "mensais180": 1217.44,
+          "mensais240": 1087.67,
+          "anuais20": 2623.06
+        }
+      },
+      "linhaOriginal": "QLL05 251,17 592,74 148.877,43 10.421,42 1.923,00 1.612,84 3.721,94 10.421,42 1.507,01 1.217,44 1.087,67 2.623,06",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QML01",
+      "unidade": "QML01",
+      "agrupadorOriginal": "QML0",
+      "areaPrivativa": 261.07,
+      "valorM2Extraido": 636.06,
+      "valorExtraido": 166056.43,
+      "valorInterpretado": 166056.43,
+      "valorValidado": null,
+      "valorPublicado": 166056.43,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11623.95,
+          "mensais72_1": 2144.9,
+          "mensais72_2": 1798.94,
+          "anuais6": 4151.41
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11623.95,
+          "mensais120": 1680.9,
+          "mensais180": 1357.92,
+          "mensais240": 1213.17,
+          "anuais20": 2925.74
+        }
+      },
+      "linhaOriginal": "QML01 261,07 636,06 166.056,43 11.623,95 2.144,90 1.798,94 4.151,41 11.623,95 1.680,90 1.357,92 1.213,17 2.925,74",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QML02",
+      "unidade": "QML02",
+      "agrupadorOriginal": "QML0",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 672.77,
+      "valorExtraido": 134554.45,
+      "valorInterpretado": 134554.45,
+      "valorValidado": null,
+      "valorPublicado": 134554.45,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9418.81,
+          "mensais72_1": 1737.99,
+          "mensais72_2": 1457.67,
+          "anuais6": 3363.86
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9418.81,
+          "mensais120": 1362.03,
+          "mensais180": 1100.31,
+          "mensais240": 983.03,
+          "anuais20": 2370.71
+        }
+      },
+      "linhaOriginal": "QML02 200,00 672,77 134.554,45 9.418,81 1.737,99 1.457,67 3.363,86 9.418,81 1.362,03 1.100,31 983,03 2.370,71",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QML03",
+      "unidade": "QML03",
+      "agrupadorOriginal": "QML0",
+      "areaPrivativa": 276.19,
+      "valorM2Extraido": 627.13,
+      "valorExtraido": 173207.18,
+      "valorInterpretado": 173207.18,
+      "valorValidado": null,
+      "valorPublicado": 173207.18,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 12124.5,
+          "mensais72_1": 2237.26,
+          "mensais72_2": 1876.41,
+          "anuais6": 4330.18
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 12124.5,
+          "mensais120": 1753.29,
+          "mensais180": 1416.39,
+          "mensais240": 1265.42,
+          "anuais20": 3051.73
+        }
+      },
+      "linhaOriginal": "QML03 276,19 627,13 173.207,18 12.124,50 2.237,26 1.876,41 4.330,18 12.124,50 1.753,29 1.416,39 1.265,42 3.051,73",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QML09",
+      "unidade": "QML09",
+      "agrupadorOriginal": "QML0",
+      "areaPrivativa": 283.08,
+      "valorM2Extraido": 621.96,
+      "valorExtraido": 176063.19,
+      "valorInterpretado": 176063.19,
+      "valorValidado": null,
+      "valorPublicado": 176063.19,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 12324.42,
+          "mensais72_1": 2274.15,
+          "mensais72_2": 1907.35,
+          "anuais6": 4401.58
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 12324.42,
+          "mensais120": 1782.2,
+          "mensais180": 1439.75,
+          "mensais240": 1286.28,
+          "anuais20": 3102.05
+        }
+      },
+      "linhaOriginal": "QML09 283,08 621,96 176.063,19 12.324,42 2.274,15 1.907,35 4.401,58 12.324,42 1.782,20 1.439,75 1.286,28 3.102,05",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL01",
+      "unidade": "QNL01",
+      "agrupadorOriginal": "QNL0",
+      "areaPrivativa": 311.87,
+      "valorM2Extraido": 547.6,
+      "valorExtraido": 170781.27,
+      "valorInterpretado": 170781.27,
+      "valorValidado": null,
+      "valorPublicado": 170781.27,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11954.69,
+          "mensais72_1": 2205.92,
+          "mensais72_2": 1850.13,
+          "anuais6": 4269.53
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11954.69,
+          "mensais120": 1728.73,
+          "mensais180": 1396.55,
+          "mensais240": 1247.69,
+          "anuais20": 3008.99
+        }
+      },
+      "linhaOriginal": "QNL01 311,87 547,60 170.781,27 11.954,69 2.205,92 1.850,13 4.269,53 11.954,69 1.728,73 1.396,55 1.247,69 3.008,99",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL02",
+      "unidade": "QNL02",
+      "agrupadorOriginal": "QNL0",
+      "areaPrivativa": 294.55,
+      "valorM2Extraido": 556.26,
+      "valorExtraido": 163845.04,
+      "valorInterpretado": 163845.04,
+      "valorValidado": null,
+      "valorPublicado": 163845.04,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11469.15,
+          "mensais72_1": 2116.33,
+          "mensais72_2": 1774.99,
+          "anuais6": 4096.13
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11469.15,
+          "mensais120": 1658.52,
+          "mensais180": 1339.83,
+          "mensais240": 1197.02,
+          "anuais20": 2886.78
+        }
+      },
+      "linhaOriginal": "QNL02 294,55 556,26 163.845,04 11.469,15 2.116,33 1.774,99 4.096,13 11.469,15 1.658,52 1.339,83 1.197,02 2.886,78",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL03",
+      "unidade": "QNL03",
+      "agrupadorOriginal": "QNL0",
+      "areaPrivativa": 293.08,
+      "valorM2Extraido": 554.28,
+      "valorExtraido": 162449.48,
+      "valorInterpretado": 162449.48,
+      "valorValidado": null,
+      "valorPublicado": 162449.48,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 11371.46,
+          "mensais72_1": 2098.31,
+          "mensais72_2": 1759.87,
+          "anuais6": 4061.24
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 11371.46,
+          "mensais120": 1644.39,
+          "mensais180": 1328.42,
+          "mensais240": 1186.82,
+          "anuais20": 2862.19
+        }
+      },
+      "linhaOriginal": "QNL03 293,08 554,28 162.449,48 11.371,46 2.098,31 1.759,87 4.061,24 11.371,46 1.644,39 1.328,42 1.186,82 2.862,19",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 2
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL06",
+      "unidade": "QNL06",
+      "agrupadorOriginal": "QNL0",
+      "areaPrivativa": 217.22,
+      "valorM2Extraido": 588.1,
+      "valorExtraido": 127747.49,
+      "valorInterpretado": 127747.49,
+      "valorValidado": null,
+      "valorPublicado": 127747.49,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8942.32,
+          "mensais72_1": 1650.07,
+          "mensais72_2": 1383.93,
+          "anuais6": 3193.69
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8942.32,
+          "mensais120": 1293.12,
+          "mensais180": 1044.65,
+          "mensais240": 933.3,
+          "anuais20": 2250.78
+        }
+      },
+      "linhaOriginal": "QNL06 217,22 588,10 127.747,49 8.942,32 1.650,07 1.383,93 3.193,69 8.942,32 1.293,12 1.044,65 933,30 2.250,78",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL07",
+      "unidade": "QNL07",
+      "agrupadorOriginal": "QNL0",
+      "areaPrivativa": 217.22,
+      "valorM2Extraido": 588.1,
+      "valorExtraido": 127747.49,
+      "valorInterpretado": 127747.49,
+      "valorValidado": null,
+      "valorPublicado": 127747.49,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8942.32,
+          "mensais72_1": 1650.07,
+          "mensais72_2": 1383.93,
+          "anuais6": 3193.69
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8942.32,
+          "mensais120": 1293.12,
+          "mensais180": 1044.65,
+          "mensais240": 933.3,
+          "anuais20": 2250.78
+        }
+      },
+      "linhaOriginal": "QNL07 217,22 588,10 127.747,49 8.942,32 1.650,07 1.383,93 3.193,69 8.942,32 1.293,12 1.044,65 933,30 2.250,78",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL09",
+      "unidade": "QNL09",
+      "agrupadorOriginal": "QNL0",
+      "areaPrivativa": 217.22,
+      "valorM2Extraido": 588.1,
+      "valorExtraido": 127747.49,
+      "valorInterpretado": 127747.49,
+      "valorValidado": null,
+      "valorPublicado": 127747.49,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8942.32,
+          "mensais72_1": 1650.07,
+          "mensais72_2": 1383.93,
+          "anuais6": 3193.69
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8942.32,
+          "mensais120": 1293.12,
+          "mensais180": 1044.65,
+          "mensais240": 933.3,
+          "anuais20": 2250.78
+        }
+      },
+      "linhaOriginal": "QNL09 217,22 588,10 127.747,49 8.942,32 1.650,07 1.383,93 3.193,69 8.942,32 1.293,12 1.044,65 933,30 2.250,78",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL10",
+      "unidade": "QNL10",
+      "agrupadorOriginal": "QNL1",
+      "areaPrivativa": 217.22,
+      "valorM2Extraido": 588.1,
+      "valorExtraido": 127747.49,
+      "valorInterpretado": 127747.49,
+      "valorValidado": null,
+      "valorPublicado": 127747.49,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 8942.32,
+          "mensais72_1": 1650.07,
+          "mensais72_2": 1383.93,
+          "anuais6": 3193.69
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 8942.32,
+          "mensais120": 1293.12,
+          "mensais180": 1044.65,
+          "mensais240": 933.3,
+          "anuais20": 2250.78
+        }
+      },
+      "linhaOriginal": "QNL10 217,22 588,10 127.747,49 8.942,32 1.650,07 1.383,93 3.193,69 8.942,32 1.293,12 1.044,65 933,30 2.250,78",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL12",
+      "unidade": "QNL12",
+      "agrupadorOriginal": "QNL1",
+      "areaPrivativa": 217.22,
+      "valorM2Extraido": 620.03,
+      "valorExtraido": 134683.72,
+      "valorInterpretado": 134683.72,
+      "valorValidado": null,
+      "valorPublicado": 134683.72,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9427.86,
+          "mensais72_1": 1739.66,
+          "mensais72_2": 1459.07,
+          "anuais6": 3367.09
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9427.86,
+          "mensais120": 1363.33,
+          "mensais180": 1101.37,
+          "mensais240": 983.97,
+          "anuais20": 2372.98
+        }
+      },
+      "linhaOriginal": "QNL12 217,22 620,03 134.683,72 9.427,86 1.739,66 1.459,07 3.367,09 9.427,86 1.363,33 1.101,37 983,97 2.372,98",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL13",
+      "unidade": "QNL13",
+      "agrupadorOriginal": "QNL1",
+      "areaPrivativa": 217.22,
+      "valorM2Extraido": 620.03,
+      "valorExtraido": 134683.72,
+      "valorInterpretado": 134683.72,
+      "valorValidado": null,
+      "valorPublicado": 134683.72,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9427.86,
+          "mensais72_1": 1739.66,
+          "mensais72_2": 1459.07,
+          "anuais6": 3367.09
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9427.86,
+          "mensais120": 1363.33,
+          "mensais180": 1101.37,
+          "mensais240": 983.97,
+          "anuais20": 2372.98
+        }
+      },
+      "linhaOriginal": "QNL13 217,22 620,03 134.683,72 9.427,86 1.739,66 1.459,07 3.367,09 9.427,86 1.363,33 1.101,37 983,97 2.372,98",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL14",
+      "unidade": "QNL14",
+      "agrupadorOriginal": "QNL1",
+      "areaPrivativa": 217.22,
+      "valorM2Extraido": 620.03,
+      "valorExtraido": 134683.72,
+      "valorInterpretado": 134683.72,
+      "valorValidado": null,
+      "valorPublicado": 134683.72,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9427.86,
+          "mensais72_1": 1739.66,
+          "mensais72_2": 1459.07,
+          "anuais6": 3367.09
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9427.86,
+          "mensais120": 1363.33,
+          "mensais180": 1101.37,
+          "mensais240": 983.97,
+          "anuais20": 2372.98
+        }
+      },
+      "linhaOriginal": "QNL14 217,22 620,03 134.683,72 9.427,86 1.739,66 1.459,07 3.367,09 9.427,86 1.363,33 1.101,37 983,97 2.372,98",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL17",
+      "unidade": "QNL17",
+      "agrupadorOriginal": "QNL1",
+      "areaPrivativa": 240.0,
+      "valorM2Extraido": 636.43,
+      "valorExtraido": 152742.92,
+      "valorInterpretado": 152742.92,
+      "valorValidado": null,
+      "valorPublicado": 152742.92,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10692.0,
+          "mensais72_1": 1972.93,
+          "mensais72_2": 1654.71,
+          "anuais6": 3818.57
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10692.0,
+          "mensais120": 1546.14,
+          "mensais180": 1249.05,
+          "mensais240": 1115.91,
+          "anuais20": 2691.17
+        }
+      },
+      "linhaOriginal": "QNL17 240,00 636,43 152.742,92 10.692,00 1.972,93 1.654,71 3.818,57 10.692,00 1.546,14 1.249,05 1.115,91 2.691,17",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL18",
+      "unidade": "QNL18",
+      "agrupadorOriginal": "QNL1",
+      "areaPrivativa": 240.0,
+      "valorM2Extraido": 601.71,
+      "valorExtraido": 144411.11,
+      "valorInterpretado": 144411.11,
+      "valorValidado": null,
+      "valorPublicado": 144411.11,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10108.78,
+          "mensais72_1": 1865.31,
+          "mensais72_2": 1564.45,
+          "anuais6": 3610.28
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10108.78,
+          "mensais120": 1461.8,
+          "mensais180": 1180.91,
+          "mensais240": 1055.04,
+          "anuais20": 2544.37
+        }
+      },
+      "linhaOriginal": "QNL18 240,00 601,71 144.411,11 10.108,78 1.865,31 1.564,45 3.610,28 10.108,78 1.461,80 1.180,91 1.055,04 2.544,37",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL19",
+      "unidade": "QNL19",
+      "agrupadorOriginal": "QNL1",
+      "areaPrivativa": 240.0,
+      "valorM2Extraido": 601.71,
+      "valorExtraido": 144411.11,
+      "valorInterpretado": 144411.11,
+      "valorValidado": null,
+      "valorPublicado": 144411.11,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10108.78,
+          "mensais72_1": 1865.31,
+          "mensais72_2": 1564.45,
+          "anuais6": 3610.28
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10108.78,
+          "mensais120": 1461.8,
+          "mensais180": 1180.91,
+          "mensais240": 1055.04,
+          "anuais20": 2544.37
+        }
+      },
+      "linhaOriginal": "QNL19 240,00 601,71 144.411,11 10.108,78 1.865,31 1.564,45 3.610,28 10.108,78 1.461,80 1.180,91 1.055,04 2.544,37",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL22",
+      "unidade": "QNL22",
+      "agrupadorOriginal": "QNL2",
+      "areaPrivativa": 240.0,
+      "valorM2Extraido": 601.71,
+      "valorExtraido": 144411.11,
+      "valorInterpretado": 144411.11,
+      "valorValidado": null,
+      "valorPublicado": 144411.11,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10108.78,
+          "mensais72_1": 1865.31,
+          "mensais72_2": 1564.45,
+          "anuais6": 3610.28
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10108.78,
+          "mensais120": 1461.8,
+          "mensais180": 1180.91,
+          "mensais240": 1055.04,
+          "anuais20": 2544.37
+        }
+      },
+      "linhaOriginal": "QNL22 240,00 601,71 144.411,11 10.108,78 1.865,31 1.564,45 3.610,28 10.108,78 1.461,80 1.180,91 1.055,04 2.544,37",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL23",
+      "unidade": "QNL23",
+      "agrupadorOriginal": "QNL2",
+      "areaPrivativa": 240.0,
+      "valorM2Extraido": 619.07,
+      "valorExtraido": 148577.02,
+      "valorInterpretado": 148577.02,
+      "valorValidado": null,
+      "valorPublicado": 148577.02,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10400.39,
+          "mensais72_1": 1919.12,
+          "mensais72_2": 1609.58,
+          "anuais6": 3714.43
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10400.39,
+          "mensais120": 1503.97,
+          "mensais180": 1214.98,
+          "mensais240": 1085.47,
+          "anuais20": 2617.77
+        }
+      },
+      "linhaOriginal": "QNL23 240,00 619,07 148.577,02 10.400,39 1.919,12 1.609,58 3.714,43 10.400,39 1.503,97 1.214,98 1.085,47 2.617,77",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL27",
+      "unidade": "QNL27",
+      "agrupadorOriginal": "QNL2",
+      "areaPrivativa": 240.0,
+      "valorM2Extraido": 644.75,
+      "valorExtraido": 154740.62,
+      "valorInterpretado": 154740.62,
+      "valorValidado": null,
+      "valorPublicado": 154740.62,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10831.84,
+          "mensais72_1": 1998.73,
+          "mensais72_2": 1676.36,
+          "anuais6": 3868.52
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10831.84,
+          "mensais120": 1566.36,
+          "mensais180": 1265.38,
+          "mensais240": 1130.5,
+          "anuais20": 2726.37
+        }
+      },
+      "linhaOriginal": "QNL27 240,00 644,75 154.740,62 10.831,84 1.998,73 1.676,36 3.868,52 10.831,84 1.566,36 1.265,38 1.130,50 2.726,37",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QNL40",
+      "unidade": "QNL40",
+      "agrupadorOriginal": "QNL4",
+      "areaPrivativa": 217.91,
+      "valorM2Extraido": 632.3,
+      "valorExtraido": 137783.56,
+      "valorInterpretado": 137783.56,
+      "valorValidado": null,
+      "valorPublicado": 137783.56,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 9644.85,
+          "mensais72_1": 1779.7,
+          "mensais72_2": 1492.66,
+          "anuais6": 3444.59
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 9644.85,
+          "mensais120": 1394.71,
+          "mensais180": 1126.72,
+          "mensais240": 1006.62,
+          "anuais20": 2427.6
+        }
+      },
+      "linhaOriginal": "QNL40 217,91 632,30 137.783,56 9.644,85 1.779,70 1.492,66 3.444,59 9.644,85 1.394,71 1.126,72 1.006,62 2.427,60",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QOL02",
+      "unidade": "QOL02",
+      "agrupadorOriginal": "QOL0",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 766.5,
+      "valorExtraido": 153299.95,
+      "valorInterpretado": 153299.95,
+      "valorValidado": null,
+      "valorPublicado": 153299.95,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10731.0,
+          "mensais72_1": 1980.12,
+          "mensais72_2": 1660.75,
+          "anuais6": 3832.5
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10731.0,
+          "mensais120": 1551.78,
+          "mensais180": 1253.6,
+          "mensais240": 1119.98,
+          "anuais20": 2700.98
+        }
+      },
+      "linhaOriginal": "QOL02 200,00 766,50 153.299,95 10.731,00 1.980,12 1.660,75 3.832,50 10.731,00 1.551,78 1.253,60 1.119,98 2.700,98",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QOL06",
+      "unidade": "QOL06",
+      "agrupadorOriginal": "QOL0",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 766.5,
+      "valorExtraido": 153299.95,
+      "valorInterpretado": 153299.95,
+      "valorValidado": null,
+      "valorPublicado": 153299.95,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10731.0,
+          "mensais72_1": 1980.12,
+          "mensais72_2": 1660.75,
+          "anuais6": 3832.5
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10731.0,
+          "mensais120": 1551.78,
+          "mensais180": 1253.6,
+          "mensais240": 1119.98,
+          "anuais20": 2700.98
+        }
+      },
+      "linhaOriginal": "QOL06 200,00 766,50 153.299,95 10.731,00 1.980,12 1.660,75 3.832,50 10.731,00 1.551,78 1.253,60 1.119,98 2.700,98",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QOL13",
+      "unidade": "QOL13",
+      "agrupadorOriginal": "QOL1",
+      "areaPrivativa": 200.0,
+      "valorM2Extraido": 766.5,
+      "valorExtraido": 153299.95,
+      "valorInterpretado": 153299.95,
+      "valorValidado": null,
+      "valorPublicado": 153299.95,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 10731.0,
+          "mensais72_1": 1980.12,
+          "mensais72_2": 1660.75,
+          "anuais6": 3832.5
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 10731.0,
+          "mensais120": 1551.78,
+          "mensais180": 1253.6,
+          "mensais240": 1119.98,
+          "anuais20": 2700.98
+        }
+      },
+      "linhaOriginal": "QOL13 200,00 766,50 153.299,95 10.731,00 1.980,12 1.660,75 3.832,50 10.731,00 1.551,78 1.253,60 1.119,98 2.700,98",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QOL20",
+      "unidade": "QOL20",
+      "agrupadorOriginal": "QOL2",
+      "areaPrivativa": 276.48,
+      "valorM2Extraido": 777.43,
+      "valorExtraido": 214944.61,
+      "valorInterpretado": 214944.61,
+      "valorValidado": null,
+      "valorPublicado": 214944.61,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 15046.12,
+          "mensais72_1": 2776.37,
+          "mensais72_2": 2328.57,
+          "anuais6": 5373.62
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 15046.12,
+          "mensais120": 2175.77,
+          "mensais180": 1757.7,
+          "mensais240": 1570.34,
+          "anuais20": 3787.1
+        }
+      },
+      "linhaOriginal": "QOL20 276,48 777,43 214.944,61 15.046,12 2.776,37 2.328,57 5.373,62 15.046,12 2.175,77 1.757,70 1.570,34 3.787,10",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    },
+    {
+      "chave": "EMP-000007::QPL09",
+      "unidade": "QPL09",
+      "agrupadorOriginal": "QPL0",
+      "areaPrivativa": 285.44,
+      "valorM2Extraido": 673.41,
+      "valorExtraido": 192218.31,
+      "valorInterpretado": 192218.31,
+      "valorValidado": null,
+      "valorPublicado": 192218.31,
+      "situacaoExtraida": null,
+      "situacaoPublicada": null,
+      "status": "Não identificado",
+      "condicoes": {
+        "planoEspecialSemJuros": {
+          "entrada7": 13455.28,
+          "mensais72_1": 2482.82,
+          "mensais72_2": 2082.37,
+          "anuais6": 4805.46
+        },
+        "planoEspecialMenorParcela": {
+          "entrada7": 13455.28,
+          "mensais120": 1945.73,
+          "mensais180": 1571.85,
+          "mensais240": 1404.31,
+          "anuais20": 3386.68
+        }
+      },
+      "linhaOriginal": "QPL09 285,44 673,41 192.218,31 13.455,28 2.482,82 2.082,37 4.805,46 13.455,28 1.945,73 1.571,85 1.404,31 3.386,68",
+      "origem": {
+        "arquivo": "Lago dos Ipês_ago_26.pdf",
+        "pagina": 3
+      },
+      "classificacao": "observado"
+    }
+  ],
+  "comparacao": {
+    "novas": [
+      "EMP-000007::QBL02",
+      "EMP-000007::QCL20",
+      "EMP-000007::QCL27",
+      "EMP-000007::QCL29",
+      "EMP-000007::QCL35",
+      "EMP-000007::QDL09",
+      "EMP-000007::QDL12",
+      "EMP-000007::QDL18",
+      "EMP-000007::QDL19",
+      "EMP-000007::QDL20",
+      "EMP-000007::QDL21",
+      "EMP-000007::QDL22",
+      "EMP-000007::QEL01",
+      "EMP-000007::QEL05",
+      "EMP-000007::QEL09",
+      "EMP-000007::QEL11",
+      "EMP-000007::QEL13",
+      "EMP-000007::QEL17",
+      "EMP-000007::QEL19",
+      "EMP-000007::QEL20",
+      "EMP-000007::QEL21",
+      "EMP-000007::QEL24",
+      "EMP-000007::QEL28",
+      "EMP-000007::QEL30",
+      "EMP-000007::QEL31",
+      "EMP-000007::QEL32",
+      "EMP-000007::QEL33",
+      "EMP-000007::QEL36",
+      "EMP-000007::QEL37",
+      "EMP-000007::QEL39",
+      "EMP-000007::QEL40",
+      "EMP-000007::QHL04",
+      "EMP-000007::QHL08",
+      "EMP-000007::QHL11",
+      "EMP-000007::QHL12",
+      "EMP-000007::QHL13",
+      "EMP-000007::QIL16",
+      "EMP-000007::QJL05",
+      "EMP-000007::QKL04",
+      "EMP-000007::QKL05",
+      "EMP-000007::QKL06",
+      "EMP-000007::QKL07",
+      "EMP-000007::QLL03",
+      "EMP-000007::QLL04",
+      "EMP-000007::QLL05",
+      "EMP-000007::QML01",
+      "EMP-000007::QML02",
+      "EMP-000007::QML03",
+      "EMP-000007::QML09",
+      "EMP-000007::QNL01",
+      "EMP-000007::QNL02",
+      "EMP-000007::QNL03",
+      "EMP-000007::QNL06",
+      "EMP-000007::QNL07",
+      "EMP-000007::QNL09",
+      "EMP-000007::QNL10",
+      "EMP-000007::QNL12",
+      "EMP-000007::QNL13",
+      "EMP-000007::QNL14",
+      "EMP-000007::QNL17",
+      "EMP-000007::QNL18",
+      "EMP-000007::QNL19",
+      "EMP-000007::QNL22",
+      "EMP-000007::QNL23",
+      "EMP-000007::QNL27",
+      "EMP-000007::QNL40",
+      "EMP-000007::QOL02",
+      "EMP-000007::QOL06",
+      "EMP-000007::QOL13",
+      "EMP-000007::QOL20",
+      "EMP-000007::QPL09"
+    ],
+    "mantidas": [],
+    "ausentes": [],
+    "retornadas": [],
+    "alteracoesValor": [],
+    "alteracoesStatus": [],
+    "alteracoesAtributos": [],
+    "alteracoesComerciais": []
+  },
+  "cadastroCentral": {
+    "novas": [
+      "EMP-000007::QBL02",
+      "EMP-000007::QCL20",
+      "EMP-000007::QCL27",
+      "EMP-000007::QCL29",
+      "EMP-000007::QCL35",
+      "EMP-000007::QDL09",
+      "EMP-000007::QDL12",
+      "EMP-000007::QDL18",
+      "EMP-000007::QDL19",
+      "EMP-000007::QDL20",
+      "EMP-000007::QDL21",
+      "EMP-000007::QDL22",
+      "EMP-000007::QEL01",
+      "EMP-000007::QEL05",
+      "EMP-000007::QEL09",
+      "EMP-000007::QEL11",
+      "EMP-000007::QEL13",
+      "EMP-000007::QEL17",
+      "EMP-000007::QEL19",
+      "EMP-000007::QEL20",
+      "EMP-000007::QEL21",
+      "EMP-000007::QEL24",
+      "EMP-000007::QEL28",
+      "EMP-000007::QEL30",
+      "EMP-000007::QEL31",
+      "EMP-000007::QEL32",
+      "EMP-000007::QEL33",
+      "EMP-000007::QEL36",
+      "EMP-000007::QEL37",
+      "EMP-000007::QEL39",
+      "EMP-000007::QEL40",
+      "EMP-000007::QHL04",
+      "EMP-000007::QHL08",
+      "EMP-000007::QHL11",
+      "EMP-000007::QHL12",
+      "EMP-000007::QHL13",
+      "EMP-000007::QIL16",
+      "EMP-000007::QJL05",
+      "EMP-000007::QKL04",
+      "EMP-000007::QKL05",
+      "EMP-000007::QKL06",
+      "EMP-000007::QKL07",
+      "EMP-000007::QLL03",
+      "EMP-000007::QLL04",
+      "EMP-000007::QLL05",
+      "EMP-000007::QML01",
+      "EMP-000007::QML02",
+      "EMP-000007::QML03",
+      "EMP-000007::QML09",
+      "EMP-000007::QNL01",
+      "EMP-000007::QNL02",
+      "EMP-000007::QNL03",
+      "EMP-000007::QNL06",
+      "EMP-000007::QNL07",
+      "EMP-000007::QNL09",
+      "EMP-000007::QNL10",
+      "EMP-000007::QNL12",
+      "EMP-000007::QNL13",
+      "EMP-000007::QNL14",
+      "EMP-000007::QNL17",
+      "EMP-000007::QNL18",
+      "EMP-000007::QNL19",
+      "EMP-000007::QNL22",
+      "EMP-000007::QNL23",
+      "EMP-000007::QNL27",
+      "EMP-000007::QNL40",
+      "EMP-000007::QOL02",
+      "EMP-000007::QOL06",
+      "EMP-000007::QOL13",
+      "EMP-000007::QOL20",
+      "EMP-000007::QPL09"
+    ],
+    "atualizadas": [],
+    "revisaoPendente": [
+      {
+        "tipo": "CONFIGURAR_MODALIDADE",
+        "motivo": "A tabela apresenta condições comerciais, mas não informa explicitamente a modalidade (CEF, bancário, direto construtora ou à vista).",
+        "status": "pendente"
+      }
+    ]
+  },
+  "historico": [],
+  "fatosComerciais": [],
+  "alertas": [
+    {
+      "tipo": "MODALIDADE_NAO_DETERMINADA",
+      "severidade": "alta"
+    },
+    {
+      "tipo": "SITUACAO_NAO_INFORMADA",
+      "severidade": "media"
+    }
+  ],
+  "confirmacoesNecessarias": [
+    "Confirmar o empreendimento e seu ID definitivo.",
+    "Confirmar a modalidade/tipo da tabela.",
+    "Confirmar a construtora, se aplicável."
+  ],
+  "auditoria": [
+    {
+      "evento": "IMPORTACAO_DOCUMENTO",
+      "arquivo": "Lago dos Ipês_ago_26.pdf",
+      "sha256": "02c5a452285bc26914ec52409782c4e8f22477f119423f04b46142194c335367",
+      "paginas": 3,
+      "unidadesExtraidas": 71
+    }
+  ]
+}

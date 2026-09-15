@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <meta
+    name="description"
+    content="NEXUM — Radar Imobiliário. Sua carteira analisada dentro do cenário real do mercado."
+  />
+
+  <title>NEXUM — Radar Imobiliário</title>
+
+  <style>
+    :root {
+      --bg: #f5f8f9;
+      --surface: #ffffff;
+      --surface-soft: #eef3f4;
+
+      --ink: #10242a;
+      --ink-soft: #52666d;
+      --ink-muted: #74858b;
+
+      --line: #dfe7e9;
+      --line-strong: #ccd9dc;
+
+      --accent: #00a6a6;
+      --accent-dark: #007f81;
+      --accent-soft: #e1f5f4;
+
+      --navy: #102d34;
+      --navy-2: #173d45;
+
+      --shadow-sm:
+        0 8px 30px rgba(16, 45, 52, 0.06);
+
+      --shadow-lg:
+        0 24px 70px rgba(16, 45, 52, 0.10);
+
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 26px;
+
+      --container: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(
+        calc(100% - 36px),
+        var(--container)
+      );
+      margin-inline: auto;
+    }
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245, 248, 249, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(223, 231, 233, 0.8);
+    }
+
+    .header-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .brand img {
+      width: 112px;
+      height: auto;
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 42px;
+      padding: 0 16px;
+
+      border-radius: 10px;
+      background: var(--ink);
+      color: #fff;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      transition:
+        transform 180ms ease,
+        background 180ms ease;
+    }
+
+    .header-cta:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    /* =========================================================
+       BUTTONS
+    ========================================================= */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+
+      min-height: 50px;
+      padding: 0 20px;
+
+      border-radius: 11px;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      transition:
+        transform 180ms ease,
+        background 180ms ease,
+        border-color 180ms ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      border: 1px solid var(--line-strong);
+      color: var(--ink);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* =========================================================
+       TYPOGRAPHY
+    ========================================================= */
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      color: var(--accent-dark);
+
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 22px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+
+      margin-bottom: 22px;
+
+      font-size: clamp(
+        42px,
+        10vw,
+        78px
+      );
+
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+      font-weight: 750;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+
+      font-size: clamp(
+        32px,
+        6vw,
+        54px
+      );
+
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+      font-weight: 740;
+    }
+
+    h3 {
+      margin-bottom: 9px;
+
+      font-size: 19px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      color: var(--ink-soft);
+
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      margin-bottom: 38px;
+    }
+
+    .section-intro .eyebrow {
+      margin-bottom: 18px;
+    }
+
+    .section-intro p {
+      max-width: 680px;
+      margin-bottom: 0;
+
+      color: var(--ink-soft);
+
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      padding:
+        70px 0
+        74px;
+    }
+
+    .hero-content {
+      display: grid;
+      gap: 44px;
+    }
+
+    .hero-copy {
+      max-width: 850px;
+    }
+
+    .hero-copy .eyebrow {
+      margin-bottom: 20px;
+    }
+
+    .hero-title-accent {
+      color: var(--accent-dark);
+    }
+
+    .hero-description {
+      max-width: 710px;
+      margin-bottom: 28px;
+
+      color: var(--ink-soft);
+
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .hero-statement {
+      max-width: 720px;
+
+      margin-bottom: 30px;
+      padding-left: 18px;
+
+      border-left: 2px solid var(--accent);
+
+      font-size: 17px;
+      line-height: 1.6;
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+
+    /* =========================================================
+       PRODUCT SCREEN
+    ========================================================= */
+
+    .product-screen {
+      overflow: hidden;
+
+      background: #fff;
+
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+
+      box-shadow: var(--shadow-lg);
+    }
+
+    .product-screen img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-screen-large {
+      margin-top: 20px;
+    }
+
+    /* =========================================================
+       SECTIONS
+    ========================================================= */
+
+    .section {
+      padding: 76px 0;
+    }
+
+    .section-soft {
+      background: var(--surface-soft);
+    }
+
+    .section-dark {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .section-dark .eyebrow {
+      color: #6ed5d2;
+    }
+
+    .section-dark .section-intro p {
+      color: rgba(255,255,255,0.68);
+    }
+
+    /* =========================================================
+       INTRO / DIFFERENCE
+    ========================================================= */
+
+    .difference-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .difference-card {
+      padding: 25px;
+
+      background: #fff;
+
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+
+      box-shadow: var(--shadow-sm);
+    }
+
+    .difference-card.accent {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff;
+    }
+
+    .difference-card p {
+      margin-bottom: 0;
+
+      color: var(--ink-soft);
+
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .difference-card.accent p {
+      color: rgba(255,255,255,0.68);
+    }
+
+    /* =========================================================
+       PORTFOLIO
+    ========================================================= */
+
+    .portfolio-layout {
+      display: grid;
+      gap: 30px;
+    }
+
+    .portfolio-copy {
+      max-width: 600px;
+    }
+
+    .portfolio-points {
+      display: grid;
+      gap: 11px;
+
+      margin-top: 25px;
+    }
+
+    .portfolio-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+
+      color: var(--ink-soft);
+
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .portfolio-point::before {
+      content: "";
+
+      flex: 0 0 7px;
+      width: 7px;
+      height: 7px;
+
+      margin-top: 8px;
+
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* =========================================================
+       TERRITORY
+    ========================================================= */
+
+    .territory-layout {
+      display: grid;
+      gap: 38px;
+    }
+
+    .territory-copy {
+      max-width: 650px;
+    }
+
+    .territory-copy p {
+      color: rgba(255,255,255,0.70);
+
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .territory-screen {
+      border-color: rgba(255,255,255,0.10);
+      box-shadow:
+        0 28px 80px rgba(0,0,0,0.22);
+    }
+
+    .signal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 9px;
+
+      margin-top: 25px;
+    }
+
+    .signal {
+      padding: 15px 12px;
+
+      border-top: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .signal strong {
+      display: block;
+      margin-bottom: 5px;
+
+      font-size: 14px;
+    }
+
+    .signal span {
+      color: rgba(255,255,255,0.55);
+
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    /* =========================================================
+       MARKET READING
+    ========================================================= */
+
+    .market-reading {
+      display: grid;
+      gap: 30px;
+    }
+
+    .market-copy {
+      max-width: 650px;
+    }
+
+    .market-copy p {
+      color: var(--ink-soft);
+
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    /* =========================================================
+       PERFORMANCE
+    ========================================================= */
+
+    .performance-layout {
+      display: grid;
+      gap: 32px;
+    }
+
+    .performance-copy {
+      max-width: 610px;
+    }
+
+    .performance-copy p {
+      color: var(--ink-soft);
+
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .metric-list {
+      display: grid;
+      gap: 10px;
+
+      margin-top: 25px;
+    }
+
+    .metric-item {
+      padding: 17px 18px;
+
+      background: #fff;
+
+      border: 1px solid var(--line);
+      border-radius: 13px;
+    }
+
+    .metric-item strong {
+      display: block;
+      margin-bottom: 5px;
+
+      font-size: 15px;
+    }
+
+    .metric-item span {
+      color: var(--ink-soft);
+
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* =========================================================
+       ABSORPTION
+    ========================================================= */
+
+    .absorption {
+      background: #fff;
+    }
+
+    .absorption .section-intro {
+      max-width: 800px;
+    }
+
+    .absorption-note {
+      display: grid;
+      gap: 5px;
+
+      max-width: 800px;
+
+      margin-top: 22px;
+      padding: 18px 20px;
+
+      background: var(--surface-soft);
+
+      border-left: 3px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+    }
+
+    .absorption-note strong {
+      font-size: 14px;
+    }
+
+    .absorption-note span {
+      color: var(--ink-soft);
+
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    /* =========================================================
+       PRICE
+    ========================================================= */
+
+    .price-layout {
+      display: grid;
+      gap: 32px;
+    }
+
+    .price-copy {
+      max-width: 660px;
+    }
+
+    .price-copy p {
+      color: var(--ink-soft);
+
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .price-reference {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+
+      margin-top: 25px;
+    }
+
+    .reference {
+      padding: 14px;
+
+      background: #fff;
+
+      border: 1px solid var(--line);
+      border-radius: 11px;
+    }
+
+    .reference strong {
+      display: block;
+
+      font-size: 13px;
+    }
+
+    .reference span {
+      color: var(--ink-muted);
+
+      font-size: 11px;
+    }
+
+    /* =========================================================
+       TIMELINE
+    ========================================================= */
+
+    .timeline-layout {
+      display: grid;
+      gap: 32px;
+    }
+
+    .timeline-copy {
+      max-width: 680px;
+    }
+
+    .timeline-copy p {
+      color: var(--ink-soft);
+
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .timeline-highlight {
+      margin-top: 25px;
+
+      font-size: 21px;
+      line-height: 1.35;
+      letter-spacing: -0.025em;
+      font-weight: 650;
+    }
+
+    /* =========================================================
+       INTEGRATION
+    ========================================================= */
+
+    .integration {
+      padding-bottom: 90px;
+    }
+
+    .integration-header {
+      max-width: 700px;
+      margin-bottom: 35px;
+    }
+
+    .integration-header p {
+      color: var(--ink-soft);
+
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .signal-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .signal-chip {
+      padding: 10px 13px;
+
+      background: #fff;
+
+      border: 1px solid var(--line);
+      border-radius: 9px;
+
+      color: var(--ink-soft);
+
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .integration-message {
+      max-width: 850px;
+
+      margin-top: 38px;
+
+      font-size: clamp(
+        26px,
+        5vw,
+        43px
+      );
+
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      font-weight: 700;
+    }
+
+    .integration-message span {
+      color: var(--accent-dark);
+    }
+
+    /* =========================================================
+       FINAL CTA
+    ========================================================= */
+
+    .final-cta {
+      padding: 80px 0;
+
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .final-cta-inner {
+      max-width: 820px;
+    }
+
+    .final-cta .eyebrow {
+      color: #6ed5d2;
+      margin-bottom: 18px;
+    }
+
+    .final-cta h2 {
+      margin-bottom: 20px;
+    }
+
+    .final-cta p {
+      max-width: 680px;
+
+      margin-bottom: 30px;
+
+      color: rgba(255,255,255,0.68);
+
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .final-cta .btn-primary {
+      background: #fff;
+      color: var(--navy);
+    }
+
+    .final-cta .btn-primary:hover {
+      background: var(--accent-soft);
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      background: #0b2228;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .footer-inner {
+      min-height: 100px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      gap: 12px;
+    }
+
+    .footer-logo {
+      width: 100px;
+      filter: brightness(0) invert(1);
+      opacity: 0.9;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       ANIMATION
+    ========================================================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+
+      transition:
+        opacity 700ms ease,
+        transform 700ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================================================
+       TABLET
+    ========================================================= */
+
+    @media (min-width: 640px) {
+
+      .container {
+        width: min(
+          calc(100% - 56px),
+          var(--container)
+        );
+      }
+
+      .hero {
+        padding-top: 90px;
+        padding-bottom: 95px;
+      }
+
+      .hero-actions {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .btn {
+        min-width: 190px;
+      }
+
+      .difference-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .price-reference {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .footer-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    /* =========================================================
+       DESKTOP
+    ========================================================= */
+
+    @media (min-width: 900px) {
+
+      .container {
+        width: min(
+          calc(100% - 80px),
+          var(--container)
+        );
+      }
+
+      .header-inner {
+        min-height: 80px;
+      }
+
+      .brand img {
+        width: 126px;
+      }
+
+      .header-cta {
+        min-height: 44px;
+        padding-inline: 19px;
+      }
+
+      .hero {
+        padding:
+          112px 0
+          120px;
+      }
+
+      .hero-content {
+        gap: 65px;
+      }
+
+      .hero-description {
+        font-size: 19px;
+      }
+
+      .hero-statement {
+        font-size: 18px;
+      }
+
+      .section {
+        padding: 115px 0;
+      }
+
+      .section-intro {
+        margin-bottom: 55px;
+      }
+
+      .difference-grid {
+        gap: 20px;
+      }
+
+      .difference-card {
+        padding: 32px;
+      }
+
+      .portfolio-layout {
+        grid-template-columns:
+          minmax(270px, 0.7fr)
+          minmax(0, 1.5fr);
+
+        align-items: center;
+        gap: 65px;
+      }
+
+      .territory-layout {
+        grid-template-columns:
+          minmax(260px, 0.65fr)
+          minmax(0, 1.45fr);
+
+        align-items: center;
+        gap: 65px;
+      }
+
+      .market-reading {
+        grid-template-columns:
+          minmax(260px, 0.7fr)
+          minmax(0, 1.3fr);
+
+        align-items: center;
+        gap: 65px;
+      }
+
+      .performance-layout {
+        grid-template-columns:
+          minmax(260px, 0.65fr)
+          minmax(0, 1.35fr);
+
+        align-items: center;
+        gap: 65px;
+      }
+
+      .price-layout {
+        grid-template-columns:
+          minmax(260px, 0.65fr)
+          minmax(0, 1.35fr);
+
+        align-items: center;
+        gap: 65px;
+      }
+
+      .timeline-layout {
+        grid-template-columns:
+          minmax(260px, 0.65fr)
+          minmax(0, 1.35fr);
+
+        align-items: center;
+        gap: 65px;
+      }
+
+      .product-screen-large {
+        margin-top: 0;
+      }
+
+      .final-cta {
+        padding: 120px 0;
+      }
+    }
+
+    /* =========================================================
+       LARGE DESKTOP
+    ========================================================= */
+
+    @media (min-width: 1200px) {
+
+      .hero-content {
+        gap: 78px;
+      }
+
+      .hero-title-accent {
+        display: inline;
+      }
+
+      .territory-layout,
+      .portfolio-layout,
+      .market-reading,
+      .performance-layout,
+      .price-layout,
+      .timeline-layout {
+        gap: 90px;
+      }
+    }
+
+    /* =========================================================
+       REDUCE MOTION
+    ========================================================= */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .btn,
+      .header-cta {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =======================================================
+       HEADER
+  ======================================================== -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!--
+        Troque pelo nome real do arquivo do logo, caso seja diferente.
+      -->
+      <a
+        href="#inicio"
+        class="brand"
+        aria-label="NEXUM — início"
+      >
+        <img
+          src="logo-nexum.png"
+          alt="NEXUM"
+        />
+      </a>
+
+      <a
+        href="#contato"
+        class="header-cta"
+      >
+        Agendar demonstração
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+      class="hero"
+      id="inicio"
+    >
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div class="hero-copy reveal">
+
+            <span class="eyebrow">
+              Radar Imobiliário
+            </span>
+
+            <h1>
+              Veja o mercado além da sua
+              <span class="hero-title-accent">
+                própria carteira.
+              </span>
+            </h1>
+
+            <p class="hero-description">
+              O NEXUM conecta empreendimentos, estoque,
+              vendas, preços, demanda, oferta e movimentação
+              dos corretores para colocar cada empreendimento
+              dentro do cenário real do mercado.
+            </p>
+
+            <p class="hero-statement">
+              O NEXUM mostra para onde o mercado está indo
+              e como a força de vendas está se movendo.
+              <br />
+              Sua carteira passa a ser analisada dentro
+              do cenário real do mercado.
+            </p>
+
+            <div class="hero-actions">
+
+              <a
+                href="#contato"
+                class="btn btn-primary"
+              >
+                Agendar uma demonstração
+              </a>
+
+              <a
+                href="#como-funciona"
+                class="btn btn-secondary"
+              >
+                Conhecer o NEXUM
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="product-screen reveal">
+
+            <img
+              src="01.png"
+              alt="Visão inicial do NEXUM — Radar Imobiliário"
+              fetchpriority="high"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         O QUE MUDA
+    ====================================================== -->
+
+    <section
+      class="section section-soft"
+      id="como-funciona"
+    >
+      <div class="container">
+
+        <div class="section-intro reveal">
+
+          <span class="eyebrow">
+            Uma nova camada de leitura
+          </span>
+
+          <h2>
+            Sua carteira já tem seus próprios números.
+            O NEXUM acrescenta o mercado.
+          </h2>
+
+          <p>
+            O objetivo não é substituir seus sistemas internos.
+            É relacionar aquilo que acontece dentro da empresa
+            com aquilo que está acontecendo ao redor dela.
+          </p>
+
+        </div>
+
+
+        <div class="difference-grid">
+
+          <article class="difference-card reveal">
+
+            <h3>
+              O que você já conhece
+            </h3>
+
+            <p>
+              Vendas, estoque, preços, campanhas,
+              custos e desempenho dos seus próprios
+              empreendimentos.
+            </p>
+
+          </article>
+
+
+          <article class="difference-card accent reveal">
+
+            <h3>
+              O que o NEXUM acrescenta
+            </h3>
+
+            <p>
+              Concorrência, oferta, demanda, velocidade
+              de vendas, movimentação dos corretores,
+              preços e comportamento territorial do mercado.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         CARTEIRA
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="carteira"
+    >
+      <div class="container">
+
+        <div class="portfolio-layout">
+
+          <div class="portfolio-copy reveal">
+
+            <span class="eyebrow">
+              Sua carteira
+            </span>
+
+            <h2>
+              O mercado começa pela visão
+              completa da carteira.
+            </h2>
+
+            <p class="lead">
+              O NEXUM organiza os empreendimentos
+              em uma base única para que desempenho,
+              estoque e posicionamento possam ser
+              analisados em conjunto.
+            </p>
+
+            <div class="portfolio-points">
+
+              <div class="portfolio-point">
+                Empreendimentos cadastrados em uma
+                mesma visão de mercado.
+              </div>
+
+              <div class="portfolio-point">
+                Tabelas atualizadas ao longo do tempo
+                permitem acompanhar mudanças de estoque.
+              </div>
+
+              <div class="portfolio-point">
+                A carteira pode ser comparada por
+                segmento, empreendimento, região e perfil.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="product-screen reveal">
+
+            <img
+              src="02.png"
+              alt="Carteira de empreendimentos cadastrada no NEXUM"
+              loading="lazy"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         TERRITÓRIO
+    ====================================================== -->
+
+    <section class="section section-dark">
+
+      <div class="container">
+
+        <div class="territory-layout">
+
+          <div class="territory-copy reveal">
+
+            <span class="eyebrow">
+              Inteligência territorial
+            </span>
+
+            <h2>
+              Não basta saber onde está
+              o empreendimento.
+            </h2>
+
+            <p>
+              É preciso entender o que acontece
+              ao redor dele.
+            </p>
+
+            <p>
+              O NEXUM permite analisar o entorno,
+              comparar empreendimentos e delimitar
+              áreas de influência para entender
+              oferta, demanda e competição dentro
+              de uma mesma região.
+            </p>
+
+            <div class="signal-grid">
+
+              <div class="signal">
+                <strong>Oferta</strong>
+                <span>
+                  Onde estão os empreendimentos
+                  e seus estoques.
+                </span>
+              </div>
+
+              <div class="signal">
+                <strong>Demanda</strong>
+                <span>
+                  Onde a procura ganha ou perde força.
+                </span>
+              </div>
+
+              <div class="signal">
+                <strong>Entorno</strong>
+                <span>
+                  O que acontece dentro da área
+                  de influência.
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="product-screen territory-screen reveal">
+
+            <img
+              src="04.png"
+              alt="Mapa do NEXUM com raio de influência e análise do entorno"
+              loading="lazy"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LEITURA DE MERCADO
+    ====================================================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="market-reading">
+
+          <div class="market-copy reveal">
+
+            <span class="eyebrow">
+              Leitura de mercado
+            </span>
+
+            <h2>
+              A mesma região pode
+              contar histórias diferentes.
+            </h2>
+
+            <p>
+              A leitura territorial permite observar
+              diferentes sinais do mercado sobre o mesmo
+              espaço: empreendimentos, estoque,
+              velocidade de vendas e pressão de demanda.
+            </p>
+
+            <p>
+              É a diferença entre apenas visualizar
+              a localização e entender o comportamento
+              daquele mercado.
+            </p>
+
+          </div>
+
+
+          <div class="product-screen reveal">
+
+            <img
+              src="03.png"
+              alt="Análise territorial e leitura de mercado no NEXUM"
+              loading="lazy"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PERFORMANCE
+    ====================================================== -->
+
+    <section
+      class="section section-soft"
+      id="performance"
+    >
+
+      <div class="container">
+
+        <div class="performance-layout">
+
+          <div class="performance-copy reveal">
+
+            <span class="eyebrow">
+              Performance
+            </span>
+
+            <h2>
+              Velocidade de vendas
+              dentro do contexto.
+            </h2>
+
+            <p>
+              O NEXUM transforma o movimento das tabelas
+              em indicadores que permitem acompanhar
+              como cada empreendimento está absorvendo
+              seu estoque.
+            </p>
+
+            <div class="metric-list">
+
+              <div class="metric-item">
+                <strong>IVV</strong>
+                <span>
+                  Velocidade média de vendas em unidades
+                  por período.
+                </span>
+              </div>
+
+              <div class="metric-item">
+                <strong>VSO</strong>
+                <span>
+                  Relação entre vendas e estoque disponível,
+                  permitindo comparar ritmos diferentes.
+                </span>
+              </div>
+
+              <div class="metric-item">
+                <strong>Comparação</strong>
+                <span>
+                  O desempenho de um empreendimento pode
+                  ser observado diante do comportamento
+                  do mercado ao redor.
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="product-screen reveal">
+
+            <img
+              src="05.png"
+              alt="Indicadores de desempenho e velocidade de vendas do NEXUM"
+              loading="lazy"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CENÁRIO DE ABSORÇÃO
+    ====================================================== -->
+
+    <section
+      class="section absorption"
+      id="absorção"
+    >
+
+      <div class="container">
+
+        <div class="section-intro reveal">
+
+          <span class="eyebrow">
+            Cenário de absorção
+          </span>
+
+          <h2>
+            O IVV atual não conta sozinho
+            a história do estoque.
+          </h2>
+
+          <p>
+            Um empreendimento pode apresentar uma boa
+            velocidade de vendas hoje, mas essa velocidade
+            tende a mudar conforme o estoque e a maturação
+            avançam.
+          </p>
+
+          <p>
+            O NEXUM coloca lado a lado o
+            <strong>IVV mantido constante</strong>
+            e um
+            <strong>IVV projetado com desaceleração</strong>,
+            permitindo visualizar como diferentes ritmos
+            de absorção podem alterar o tempo necessário
+            para consumir o estoque.
+          </p>
+
+        </div>
+
+
+        <div class="product-screen product-screen-large reveal">
+
+          <img
+            src="08.png"
+            alt="Cenário de absorção comparando IVV fixo e IVV projetado com desaceleração"
+            loading="lazy"
+          />
+
+        </div>
+
+
+        <div class="absorption-note reveal">
+
+          <strong>
+            IVV atual × IVV projetado
+          </strong>
+
+          <span>
+            Uma leitura de cenário para dimensionar
+            o comportamento do estoque ao longo do tempo.
+            Não representa uma promessa de vendas.
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PREÇO / REAJUSTE
+    ====================================================== -->
+
+    <section
+      class="section section-soft"
+      id="precos"
+    >
+
+      <div class="container">
+
+        <div class="price-layout">
+
+          <div class="price-copy reveal">
+
+            <span class="eyebrow">
+              Pressão econômica e de mercado
+            </span>
+
+            <h2>
+              Preço também precisa
+              ser analisado no contexto.
+            </h2>
+
+            <p>
+              O NEXUM relaciona referências econômicas
+              e de mercado com o comportamento observado
+              na carteira.
+            </p>
+
+            <p>
+              A análise permite visualizar a relação entre
+              reajustes praticados, custos de construção,
+              inflação, mercado imobiliário e referências
+              de preço.
+            </p>
+
+            <div class="price-reference">
+
+              <div class="reference">
+                <strong>INCC</strong>
+                <span>
+                  Custo da construção
+                </span>
+              </div>
+
+              <div class="reference">
+                <strong>CUB</strong>
+                <span>
+                  Custo unitário básico
+                </span>
+              </div>
+
+              <div class="reference">
+                <strong>IPCA</strong>
+                <span>
+                  Inflação
+                </span>
+              </div>
+
+              <div class="reference">
+                <strong>IGP-M</strong>
+                <span>
+                  Referência econômica
+                </span>
+              </div>
+
+              <div class="reference">
+                <strong>FipeZap</strong>
+                <span>
+                  Referência imobiliária
+                </span>
+              </div>
+
+              <div class="reference">
+                <strong>NEXUM</strong>
+                <span>
+                  Comportamento da carteira
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="product-screen reveal">
+
+            <img
+              src="06.png"
+              alt="Janela de indicadores econômicos e referências de reajuste do NEXUM"
+              loading="lazy"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TEMPO / TIMELINE
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="tempo"
+    >
+
+      <div class="container">
+
+        <div class="timeline-layout">
+
+          <div class="timeline-copy reveal">
+
+            <span class="eyebrow">
+              Mercado em movimento
+            </span>
+
+            <h2>
+              O mercado não é uma fotografia.
+              É movimento.
+            </h2>
+
+            <p>
+              A leitura ao longo do tempo permite acompanhar
+              como oferta, demanda, vendas, locações e
+              movimentação dos corretores se relacionam.
+            </p>
+
+            <p>
+              O histórico deixa de ser apenas um registro
+              e passa a mostrar como o mercado foi se
+              deslocando.
+            </p>
+
+            <div class="timeline-highlight">
+              O que aconteceu ontem ajuda a entender
+              a direção do mercado hoje.
+            </div>
+
+          </div>
+
+
+          <div class="product-screen reveal">
+
+            <img
+              src="07.png"
+              alt="Timeline de mercado do NEXUM mostrando a evolução dos sinais ao longo do tempo"
+              loading="lazy"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         INTEGRAÇÃO DOS SINAIS
+    ====================================================== -->
+
+    <section
+      class="section section-soft integration"
+    >
+
+      <div class="container">
+
+        <div class="integration-header reveal">
+
+          <span class="eyebrow">
+            O valor está na relação
+          </span>
+
+          <h2>
+            Um mercado. Diferentes sinais.
+          </h2>
+
+          <p>
+            O NEXUM reúne diferentes dimensões do mercado
+            para que elas possam ser analisadas em conjunto,
+            em vez de permanecerem isoladas.
+          </p>
+
+        </div>
+
+
+        <div class="signal-cloud reveal">
+
+          <span class="signal-chip">
+            Empreendimentos
+          </span>
+
+          <span class="signal-chip">
+            Estoque
+          </span>
+
+          <span class="signal-chip">
+            IVV
+          </span>
+
+          <span class="signal-chip">
+            VSO
+          </span>
+
+          <span class="signal-chip">
+            Oferta
+          </span>
+
+          <span class="signal-chip">
+            Demanda
+          </span>
+
+          <span class="signal-chip">
+            Corretores
+          </span>
+
+          <span class="signal-chip">
+            Preços
+          </span>
+
+          <span class="signal-chip">
+            Regiões
+          </span>
+
+          <span class="signal-chip">
+            IPD
+          </span>
+
+          <span class="signal-chip">
+            Tempo
+          </span>
+
+        </div>
+
+
+        <div class="integration-message reveal">
+
+          Sua carteira deixa de ser analisada
+          <span>isoladamente.</span>
+
+          Ela passa a ocupar uma posição
+          dentro do mercado.
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA FINAL
+    ====================================================== -->
+
+    <section
+      class="final-cta"
+      id="contato"
+    >
+
+      <div class="container">
+
+        <div class="final-cta-inner reveal">
+
+          <span class="eyebrow">
+            Conheça o NEXUM
+          </span>
+
+          <h2>
+            Veja o mercado além da
+            sua própria carteira.
+          </h2>
+
+          <p>
+            Conheça o NEXUM e veja como os dados do mercado
+            podem ser relacionados à sua carteira,
+            aos seus empreendimentos e ao movimento
+            que acontece ao redor deles.
+          </p>
+
+          <!--
+            IMPORTANTE:
+            Substitua o href abaixo pelo WhatsApp,
+            formulário ou URL comercial real do NEXUM.
+          -->
+
+          <a
+            href="#"
+            class="btn btn-primary js-contact"
+          >
+            Agendar uma demonstração
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <img
+        src="logo-nexum.png"
+        alt="NEXUM"
+        class="footer-logo"
+      />
+
+      <div class="footer-copy">
+        NEXUM — Radar Imobiliário
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    /* =======================================================
+       CONFIGURAÇÃO DE CONTATO
+
+       Coloque aqui o link real do WhatsApp,
+       formulário ou página comercial.
+
+       Exemplo:
+       const NEXUM_CONTACT_URL =
+         "https://wa.me/5583999999999";
+
+       Não deixe um e-mail fictício aqui.
+    ======================================================== */
+
+    const NEXUM_CONTACT_URL = "";
+
+
+    /* =======================================================
+       CONTATO
+    ======================================================== */
+
+    document
+      .querySelectorAll(".js-contact")
+      .forEach((link) => {
+
+        link.addEventListener("click", (event) => {
+
+          if (!NEXUM_CONTACT_URL) {
+            event.preventDefault();
+
+            const target =
+              document.querySelector("#contato");
+
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+              });
+            }
+
+            return;
+          }
+
+          link.href = NEXUM_CONTACT_URL;
+
+        });
+
+      });
+
+
+    /* =======================================================
+       REVEAL ON SCROLL
+    ======================================================== */
+
+    const revealElements =
+      document.querySelectorAll(".reveal");
+
+
+    if ("IntersectionObserver" in window) {
+
+      const observer =
+        new IntersectionObserver(
+          (entries) => {
+
+            entries.forEach((entry) => {
+
+              if (entry.isIntersecting) {
+
+                entry.target.classList.add(
+                  "is-visible"
+                );
+
+                observer.unobserve(
+                  entry.target
+                );
+
+              }
+
+            });
+
+          },
+          {
+            threshold: 0.12,
+            rootMargin: "0px 0px -40px 0px"
+          }
+        );
+
+
+      revealElements.forEach((element) => {
+        observer.observe(element);
+      });
+
+    } else {
+
+      revealElements.forEach((element) => {
+        element.classList.add("is-visible");
+      });
+
+    }
+
+
+    /* =======================================================
+       HEADER SHADOW / SCROLL
+    ======================================================== */
+
+    const header =
+      document.querySelector(".site-header");
+
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        if (!header) return;
+
+        if (window.scrollY > 12) {
+
+          header.style.boxShadow =
+            "0 8px 30px rgba(16,45,52,0.05)";
+
+        } else {
+
+          header.style.boxShadow = "none";
+
+        }
+
+      },
+      {
+        passive: true
+      }
+    );
+
+  </script>
+
+</body>
+</html>

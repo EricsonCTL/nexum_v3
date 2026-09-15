@@ -1,0 +1,11 @@
+{
+  "venda": ["venda", "vendo", "valor de venda", "por apenas"],
+  "locacao": ["aluguel", "locacao", "alugo", "aluga", "mensal"],
+  "condominio": ["condominio", "cond"],
+  "iptu": ["iptu"],
+  "entrada": ["entrada", "sinal"],
+  "saldo": ["saldo", "saldo devedor"],
+  "parcela": ["parcela", "prestacao"],
+  "repasse": ["repasse", "agio", "ágio"],
+  "orcamento": ["ate", "maximo", "orcamento"]
+}

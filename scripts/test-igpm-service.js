@@ -1,0 +1,20 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fresh=()=>{delete require.cache[require.resolve('../igpm-service')];return require('../igpm-service').getIgpm;};
+(async()=>{
+  let getIgpm=fresh(),calls=0;
+  const response=async(url)=>{calls++;assert.match(url,/sgs\.189/);return {ok:true,json:async()=>[{data:'01/04/2026',valor:'1,50'},{data:'01/05/2026',valor:'-0.50'},{data:'01/06/2026',valor:null}]};};
+  const value=await getIgpm('2026-03-01','2026-06-30',response);
+  assert.deepEqual(value.rows,[{month:'2026-04',value:1.5},{month:'2026-05',value:-.5}]);
+  await getIgpm('2026-04-01','2026-05-30',response);assert.equal(calls,1,'Reuse a covering cache.');
+  getIgpm=fresh();
+  const unavailable=await getIgpm('2026-03-01','2026-06-30',async()=>{throw Error('offline');});
+  assert.deepEqual(unavailable.rows,[]);assert.match(unavailable.warning,/N\/D/);
+  getIgpm=fresh();
+  const empty=await getIgpm('2026-03-01','2026-06-30',async()=>({ok:true,json:async()=>[]}));
+  assert.deepEqual(empty.rows,[],'A missing month must not become zero.');
+  getIgpm=fresh();calls=0;
+  await Promise.all([getIgpm('2026-03-01','2026-06-30',response),getIgpm('2026-03-01','2026-06-30',response)]);
+  assert.equal(calls,1,'Concurrent requests share a single consultation.');
+  console.log('OK: fonte SGS 189, parsing, cache, concorrência e falha sem índices inventados.');
+})().catch(error=>{console.error(error);process.exitCode=1;});

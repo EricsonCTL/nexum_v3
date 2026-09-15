@@ -1,0 +1,5444 @@
+{
+  "schema": "nexum-skill-json",
+  "schema_version": "6.0",
+  "status_processamento": "CONSOLIDADO",
+  "empreendimento": {
+    "nome": "Village Sudoeste",
+    "construtora_incorporadora": "Andrade Marinho LMF",
+    "tipo": "Lote",
+    "padrao": "Popular",
+    "fase": "Entregue",
+    "data_lancamento": "2021-06-25",
+    "data_entrega": "2024-10",
+    "endereco": "Av. Francisco Lopes de Almeida, 3000 — Serrotão, Campina Grande-PB",
+    "cep": "58434-700",
+    "latitude": null,
+    "longitude": null
+  },
+  "tabela": {
+    "id": "VILLAGE-SUDOESTE-TC-2026-03",
+    "nome": "Tabela de Preço — Village Sudoeste — 02/03/2026",
+    "tipo": "TABELA_ATUAL",
+    "data_tabela": "2026-03-02",
+    "arquivo_origem": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+    "unidades_apresentadas": 122,
+    "unidades": [
+      {
+        "apartamento": "0028-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0028-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0029-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0029-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0030-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0030-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0031-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0031-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0032-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0032-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0033-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0033-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0034-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0034-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0035-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0035-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0036-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0036-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0039-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0039-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0040-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0040-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0041-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0041-01",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0044-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0044-01 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0045-01",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0045-01 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0001-11",
+        "area_m2": 152.9,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 153393.38,
+        "preco": 153393.38,
+        "valorVenda": 153393.38,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0001-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 30678.68,
+          "12_meses": {
+            "mensal": 10226.23
+          },
+          "24_meses": {
+            "mensal": 5113.11
+          },
+          "36_meses": {
+            "mensal": 1917.42,
+            "intercalada": 17895.89,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1438.06,
+            "intercalada": 13421.92,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1150.45,
+            "intercalada": 10737.54,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0002-11",
+        "area_m2": 157.07,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 157576.83,
+        "preco": 157576.83,
+        "valorVenda": 157576.83,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0002-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 31515.37,
+          "12_meses": {
+            "mensal": 10505.12
+          },
+          "24_meses": {
+            "mensal": 5252.56
+          },
+          "36_meses": {
+            "mensal": 1969.71,
+            "intercalada": 18383.96,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1477.28,
+            "intercalada": 13787.97,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1181.83,
+            "intercalada": 11030.38,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0004-11",
+        "area_m2": 138.8,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 139247.88,
+        "preco": 139247.88,
+        "valorVenda": 139247.88,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0004-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 27849.58,
+          "12_meses": {
+            "mensal": 9283.19
+          },
+          "24_meses": {
+            "mensal": 4641.6
+          },
+          "36_meses": {
+            "mensal": 1740.6,
+            "intercalada": 16245.59,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1305.45,
+            "intercalada": 12184.19,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1044.36,
+            "intercalada": 9747.35,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0005-11",
+        "area_m2": 131.34,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 131763.82,
+        "preco": 131763.82,
+        "valorVenda": 131763.82,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0005-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 26352.76,
+          "12_meses": {
+            "mensal": 8784.25
+          },
+          "24_meses": {
+            "mensal": 4392.13
+          },
+          "36_meses": {
+            "mensal": 1647.05,
+            "intercalada": 15372.45,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1235.29,
+            "intercalada": 11529.33,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 988.23,
+            "intercalada": 9223.47,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0007-11",
+        "area_m2": 136.62,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 137060.85,
+        "preco": 137060.85,
+        "valorVenda": 137060.85,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0007-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 27412.17,
+          "12_meses": {
+            "mensal": 9137.39
+          },
+          "24_meses": {
+            "mensal": 4568.7
+          },
+          "36_meses": {
+            "mensal": 1713.26,
+            "intercalada": 15990.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1284.95,
+            "intercalada": 11992.82,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1027.96,
+            "intercalada": 9594.26,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0009-11",
+        "area_m2": 141.89,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 142347.86,
+        "preco": 142347.86,
+        "valorVenda": 142347.86,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0009-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 28469.57,
+          "12_meses": {
+            "mensal": 9489.86
+          },
+          "24_meses": {
+            "mensal": 4744.93
+          },
+          "36_meses": {
+            "mensal": 1779.35,
+            "intercalada": 16607.25,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1334.51,
+            "intercalada": 12455.44,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1067.61,
+            "intercalada": 9964.35,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0010-11",
+        "area_m2": 144.53,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 144996.37,
+        "preco": 144996.37,
+        "valorVenda": 144996.37,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0010-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 28999.27,
+          "12_meses": {
+            "mensal": 9666.42
+          },
+          "24_meses": {
+            "mensal": 4833.21
+          },
+          "36_meses": {
+            "mensal": 1812.45,
+            "intercalada": 16916.24,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1359.34,
+            "intercalada": 12687.18,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1087.47,
+            "intercalada": 10149.75,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0011-11",
+        "area_m2": 147.22,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 147695.04,
+        "preco": 147695.04,
+        "valorVenda": 147695.04,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0011-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 29539.01,
+          "12_meses": {
+            "mensal": 9846.34
+          },
+          "24_meses": {
+            "mensal": 4923.17
+          },
+          "36_meses": {
+            "mensal": 1846.19,
+            "intercalada": 17231.09,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1384.64,
+            "intercalada": 12923.32,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1107.71,
+            "intercalada": 10338.65,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0012-11",
+        "area_m2": 149.93,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 150413.78,
+        "preco": 150413.78,
+        "valorVenda": 150413.78,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0012-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 30082.76,
+          "12_meses": {
+            "mensal": 10027.59
+          },
+          "24_meses": {
+            "mensal": 5013.79
+          },
+          "36_meses": {
+            "mensal": 1880.17,
+            "intercalada": 17548.27,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1410.13,
+            "intercalada": 13161.21,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1128.1,
+            "intercalada": 10528.96,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0013-11",
+        "area_m2": 152.64,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 153132.55,
+        "preco": 153132.55,
+        "valorVenda": 153132.55,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0013-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 30626.51,
+          "12_meses": {
+            "mensal": 10208.84
+          },
+          "24_meses": {
+            "mensal": 5104.42
+          },
+          "36_meses": {
+            "mensal": 1914.16,
+            "intercalada": 17865.46,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1435.62,
+            "intercalada": 13399.1,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1148.49,
+            "intercalada": 10719.28,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0014-11",
+        "area_m2": 155.35,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 155851.28,
+        "preco": 155851.28,
+        "valorVenda": 155851.28,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0014-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 31170.26,
+          "12_meses": {
+            "mensal": 10390.09
+          },
+          "24_meses": {
+            "mensal": 5195.04
+          },
+          "36_meses": {
+            "mensal": 1948.14,
+            "intercalada": 18182.65,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1461.11,
+            "intercalada": 13636.99,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1168.88,
+            "intercalada": 10909.59,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0015-11",
+        "area_m2": 158.05,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 158559.99,
+        "preco": 158559.99,
+        "valorVenda": 158559.99,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0015-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 31712.0,
+          "12_meses": {
+            "mensal": 10570.67
+          },
+          "24_meses": {
+            "mensal": 5285.33
+          },
+          "36_meses": {
+            "mensal": 1982.0,
+            "intercalada": 18498.67,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1486.5,
+            "intercalada": 13874.0,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1189.2,
+            "intercalada": 11099.2,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0016-11",
+        "area_m2": 160.76,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 161278.73,
+        "preco": 161278.73,
+        "valorVenda": 161278.73,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0016-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 32255.75,
+          "12_meses": {
+            "mensal": 10751.92
+          },
+          "24_meses": {
+            "mensal": 5375.96
+          },
+          "36_meses": {
+            "mensal": 2015.98,
+            "intercalada": 18815.85,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1511.99,
+            "intercalada": 14111.89,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1209.59,
+            "intercalada": 11289.51,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0017-11",
+        "area_m2": 163.47,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 163997.48,
+        "preco": 163997.48,
+        "valorVenda": 163997.48,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0017-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 32799.5,
+          "12_meses": {
+            "mensal": 10933.17
+          },
+          "24_meses": {
+            "mensal": 5466.58
+          },
+          "36_meses": {
+            "mensal": 2049.97,
+            "intercalada": 19133.04,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1537.48,
+            "intercalada": 14349.78,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1229.98,
+            "intercalada": 11479.82,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0018-11",
+        "area_m2": 166.18,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 166716.23,
+        "preco": 166716.23,
+        "valorVenda": 166716.23,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0018-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33343.25,
+          "12_meses": {
+            "mensal": 11114.42
+          },
+          "24_meses": {
+            "mensal": 5557.21
+          },
+          "36_meses": {
+            "mensal": 2083.95,
+            "intercalada": 19450.23,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1562.96,
+            "intercalada": 14587.67,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1250.37,
+            "intercalada": 11670.14,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0019-11",
+        "area_m2": 168.89,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 169434.97,
+        "preco": 169434.97,
+        "valorVenda": 169434.97,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0019-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33886.99,
+          "12_meses": {
+            "mensal": 11295.66
+          },
+          "24_meses": {
+            "mensal": 5647.83
+          },
+          "36_meses": {
+            "mensal": 2117.94,
+            "intercalada": 19767.41,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1588.45,
+            "intercalada": 14825.56,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1270.76,
+            "intercalada": 11860.45,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0020-11",
+        "area_m2": 171.6,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 172153.72,
+        "preco": 172153.72,
+        "valorVenda": 172153.72,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0020-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 34430.74,
+          "12_meses": {
+            "mensal": 11476.91
+          },
+          "24_meses": {
+            "mensal": 5738.46
+          },
+          "36_meses": {
+            "mensal": 2151.92,
+            "intercalada": 20084.6,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1613.94,
+            "intercalada": 15063.45,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1291.15,
+            "intercalada": 12050.76,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0021-11",
+        "area_m2": 172.26,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 172815.85,
+        "preco": 172815.85,
+        "valorVenda": 172815.85,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0021-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 34563.17,
+          "12_meses": {
+            "mensal": 11521.06
+          },
+          "24_meses": {
+            "mensal": 5760.53
+          },
+          "36_meses": {
+            "mensal": 2160.2,
+            "intercalada": 20161.85,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1620.15,
+            "intercalada": 15121.39,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1296.12,
+            "intercalada": 12097.11,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0022-11",
+        "area_m2": 170.38,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 170929.79,
+        "preco": 170929.79,
+        "valorVenda": 170929.79,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0022-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 34185.96,
+          "12_meses": {
+            "mensal": 11395.32
+          },
+          "24_meses": {
+            "mensal": 5697.66
+          },
+          "36_meses": {
+            "mensal": 2136.62,
+            "intercalada": 19941.81,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1602.47,
+            "intercalada": 14956.36,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1281.97,
+            "intercalada": 11965.09,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0023-11",
+        "area_m2": 169.64,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 170187.39,
+        "preco": 170187.39,
+        "valorVenda": 170187.39,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0023-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 34037.48,
+          "12_meses": {
+            "mensal": 11345.83
+          },
+          "24_meses": {
+            "mensal": 5672.91
+          },
+          "36_meses": {
+            "mensal": 2127.34,
+            "intercalada": 19855.2,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1595.51,
+            "intercalada": 14891.4,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1276.41,
+            "intercalada": 11913.12,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0024-11",
+        "area_m2": 169.47,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 170016.85,
+        "preco": 170016.85,
+        "valorVenda": 170016.85,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0024-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 34003.37,
+          "12_meses": {
+            "mensal": 11334.46
+          },
+          "24_meses": {
+            "mensal": 5667.23
+          },
+          "36_meses": {
+            "mensal": 2125.21,
+            "intercalada": 19835.3,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1593.91,
+            "intercalada": 14876.47,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1275.13,
+            "intercalada": 11901.18,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0025-11",
+        "area_m2": 169.3,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 169846.29,
+        "preco": 169846.29,
+        "valorVenda": 169846.29,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0025-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33969.26,
+          "12_meses": {
+            "mensal": 11323.09
+          },
+          "24_meses": {
+            "mensal": 5661.54
+          },
+          "36_meses": {
+            "mensal": 2123.08,
+            "intercalada": 19815.4,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1592.31,
+            "intercalada": 14861.55,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1273.85,
+            "intercalada": 11889.24,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0026-11",
+        "area_m2": 169.12,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 169665.72,
+        "preco": 169665.72,
+        "valorVenda": 169665.72,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0026-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33933.14,
+          "12_meses": {
+            "mensal": 11311.05
+          },
+          "24_meses": {
+            "mensal": 5655.52
+          },
+          "36_meses": {
+            "mensal": 2120.82,
+            "intercalada": 19794.33,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1590.62,
+            "intercalada": 14845.75,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1272.49,
+            "intercalada": 11876.6,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0027-11",
+        "area_m2": 168.95,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 169495.16,
+        "preco": 169495.16,
+        "valorVenda": 169495.16,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0027-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33899.03,
+          "12_meses": {
+            "mensal": 11299.68
+          },
+          "24_meses": {
+            "mensal": 5649.84
+          },
+          "36_meses": {
+            "mensal": 2118.69,
+            "intercalada": 19774.44,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1589.02,
+            "intercalada": 14830.83,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1271.21,
+            "intercalada": 11864.66,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0028-11",
+        "area_m2": 168.78,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 169324.62,
+        "preco": 169324.62,
+        "valorVenda": 169324.62,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0028-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33864.92,
+          "12_meses": {
+            "mensal": 11288.31
+          },
+          "24_meses": {
+            "mensal": 5644.15
+          },
+          "36_meses": {
+            "mensal": 2116.56,
+            "intercalada": 19754.54,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1587.42,
+            "intercalada": 14815.9,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1269.93,
+            "intercalada": 11852.72,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0029-11",
+        "area_m2": 168.61,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 169154.07,
+        "preco": 169154.07,
+        "valorVenda": 169154.07,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0029-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33830.81,
+          "12_meses": {
+            "mensal": 11276.94
+          },
+          "24_meses": {
+            "mensal": 5638.47
+          },
+          "36_meses": {
+            "mensal": 2114.43,
+            "intercalada": 19734.64,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1585.82,
+            "intercalada": 14800.98,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1268.66,
+            "intercalada": 11840.78,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0030-11",
+        "area_m2": 168.43,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 168973.49,
+        "preco": 168973.49,
+        "valorVenda": 168973.49,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0030-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33794.7,
+          "12_meses": {
+            "mensal": 11264.9
+          },
+          "24_meses": {
+            "mensal": 5632.45
+          },
+          "36_meses": {
+            "mensal": 2112.17,
+            "intercalada": 19713.57,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1584.13,
+            "intercalada": 14785.18,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1267.3,
+            "intercalada": 11828.14,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0031-11",
+        "area_m2": 168.26,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 168802.94,
+        "preco": 168802.94,
+        "valorVenda": 168802.94,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0031-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33760.59,
+          "12_meses": {
+            "mensal": 11253.53
+          },
+          "24_meses": {
+            "mensal": 5626.76
+          },
+          "36_meses": {
+            "mensal": 2110.04,
+            "intercalada": 19693.68,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1582.53,
+            "intercalada": 14770.26,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1266.02,
+            "intercalada": 11816.21,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0032-11",
+        "area_m2": 168.09,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 168632.38,
+        "preco": 168632.38,
+        "valorVenda": 168632.38,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0032-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33726.48,
+          "12_meses": {
+            "mensal": 11242.16
+          },
+          "24_meses": {
+            "mensal": 5621.08
+          },
+          "36_meses": {
+            "mensal": 2107.9,
+            "intercalada": 19673.78,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1580.93,
+            "intercalada": 14755.33,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1264.74,
+            "intercalada": 11804.27,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0033-11",
+        "area_m2": 167.92,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 168461.85,
+        "preco": 168461.85,
+        "valorVenda": 168461.85,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0033-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33692.37,
+          "12_meses": {
+            "mensal": 11230.79
+          },
+          "24_meses": {
+            "mensal": 5615.4
+          },
+          "36_meses": {
+            "mensal": 2105.77,
+            "intercalada": 19653.88,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1579.33,
+            "intercalada": 14740.41,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1263.46,
+            "intercalada": 11792.33,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0034-11",
+        "area_m2": 167.71,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 168251.17,
+        "preco": 168251.17,
+        "valorVenda": 168251.17,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0034-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33650.23,
+          "12_meses": {
+            "mensal": 11216.74
+          },
+          "24_meses": {
+            "mensal": 5608.37
+          },
+          "36_meses": {
+            "mensal": 2103.14,
+            "intercalada": 19629.3,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1577.35,
+            "intercalada": 14721.98,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1261.88,
+            "intercalada": 11777.58,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0035-11",
+        "area_m2": 167.48,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 168020.42,
+        "preco": 168020.42,
+        "valorVenda": 168020.42,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0035-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33604.08,
+          "12_meses": {
+            "mensal": 11201.36
+          },
+          "24_meses": {
+            "mensal": 5600.68
+          },
+          "36_meses": {
+            "mensal": 2100.26,
+            "intercalada": 19602.38,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1575.19,
+            "intercalada": 14701.79,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1260.15,
+            "intercalada": 11761.43,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0036-11",
+        "area_m2": 167.24,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 167779.64,
+        "preco": 167779.64,
+        "valorVenda": 167779.64,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0036-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33555.93,
+          "12_meses": {
+            "mensal": 11185.31
+          },
+          "24_meses": {
+            "mensal": 5592.65
+          },
+          "36_meses": {
+            "mensal": 2097.25,
+            "intercalada": 19574.29,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1572.93,
+            "intercalada": 14680.72,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1258.35,
+            "intercalada": 11744.57,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0037-11",
+        "area_m2": 167.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 167538.88,
+        "preco": 167538.88,
+        "valorVenda": 167538.88,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0037-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33507.78,
+          "12_meses": {
+            "mensal": 11169.26
+          },
+          "24_meses": {
+            "mensal": 5584.63
+          },
+          "36_meses": {
+            "mensal": 2094.24,
+            "intercalada": 19546.2,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1570.68,
+            "intercalada": 14659.65,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1256.54,
+            "intercalada": 11727.72,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0038-11",
+        "area_m2": 166.77,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 167308.13,
+        "preco": 167308.13,
+        "valorVenda": 167308.13,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0038-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33461.63,
+          "12_meses": {
+            "mensal": 11153.88
+          },
+          "24_meses": {
+            "mensal": 5576.94
+          },
+          "36_meses": {
+            "mensal": 2091.35,
+            "intercalada": 19519.28,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1568.51,
+            "intercalada": 14639.46,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1254.81,
+            "intercalada": 11711.57,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0039-11",
+        "area_m2": 166.53,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 167067.35,
+        "preco": 167067.35,
+        "valorVenda": 167067.35,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0039-11 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33413.47,
+          "12_meses": {
+            "mensal": 11137.82
+          },
+          "24_meses": {
+            "mensal": 5568.91
+          },
+          "36_meses": {
+            "mensal": 2088.34,
+            "intercalada": 19491.19,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1566.26,
+            "intercalada": 14618.39,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1253.01,
+            "intercalada": 11694.71,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0040-11",
+        "area_m2": 166.29,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 166826.58,
+        "preco": 166826.58,
+        "valorVenda": 166826.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0040-11",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 33365.32,
+          "12_meses": {
+            "mensal": 11121.77
+          },
+          "24_meses": {
+            "mensal": 5560.89
+          },
+          "36_meses": {
+            "mensal": 2085.33,
+            "intercalada": 19463.1,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1564.0,
+            "intercalada": 14597.33,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 1251.2,
+            "intercalada": 11677.86,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0025-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0025-13",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0026-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0026-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0027-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0027-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0028-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0028-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0029-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0029-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0030-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0030-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0031-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0031-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0032-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0032-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0035-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0035-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0036-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0036-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0037-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0037-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0038-13",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0038-13 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0002-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0002-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0003-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0003-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0004-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0004-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0005-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0005-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0006-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0006-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0007-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0007-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0008-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0008-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0009-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0009-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0010-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0010-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0011-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0011-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0012-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0012-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0013-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0013-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0015-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0015-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0016-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0016-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0017-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0017-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0018-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0018-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0019-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0019-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0020-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0020-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0021-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0021-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0022-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0022-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0023-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0023-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0024-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0024-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0025-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0025-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0026-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0026-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0027-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0027-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0028-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0028-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0052-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0052-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0057-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0057-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0058-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0058-14",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0059-14",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0059-14 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0003-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0003-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0004-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0004-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0006-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0006-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0008-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0008-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0009-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0009-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0010-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0010-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0018-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0018-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0021-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0021-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0022-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0022-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0023-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0023-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0024-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0024-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0025-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0025-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0027-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0027-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0028-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0028-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0029-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0029-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0030-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0030-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0031-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0031-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0033-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0033-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0034-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0034-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0035-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0035-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0036-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0036-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0037-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0037-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0045-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0045-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0046-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0046-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0047-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0047-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0049-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0049-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0053-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0053-15 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0054-15",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0054-15",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      },
+      {
+        "apartamento": "0063-17",
+        "area_m2": 126.0,
+        "tipologia": "Lote",
+        "posicao": null,
+        "vaga": null,
+        "status": "DISPONIVEL",
+        "status_original": "Disponível",
+        "investimento": 126406.58,
+        "preco": 126406.58,
+        "valorVenda": 126406.58,
+        "bloco": null,
+        "torre": null,
+        "andar": null,
+        "descricao_original": "LOTE 0063-17 (*)",
+        "origem": "DOCUMENTO_ORIGINAL",
+        "confianca": "ALTA",
+        "fonte": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+        "metodologia": "OBSERVADO no documento; marcador (*) preservado sem inferir seu significado.",
+        "condicoes_pagamento": {
+          "entrada": 25281.32,
+          "12_meses": {
+            "mensal": 8427.11
+          },
+          "24_meses": {
+            "mensal": 4213.55
+          },
+          "36_meses": {
+            "mensal": 1580.08,
+            "intercalada": 14747.43,
+            "quantidade_intercaladas": 3
+          },
+          "48_meses": {
+            "mensal": 1185.06,
+            "intercalada": 11060.58,
+            "quantidade_intercaladas": 4
+          },
+          "60_meses": {
+            "mensal": 948.05,
+            "intercalada": 8848.46,
+            "quantidade_intercaladas": 5
+          }
+        }
+      }
+    ]
+  },
+  "resumo_comercial": {
+    "unidades_na_tabela": 122,
+    "area_total_m2": 16675.47,
+    "vgv_tabela": 16729278.63,
+    "preco_medio_m2": 1003.23,
+    "quadras": {
+      "01": 14,
+      "11": 37,
+      "13": 12,
+      "14": 30,
+      "15": 28,
+      "17": 1
+    }
+  },
+  "comparacao": {
+    "matriz_zero_referencia": 918,
+    "unidades_na_tabela_atual": 122,
+    "unidades_nao_apresentadas_na_tabela_atual": 796,
+    "observacao": "A ausência de uma unidade na tabela atual não foi convertida automaticamente em vendido/reservado."
+  },
+  "validacoes": {
+    "quantidade_unidades": 122,
+    "unidades_apresentadas_igual_quantidade": true,
+    "chaves_naturais_unicas": true,
+    "todas_unidades_individualizadas": true,
+    "marcadores_asterisco_preservados": true
+  },
+  "pendencias": [
+    "Reconciliar esta tabela parcial com a matriz zero de 918 unidades em etapa de análise histórica/comercial."
+  ],
+  "auditoria": {
+    "data_documento": "02/03/2026",
+    "data_geracao_documento": "16/03/2026 10:01:36",
+    "criterio": "Somente unidades efetivamente listadas no PDF foram importadas.",
+    "notas": [
+      "Preço impresso para aquisição à vista, em parcela única, sem juros ou correção.",
+      "Parcelas financiadas atualizadas pelo INCC até a entrega e pelo IGP-M + 1% após a entrega.",
+      "Tabela sujeita a alteração sem aviso prévio.",
+      "Crédito imobiliário após entrega sujeito à obtenção pelo comprador."
+    ]
+  },
+  "fontes": [
+    {
+      "tipo": "arquivo_fornecido",
+      "arquivo": "64812_1773844017234_VILLAGE_SUDOESTE(1).pdf",
+      "uso": "Tabela comercial de 02/03/2026."
+    }
+  ]
+}

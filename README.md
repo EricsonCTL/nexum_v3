@@ -8,7 +8,7 @@ Módulo 01: cadastro de empreendimentos e versionamento de tabelas comerciais.
 npm start
 ```
 
-Abra `http://localhost:3030`.
+Abra `http://localhost:3000`.
 
 O acesso demonstrativo continua sem senha. Use **Marcos / Administrador** para cadastrar empreendimentos e tabelas.
 
@@ -29,3 +29,20 @@ O servidor usa `pdftotext` (Poppler) disponível no ambiente local. A extração
 ## Limite atual
 
 Esta é uma base local com armazenamento JSON, deliberadamente simples. A separação entre empreendimento, tabela, unidades, documento, comparação e auditoria permite migrar a persistência para PostgreSQL sem refazer a regra de negócio.
+
+## Publicar no GitHub e na Vercel
+
+O projeto possui dois ambientes:
+
+- **Raiz do repositório:** ambiente administrativo local, com importação, processamento e gravação de dados.
+- **`Nexum/`:** pacote público somente leitura, preparado para a Vercel.
+
+No GitHub, publique o repositório inteiro. Na Vercel, importe o repositório e defina **Root Directory** como `Nexum`. Não use a raiz como diretório da Vercel, pois o servidor administrativo não é um servidor serverless e depende de armazenamento local.
+
+Antes de publicar uma nova fotografia dos dados, execute:
+
+```powershell
+npm run export:online
+```
+
+Depois, faça `git add`, `git commit` e `git push`. A Vercel publicará os arquivos da pasta `Nexum` e as rotas públicas em `Nexum/api/`.

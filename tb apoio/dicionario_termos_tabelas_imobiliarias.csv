@@ -1,0 +1,125 @@
+﻿termo_origem,termo_normalizado,categoria
+assinatura,ato,entrada
+ato,ato,entrada
+ato / sinal,ato,entrada
+ato da assinatura,ato,entrada
+ato na assinatura,ato,entrada
+ato/sinal,ato,entrada
+sinal ato,ato,entrada
+entrada,entrada,entrada
+entrada a vista,entrada,entrada
+entrada facilitada,entrada,entrada
+entrada parcelada,entrada,entrada
+entrada total,entrada,entrada
+entrada à vista,entrada,entrada
+inicial,entrada,entrada
+parcelas de entrada,entrada,entrada
+parcelas iniciais,entrada,entrada
+sinal,entrada,entrada
+sinal de entrada,entrada,entrada
+chave,entrega_chaves,evento
+chaves,entrega_chaves,evento
+entrega das chaves,entrega_chaves,evento
+entrega de chaves,entrega_chaves,evento
+na chave,entrega_chaves,evento
+nas chaves,entrega_chaves,evento
+parcela das chaves,entrega_chaves,evento
+parcela de chaves,entrega_chaves,evento
+parcela final,parcela_unica,evento
+parcela unica,parcela_unica,evento
+parcela única,parcela_unica,evento
+unica,parcela_unica,evento
+única,parcela_unica,evento
+financiamento,financiamento,financiamento
+financiamento bancário,financiamento,financiamento
+financiamento imobiliário,financiamento,financiamento
+saldo financiamento,financiamento,financiamento
+saldo no financiamento,financiamento,financiamento
+financiamento direto,financiamento_direto,financiamento
+financiamento direto com a construtora,financiamento_direto,financiamento
+periodica,periodicidade,metadado
+periodicidade,periodicidade,metadado
+periódica,periodicidade,metadado
+balão,intercalada,parcelamento
+balões,intercalada,parcelamento
+intercalada,intercalada,parcelamento
+intercaladas,intercalada,parcelamento
+intermediária,intercalada,parcelamento
+intermediárias,intercalada,parcelamento
+parcela balão,intercalada,parcelamento
+parcela de reforço,intercalada,parcelamento
+parcela intercalada,intercalada,parcelamento
+parcela intermediária,intercalada,parcelamento
+parcelas balão,intercalada,parcelamento
+parcelas de reforço,intercalada,parcelamento
+parcelas intercaladas,intercalada,parcelamento
+parcelas intermediárias,intercalada,parcelamento
+reforço,intercalada,parcelamento
+reforços,intercalada,parcelamento
+anuais,intercalada_anual,parcelamento
+anual,intercalada_anual,parcelamento
+intercalada anual,intercalada_anual,parcelamento
+intercaladas (anuais),intercalada_anual,parcelamento
+intercaladas anuais,intercalada_anual,parcelamento
+intercaladas anual,intercalada_anual,parcelamento
+parcela anual,intercalada_anual,parcelamento
+parcelas anuais,intercalada_anual,parcelamento
+parcelas anual,intercalada_anual,parcelamento
+intercalada semestral,intercalada_semestral,parcelamento
+intercaladas (semestrais),intercalada_semestral,parcelamento
+intercaladas semestrais,intercalada_semestral,parcelamento
+intercaladas semestral,intercalada_semestral,parcelamento
+parcela semestral,intercalada_semestral,parcelamento
+parcelas semestrais,intercalada_semestral,parcelamento
+parcelas semestral,intercalada_semestral,parcelamento
+semestrais,intercalada_semestral,parcelamento
+semestral,intercalada_semestral,parcelamento
+mensais,parcelas_mensais,parcelamento
+mensais fixas,parcelas_mensais,parcelamento
+mensal,parcelas_mensais,parcelamento
+mensalidades,parcelas_mensais,parcelamento
+parcela mensal,parcelas_mensais,parcelamento
+parcelas fixas,parcelas_mensais,parcelamento
+parcelas mensais,parcelas_mensais,parcelamento
+parcelas mensal,parcelas_mensais,parcelamento
+x mensais,parcelas_mensais,parcelamento
+pos chaves,pos_chaves,pos_entrega
+pos-chaves,pos_chaves,pos_entrega
+pós chaves,pos_chaves,pos_entrega
+pós-chaves,pos_chaves,pos_entrega
+pos-entrega,pos_entrega,pos_entrega
+pós entrega,pos_entrega,pos_entrega
+pós obra,pos_entrega,pos_entrega
+pós-entrega,pos_entrega,pos_entrega
+pós-obra,pos_entrega,pos_entrega
+preço,valor,preco_valor
+preço da unidade,valor,preco_valor
+preço do imóvel,valor,preco_valor
+preço imóvel,valor,preco_valor
+preço total,valor,preco_valor
+valor,valor,preco_valor
+valor da unidade,valor,preco_valor
+valor de venda,valor,preco_valor
+valor do imóvel,valor,preco_valor
+valor imóvel,valor,preco_valor
+valor total,valor,preco_valor
+valor total do imóvel,valor,preco_valor
+avaliação,valor_avaliacao,preco_valor
+avaliação caixa,valor_avaliacao,preco_valor
+valor de avaliação,valor_avaliacao,preco_valor
+preço c/ desconto,valor_com_desconto,preco_valor
+preço com desconto,valor_com_desconto,preco_valor
+valor com desconto,valor_com_desconto,preco_valor
+preço de tabela,valor_tabela,preco_valor
+valor de tabela,valor_tabela,preco_valor
+correcao,correcao,reajuste
+correção,correcao,reajuste
+correção monetária,correcao,reajuste
+IGP-M,igpm,reajuste
+IGPM,igpm,reajuste
+INCC,incc,reajuste
+INCC-DI,incc_di,reajuste
+INCC-M,incc_m,reajuste
+indexador,indice_correcao,reajuste
+índice de correção,indice_correcao,reajuste
+IPCA,ipca,reajuste

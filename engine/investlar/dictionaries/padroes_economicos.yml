@@ -1,0 +1,17 @@
+{
+  "faixas_valor": [
+    {"id": "ate_120k", "min": 0, "max": 120000},
+    {"id": "ate_150k", "min": 0, "max": 150000},
+    {"id": "ate_275k", "min": 0, "max": 275000},
+    {"id": "275k_600k", "min": 275001, "max": 600000},
+    {"id": "600k_1mi", "min": 600001, "max": 999999},
+    {"id": "1mi_mais", "min": 1000000, "max": null}
+  ],
+  "mcmv_valor_max_residencial": 275000,
+  "lote_popular_max": 120000,
+  "lote_popular_possivel_max": 150000,
+  "lote_medio_max": 300000,
+  "area_investimento_min_m2": 800,
+  "compacto_area_max_m2": 45,
+  "compacto_medio_min_valor": 180000
+}

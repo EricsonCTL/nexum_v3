@@ -1,0 +1,443 @@
+{
+  "schema": "nexum_empreendimento",
+  "schema_version": "1.0",
+  "status_processamento": "CONSOLIDADO",
+  "empreendimento": {
+    "nome": "UNI 501",
+    "nome_comercial": "UNI 501",
+    "tipo": "Empreendimento residencial multifamiliar",
+    "incorporadora": "Planta Empreendimentos",
+    "projeto_arquitetonico": {
+      "arquitetos": [
+        "Ricardo Nogueira",
+        "Cristiano Rolim"
+      ]
+    },
+    "endereco": {
+      "logradouro": "Rua Desembargador Arquilino de Souza Guimarães",
+      "numero": "501",
+      "bairro": "Jardim Tavares",
+      "cidade": "Campina Grande",
+      "uf": "PB",
+      "cep": "58402-023",
+      "pais": "Brasil"
+    },
+    "coordenadas": {
+      "latitude": -7.2135,
+      "longitude": -35.8753,
+      "precisao": "aproximada"
+    },
+    "datas": {
+      "lancamento": {
+        "valor": "2022-03",
+        "descricao": "Março de 2022",
+        "natureza": "fase de apresentação e vendas",
+        "origem": "informacao_fornecida_pelo_operador"
+      },
+      "entrega": {
+        "valor": "2025-11",
+        "descricao": "Novembro de 2025",
+        "origem": "informacao_fornecida_pelo_operador"
+      }
+    },
+    "status_atual": {
+      "status": "PRONTO_PARA_MORAR",
+      "descricao": "Edifício finalizado e pronto para morar",
+      "origem": "informacao_fornecida_pelo_operador"
+    }
+  },
+
+  "empreendimento_caracteristicas": {
+    "unidades_totais": 68,
+    "pavimentos": 22,
+    "faixa_areas_apartamentos_m2": {
+      "minima": 69,
+      "maxima": 111
+    },
+    "area_maxima_com_uniao_m2": 181,
+    "localizacao_descricao": "Área elevada e valorizada do bairro Jardim Tavares",
+    "lazer_e_diferenciais": [
+      "Piscina de uso exclusivo",
+      "Academia panorâmica",
+      "Gourmet panorâmico",
+      "Espaço relax",
+      "Espaços de integração",
+      "Plantas versáteis",
+      "Jardins"
+    ]
+  },
+
+  "tabela_comercial": {
+    "arquivo_origem": "TABELA UNI 501 - ATUALIZADA 06.08.pdf",
+    "tipo": "Tabela comercial de unidades",
+    "quantidade_unidades_apresentadas": 15,
+    "observacao": "A tabela apresentada contém apenas parte das 68 unidades do empreendimento.",
+    "colunas_originais": [
+      "APART.",
+      "ÁREA COBERTA",
+      "ÁREA DESCOBERTA",
+      "STATUS",
+      "INVESTIMENTO",
+      "SINAL 10%",
+      "2X",
+      "MENSAIS 0%",
+      "INTERCALADAS SEMESTRAIS 0%",
+      "FINANCIAMENTO 90%",
+      "AVALIAÇÃO CAIXA"
+    ],
+    "unidades": [
+      {
+        "apartamento": "204",
+        "area_coberta_m2": 110.49,
+        "area_descoberta_m2": 0,
+        "status": "RESERVADO",
+        "investimento": 677388.71,
+        "sinal_10": 67738.87,
+        "2x": 33869.44,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": 609649.84,
+        "avaliacao_caixa": 683993.68
+      },
+      {
+        "apartamento": "304",
+        "area_coberta_m2": 110.49,
+        "area_descoberta_m2": 0,
+        "status": "DISPONÍVEL",
+        "investimento": 691916.63,
+        "sinal_10": 69191.66,
+        "2x": 34595.83,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": 622724.97,
+        "avaliacao_caixa": 689269.89
+      },
+      {
+        "apartamento": "1003",
+        "area_coberta_m2": 69.83,
+        "area_descoberta_m2": 0,
+        "status": "DISPONÍVEL",
+        "investimento": 537629.07,
+        "sinal_10": 53762.91,
+        "2x": 26881.45,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": 483866.16,
+        "avaliacao_caixa": 460595.67
+      },
+      {
+        "apartamento": "1104",
+        "area_coberta_m2": 111.27,
+        "area_descoberta_m2": 0,
+        "status": "VENDIDO",
+        "investimento": null,
+        "sinal_10": null,
+        "2x": null,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": null,
+        "avaliacao_caixa": null
+      },
+      {
+        "apartamento": "1201",
+        "area_coberta_m2": 111.85,
+        "area_descoberta_m2": 0,
+        "status": "VENDIDO",
+        "investimento": null,
+        "sinal_10": null,
+        "2x": null,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": null,
+        "avaliacao_caixa": null
+      },
+      {
+        "apartamento": "1202",
+        "area_coberta_m2": 69.83,
+        "area_descoberta_m2": 0,
+        "status": "VENDIDO",
+        "investimento": null,
+        "sinal_10": null,
+        "2x": null,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": null,
+        "avaliacao_caixa": null
+      },
+      {
+        "apartamento": "1204",
+        "area_coberta_m2": 110.49,
+        "area_descoberta_m2": 0,
+        "status": "VENDIDO",
+        "investimento": null,
+        "sinal_10": null,
+        "2x": null,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": null,
+        "avaliacao_caixa": null
+      },
+      {
+        "apartamento": "1404",
+        "area_coberta_m2": 110.49,
+        "area_descoberta_m2": 0,
+        "status": "VENDIDO",
+        "investimento": null,
+        "sinal_10": null,
+        "2x": null,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": null,
+        "avaliacao_caixa": null
+      },
+      {
+        "apartamento": "1504",
+        "area_coberta_m2": 110.49,
+        "area_descoberta_m2": 0,
+        "status": "RESERVADO",
+        "investimento": 816121.36,
+        "sinal_10": 81612.14,
+        "2x": 40806.07,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": 734509.22,
+        "avaliacao_caixa": 761486.39
+      },
+      {
+        "apartamento": "1604",
+        "area_coberta_m2": 110.49,
+        "area_descoberta_m2": 0,
+        "status": "DISPONÍVEL",
+        "investimento": 835663.24,
+        "sinal_10": 83566.32,
+        "2x": 41783.16,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": 752096.92,
+        "avaliacao_caixa": 767504.75
+      },
+      {
+        "apartamento": "1701",
+        "area_coberta_m2": 111.85,
+        "area_descoberta_m2": 0,
+        "status": "VENDIDO",
+        "investimento": null,
+        "sinal_10": null,
+        "2x": null,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": null,
+        "avaliacao_caixa": null
+      },
+      {
+        "apartamento": "1703",
+        "area_coberta_m2": 69.41,
+        "area_descoberta_m2": 61.45,
+        "status": "DISPONÍVEL",
+        "investimento": 800489.99,
+        "sinal_10": 80049.00,
+        "2x": 40024.50,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": 720440.99,
+        "avaliacao_caixa": 761716.73
+      },
+      {
+        "apartamento": "1704",
+        "area_coberta_m2": 110.62,
+        "area_descoberta_m2": 99.65,
+        "status": "DISPONÍVEL",
+        "investimento": 1250293.03,
+        "sinal_10": 125029.30,
+        "2x": 62514.65,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": 1125263.73,
+        "avaliacao_caixa": 1189732.68
+      },
+      {
+        "apartamento": "1801",
+        "area_coberta_m2": 111.85,
+        "area_descoberta_m2": 102.17,
+        "status": "DISPONÍVEL",
+        "investimento": 1298269.17,
+        "sinal_10": 129826.92,
+        "2x": 64913.46,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": 1168442.25,
+        "avaliacao_caixa": 1231379.31
+      },
+      {
+        "apartamento": "1802",
+        "area_coberta_m2": 69.76,
+        "area_descoberta_m2": 61.32,
+        "status": "DISPONÍVEL",
+        "investimento": 814172.24,
+        "sinal_10": 81417.22,
+        "2x": 40708.61,
+        "mensais_0": null,
+        "intercaladas_semestrais_0": null,
+        "financiamento_90": 732755.02,
+        "avaliacao_caixa": 772224.19
+      }
+    ]
+  },
+
+  "costura": {
+    "objetivo": "Relacionar e consolidar as informações do empreendimento, fontes, tabela comercial e unidades sem perder a origem dos dados.",
+    "chave_empreendimento": {
+      "nome": "UNI 501",
+      "endereco": "Rua Desembargador Arquilino de Souza Guimarães, 501",
+      "cidade": "Campina Grande",
+      "uf": "PB"
+    },
+    "relacionamentos": [
+      {
+        "origem": "cadastro_empreendimento",
+        "destino": "tabela_comercial",
+        "relacao": "A tabela comercial pertence ao empreendimento UNI 501"
+      },
+      {
+        "origem": "tabela_comercial.apartamento",
+        "destino": "unidade",
+        "relacao": "Cada número de apartamento identifica uma unidade imobiliária dentro do empreendimento"
+      },
+      {
+        "origem": "tabela_comercial.status",
+        "destino": "unidade.status_comercial",
+        "relacao": "Status comercial informado na tabela"
+      },
+      {
+        "origem": "tabela_comercial.investimento",
+        "destino": "unidade.preco_comercial",
+        "relacao": "Valor de investimento informado na tabela"
+      },
+      {
+        "origem": "tabela_comercial.avaliacao_caixa",
+        "destino": "unidade.avaliacao_caixa",
+        "relacao": "Valor de avaliação bancária informado na tabela"
+      },
+      {
+        "origem": "empreendimento.endereco",
+        "destino": "unidades",
+        "relacao": "Todas as unidades pertencem ao endereço do empreendimento UNI 501"
+      }
+    ],
+    "regras": [
+      "Não substituir dado fornecido pelo operador sem registrar a origem da substituição.",
+      "Não transformar campo ausente em zero.",
+      "Usar null quando a tabela não apresentar valor.",
+      "Preservar os valores da tabela comercial como fonte primária para preço e status comercial.",
+      "Distinguir dados do empreendimento de dados específicos da unidade.",
+      "Manter a origem de cada informação relevante.",
+      "Não considerar as 15 unidades da tabela como o universo total das 68 unidades do empreendimento."
+    ]
+  },
+
+  "resumo_comercial": {
+    "unidades_na_tabela": 15,
+    "disponiveis": 7,
+    "reservadas": 2,
+    "vendidas": 6,
+    "total_unidades_empreendimento": 68,
+    "unidades_nao_representadas_na_tabela": 53
+  },
+
+  "unidades_disponiveis": {
+    "quantidade": 7,
+    "apartamentos": [
+      "304",
+      "1003",
+      "1604",
+      "1703",
+      "1704",
+      "1801",
+      "1802"
+    ]
+  },
+
+  "unidades_reservadas": {
+    "quantidade": 2,
+    "apartamentos": [
+      "204",
+      "1504"
+    ]
+  },
+
+  "unidades_vendidas": {
+    "quantidade": 6,
+    "apartamentos": [
+      "1104",
+      "1201",
+      "1202",
+      "1204",
+      "1404",
+      "1701"
+    ]
+  },
+
+  "validacoes": {
+    "financeiras": {
+      "regra": "sinal_10 + financiamento_90 = investimento",
+      "status": "VALIDADO",
+      "observacao": "Os valores apresentados para as unidades com investimento conferem com a composição de 10% de sinal e 90% de financiamento, considerando arredondamentos de centavos."
+    },
+    "areas": {
+      "status": "VALIDADO",
+      "observacao": "As áreas cobertas e descobertas foram transcritas conforme a tabela."
+    },
+    "status_unidades": {
+      "status": "VALIDADO",
+      "observacao": "Os status RESERVADO, DISPONÍVEL e VENDIDO foram preservados conforme apresentados."
+    },
+    "avaliacao_caixa": {
+      "status": "CAPTURADO",
+      "observacao": "A coluna AVALIAÇÃO CAIXA foi incorporada após conferência visual da tabela."
+    }
+  },
+
+  "dados_fornecidos_operador": {
+    "lancamento": "Março de 2022",
+    "entrega": "Novembro de 2025",
+    "status_atual": "Pronto para morar",
+    "incorporadora": "Planta Empreendimentos",
+    "arquitetos": [
+      "Ricardo Nogueira",
+      "Cristiano Rolim"
+    ],
+    "cep": "58402-023",
+    "latitude": -7.2135,
+    "longitude": -35.8753
+  },
+
+  "pendencias": [
+    {
+      "campo": "coordenadas",
+      "status": "APROXIMADAS",
+      "observacao": "Latitude e longitude foram fornecidas como aproximadas."
+    },
+    {
+      "campo": "unidades_totais_da_tabela",
+      "status": "PARCIAL",
+      "observacao": "A tabela disponibilizada contém 15 unidades, enquanto o empreendimento possui 68 unidades."
+    }
+  ],
+
+  "auditoria": {
+    "tabela": {
+      "status": "CONFERIDA_VISUALMENTE",
+      "observacao": "Tabela conferida a partir da imagem integral fornecida pelo operador."
+    },
+    "dados_empreendimento": {
+      "status": "FORNECIDOS_PELO_OPERADOR",
+      "observacao": "Datas, endereço, incorporadora, arquitetos e coordenadas foram mantidos conforme informação fornecida antes da tabela."
+    },
+    "tratamento_de_dados": {
+      "campos_sem_valor": "null",
+      "valores_monetarios": "numeric_decimal",
+      "areas": "numeric_decimal",
+      "status": "preservado_em_maiusculas"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "tiers": {
+    "alto": ["Catolé", "Mirante", "Alto Branco", "Jardim Tavares", "Vila Cabral"],
+    "medio_alto": ["Itararé", "Prata", "Centro", "Santa Terezinha"],
+    "medio": ["Dinamérica", "Sandra Cavalcante", "Cruzeiro", "Universitário", "José Pinheiro"],
+    "popular": ["Malvinas", "Bodocongó", "Serrotão", "Três Irmãs", "Tambor", "Presidente Médici"]
+  }
+}

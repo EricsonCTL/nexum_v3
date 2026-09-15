@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "description": "Nexo Radar Imobiliário — módulo de cadastro e versionamento",
+  "engines": { "node": ">=20" },
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "export:online": "node scripts/export-online.js",
+    "test": "node scripts/test-editorial-engine.js && node scripts/test-commercial-v4.js && node scripts/test-broker-network.js && node scripts/test-market-pressure.js && node scripts/test-rede-ingestion.js && python -m pytest -q engine/investlar/tests",
+    "test:corretores": "node scripts/test-broker-network.js",
+    "test:radar": "node scripts/test-radar-analysis.js && node scripts/test-maturity-projection.js && node scripts/test-ivv-curves.js && node scripts/test-igpm-service.js && node scripts/test-radar-ui.js && node scripts/test-analytics-dialogs.js",
+    "test:market-pressure": "node scripts/test-market-pressure.js",
+    "test:rede": "node scripts/test-rede-ingestion.js && python -m pytest -q engine/investlar/tests",
+    "test:skill": "node scripts/test-json-import-regression.cjs && node scripts/test-skill-v8-import-flow.cjs && node scripts/test-skill-v11-contract.cjs"
   }
 }

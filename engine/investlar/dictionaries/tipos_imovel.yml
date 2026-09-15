@@ -1,0 +1,5 @@
+{
+  "residencial": ["casa", "apartamento", "flat", "studio", "kitnet", "lote", "terreno"],
+  "comercial": ["galpao", "sala_comercial", "ponto_comercial", "predio_comercial"],
+  "rural": ["chacara", "sitio"]
+}

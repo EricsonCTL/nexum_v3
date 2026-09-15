@@ -1,0 +1,1625 @@
+{
+  "versions": [
+    {
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "ivv": 4.181637589741269,
+          "ivvReal": null,
+          "quantidade": 0,
+          "observacoes": 0,
+          "participantes": [],
+          "variacao": null,
+          "calculada": null,
+          "validada": null,
+          "origem": "ESTIMADO",
+          "metodo": "extrapolacao_local_logaritmica_ivv",
+          "alertas": [],
+          "ivvEstimado": 4.181637589741269
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "ivv": 3.9599420401730328,
+          "ivvReal": null,
+          "quantidade": 0,
+          "observacoes": 0,
+          "participantes": [],
+          "variacao": null,
+          "calculada": -0.053016442675978936,
+          "validada": -0.053016442675978936,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Base pequena: consulte as evidências."
+          ],
+          "ivvEstimado": 3.9599420401730328
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "ivv": 3.75,
+          "ivvReal": 3.75,
+          "quantidade": 2,
+          "observacoes": 2,
+          "participantes": [
+            {
+              "id": "EMP-000001",
+              "nome": "LETS BELA VISTA - INC",
+              "ivv": 7.5,
+              "idadeMeses": 7,
+              "faixaIndex": 2,
+              "fotografia": "2026-06-01",
+              "anterior": "TAB-000001",
+              "atual": "TAB-000002",
+              "mesesIntervalo": 2
+            },
+            {
+              "id": "EMP-000021",
+              "nome": "Celebra Liberdade",
+              "ivv": 0,
+              "idadeMeses": 7,
+              "faixaIndex": 2,
+              "fotografia": "2026-08-25",
+              "anterior": "TAB-000061",
+              "atual": "TAB-000063",
+              "mesesIntervalo": 7
+            }
+          ],
+          "variacao": null,
+          "calculada": -0.053016442675978936,
+          "validada": -0.053016442675978936,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Base pequena: consulte as evidências."
+          ]
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "ivv": 3.551188339965079,
+          "ivvReal": null,
+          "quantidade": 0,
+          "observacoes": 0,
+          "participantes": [],
+          "variacao": null,
+          "calculada": -0.053016442675978936,
+          "validada": -0.053016442675978936,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Base pequena: consulte as evidências."
+          ],
+          "ivvEstimado": 3.551188339965079
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "ivv": 3.362916966907716,
+          "ivvReal": null,
+          "quantidade": 0,
+          "observacoes": 0,
+          "participantes": [],
+          "variacao": null,
+          "calculada": -0.053016442675978825,
+          "validada": -0.053016442675978825,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Base pequena: consulte as evidências."
+          ],
+          "ivvEstimado": 3.362916966907716
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "ivv": 3.184627072307576,
+          "ivvReal": null,
+          "quantidade": 0,
+          "observacoes": 0,
+          "participantes": [],
+          "variacao": null,
+          "calculada": -0.05301644267597905,
+          "validada": -0.05301644267597905,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Base pequena: consulte as evidências."
+          ],
+          "ivvEstimado": 3.184627072307576
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "ivv": 3.015789473684211,
+          "ivvReal": 3.015789473684211,
+          "quantidade": 2,
+          "observacoes": 2,
+          "participantes": [
+            {
+              "id": "EMP-000011",
+              "nome": "Nóz",
+              "ivv": 1.4,
+              "idadeMeses": 20,
+              "faixaIndex": 6,
+              "fotografia": "2026-08-10",
+              "anterior": "TAB-000044",
+              "atual": "TAB-000045",
+              "mesesIntervalo": 20
+            },
+            {
+              "id": "EMP-000017",
+              "nome": "Trend Residence",
+              "ivv": 4.631578947368421,
+              "idadeMeses": 20,
+              "faixaIndex": 6,
+              "fotografia": "2026-08-25",
+              "anterior": "TAB-000053",
+              "atual": "TAB-000054",
+              "mesesIntervalo": 19
+            }
+          ],
+          "variacao": null,
+          "calculada": -0.053016442675978825,
+          "validada": -0.053016442675978825,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Base pequena: consulte as evidências."
+          ]
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "ivv": 4.0105125017029675,
+          "ivvReal": null,
+          "quantidade": 0,
+          "observacoes": 0,
+          "participantes": [],
+          "variacao": null,
+          "calculada": 0.32983835135002404,
+          "validada": null,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Taxa fora da faixa de desaceleração permitida (-95% a 0%). Revisão manual necessária.",
+            "Base pequena: consulte as evidências."
+          ],
+          "ivvEstimado": 4.0105125017029675
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "ivv": 5.333333333333333,
+          "ivvReal": 5.333333333333333,
+          "quantidade": 1,
+          "observacoes": 1,
+          "participantes": [
+            {
+              "id": "EMP-000025",
+              "nome": "Vision Residence",
+              "ivv": 5.333333333333333,
+              "idadeMeses": 24,
+              "faixaIndex": 8,
+              "fotografia": "2026-08-18",
+              "anterior": "TAB-000068",
+              "atual": "TAB-000070",
+              "mesesIntervalo": 24
+            }
+          ],
+          "variacao": null,
+          "calculada": 0.3298383513500236,
+          "validada": null,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Taxa fora da faixa de desaceleração permitida (-95% a 0%). Revisão manual necessária.",
+            "Base pequena: consulte as evidências."
+          ]
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "ivv": 0.5,
+          "ivvReal": 0.5,
+          "quantidade": 1,
+          "observacoes": 1,
+          "participantes": [
+            {
+              "id": "EMP-000012",
+              "nome": "Residencial Marta Rocha II",
+              "ivv": 0.5,
+              "idadeMeses": 28,
+              "faixaIndex": 9,
+              "fotografia": "2026-08-01",
+              "anterior": "TAB-000046",
+              "atual": "TAB-000048",
+              "mesesIntervalo": 28
+            }
+          ],
+          "variacao": -0.90625,
+          "calculada": -0.90625,
+          "validada": -0.90625,
+          "origem": "REAL",
+          "metodo": "razao_das_medias_por_empreendimento",
+          "alertas": [
+            "Base pequena: consulte as evidências."
+          ]
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "ivv": 0.046874999999999986,
+          "ivvReal": null,
+          "quantidade": 0,
+          "observacoes": 0,
+          "participantes": [],
+          "variacao": null,
+          "calculada": -0.90625,
+          "validada": -0.90625,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Base pequena: consulte as evidências."
+          ],
+          "ivvEstimado": 0.046874999999999986
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "ivv": 0.004394531249999998,
+          "ivvReal": null,
+          "quantidade": 0,
+          "observacoes": 0,
+          "participantes": [],
+          "variacao": null,
+          "calculada": -0.90625,
+          "validada": -0.90625,
+          "origem": "ESTIMADO",
+          "metodo": "razao_dos_niveis_ivv_estimados",
+          "alertas": [
+            "Base pequena: consulte as evidências."
+          ],
+          "ivvEstimado": 0.004394531249999998
+        }
+      ],
+      "cobertura": {
+        "empreendimentosNoEscopo": 19,
+        "observacoesValidas": 6,
+        "excluidos": [
+          {
+            "enterpriseId": "EMP-000002",
+            "previous": "TAB-000005",
+            "current": "TAB-000009",
+            "reason": "data_invalida"
+          },
+          {
+            "enterpriseId": "EMP-000003",
+            "previous": "TAB-000014",
+            "current": "TAB-000015",
+            "reason": "data_invalida"
+          },
+          {
+            "enterpriseId": "EMP-000004",
+            "previous": "TAB-000029",
+            "current": "TAB-000031",
+            "reason": "data_invalida"
+          },
+          {
+            "enterpriseId": "EMP-000004",
+            "previous": "TAB-000031",
+            "current": "TAB-000032",
+            "reason": "data_invalida"
+          },
+          {
+            "enterpriseId": "EMP-000014",
+            "previous": "TAB-000049",
+            "current": "TAB-000050",
+            "reason": "data_invalida"
+          },
+          {
+            "enterpriseId": "EMP-000018",
+            "previous": "TAB-000057",
+            "current": "TAB-000059",
+            "reason": "fora_dos_36_meses"
+          },
+          {
+            "enterpriseId": "EMP-000024",
+            "previous": "TAB-000065",
+            "current": "TAB-000066",
+            "reason": "fora_dos_36_meses"
+          },
+          {
+            "enterpriseId": "EMP-000024",
+            "previous": "TAB-000066",
+            "current": "TAB-000067",
+            "reason": "fora_dos_36_meses"
+          }
+        ]
+      },
+      "metodologia": "Média por empreendimento em cada faixa de idade no fechamento do intervalo; razão entre médias adjacentes. Lacunas de taxas: interpolação ou extrapolação local com duas referências. Após 36 meses mantém o último IVV projetado.",
+      "id": "3204b6eb-59de-4a0f-861c-890b6a94e3b8",
+      "number": 1,
+      "status": "REVISAO",
+      "createdAt": "2026-09-13T16:05:45.251Z",
+      "createdBy": {
+        "codigo": "CODEX",
+        "nome": "Codex · implantação solicitada",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": null
+    },
+    {
+      "id": "e0113b9e-e7be-4c2b-a996-a84d57cdfa07",
+      "seedKey": "nexum-ivv-v1.1",
+      "label": "NEXUM v1.1",
+      "model": "parametrica_segmentada",
+      "number": 2,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T11:56:45.498Z",
+      "createdBy": {
+        "nome": "NEXUM · curva aprovada pelo operador"
+      },
+      "validatedAt": "2026-09-14T11:56:45.498Z",
+      "validatedBy": {
+        "nome": "NEXUM · curva aprovada pelo operador"
+      },
+      "previousVersionId": null,
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": 0,
+            "medio": 0,
+            "alto": 0
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.29,
+            "medio": -0.31,
+            "alto": -0.33
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.27,
+            "medio": -0.29,
+            "alto": -0.31
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.24,
+            "medio": -0.26,
+            "alto": -0.28
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.21,
+            "medio": -0.23,
+            "alto": -0.25
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.19,
+            "medio": -0.21,
+            "alto": -0.23
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.17,
+            "medio": -0.19,
+            "alto": -0.21
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.15,
+            "medio": -0.17,
+            "alto": -0.19
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.13,
+            "medio": -0.15,
+            "alto": -0.17
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.11,
+            "medio": -0.13,
+            "alto": -0.15
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.09,
+            "medio": -0.11,
+            "alto": -0.13
+          }
+        }
+      ],
+      "metodologia": "Curva NEXUM v1.1 paramétrica aprovada: não calculada a partir da carteira. A fotografia vigente é o mês 0 da projeção; a cada bloco de três meses, avança uma faixa da curva. Cada taxa reduz o IVV do trimestre anterior. Após 36 meses de projeção, mantém o último IVV projetado. A idade cronológica contextualiza o eixo e não desloca a curva. IVV real e coordenadas históricas são preservados."
+    },
+    {
+      "id": "e89faf3d-5e59-42d3-9359-1c1e69fbe15a",
+      "label": "NEXUM · revisão 3",
+      "model": "parametrica_segmentada",
+      "number": 3,
+      "status": "REVISAO",
+      "createdAt": "2026-09-14T18:19:11.519Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "e0113b9e-e7be-4c2b-a996-a84d57cdfa07",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": 0,
+            "medio": 0,
+            "alto": 0
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.29,
+            "medio": -0.31,
+            "alto": -0.33
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.27,
+            "medio": -0.29,
+            "alto": -0.31
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.24,
+            "medio": -0.26,
+            "alto": -0.28
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.21,
+            "medio": -0.23,
+            "alto": -0.25
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.19,
+            "medio": -0.21,
+            "alto": -0.23
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.17,
+            "medio": -0.19,
+            "alto": -0.21
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.15,
+            "medio": -0.17,
+            "alto": -0.19
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.13,
+            "medio": -0.15,
+            "alto": -0.17
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.11,
+            "medio": -0.13,
+            "alto": -0.15
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "PARAMETRO_APROVADO",
+          "rates": {
+            "popular_mcmv": -0.09,
+            "medio": -0.11,
+            "alto": -0.13
+          }
+        }
+      ],
+      "metodologia": "Curva NEXUM v1.1 paramétrica aprovada: não calculada a partir da carteira. A fotografia vigente é o mês 0 da projeção; a cada bloco de três meses, avança uma faixa da curva. Cada taxa reduz o IVV do trimestre anterior. Após 36 meses de projeção, mantém o último IVV projetado. A idade cronológica contextualiza o eixo e não desloca a curva. IVV real e coordenadas históricas são preservados."
+    },
+    {
+      "id": "ec50821a-f9bf-4e4a-a7cd-91767a6429e4",
+      "label": "NEXUM · revisão 4",
+      "model": "parametrica_segmentada",
+      "number": 4,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T18:19:17.305Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "e89faf3d-5e59-42d3-9359-1c1e69fbe15a",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": 0,
+            "medio": 0,
+            "alto": 0
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.29,
+            "medio": -0.31,
+            "alto": -0.33
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.27,
+            "medio": -0.29,
+            "alto": -0.31
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.24,
+            "medio": -0.26,
+            "alto": -0.28
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.21,
+            "medio": -0.23,
+            "alto": -0.25
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.19,
+            "medio": -0.21,
+            "alto": -0.23
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.17,
+            "medio": -0.19,
+            "alto": -0.21
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.15,
+            "medio": -0.17,
+            "alto": -0.19
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.13,
+            "medio": -0.15,
+            "alto": -0.17
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.11,
+            "medio": -0.13,
+            "alto": -0.15
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.09,
+            "medio": -0.11,
+            "alto": -0.13
+          }
+        }
+      ],
+      "metodologia": "Curva NEXUM v1.1 paramétrica aprovada: não calculada a partir da carteira. A fotografia vigente é o mês 0 da projeção; a cada bloco de três meses, avança uma faixa da curva. Cada taxa reduz o IVV do trimestre anterior. Após 36 meses de projeção, mantém o último IVV projetado. A idade cronológica contextualiza o eixo e não desloca a curva. IVV real e coordenadas históricas são preservados.",
+      "validatedAt": "2026-09-14T18:19:17.305Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "7ced2718-0b00-48e9-be43-28b62caf43e6",
+      "label": "NEXUM · revisão 5",
+      "model": "parametrica_segmentada",
+      "number": 5,
+      "status": "VALIDADA",
+      "createdAt": "2026-09-14T18:19:33.205Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "ec50821a-f9bf-4e4a-a7cd-91767a6429e4",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.29,
+            "medio": -0.31,
+            "alto": -0.33
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.27,
+            "medio": -0.29,
+            "alto": -0.31
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.24,
+            "medio": -0.26,
+            "alto": -0.28
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.21,
+            "medio": -0.23,
+            "alto": -0.25
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.19,
+            "medio": -0.21,
+            "alto": -0.23
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.17,
+            "medio": -0.19,
+            "alto": -0.21
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.15,
+            "medio": -0.17,
+            "alto": -0.19
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.13,
+            "medio": -0.15,
+            "alto": -0.17
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.11,
+            "medio": -0.13,
+            "alto": -0.15
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.09,
+            "medio": -0.11,
+            "alto": -0.13
+          }
+        }
+      ],
+      "metodologia": "Curva NEXUM v1.1 paramétrica aprovada: não calculada a partir da carteira. A fotografia vigente é o mês 0 da projeção; a cada bloco de três meses, avança uma faixa da curva. Cada taxa reduz o IVV do trimestre anterior. Após 36 meses de projeção, mantém o último IVV projetado. A idade cronológica contextualiza o eixo e não desloca a curva. IVV real e coordenadas históricas são preservados.",
+      "validatedAt": "2026-09-14T18:19:33.205Z",
+      "validatedBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      }
+    },
+    {
+      "id": "51203b7a-c1af-4126-83f9-cf413e5bc325",
+      "label": "NEXUM · revisão 6",
+      "model": "parametrica_segmentada",
+      "number": 6,
+      "status": "REVISAO",
+      "createdAt": "2026-09-14T19:50:31.183Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "7ced2718-0b00-48e9-be43-28b62caf43e6",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.29,
+            "medio": -0.31,
+            "alto": -0.33
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.27,
+            "medio": -0.29,
+            "alto": -0.31
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.24,
+            "medio": -0.26,
+            "alto": -0.28
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.21,
+            "medio": -0.23,
+            "alto": -0.25
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.19,
+            "medio": -0.21,
+            "alto": -0.23
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.17,
+            "medio": -0.19,
+            "alto": -0.21
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.15,
+            "medio": -0.17,
+            "alto": -0.19
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.13,
+            "medio": -0.15,
+            "alto": -0.17
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.11,
+            "medio": -0.13,
+            "alto": -0.15
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.09,
+            "medio": -0.11,
+            "alto": -0.13
+          }
+        }
+      ],
+      "metodologia": "Curva NEXUM v1.1 paramétrica aprovada: não calculada a partir da carteira. A fotografia vigente é o mês 0 da projeção; a cada bloco de três meses, avança uma faixa da curva. Cada taxa reduz o IVV do trimestre anterior. Após 36 meses de projeção, mantém o último IVV projetado. A idade cronológica contextualiza o eixo e não desloca a curva. IVV real e coordenadas históricas são preservados."
+    },
+    {
+      "id": "3742eda4-0cff-47f8-bf4c-f7179dd223d3",
+      "label": "NEXUM · revisão 7",
+      "model": "parametrica_segmentada",
+      "number": 7,
+      "status": "REVISAO",
+      "createdAt": "2026-09-14T19:52:53.348Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "7ced2718-0b00-48e9-be43-28b62caf43e6",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.29,
+            "medio": -0.31,
+            "alto": -0.33
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.27,
+            "medio": -0.29,
+            "alto": -0.31
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.24,
+            "medio": -0.26,
+            "alto": -0.28
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.21,
+            "medio": -0.23,
+            "alto": -0.25
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.19,
+            "medio": -0.21,
+            "alto": -0.23
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.17,
+            "medio": -0.19,
+            "alto": -0.21
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.15,
+            "medio": -0.17,
+            "alto": -0.19
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.13,
+            "medio": -0.15,
+            "alto": -0.17
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.11,
+            "medio": -0.13,
+            "alto": -0.15
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.09,
+            "medio": -0.11,
+            "alto": -0.13
+          }
+        }
+      ],
+      "metodologia": "Curva NEXUM v1.1 paramétrica aprovada: não calculada a partir da carteira. A fotografia vigente é o mês 0 da projeção; a cada bloco de três meses, avança uma faixa da curva. Cada taxa reduz o IVV do trimestre anterior. Após 36 meses de projeção, mantém o último IVV projetado. A idade cronológica contextualiza o eixo e não desloca a curva. IVV real e coordenadas históricas são preservados."
+    },
+    {
+      "id": "255fc09b-c2b8-4b79-8e89-295c73401f24",
+      "label": "NEXUM · revisão 8",
+      "model": "parametrica_segmentada",
+      "number": 8,
+      "status": "REVISAO",
+      "createdAt": "2026-09-14T19:53:13.474Z",
+      "createdBy": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "previousVersionId": "7ced2718-0b00-48e9-be43-28b62caf43e6",
+      "periods": [
+        {
+          "indice": 0,
+          "inicioMeses": 0,
+          "fimMeses": 3,
+          "faixa": "0–3 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 1,
+          "inicioMeses": 3,
+          "fimMeses": 6,
+          "faixa": "3–6 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.3,
+            "medio": -0.32,
+            "alto": -0.34
+          }
+        },
+        {
+          "indice": 2,
+          "inicioMeses": 6,
+          "fimMeses": 9,
+          "faixa": "6–9 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.29,
+            "medio": -0.31,
+            "alto": -0.33
+          }
+        },
+        {
+          "indice": 3,
+          "inicioMeses": 9,
+          "fimMeses": 12,
+          "faixa": "9–12 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.27,
+            "medio": -0.29,
+            "alto": -0.31
+          }
+        },
+        {
+          "indice": 4,
+          "inicioMeses": 12,
+          "fimMeses": 15,
+          "faixa": "12–15 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.24,
+            "medio": -0.26,
+            "alto": -0.28
+          }
+        },
+        {
+          "indice": 5,
+          "inicioMeses": 15,
+          "fimMeses": 18,
+          "faixa": "15–18 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.21,
+            "medio": -0.23,
+            "alto": -0.25
+          }
+        },
+        {
+          "indice": 6,
+          "inicioMeses": 18,
+          "fimMeses": 21,
+          "faixa": "18–21 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.19,
+            "medio": -0.21,
+            "alto": -0.23
+          }
+        },
+        {
+          "indice": 7,
+          "inicioMeses": 21,
+          "fimMeses": 24,
+          "faixa": "21–24 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.17,
+            "medio": -0.19,
+            "alto": -0.21
+          }
+        },
+        {
+          "indice": 8,
+          "inicioMeses": 24,
+          "fimMeses": 27,
+          "faixa": "24–27 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.15,
+            "medio": -0.17,
+            "alto": -0.19
+          }
+        },
+        {
+          "indice": 9,
+          "inicioMeses": 27,
+          "fimMeses": 30,
+          "faixa": "27–30 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.13,
+            "medio": -0.15,
+            "alto": -0.17
+          }
+        },
+        {
+          "indice": 10,
+          "inicioMeses": 30,
+          "fimMeses": 33,
+          "faixa": "30–33 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.11,
+            "medio": -0.13,
+            "alto": -0.15
+          }
+        },
+        {
+          "indice": 11,
+          "inicioMeses": 33,
+          "fimMeses": 36,
+          "faixa": "33–36 meses",
+          "origem": "MANUAL",
+          "rates": {
+            "popular_mcmv": -0.09,
+            "medio": -0.11,
+            "alto": -0.13
+          }
+        }
+      ],
+      "metodologia": "Curva NEXUM v1.1 paramétrica aprovada: não calculada a partir da carteira. A fotografia vigente é o mês 0 da projeção; a cada bloco de três meses, avança uma faixa da curva. Cada taxa reduz o IVV do trimestre anterior. Após 36 meses de projeção, mantém o último IVV projetado. A idade cronológica contextualiza o eixo e não desloca a curva. IVV real e coordenadas históricas são preservados."
+    }
+  ],
+  "activeId": "7ced2718-0b00-48e9-be43-28b62caf43e6",
+  "events": [
+    {
+      "action": "calculate",
+      "at": "2026-09-13T16:05:45.251Z",
+      "actor": {
+        "codigo": "CODEX",
+        "nome": "Codex · implantação solicitada",
+        "perfil": "ADMIN"
+      },
+      "versionId": "3204b6eb-59de-4a0f-861c-890b6a94e3b8"
+    },
+    {
+      "action": "initialize_v1.1",
+      "at": "2026-09-14T11:56:45.498Z",
+      "actor": {
+        "nome": "NEXUM · curva aprovada pelo operador"
+      },
+      "versionId": "e0113b9e-e7be-4c2b-a996-a84d57cdfa07",
+      "previousVersionId": null
+    },
+    {
+      "action": "calculate",
+      "at": "2026-09-14T18:19:11.519Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "e89faf3d-5e59-42d3-9359-1c1e69fbe15a"
+    },
+    {
+      "action": "validate",
+      "at": "2026-09-14T18:19:17.305Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "ec50821a-f9bf-4e4a-a7cd-91767a6429e4"
+    },
+    {
+      "action": "activate",
+      "at": "2026-09-14T18:19:19.329Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "ec50821a-f9bf-4e4a-a7cd-91767a6429e4",
+      "previousVersionId": "e0113b9e-e7be-4c2b-a996-a84d57cdfa07"
+    },
+    {
+      "action": "validate",
+      "at": "2026-09-14T18:19:33.205Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "7ced2718-0b00-48e9-be43-28b62caf43e6"
+    },
+    {
+      "action": "activate",
+      "at": "2026-09-14T18:19:51.876Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "7ced2718-0b00-48e9-be43-28b62caf43e6",
+      "previousVersionId": "ec50821a-f9bf-4e4a-a7cd-91767a6429e4"
+    },
+    {
+      "action": "calculate",
+      "at": "2026-09-14T19:50:31.183Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "51203b7a-c1af-4126-83f9-cf413e5bc325"
+    },
+    {
+      "action": "calculate",
+      "at": "2026-09-14T19:52:53.348Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "3742eda4-0cff-47f8-bf4c-f7179dd223d3"
+    },
+    {
+      "action": "calculate",
+      "at": "2026-09-14T19:53:13.474Z",
+      "actor": {
+        "codigo": "ADMIN",
+        "nome": "Ericson",
+        "perfil": "ADMIN"
+      },
+      "versionId": "255fc09b-c2b8-4b79-8e89-295c73401f24"
+    }
+  ]
+}

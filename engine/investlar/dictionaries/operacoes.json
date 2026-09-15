@@ -1,0 +1,16 @@
+{
+  "intencoes": [
+    "OFERTA_VENDA",
+    "OFERTA_LOCACAO",
+    "OFERTA_REPASSE",
+    "DEMANDA_COMPRA",
+    "DEMANDA_LOCACAO",
+    "CAPTACAO_VENDA",
+    "CAPTACAO_LOCACAO",
+    "PERMUTA",
+    "INDEFINIDA",
+    "RUIDO"
+  ],
+  "lados_negociacao": ["OFERTA", "DEMANDA", "CAPTACAO", "INDEFINIDO"],
+  "status_extracao": ["VALIDO", "PARCIAL", "RUIDO", "AMBIGUO", "REVISAO_MANUAL"]
+}

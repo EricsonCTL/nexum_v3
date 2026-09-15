@@ -1,0 +1,10 @@
+{
+  "name": "nexum-online",
+  "private": true,
+  "description": "Pacote público e somente leitura do Nexum",
+  "scripts": {
+    "start": "node local-server.js",
+    "dev": "node --watch local-server.js"
+  },
+  "engines": { "node": ">=20" }
+}

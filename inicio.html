@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NEXUM · Início</title>
+  <link rel="stylesheet" href="nexo.css">
+</head>
+<body class="app-surface nexum-home-page">
+  <header class="topbar"><div class="topbar-inner">
+    <a class="brand" href="inicio.html"><img src="logo/ChatGPT%20Image%2013%20de%20ago.%20de%202026,%2011_38_17.png" alt="NEXUM Radar Imobiliário"></a>
+    <nav class="nav" aria-label="Navegação principal"><a class="active" href="inicio.html">Início</a><a href="empreendimentos.html">Empreendimentos</a><a href="mapa.html">Mapa</a><a href="analytics.html">Analytics</a><a href="rede-mercados.html">Rede</a><button type="button" onclick="logoutCTI()">Sair</button></nav>
+  </div></header>
+
+  <main class="nexum-home-main">
+    <aside class="nexum-home-analysis">
+      <section class="nexum-home-intro">
+        <h1>O mercado em um só lugar.<br><span>Mais clareza.</span> <em>Melhores decisões.</em></h1>
+        <p>Inteligência imobiliária em Campina Grande.</p>
+      </section>
+      <section class="nexum-home-panel demand-panel" aria-labelledby="demand-title">
+        <header><h2 id="demand-title">Bairros em destaque</h2><span>Variação de demanda (6M)</span></header>
+        <div id="demand-list" class="nexum-demand-list"></div>
+      </section>
+      <section class="nexum-home-panel opportunity-panel" aria-labelledby="opportunity-title">
+        <header><h2 id="opportunity-title">Oportunidades de mercado</h2></header>
+        <div class="nexum-opportunity"><i class="building" aria-hidden="true">⌂</i><div><strong>Alta demanda no Catolé</strong><p>Região com maior crescimento de buscas nos últimos 90 dias.</p></div></div>
+        <div class="nexum-opportunity"><i class="chart" aria-hidden="true">⌁</i><div><strong>Lançamentos impulsionando vendas</strong><p>Empreendimentos lançados estão com VSO 25% acima da média da cidade.</p></div></div>
+        <div class="nexum-opportunity"><i class="money" aria-hidden="true">$</i><div><strong>Oportunidade no Jardim Tavares</strong><p>Região com maior estoque disponível e menor pressão de oferta.</p></div></div>
+        <a class="nexum-insights-link" href="analytics.html#insights">Ver todos os insights <b>→</b></a>
+      </section>
+    </aside>
+
+    <section class="nexum-home-content nexum-home-modules" aria-label="Áreas principais do NEXUM">
+      <article class="home-module-card portfolio-module">
+        <div class="home-module-copy"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 21V7l6-3v17M10 21V9l10-3v15M2 21h20M7 9v1M7 13v1M7 17v1M14 10v1M18 9v1M14 14v1M18 13v1M14 18v1M18 17v1"/></svg></i><div><h2><a href="empreendimentos.html">Empreendimentos</a></h2><p class="home-module-lead"><strong class="live-value"><span id="home-portfolio-enterprises">—</span> empreendimentos</strong> monitorados em <strong class="live-city">Campina Grande</strong>.</p><ul class="home-module-evidence"><li><strong class="live-value"><span id="home-portfolio-enterprises-evidence">—</span> empreendimentos</strong> monitorados</li><li><strong class="live-units"><span id="home-portfolio-units">—</span> unidades</strong> na base comercial</li><li>Raio personalizado para analisar áreas</li></ul></div></div>
+        <div class="home-module-visual portfolio-module-visual"><img src="img/01.png" alt="Prévia ilustrativa do Portfólio NEXUM"></div>
+        <a class="home-module-arrow" href="empreendimentos.html" aria-label="Abrir Empreendimentos">›</a>
+      </article>
+      <article class="home-module-card map-module">
+        <div class="home-module-copy"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-13a7 7 0 1 0-14 0c0 6.8 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg></i><div><h2><a href="mapa.html">Mapa</a></h2><p class="home-module-lead">Veja <strong class="live-value">onde o mercado acontece</strong>: <strong class="live-units"><span id="home-map-available">—</span> unidades disponíveis</strong> pelo território.</p><ul class="home-module-evidence"><li><strong>Oferta × Demanda</strong> por região</li><li><strong>IPD e IPO</strong> no território</li><li>Mapa de calor para identificar mudanças</li></ul></div></div>
+        <div class="home-module-visual map-module-visual"><img src="img/02.png" alt="Prévia ilustrativa do Mapa territorial NEXUM"></div>
+        <a class="home-module-arrow" href="mapa.html" aria-label="Abrir Mapa">›</a>
+      </article>
+      <article class="home-module-card analytics-module">
+        <div class="home-module-copy"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 17v-5h3v5M11 17V8h3v9M16 17v-7h3v7M6 9l4-4 4 2 5-5M16 2h3v3"/></svg></i><div><h2><a href="analytics.html">Analytics</a></h2><p class="home-module-lead">Transforme <strong class="live-value">dados de mercado</strong> em leitura executiva do que mudou e para onde evolui.</p><ul class="home-module-evidence"><li><strong class="live-ivv">IVV <span id="home-analytics-ivv">—</span></strong> · <strong class="live-vso">VSO <span id="home-analytics-vso">—</span></strong></li><li><strong>IPD × IPO</strong> — evolução da pressão</li><li>Insights descritivos do período</li></ul></div></div>
+        <div class="home-module-visual analytics-module-visual"><img src="img/03.png" alt="Prévia ilustrativa do Analytics NEXUM"></div>
+        <a class="home-module-arrow" href="analytics.html" aria-label="Abrir Analytics">›</a>
+      </article>
+    </section>
+  </main>
+  <footer class="app-statusbar app-metrics-footer" aria-label="Indicadores de mercado">
+    <div class="footer-metrics-grid">
+      <div class="footer-metric" data-footer-metric="enterprises"><i aria-hidden="true"></i><span>Empreend.</span><strong>—</strong></div>
+      <div class="footer-metric" data-footer-metric="units"><i aria-hidden="true"></i><span>Unidades</span><strong>—</strong></div>
+      <div class="footer-metric" data-footer-metric="available"><i aria-hidden="true"></i><span>Disponíveis</span><strong>—</strong></div>
+      <div class="footer-metric" data-footer-metric="sales"><i aria-hidden="true"></i><span>Vendidas</span><strong>—</strong></div>
+      <div class="footer-metric" data-footer-metric="ticket"><i aria-hidden="true"></i><span>Ticket médio</span><strong>—</strong></div>
+      <div class="footer-metric" data-footer-metric="m2"><i aria-hidden="true"></i><span>M² médio</span><strong>—</strong></div>
+      <div class="footer-metric" data-footer-metric="adjusted"><i aria-hidden="true"></i><span>Reajuste médio</span><strong>—</strong></div>
+      <div class="footer-metric" data-footer-metric="ivv"><i aria-hidden="true"></i><span>IVV mensal</span><strong>—</strong></div>
+      <div class="footer-metric" data-footer-metric="vso"><i aria-hidden="true"></i><span>VSO</span><strong>—</strong></div>
+    </div>
+    <p class="footer-rights">© Ericson Tenório 2026.<br>Todos os direitos reservados.</p>
+  </footer>
+  <script src="auth.js"></script>
+  <script>
+    requireCTIUser(['ADMIN','BROKER']);
+    const api = url => fetch(url).then(async r => { const data=await r.json(); if(!r.ok) throw new Error(data.error||'Não foi possível carregar os dados.'); return data; });
+    const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const n = value => Number(value||0).toLocaleString('pt-BR');
+    const valid = value => value !== null && value !== undefined && value !== '' && Number.isFinite(Number(value));
+    const money = value => valid(value) ? Number(value).toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0}) : '—';
+    const pct = value => valid(value) ? `${Number(value).toLocaleString('pt-BR',{maximumFractionDigits:1})}%` : '—';
+    function drawDemand(){const rows=[['Prata',18.6],['Catolé',11.2],['Bodocongó',7.8],['Jardim Tavares',-2.1],['Centro',-4.3]], max=18.6;document.getElementById('demand-list').innerHTML=rows.map(([name,value])=>`<article class="${value<0?'negative':''}"><i></i><strong>${name}</strong><span><b style="width:${Math.abs(value)/max*100}%"></b></span><em>${value>0?'+':''}${String(value).replace('.',',')}%</em><mark>${value>0?'↑':'↓'}</mark></article>`).join('')}
+    function renderHomeModules(portfolio){const k=portfolio?.kpis||{},set=(id,value)=>{const target=document.getElementById(id);if(target)target.textContent=value},whole=value=>valid(value)?n(value):'—';set('home-portfolio-enterprises',whole(k.empreendimentos));set('home-portfolio-enterprises-evidence',whole(k.empreendimentos));set('home-portfolio-units',whole((portfolio?.entries||[]).reduce((sum,row)=>sum+Number(row.current?.units||0),0)));set('home-map-available',whole(k.disponiveis));set('home-analytics-ivv',valid(k.ivv)?Number(k.ivv).toLocaleString('pt-BR',{maximumFractionDigits:2}):'—');set('home-analytics-vso',pct(k.vso));}
+    function renderHomeFooter(portfolio){const footer=document.querySelector('.app-statusbar'),entries=portfolio?.entries||[],average=values=>{const validValues=values.map(Number).filter(Number.isFinite);return validValues.length?validValues.reduce((sum,value)=>sum+value,0)/validValues.length:null};if(footer&&window.nexumFooterMarkup){const ticket=average(entries.map(row=>row.current?.averagePrice)),m2=average(entries.map(row=>row.current?.pricePerM2)),units=entries.reduce((sum,row)=>sum+Number(row.current?.units||0),0),sales=entries.reduce((sum,row)=>sum+Number(row.comparison?.salesConfirmed??row.current?.sold??0),0);footer.innerHTML=window.nexumFooterMarkup();window.updateNexumFooterMetrics?.(entries,{...portfolio?.kpis,unidades:units,vendasValidadas:sales,ticketMedio:ticket,precoMedioM2:m2});window.updateNexumFooterContext?.({enterprises:portfolio?.kpis?.empreendimentos,units,available:portfolio?.kpis?.disponiveis,sales,ticket,m2,adjusted:portfolio?.kpis?.reajusteMedioMensal,adjustedMonthly:true,ivv:portfolio?.kpis?.ivv,vso:portfolio?.kpis?.vso});}renderHomeModules(portfolio);}
+    function renderChart(analytics){const rows=(analytics?.series?.consolidada?.velocidade||[]).slice(-6), values=rows.map(x=>Number(x.vso||0)), max=Math.max(...values,1), points=rows.map((r,i)=>`${16+i*(328/Math.max(rows.length-1,1))},${96-(Number(r.vso||0)/max*65)}`).join(' '), labels=rows.map((r,i)=>`<text x="${16+i*(328/Math.max(rows.length-1,1))}" y="113" text-anchor="middle">${String(r.mes||'').slice(5,7)||'—'}</text>`).join('');document.getElementById('vso-chart').innerHTML=`<path d="M12 30H348M12 62H348M12 94H348" class="grid"/><polyline points="${points}" class="line"/>${rows.map((r,i)=>{const [x,y]=points.split(' ')[i].split(',');return `<circle cx="${x}" cy="${y}" r="3.5"/>`}).join('')}${labels}`;const latest=rows.at(-1)||{}, photos=(analytics?.series?.consolidada?.fotografias||[]).at(-1)||{};document.getElementById('home-vso').textContent=pct(latest.vso);document.getElementById('home-ivv').textContent=Number(latest.ivv||0).toLocaleString('pt-BR',{maximumFractionDigits:1})+' un./mês';document.getElementById('home-price').textContent=money(photos.precoMedioM2);if(rows.length)document.getElementById('vso-period').textContent='Últimos '+rows.length+' meses'}
+    async function loadHome(){try{const portfolio=await api('/api/portfolio-home');drawDemand();renderHomeFooter(portfolio);}catch(error){console.error(error);}}
+    loadHome();
+  </script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+{
+  "schema": "nexum-skill-json",
+  "schema_version": "2.0",
+  "status_processamento": "CONSOLIDADO",
+  "empreendimento": {
+    "nome": "Residencial Marta Rocha II",
+    "incorporadora": "Pedra Construtora",
+    "construtora": "Pedra Construtora",
+    "endereco": {
+      "logradouro": "Rua Benedito Almeida Carneiro",
+      "numero": "305",
+      "bairro": "Santa Cruz",
+      "cidade": "Campina Grande",
+      "uf": "PB",
+      "cep": null
+    },
+    "coordenadas": {
+      "latitude": null,
+      "longitude": null
+    },
+    "fase": "ENTREGUE",
+    "datas": {
+      "lancamento": "2024-04-01",
+      "entrega_efetiva": "2025-06"
+    },
+    "empreendimento_caracteristicas": {
+      "tipologia": "2 quartos",
+      "vagas_por_unidade": 1,
+      "lazer": [
+        "Piscina",
+        "Área gourmet com churrasqueira",
+        "Playground"
+      ],
+      "observacao": "Dados cadastrais complementados conforme informações fornecidas pelo operador; CEP e coordenadas não confirmados nesta versão."
+    }
+  },
+  "tabela": {
+    "id": "MARTA_ROCHA_II_ATUAL_2026-08-01",
+    "tipo": "PRECO_ATUAL",
+    "data_tabela": "2026-08-01",
+    "arquivo_origem": "TABELA marta rocha 2 (1).pdf",
+    "unidades_apresentadas": 19,
+    "unidades": [
+      {
+        "apartamento": "Sub solo 001",
+        "unidade_original": "Sub solo 001",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "Moto",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "inferido_por_ausencia_de_marcacao",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "Sub solo 002",
+        "unidade_original": "Sub solo 002",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "inferido_por_ausencia_de_marcacao",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "Sub solo 003",
+        "unidade_original": "Sub solo 003",
+        "area_m2": 49.71,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "Térreo 101",
+        "unidade_original": "Térreo 101",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "Térreo 102",
+        "unidade_original": "Térreo 102",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "inferido_por_ausencia_de_marcacao",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "Térreo 103",
+        "unidade_original": "Térreo 103",
+        "area_m2": 49.18,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "Térreo 104",
+        "unidade_original": "Térreo 104",
+        "area_m2": 48.33,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "OESTE",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 185000.0,
+        "preco": 192000.0,
+        "valorVenda": 192000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "201",
+        "unidade_original": "201",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "RESERVADO",
+        "status_original": "RESERVADO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "202",
+        "unidade_original": "202",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "RESERVADO",
+        "status_original": "RESERVADO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "203",
+        "unidade_original": "203",
+        "area_m2": 49.18,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "204",
+        "unidade_original": "204",
+        "area_m2": 48.33,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "OESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "promocao": 185000.0,
+        "preco": 192000.0,
+        "valorVenda": 192000.0,
+        "proveniencia_status": "inferido_por_ausencia_de_marcacao",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "301",
+        "unidade_original": "301",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "302",
+        "unidade_original": "302",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "RESERVADO",
+        "status_original": "RESERVADO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "303",
+        "unidade_original": "303",
+        "area_m2": 49.18,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "304",
+        "unidade_original": "304",
+        "area_m2": 48.33,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "OESTE",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 185000.0,
+        "preco": 192000.0,
+        "valorVenda": 192000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "401",
+        "unidade_original": "401",
+        "area_m2": 46.9,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "402",
+        "unidade_original": "402",
+        "area_m2": 47.84,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "LESTE",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "403",
+        "unidade_original": "403",
+        "area_m2": 49.18,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "SUL",
+        "status": "VENDIDO",
+        "status_original": "VENDIDO",
+        "promocao": 188000.0,
+        "preco": 198000.0,
+        "valorVenda": 198000.0,
+        "proveniencia_status": "observado_no_pdf",
+        "proveniencia_preco": "observado_no_pdf"
+      },
+      {
+        "apartamento": "404",
+        "unidade_original": "404",
+        "area_m2": 48.33,
+        "descricao": "2 quartos",
+        "vaga": "carro",
+        "posicao": "OESTE",
+        "status": "DISPONIVEL",
+        "status_original": "DISPONIVEL",
+        "promocao": 185000.0,
+        "preco": 192000.0,
+        "valorVenda": 192000.0,
+        "proveniencia_status": "inferido_por_ausencia_de_marcacao",
+        "proveniencia_preco": "observado_no_pdf"
+      }
+    ]
+  },
+  "resumo_comercial": {
+    "total_unidades": 19,
+    "disponiveis": 5,
+    "vendidas": 11,
+    "reservadas": 3,
+    "observacao": "Distribuição documental exatamente como aparece na tabela atual. Unidades sem marcação de venda/reserva foram tratadas como DISPONIVEL."
+  },
+  "comparacao": {
+    "previousTableId": "MARTA_ROCHA_II_LANCAMENTO_2024-04-01",
+    "novas": [],
+    "mantidas": [
+      "Sub solo 001",
+      "Sub solo 002",
+      "Sub solo 003",
+      "Térreo 101",
+      "Térreo 102",
+      "Térreo 103",
+      "Térreo 104",
+      "201",
+      "202",
+      "203",
+      "204",
+      "301",
+      "302",
+      "303",
+      "304",
+      "401",
+      "402",
+      "403",
+      "404"
+    ],
+    "removidas": [],
+    "retornadas": [],
+    "alteracoesValor": [],
+    "alteracoesStatus": [],
+    "alteracoesComerciais": []
+  },
+  "validacoes": [
+    {
+      "tipo": "ARRAY_UNIDADES",
+      "resultado": "OK",
+      "detalhe": "tabela.unidades é um array."
+    },
+    {
+      "tipo": "CONTAGEM_UNIDADES",
+      "resultado": "OK",
+      "detalhe": "19 unidades no array e 19 em unidades_apresentadas."
+    },
+    {
+      "tipo": "DUPLICIDADES",
+      "resultado": "OK",
+      "detalhe": "Nenhuma chave de unidade duplicada."
+    },
+    {
+      "tipo": "STATUS",
+      "resultado": "OK",
+      "detalhe": "5 DISPONIVEL, 11 VENDIDO e 3 RESERVADO."
+    }
+  ],
+  "pendencias": [
+    "CEP do Residencial Marta Rocha II não confirmado.",
+    "Latitude e longitude do Residencial Marta Rocha II não confirmadas.",
+    "A data da tabela atual foi definida como 2026-08-01 por decisão explícita do operador, não observada no PDF."
+  ],
+  "auditoria": [
+    {
+      "campo": "tabela.data_tabela",
+      "classificacao": "confirmado",
+      "valor": "2026-08-01",
+      "observacao": "Data de vigência definida explicitamente pelo operador."
+    },
+    {
+      "campo": "tabela.unidades[].status",
+      "classificacao": "observado",
+      "observacao": "VENDIDO e RESERVADO preservados literalmente; ausência de marcação foi normalizada para DISPONIVEL."
+    },
+    {
+      "campo": "tabela.unidades[].preco/promocao",
+      "classificacao": "observado",
+      "observacao": "Valores extraídos da tabela PDF atual."
+    }
+  ],
+  "fontes": [
+    {
+      "tipo": "arquivo_origem",
+      "arquivo": "TABELA marta rocha 2 (1).pdf",
+      "uso": "Unidades, áreas, descrição, vaga, posição, promoção, preço e status atuais."
+    },
+    {
+      "tipo": "decisao_operador",
+      "uso": "Data de vigência da tabela atual: 2026-08-01."
+    }
+  ]
+}

@@ -1,0 +1,706 @@
+{
+  "diagnostico": {
+    "processamento": "skill_nexum",
+    "arquivoOrigem": "TABELA DE DISPONILIDADE - RADAR DOS CLIENTES (9).pdf",
+    "paginas": 1,
+    "resultado": "processado_com_confirmacao_de_endereco",
+    "observacao": "O endereço foi confirmado pelo operador antes da geração do JSON."
+  },
+  "identificacao": {
+    "nome": "Vitta Sudoeste 17",
+    "nomeComercial": "VITTA 17",
+    "nomeOriginalNoDocumento": "VITTA 17",
+    "nomeRegistralEncontrado": "RESIDENCIAL VITTA SUDOESTE 17",
+    "statusIdentificacao": "confirmado",
+    "riscoDuplicidade": "baixo"
+  },
+  "empreendimento": {
+    "id": null,
+    "nome": "Vitta Sudoeste 17",
+    "nomesAlternativos": [
+      "VITTA 17",
+      "Residencial Vitta Sudoeste 17"
+    ],
+    "fase": {
+      "codigo": "LANCAMENTO",
+      "rotulo": "Lançamento",
+      "classificacao": "pesquisado_e_confirmado_por_documento"
+    },
+    "incorporadora": {
+      "nome": "VITTA 37 CONSTRUÇÕES SPE LTDA",
+      "classificacao": "pesquisado",
+      "cnpj": "56.147.471/0001-81"
+    },
+    "construtora": {
+      "nome": "VITTA 37 CONSTRUÇÕES SPE LTDA",
+      "classificacao": "pesquisado",
+      "cnpj": "56.147.471/0001-81"
+    },
+    "datas": {
+      "launchDate": null,
+      "constructionStartDate": null,
+      "deliveryDate": "2026-11-30",
+      "deliveryDateType": "previsao",
+      "actualDeliveryDate": null,
+      "occupancyPermitDate": null
+    },
+    "endereco": {
+      "logradouro": "Rua José França Macedo",
+      "numero": "850",
+      "complemento": "Quadra 17",
+      "bairro": "Três Irmãs",
+      "cidade": "Campina Grande",
+      "estado": "Paraíba",
+      "uf": "PB",
+      "cep": "58424-490",
+      "enderecoCompleto": "Rua José França Macedo, 850, Quadra 17, Três Irmãs, Campina Grande - PB, CEP 58424-490"
+    },
+    "geolocalizacao": {
+      "latitude": null,
+      "longitude": null,
+      "classificacao": "nao_determinado",
+      "observacao": "Não foi encontrada coordenada confiável e específica do nº 850 nas fontes pesquisadas; não inventar."
+    },
+    "caracteristicasImovel": {
+      "dormitorios": {
+        "opcoes": [
+          "2 quartos"
+        ]
+      },
+      "suite": null,
+      "areaDeLazer": [
+        "piscina",
+        "salão de festas",
+        "churrasqueira"
+      ],
+      "piscina": true,
+      "mobiliado": false,
+      "financiavel": true,
+      "condominioFechado": true,
+      "vagasDeGaragem": "1 vaga nas ofertas pesquisadas; VGM aparece em algumas unidades da tabela",
+      "banheiros": 1,
+      "areasEncontradasM2": [
+        44.65,
+        52.4,
+        60.17
+      ]
+    },
+    "leituraComercial": {
+      "formasPagamento": [
+        "Financiamento",
+        "Fundo de Garantia",
+        "Carta de Crédito",
+        "sinal mínimo de R$ 500,00"
+      ],
+      "caracteristicasComerciais": [
+        "Documentação total inclusa (Cartório + ITBI + Caixa)",
+        "Tabela de vendas de lançamento",
+        "Unidades com status Disponível e Reservado"
+      ],
+      "observacoes": [
+        "O PDF informa previsão de entrega para novembro/2026.",
+        "A fonte imobiliária consultada informa data de entrega de 30/11/2026.",
+        "A tabela original usa 'VGM' em algumas unidades; a sigla foi preservada sem expansão não comprovada."
+      ]
+    }
+  },
+  "tabelaProcessada": {
+    "id": null,
+    "tipo": "tabela_de_vendas",
+    "tipoTabelaLabel": "Tabela de Vendas - Lançamento Vitta 17",
+    "status": "registered",
+    "validityDate": null,
+    "quantidadeUnidades": 32,
+    "quantidadeDisponiveis": 3,
+    "quantidadeReservadas": 29,
+    "regraInterpretada": {
+      "precoVenda": "valor de avaliação - desconto",
+      "status": "preservado conforme documento"
+    },
+    "documento": {
+      "nomeArquivo": "TABELA DE DISPONILIDADE - RADAR DOS CLIENTES (9).pdf",
+      "paginas": 1
+    }
+  },
+  "unidades": [
+    {
+      "unidade": "Apto 001",
+      "numero": "001",
+      "areaPrivativaM2": 60.17,
+      "tipologia": "Com área privativa descoberta + 2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "disponível",
+      "valorAvaliacao": 185600,
+      "desconto": 4100,
+      "valorVenda": 181500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 002 (VGM)",
+      "numero": "002",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 8910,
+      "valorVenda": 156990,
+      "vagaGaragem": null,
+      "marcacaoVGM": true,
+      "observacoes": [
+        "VGM conforme tabela original"
+      ]
+    },
+    {
+      "unidade": "Apto 003",
+      "numero": "003",
+      "areaPrivativaM2": 60.17,
+      "tipologia": "Com área privativa descoberta + 2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 185600,
+      "desconto": 4100,
+      "valorVenda": 181500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 004",
+      "numero": "004",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 168000,
+      "desconto": 2500,
+      "valorVenda": 165500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 005",
+      "numero": "005",
+      "areaPrivativaM2": 52.4,
+      "tipologia": "Com área privativa descoberta + 2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "disponível",
+      "valorAvaliacao": 180000,
+      "desconto": 2500,
+      "valorVenda": 177500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 006",
+      "numero": "006",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2400,
+      "valorVenda": 163500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 007",
+      "numero": "007",
+      "areaPrivativaM2": 60.17,
+      "tipologia": "Com área privativa descoberta + 2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "disponível",
+      "valorAvaliacao": 185600,
+      "desconto": 4100,
+      "valorVenda": 181500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 008",
+      "numero": "008",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2400,
+      "valorVenda": 163500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 101",
+      "numero": "101",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2000,
+      "valorVenda": 163900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 102",
+      "numero": "102",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2400,
+      "valorVenda": 163500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 103",
+      "numero": "103",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2000,
+      "valorVenda": 163900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 104",
+      "numero": "104",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2400,
+      "valorVenda": 163500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 105",
+      "numero": "105",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2000,
+      "valorVenda": 163900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 106",
+      "numero": "106",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2400,
+      "valorVenda": 163500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 107",
+      "numero": "107",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2000,
+      "valorVenda": 163900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 108",
+      "numero": "108",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 2400,
+      "valorVenda": 163500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 201",
+      "numero": "201",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 4000,
+      "valorVenda": 161900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 202",
+      "numero": "202",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 4400,
+      "valorVenda": 161500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 203",
+      "numero": "203",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 4000,
+      "valorVenda": 161900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 204",
+      "numero": "204",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 4400,
+      "valorVenda": 161500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 205",
+      "numero": "205",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 4000,
+      "valorVenda": 161900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 206",
+      "numero": "206",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 4400,
+      "valorVenda": 161500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 207",
+      "numero": "207",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 4000,
+      "valorVenda": 161900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 208",
+      "numero": "208",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 4400,
+      "valorVenda": 161500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 301",
+      "numero": "301",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 5000,
+      "valorVenda": 160900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 302 (VGM)",
+      "numero": "302",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 7000,
+      "valorVenda": 158900,
+      "vagaGaragem": null,
+      "marcacaoVGM": true,
+      "observacoes": [
+        "VGM conforme tabela original"
+      ]
+    },
+    {
+      "unidade": "Apto 303",
+      "numero": "303",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 5000,
+      "valorVenda": 160900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 304 (VGM)",
+      "numero": "304",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 7000,
+      "valorVenda": 158900,
+      "vagaGaragem": null,
+      "marcacaoVGM": true,
+      "observacoes": [
+        "VGM conforme tabela original"
+      ]
+    },
+    {
+      "unidade": "Apto 305",
+      "numero": "305",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 5000,
+      "valorVenda": 160900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 306 (VGM)",
+      "numero": "306",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 7000,
+      "valorVenda": 158900,
+      "vagaGaragem": null,
+      "marcacaoVGM": true,
+      "observacoes": [
+        "VGM conforme tabela original"
+      ]
+    },
+    {
+      "unidade": "Apto 307",
+      "numero": "307",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 5000,
+      "valorVenda": 160900,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    },
+    {
+      "unidade": "Apto 308",
+      "numero": "308",
+      "areaPrivativaM2": 44.65,
+      "tipologia": "2Q",
+      "dormitorios": 2,
+      "suites": null,
+      "status": "reservado",
+      "valorAvaliacao": 165900,
+      "desconto": 4400,
+      "valorVenda": 161500,
+      "vagaGaragem": null,
+      "marcacaoVGM": false,
+      "observacoes": []
+    }
+  ],
+  "comparacao": {
+    "tipo": "nova_tabela",
+    "empreendimentoExistente": null,
+    "regra": "Se o Codex já possuir Vitta Sudoeste 17, reutilizar o empreendimento e registrar esta tabela como novo snapshot; não criar duplicata.",
+    "resultado": "sem_comparacao_anterior_disponivel_nesta_execucao"
+  },
+  "cadastroCentral": {
+    "empreendimentoId": null,
+    "tabelaId": null,
+    "acaoEsperada": "upsert_sem_duplicacao",
+    "preservarHistorico": true
+  },
+  "fontesPesquisa": [
+    {
+      "fonte": "Documento PDF fornecido pelo operador",
+      "tipo": "origem_primaria_da_tabela",
+      "suporta": [
+        "nome comercial",
+        "endereço informado no documento",
+        "status das unidades",
+        "preços",
+        "descontos",
+        "previsão de entrega",
+        "condições comerciais"
+      ]
+    },
+    {
+      "fonte": "VITTA - Inteligência Imobiliária",
+      "url": "https://vittainteligencia.com.br/",
+      "suporta": [
+        "Vitta Sudoeste 17",
+        "Rua José França Macedo, 850",
+        "CEP 58424-490",
+        "2 quartos",
+        "1 vaga",
+        "piscina",
+        "entrega 30/11/2026",
+        "financiamento/Fundo de Garantia/Carta de Crédito"
+      ]
+    },
+    {
+      "fonte": "Prefeitura de Campina Grande - Semanário Oficial",
+      "url": "https://campinagrande.pb.gov.br/wp-content/uploads/2025/03/SEMANARIO-OFICIAL-No-2.928-24-A-28-DE-MARCO-DE-2025.pdf",
+      "suporta": [
+        "VITTA 37 CONSTRUÇÕES SPE LTDA",
+        "empreendimento residencial vertical",
+        "32 unidades",
+        "Rua José França Macedo, Três Irmãs"
+      ]
+    },
+    {
+      "fonte": "Base Empresarial",
+      "url": "https://baseempresarial.com.br/municipio/2504009-campina-grande-pb/cnae/4110700-incorporacao-de-empreendimentos-imobiliarios",
+      "suporta": [
+        "RESIDENCIAL VITTA SUDOESTE 17",
+        "CNPJ 56.147.471/0006-96",
+        "VITTA 37 CONSTRUÇÕES SPE LTDA"
+      ]
+    },
+    {
+      "fonte": "ProCep",
+      "url": "https://www.procep.com.br/pb/campina-grande/tres-irmas/rua-jose-franca-macedo-58424490",
+      "suporta": [
+        "CEP 58424-490",
+        "Rua José França Macedo",
+        "vínculo cadastral do Residencial Vitta Sudoeste 17"
+      ]
+    }
+  ],
+  "confirmacoesNecessarias": [],
+  "alertas": [
+    "Coordenadas latitude/longitude ficaram não determinadas por falta de fonte confiável específica.",
+    "Data de lançamento exata não foi localizada; fase de lançamento é sustentada pelo próprio documento.",
+    "Data de entrega é previsão, não entrega efetivamente comprovada.",
+    "Não foi feita comparação com snapshot anterior do Codex porque o banco/Codex não está conectado nesta execução."
+  ],
+  "auditoria": {
+    "principio": "IDENTIDADE CORRETA > DADOS COMPLETOS > EVIDÊNCIA > PROVENIÊNCIA > HISTÓRICO > AUTOMAÇÃO",
+    "naoInventado": true,
+    "camposNaoDeterminados": [
+      "empreendimento.id",
+      "tabela.id",
+      "launchDate",
+      "constructionStartDate",
+      "actualDeliveryDate",
+      "occupancyPermitDate",
+      "latitude",
+      "longitude",
+      "suites"
+    ]
+  }
+}

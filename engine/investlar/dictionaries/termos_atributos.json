@@ -1,0 +1,11 @@
+{
+  "mobiliado": ["mobiliado", "mobiliada"],
+  "semi_mobiliado": ["semi mobiliado", "semi-mobiliado", "semimobiliado"],
+  "elevador": ["elevador", "elevadores"],
+  "area_lazer": ["area de lazer", "lazer", "salao de festas", "academia"],
+  "piscina": ["piscina"],
+  "condominio_incluso": ["condominio incluso", "condominio incluso", "ja incluso"],
+  "financiavel": ["financiavel", "financia", "aceita financiamento"],
+  "aceita_permuta": ["permuta", "aceita troca"],
+  "nascente": ["nascente", "sombra"]
+}

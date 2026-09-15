@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="description" content="NEXUM — Radar Imobiliário. O mercado em um só lugar. Mais clareza. Melhores decisões. IPD, IPO, IVV, VSO, Índice NEXUM e contexto de mercado para a sua carteira." />
+<title>NEXUM — Radar Imobiliário</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1216'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%232dd4bf' stroke-width='1.4'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%232dd4bf'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+/* =========================================================
+   NEXUM · Editorial Executivo — v9
+   Hero escuro + radar territorial + parallax narrativo
+========================================================= */
+:root{
+  --paper:#ffffff;
+  --paper-warm:#f6f4ef;
+  --paper-teal:#eaf4f3;
+
+  --ink:#0f1b21;
+  --ink-2:#3f525a;
+  --ink-3:#798b92;
+
+  --navy:#0d2231;
+  --navy-2:#123347;
+
+  --hairline:#e4ebed;
+  --hairline-2:#d6e1e3;
+
+  --teal:#0f8f88;
+  --teal-bright:#2dd4bf;
+  --teal-soft:#7de3d8;
+  --teal-deep:#0a6e69;
+  --teal-mist:#e3f2f0;
+  --blue:#3b82f6;
+
+  --header-grad:linear-gradient(100deg,#070d13 0%,#0b2334 48%,#0d4a52 100%);
+  --shadow-sm:0 2px 6px rgba(15,30,36,.05),0 8px 22px -12px rgba(15,30,36,.10);
+  --shadow-md:0 6px 18px -8px rgba(15,30,36,.12),0 20px 46px -22px rgba(15,30,36,.16);
+  --shadow-fig:0 48px 110px -46px rgba(15,45,52,.34),0 16px 38px -20px rgba(15,30,36,.16);
+  --shadow-deep:0 60px 120px -50px rgba(11,18,22,.65);
+
+  --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+  --container:1160px;
+  --header-h:60px;
+  --ease:cubic-bezier(.22,.7,.3,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 14px)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+body.no-scroll{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+::selection{background:rgba(45,212,191,.32)}
+
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(38px,4.8vw,62px);line-height:1.03}
+h2{font-size:clamp(30px,4vw,52px);line-height:1.08}
+h3{font-size:22px;line-height:1.3}
+p{margin:0}
+
+em.acc{font-style:italic;color:var(--teal);font-weight:600}
+.container{width:min(calc(100% - 40px),var(--container));margin-inline:auto}
+
+/* ---------- Eyebrow ---------- */
+.eyebrow{
+  display:inline-flex;align-items:baseline;gap:12px;
+  color:var(--teal-deep);font-size:11px;font-weight:700;
+  letter-spacing:.24em;text-transform:uppercase;
+}
+.eyebrow i{font-family:var(--serif);font-style:italic;font-weight:600;font-size:17px;letter-spacing:0;color:var(--teal)}
+.eyebrow::after{content:"";width:34px;height:1.5px;background:var(--hairline-2);align-self:center}
+
+/* ---------- Botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:52px;padding:0 30px;border-radius:999px;
+  font-size:15px;font-weight:600;white-space:nowrap;cursor:pointer;
+  transition:transform .2s var(--ease),background .2s,box-shadow .2s,color .2s;
+}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-navy{background:var(--navy);color:#fff;box-shadow:0 18px 40px -16px rgba(13,34,49,.55)}
+.btn-navy:hover{background:var(--teal-deep);transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--navy);box-shadow:0 18px 44px -18px rgba(0,0,0,.6)}
+.btn-light:hover{transform:translateY(-2px);background:var(--teal-mist)}
+.btn-text{
+  min-height:52px;padding:0 4px;border-radius:0;
+  color:var(--ink-2);font-weight:600;font-size:14.5px;
+  border-bottom:1.5px solid var(--hairline-2);
+}
+.btn-text:hover{color:var(--teal-deep);border-color:var(--teal)}
+.btn-teal{
+  background:var(--teal-bright);color:#04211d;
+  box-shadow:0 18px 44px -16px rgba(45,212,191,.5);
+}
+.btn-teal:hover{background:var(--teal-soft);transform:translateY(-2px)}
+
+/* =========================================================
+   HEADER — sempre escuro
+========================================================= */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:var(--header-grad);
+  transition:box-shadow .25s;
+}
+.site-header.scrolled{box-shadow:0 10px 30px -12px rgba(4,10,14,.5)}
+.header-inner{min-height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:inline-flex;flex-shrink:0}
+.brand img{width:92px;height:auto;mix-blend-mode:screen}
+.nav{display:flex;gap:8px}
+.nav a{
+  position:relative;display:inline-flex;align-items:center;
+  min-height:44px;padding:0 11px;
+  font-size:13px;font-weight:600;letter-spacing:.03em;
+  color:rgba(255,255,255,.72);transition:color .18s;
+}
+.nav a:hover{color:var(--teal-soft)}
+.nav a::after{
+  content:"";position:absolute;left:11px;right:11px;bottom:8px;height:2px;
+  border-radius:2px;
+  background:linear-gradient(90deg,var(--teal-bright),var(--teal-soft));
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .3s var(--ease);
+}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1)}
+.nav a.active{color:var(--teal-soft)}
+
+.header-cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:42px;padding:0 18px;border-radius:10px;
+  background:linear-gradient(135deg,#2dd4bf,#0f8f88);
+  color:#04211d;font-size:12.5px;font-weight:700;
+  box-shadow:0 10px 26px -10px rgba(45,212,191,.55);
+  transition:transform .18s,box-shadow .18s;
+}
+.header-cta:hover{transform:translateY(-1px);box-shadow:0 14px 30px -10px rgba(45,212,191,.65)}
+
+.menu-btn{
+  display:none;width:48px;height:48px;padding:0;
+  background:transparent;border:1px solid rgba(255,255,255,.28);
+  border-radius:11px;color:#fff;cursor:pointer;
+  align-items:center;justify-content:center;flex:none;
+}
+
+/* ---------- Drawer mobile ---------- */
+.drawer-backdrop{
+  position:fixed;inset:0;z-index:190;background:rgba(4,10,14,.55);
+  backdrop-filter:blur(2px);opacity:0;visibility:hidden;
+  transition:opacity .3s var(--ease),visibility .3s;
+}
+.drawer-backdrop.open{opacity:1;visibility:visible}
+.drawer{
+  position:fixed;top:0;right:0;bottom:0;z-index:200;
+  width:min(330px,86vw);
+  display:flex;flex-direction:column;
+  background:linear-gradient(165deg,#0a141b 0%,#0b2334 70%,#0d4a52 130%);
+  transform:translateX(102%);visibility:hidden;
+  transition:transform .34s var(--ease),visibility .34s;
+  box-shadow:-30px 0 70px rgba(0,0,0,.45);
+}
+.drawer.open{transform:translateX(0);visibility:visible}
+.drawer-head{
+  min-height:var(--header-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 18px;border-bottom:1px solid rgba(255,255,255,.10);
+}
+.drawer-logo{width:88px;mix-blend-mode:screen}
+.drawer-close{
+  width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;
+  background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:11px;
+  color:#fff;cursor:pointer;flex:none;
+}
+.drawer-nav{display:flex;flex-direction:column;padding:10px 8px;flex:1}
+.drawer-nav a{
+  display:flex;align-items:center;min-height:56px;padding:0 14px;
+  color:rgba(255,255,255,.85);font-size:15.5px;font-weight:600;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.drawer-nav a.active{color:var(--teal-soft)}
+.drawer-nav a:last-child{border-bottom:0}
+.drawer-foot{padding:16px 18px 26px;border-top:1px solid rgba(255,255,255,.10)}
+.drawer-cta{
+  width:100%;min-height:52px;
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:linear-gradient(135deg,#2dd4bf,#0f8f88);
+  color:#04211d;font-weight:700;font-size:15px;border-radius:12px;
+}
+.drawer-phone{margin-top:12px;text-align:center;font-size:13px;color:rgba(255,255,255,.55)}
+
+/* =========================================================
+   HERO v2 — escuro · ~100vh · radar territorial
+========================================================= */
+.hero{
+  position:relative;
+  min-height:calc(100vh - var(--header-h));
+  min-height:calc(100svh - var(--header-h));
+  display:flex;align-items:center;
+  padding:56px 0 110px;
+  overflow:hidden;color:#fff;
+  background:
+    radial-gradient(1100px 620px at 84% 8%, rgba(15,143,136,.20), transparent 62%),
+    radial-gradient(760px 480px at 4% 110%, rgba(59,130,246,.10), transparent 58%),
+    linear-gradient(158deg,#070d13 0%,#0b1d2a 54%,#0d3140 100%);
+}
+/* grade territorial sutil */
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(125,227,216,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125,227,216,.05) 1px, transparent 1px);
+  background-size:76px 76px;
+  -webkit-mask-image:radial-gradient(72% 74% at 64% 44%, #000 26%, transparent 76%);
+          mask-image:radial-gradient(72% 74% at 64% 44%, #000 26%, transparent 76%);
+}
+.hero .container{position:relative;z-index:2}
+
+/* ---------- Radar ---------- */
+.hero-radar{
+  position:absolute;z-index:1;pointer-events:none;
+  top:50%;right:-4%;transform:translateY(-50%);
+  width:min(780px,58vw);aspect-ratio:1/1;opacity:.85;
+  will-change:transform;
+}
+.hero-radar::before{
+  content:"";position:absolute;inset:12%;border-radius:50%;
+  background:radial-gradient(circle, rgba(45,212,191,.14), transparent 62%);
+}
+.hero-radar .ring{
+  position:absolute;inset:0;margin:auto;border-radius:50%;
+  border:1px solid rgba(125,227,216,.14);
+}
+.hero-radar .ring:nth-child(1){width:32%;height:32%}
+.hero-radar .ring:nth-child(2){width:56%;height:56%}
+.hero-radar .ring:nth-child(3){width:78%;height:78%}
+.hero-radar .ring:nth-child(4){width:100%;height:100%}
+.hero-radar .sweep{
+  position:absolute;inset:0;border-radius:50%;
+  background:conic-gradient(from 0deg, rgba(45,212,191,.26), rgba(45,212,191,.05) 16%, transparent 26%);
+  -webkit-mask-image:radial-gradient(circle, #000 0 68%, transparent 69%);
+          mask-image:radial-gradient(circle, #000 0 68%, transparent 69%);
+  animation:sweep 16s linear infinite;
+}
+@keyframes sweep{to{transform:rotate(360deg)}}
+.hero-radar .blip{
+  position:absolute;width:8px;height:8px;border-radius:50%;
+  background:var(--teal-soft);
+  animation:pulse 4.5s ease-out infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(125,227,216,.45)}
+  70%{box-shadow:0 0 0 16px rgba(125,227,216,0)}
+  100%{box-shadow:0 0 0 0 rgba(125,227,216,0)}
+}
+.hero-radar .tag{
+  position:absolute;font-size:10px;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(238,247,246,.5);
+}
+.hero-radar .asset{
+  position:absolute;left:50%;top:50%;width:14px;height:14px;
+  margin:-7px 0 0 -7px;border-radius:50%;
+  background:var(--teal-bright);
+  box-shadow:0 0 26px rgba(45,212,191,.8);
+}
+.hero-radar .asset::after{
+  content:"SEU EMPREENDIMENTO";
+  position:absolute;left:50%;bottom:22px;transform:translateX(-50%);
+  white-space:nowrap;font-size:10px;font-weight:700;letter-spacing:.18em;
+  color:var(--teal-soft);padding:6px 12px;border-radius:99px;
+  border:1px solid rgba(125,227,216,.35);background:rgba(7,13,19,.6);
+}
+
+/* ---------- Conteúdo do hero ---------- */
+.hero-inner{max-width:720px}
+.hero-brand{
+  display:flex;align-items:baseline;gap:14px;margin-bottom:28px;
+  font-size:12px;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(238,247,246,.55);
+}
+.hero-brand strong{font-size:15px;font-weight:700;letter-spacing:.34em;color:#fff}
+.hero-brand span{
+  padding-left:14px;border-left:1px solid rgba(125,227,216,.4);color:var(--teal-soft);
+}
+
+/* Hierarquia combinada do H1:
+   L1 dominante · L2 transição teal · b fechamento em destaque */
+.hero-title{margin-bottom:22px;color:#fff}
+.hero-title .l1{
+  display:block;font-weight:700;line-height:1.02;letter-spacing:-.015em;
+  font-size:clamp(40px,5.2vw,72px);
+}
+.hero-title .l2{
+  display:block;margin-top:12px;font-weight:600;line-height:1.16;
+  font-size:clamp(25px,3.2vw,42px);color:var(--teal-soft);
+}
+.hero-title .l2 b{
+  font-weight:800;font-size:1.06em;
+  background:linear-gradient(92deg,#7de3d8,#2dd4bf 60%,#a7f3ec);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+
+.hero-sub{
+  max-width:56ch;margin-bottom:20px;
+  font-size:16.5px;line-height:1.75;color:rgba(238,247,246,.72);
+}
+.hero-statement{
+  max-width:56ch;margin-bottom:32px;padding:18px 24px;
+  border-left:2px solid var(--teal-bright);border-radius:0 14px 14px 0;
+  background:linear-gradient(90deg, rgba(45,212,191,.10), transparent 72%);
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(18px,2vw,22px);line-height:1.5;color:rgba(238,247,246,.9);
+}
+.hero-statement strong{color:#fff}
+.hero-statement em{color:var(--teal-bright);font-weight:600}
+
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+.hero .btn-text{color:rgba(238,247,246,.8);border-color:rgba(255,255,255,.28)}
+.hero .btn-text:hover{color:var(--teal-soft);border-color:var(--teal-bright)}
+
+/* rodapé da dobra */
+.hero-foot{
+  position:absolute;left:0;right:0;bottom:30px;z-index:2;
+  display:flex;justify-content:center;flex-wrap:wrap;gap:clamp(18px,4vw,52px);
+  font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;
+  color:rgba(238,247,246,.42);
+}
+.hero-foot span{display:flex;align-items:center;gap:10px}
+.hero-foot span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal-bright);opacity:.75}
+
+/* entrada suave em cascata */
+@keyframes riseIn{from{opacity:0;transform:translate3d(0,14px,0)}to{opacity:1;transform:none}}
+.hero-inner > *{animation:riseIn .8s var(--ease) both}
+.hero-inner > *:nth-child(1){animation-delay:.05s}
+.hero-inner > *:nth-child(2){animation-delay:.15s}
+.hero-inner > *:nth-child(3){animation-delay:.25s}
+.hero-inner > *:nth-child(4){animation-delay:.35s}
+.hero-inner > *:nth-child(5){animation-delay:.45s}
+
+@media (max-width:900px){
+  .hero{padding:40px 0 90px}
+  .hero-radar{right:-34%;width:120vw;opacity:.32}
+  .hero-foot{gap:16px 26px}
+}
+
+/* =========================================================
+   CHEGADA DO NEXUM · parallax narrativo
+========================================================= */
+.arrival{position:relative;height:300vh;background:var(--paper-warm)}
+.arrival-sticky{
+  position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;
+  display:grid;place-items:center;
+  padding:calc(var(--header-h) + 20px) 20px 40px;
+}
+.arrival-bg{
+  position:absolute;inset:0;z-index:0;opacity:0;will-change:opacity;
+  background:
+    radial-gradient(900px 500px at 80% 0%, rgba(45,212,191,.16), transparent 60%),
+    linear-gradient(165deg,#0a141b,#0d2231 55%,#0d4a52 130%);
+}
+
+/* indicadores */
+.arrival-data{position:relative;z-index:1;text-align:center;will-change:transform,opacity}
+.arrival-data .kick{
+  margin-bottom:30px;font-size:11px;font-weight:700;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--teal-deep);
+}
+.arrival-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1.5px solid var(--hairline-2);text-align:left;
+}
+.a-metric{padding:28px 26px 0}
+.a-metric + .a-metric{border-left:1px solid var(--hairline);padding-left:26px}
+.a-metric b{
+  display:block;margin-bottom:8px;color:var(--navy);
+  font-family:var(--serif);font-weight:700;line-height:1.1;
+  font-size:clamp(21px,2.6vw,32px);
+}
+.a-metric span{font-size:13px;line-height:1.6;color:var(--ink-2)}
+
+/* interface que chega */
+.arrival-ui{
+  position:absolute;left:50%;top:50%;z-index:2;
+  width:min(1040px,92vw);will-change:transform,opacity;
+}
+.arrival-ui .figure-frame{box-shadow:var(--shadow-deep)}
+.arrival-caption{
+  margin-top:20px;text-align:center;
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(16px,2vw,20px);color:rgba(238,247,246,.88);
+}
+.arrival-caption b{color:var(--teal-soft);font-style:normal}
+
+/* fallback sem JS / reduced-motion: tudo empilhado, nada escondido */
+.arrival:not(.is-armed){height:auto}
+.arrival:not(.is-armed) .arrival-sticky{position:static;height:auto;display:grid;gap:48px;padding:96px 20px}
+.arrival:not(.is-armed) .arrival-ui{position:static;width:min(1040px,92vw);margin:0 auto}
+.arrival:not(.is-armed) .arrival-bg{display:none}
+.arrival:not(.is-armed) .arrival-caption{color:var(--ink-2)}
+.arrival:not(.is-armed) .arrival-caption b{color:var(--teal-deep)}
+
+@media (max-width:760px){
+  .arrival{height:240vh}
+  .arrival-grid{grid-template-columns:1fr 1fr}
+  .a-metric{padding:20px 16px 0}
+  .a-metric + .a-metric{padding-left:16px}
+  .a-metric:nth-child(3){border-left:0}
+  .a-metric:nth-child(n+3){border-top:1px solid var(--hairline);margin-top:18px;padding-top:20px}
+}
+
+/* =========================================================
+   VITRINE DE FIGURA
+========================================================= */
+.figure{margin:0;position:relative}
+.media-tag{
+  position:absolute;top:-13px;left:26px;z-index:3;
+  background:var(--navy);color:#fff;
+  padding:7px 16px;border-radius:99px;
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  box-shadow:0 8px 20px -8px rgba(13,34,49,.5);
+}
+.media-tag.teal{background:var(--teal-deep)}
+.figure-frame{
+  border-radius:26px;overflow:hidden;background:#fff;
+  border:1px solid var(--hairline);box-shadow:var(--shadow-fig);
+  transition:transform .3s var(--ease);
+}
+.figure-frame:hover{transform:translateY(-4px)}
+.figure-frame img{width:100%}
+figcaption{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:15px;color:var(--ink-3);text-align:center}
+figcaption b{font-style:normal;font-weight:600;color:var(--teal);letter-spacing:.02em}
+
+/* =========================================================
+   SEÇÕES / CAPÍTULOS
+========================================================= */
+.section{padding:110px 0}
+.bg-warm{background:var(--paper-warm)}
+.bg-teal{background:var(--paper-teal)}
+
+.chapter-head{max-width:840px;margin-bottom:52px}
+.chapter-head.center{margin-inline:auto;text-align:center}
+.chapter-head .eyebrow{margin-bottom:18px}
+.chapter-head .lead{font-size:17px;color:var(--ink-2);max-width:68ch}
+.chapter-head.center .lead{margin-inline:auto}
+.chapter-head .lead + .lead{margin-top:12px}
+
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;border-top:1.5px solid var(--hairline-2)}
+.cols > div{padding:26px 30px 0 0}
+.cols > div + div{border-left:1px solid var(--hairline);padding-left:30px}
+.cols .k{display:block;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:9px}
+.cols .k i{font-family:var(--serif);font-style:italic;font-size:16px;letter-spacing:0;text-transform:none;color:var(--teal);margin-right:6px}
+.cols p{font-size:14.5px;line-height:1.65;color:var(--ink-2)}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{padding:36px;border:1px solid var(--hairline);border-radius:26px;background:#fff;box-shadow:var(--shadow-sm)}
+.panel-navy{
+  background:radial-gradient(420px 220px at 85% -10%,rgba(45,212,191,.18),transparent 60%),var(--navy);
+  border-color:var(--navy);color:#fff;
+  box-shadow:0 34px 70px -34px rgba(13,34,49,.55);
+}
+.panel h3{margin-bottom:6px}
+.panel .sub{font-size:13px;color:var(--ink-3);margin-bottom:20px}
+.panel-navy .sub{color:rgba(255,255,255,.55)}
+.hairline-list{list-style:none;margin:0;padding:0}
+.hairline-list li{
+  display:flex;justify-content:space-between;gap:16px;align-items:center;
+  padding:13px 0;border-top:1px solid var(--hairline);
+  font-size:14.5px;color:var(--ink-2);
+}
+.hairline-list li:first-child{border-top:0;padding-top:0}
+.panel-navy .hairline-list li{border-color:rgba(255,255,255,.12);color:rgba(255,255,255,.85)}
+.hairline-list li::after{content:"";width:7px;height:7px;border-radius:50%;flex:none;background:var(--hairline-2)}
+.panel-navy .hairline-list li::after{background:var(--teal-soft);box-shadow:0 0 0 3px rgba(125,227,216,.15)}
+
+.note{max-width:760px;margin:50px auto 0;text-align:center;font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.55;color:var(--ink-2)}
+.note b{font-style:normal;color:var(--teal-deep);font-weight:600}
+
+/* =========================================================
+   CARD DA REDE / RADAR (14.048)
+========================================================= */
+.ipd-card{
+  position:relative;overflow:hidden;
+  border-radius:32px;color:#fff;
+  padding:clamp(36px,5.5vw,68px);
+  background:
+    radial-gradient(900px 420px at 88% -20%,rgba(45,212,191,.24),transparent 62%),
+    radial-gradient(600px 300px at -10% 110%,rgba(59,130,246,.14),transparent 60%),
+    linear-gradient(120deg,#0a141b 0%,#0d2231 55%,#0d4a52 135%);
+  box-shadow:var(--shadow-deep);
+}
+.ipd-rings{position:absolute;inset:0;pointer-events:none;
+  -webkit-mask-image:radial-gradient(circle at 88% -10%,#000 25%,transparent 68%);
+          mask-image:radial-gradient(circle at 88% -10%,#000 25%,transparent 68%);
+}
+.ipd-rings i{position:absolute;top:0;right:0;transform:translate(38%,-38%);border:1px solid rgba(45,212,191,.16);border-radius:50%}
+.ipd-rings i:nth-child(1){width:480px;height:480px}
+.ipd-rings i:nth-child(2){width:760px;height:760px}
+.ipd-rings i:nth-child(3){width:1040px;height:1040px}
+.ipd-card-main{position:relative;z-index:1;display:flex;align-items:center;gap:clamp(24px,4vw,52px);flex-wrap:wrap}
+
+.ipd-count-block{flex:none;line-height:1}
+.ipd-count-eyebrow{
+  display:block;margin-bottom:12px;
+  font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--teal-soft);
+}
+.ipd-count .num{
+  display:inline-block;
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(76px,11vw,148px);
+  letter-spacing:-.03em;line-height:1;
+  background:linear-gradient(100deg,#ffffff 15%,#7de3d8 38%,#ffffff 52%,#5eead4 75%,#ffffff 90%);
+  background-size:220% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shimmer 5.5s linear infinite;
+  filter:drop-shadow(0 12px 34px rgba(45,212,191,.25));
+}
+@keyframes shimmer{to{background-position:-220% 0}}
+
+.ipd-count-label{flex:1;min-width:240px}
+.ipd-count-label strong{
+  display:block;font-family:var(--serif);font-weight:600;
+  font-size:clamp(20px,2.6vw,27px);line-height:1.3;margin-bottom:10px;
+}
+.ipd-count-label strong em{font-style:italic;color:var(--teal-soft)}
+.ipd-count-label span{font-size:15px;line-height:1.65;color:rgba(238,247,246,.66);max-width:52ch;display:block}
+
+.ipd-card-strip{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  margin-top:clamp(30px,4vw,48px);padding-top:clamp(20px,3vw,30px);
+  border-top:1px solid rgba(255,255,255,.14);
+}
+.ipd-card-strip > div{padding-left:22px;border-left:1px solid rgba(255,255,255,.12)}
+.ipd-card-strip > div:first-child{padding-left:0;border-left:0}
+.ipd-card-strip b{
+  display:block;font-family:var(--serif);font-weight:700;
+  font-size:clamp(24px,3.2vw,34px);line-height:1.1;margin-bottom:5px;
+}
+.ipd-card-strip span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:rgba(238,247,246,.5)}
+
+.ipd-tickets{
+  position:relative;z-index:1;
+  margin-top:clamp(26px,3.5vw,40px);
+  padding-top:clamp(20px,3vw,28px);
+  border-top:1px solid rgba(255,255,255,.14);
+}
+.ipd-tickets h4{
+  font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:rgba(238,247,246,.5);margin:0 0 16px;
+}
+.ticket-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ticket-grid > div{
+  padding:16px 18px;border:1px solid rgba(255,255,255,.12);border-radius:14px;
+  background:rgba(255,255,255,.045);
+  transition:border-color .2s,background .2s;
+}
+.ticket-grid > div:hover{border-color:rgba(125,227,216,.4);background:rgba(255,255,255,.07)}
+.ticket-grid span{
+  display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  font-weight:600;color:rgba(238,247,246,.5);margin-bottom:7px;
+}
+.ticket-grid b{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(19px,2.2vw,25px);color:#fff;line-height:1.1;
+}
+
+.ipd-def{
+  display:grid;grid-template-columns:1fr 1fr;margin-top:28px;
+  border:1px solid var(--hairline);border-radius:28px;overflow:hidden;background:#fff;
+  box-shadow:var(--shadow-md);
+}
+.ipd-def > div{padding:42px 44px}
+.ipd-def > div + div{border-left:1px solid var(--hairline);background:var(--paper-teal)}
+.ipd-def h3{font-size:27px;margin-bottom:8px}
+.ipd-def h3 small{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-deep);display:block;margin-bottom:10px}
+.ipd-def p{font-size:14.5px;color:var(--ink-2);line-height:1.7}
+
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags span{
+  padding:11px 20px;border:1.5px solid var(--hairline-2);border-radius:999px;
+  font-size:13px;font-weight:600;color:var(--ink-2);background:#fff;
+  transition:border-color .2s,color .2s,transform .2s;
+}
+.tags span:hover{border-color:var(--teal);color:var(--teal-deep);transform:translateY(-2px)}
+
+/* Barras de absorção */
+.absorb{margin-top:52px;padding:34px 38px;border:1px solid var(--hairline);border-radius:24px;background:#fff;box-shadow:var(--shadow-sm)}
+.absorb h3{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:22px}
+.bar-row{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;margin-bottom:16px}
+.bar-row:last-of-type{margin-bottom:0}
+.bar-row .lab{font-size:13.5px;color:var(--ink-2)}
+.bar-row .lab b{color:var(--ink)}
+.bar-track{grid-column:1/-1;height:6px;border-radius:99px;background:var(--paper-warm);border:1px solid var(--hairline);overflow:hidden}
+.bar-track i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--teal),#0b6f92);transition:width 1.4s var(--ease)}
+.bar-row .val{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--teal-deep)}
+.absorb .foot{margin-top:18px;font-size:12.5px;color:var(--ink-3)}
+
+/* Cenários */
+.scen{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:56px}
+.scen article{
+  padding:34px 36px;border:1px solid var(--hairline);border-radius:26px;background:#fff;
+  display:flex;gap:22px;align-items:flex-start;box-shadow:var(--shadow-sm);
+}
+.scen .letter{font-family:var(--serif);font-style:italic;font-weight:700;font-size:36px;color:var(--teal);line-height:1;flex:none;width:44px}
+.scen h3{font-size:21px;margin-bottom:8px}
+.scen p{font-size:14.5px;line-height:1.65;color:var(--ink-2)}
+
+/* =========================================================
+   CTA FINAL / CONTATO / FOOTER
+========================================================= */
+.final-cta{
+  position:relative;overflow:hidden;color:#fff;
+  padding:clamp(80px,10vw,140px) 0;
+  background:
+    radial-gradient(900px 460px at 88% -20%,rgba(45,212,191,.22),transparent 62%),
+    linear-gradient(120deg,#070d13 0%,#0b2334 55%,#0d4a52 130%);
+}
+.final-cta h2{color:#fff;max-width:20ch}
+.final-cta .lead{max-width:60ch;margin-top:18px;color:rgba(238,247,246,.72);font-size:17px}
+.final-cta .hero-statement{margin:28px 0 34px}
+.final-cta .eyebrow{color:var(--teal-soft)}
+.final-cta .eyebrow::after{background:rgba(125,227,216,.35)}
+
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;margin-top:56px}
+.contact-card{padding:36px;border-radius:26px;background:#fff;color:var(--ink);box-shadow:var(--shadow-md)}
+.contact-card h3{margin-bottom:8px}
+.contact-card p{font-size:14.5px;color:var(--ink-2)}
+.contact-card .row{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+.contact-card .mail{display:block;margin-top:18px;font-weight:600;color:var(--teal-deep)}
+.contact-mini{padding:36px;border-radius:26px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05)}
+.contact-mini h4{margin:0 0 14px;font-family:var(--serif);font-style:italic;font-weight:600;font-size:19px}
+.contact-mini ul{list-style:none;margin:0;padding:0}
+.contact-mini li{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 0;border-top:1px solid rgba(255,255,255,.12);
+  font-size:14.5px;color:rgba(238,247,246,.85);
+}
+.contact-mini li:first-child{border-top:0;padding-top:0}
+.contact-mini li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal-soft);flex:none}
+
+.site-footer{background:#070d13;color:rgba(255,255,255,.55);padding:44px 0}
+.footer-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.footer-brand{display:flex;align-items:center;gap:14px}
+.footer-brand img{width:74px;mix-blend-mode:screen}
+.footer-brand span{font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+.footer-nav{display:flex;flex-wrap:wrap;gap:20px;font-size:13px}
+.footer-nav a:hover{color:var(--teal-soft)}
+.footer-legal{margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:rgba(255,255,255,.35)}
+
+/* =========================================================
+   REVEAL on scroll
+========================================================= */
+[data-reveal]{opacity:0;transform:translate3d(0,22px,0);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+[data-reveal].is-visible{opacity:1;transform:none}
+[data-reveal][data-delay="1"]{transition-delay:.1s}
+[data-reveal][data-delay="2"]{transition-delay:.2s}
+[data-reveal][data-delay="3"]{transition-delay:.3s}
+
+/* =========================================================
+   RESPONSIVO / ACESSIBILIDADE
+========================================================= */
+@media (max-width:960px){
+  .nav{display:none}
+  .header-cta{display:none}
+  .menu-btn{display:inline-flex}
+  .duo,.scen,.contact-grid{grid-template-columns:1fr}
+  .ticket-grid{grid-template-columns:repeat(2,1fr)}
+  .ipd-def{grid-template-columns:1fr}
+  .ipd-def > div + div{border-left:0;border-top:1px solid var(--hairline)}
+  .cols{grid-template-columns:1fr}
+  .cols > div{padding:22px 0 0}
+  .cols > div + div{border-left:0;border-top:1px solid var(--hairline);padding-left:0;margin-top:22px}
+  .section{padding:84px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  html{scroll-behavior:auto}
+  [data-reveal]{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="topo">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="NEXUM — início">
+      <!-- mantenha o caminho da SUA logo -->
+      <img src="img/logo-nexum.svg" alt="NEXUM">
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#plataforma">Produto</a>
+      <a href="#radar">Radar</a>
+      <a href="#metodologia">Metodologia</a>
+      <a href="#movimento">Movimento</a>
+    </nav>
+
+    <a class="header-cta" href="#contato">Falar com o NEXUM</a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Drawer mobile -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="drawer" aria-label="Menu">
+  <div class="drawer-head">
+    <img class="drawer-logo" src="img/logo-nexum.svg" alt="NEXUM">
+    <button class="drawer-close" id="drawerClose" aria-label="Fechar menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="#plataforma">Produto</a>
+    <a href="#radar">Radar</a>
+    <a href="#metodologia">Metodologia</a>
+    <a href="#movimento">Movimento</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="drawer-foot">
+    <a class="drawer-cta" href="#contato">Falar com o NEXUM</a>
+    <p class="drawer-phone">comercial@nexum.com.br</p>
+  </div>
+</aside>
+
+<!-- ================= HERO v2 ================= -->
+<section class="hero" id="inicio">
+
+  <!-- Radar territorial (decorativo) -->
+  <div class="hero-radar" data-drift="0.05" aria-hidden="true">
+    <span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span>
+    <span class="sweep"></span>
+    <span class="blip" style="top:22%;left:28%"></span>
+    <span class="blip" style="top:58%;left:16%;animation-delay:1.2s"></span>
+    <span class="blip" style="top:34%;left:72%;animation-delay:2.1s"></span>
+    <span class="blip" style="bottom:20%;left:58%;animation-delay:.7s"></span>
+    <span class="blip" style="bottom:30%;left:82%;animation-delay:2.8s"></span>
+    <span class="tag" style="top:16%;left:38%">Oferta</span>
+    <span class="tag" style="top:52%;left:8%">Demanda</span>
+    <span class="tag" style="top:26%;left:80%">Preço</span>
+    <span class="tag" style="bottom:14%;right:14%">Velocidade</span>
+    <span class="asset"></span>
+  </div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <p class="hero-brand"><strong>NEXUM</strong><span>Radar Imobiliário</span></p>
+
+      <h1 class="hero-title">
+        <span class="l1">O mercado em um só lugar.</span>
+        <span class="l2">Mais clareza. <b>Melhores decisões.</b></span>
+      </h1>
+
+      <p class="hero-sub">
+        O NEXUM conecta empreendimentos, estoque, vendas, preços, demanda, oferta e
+        movimentação dos corretores para colocar cada empreendimento dentro do
+        cenário real do mercado.
+      </p>
+
+      <p class="hero-statement">
+        Seus dados mostram o que aconteceu.<br>
+        O <strong>NEXUM</strong> mostra <em>o contexto</em>.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-teal" href="#contato">Conhecer o NEXUM
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-text" href="#plataforma">Ver o radar em ação</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-foot" aria-hidden="true">
+    <span>Carteira</span><span>Mercado</span><span>Entorno</span><span>Movimento</span>
+  </div>
+</section>
+
+<!-- ===== CHEGADA DO NEXUM · parallax narrativo ===== -->
+<section class="arrival" id="plataforma" aria-label="A plataforma NEXUM">
+  <div class="arrival-sticky">
+
+    <div class="arrival-bg" aria-hidden="true"></div>
+
+    <!-- CAMADA 2 · indicadores (ficam para trás) -->
+    <div class="arrival-data">
+      <p class="kick">A base do radar</p>
+      <div class="arrival-grid">
+        <div class="a-metric"><b>14.048</b><span>registros validados na rede de corretores alimentam o radar</span></div>
+        <div class="a-metric"><b>IPD · IPO</b><span>pressão de demanda e oferta organizada no território</span></div>
+        <div class="a-metric"><b>IVV · VSO</b><span>velocidade de vendas e absorção, com contexto de mercado</span></div>
+        <div class="a-metric"><b>Índice NEXUM</b><span>INCC, CUB, IPCA, IGP-M, FipeZap e a sua carteira</span></div>
+      </div>
+    </div>
+
+    <!-- CAMADA 3 · a interface chega -->
+    <div class="arrival-ui">
+      <figure class="figure">
+        <span class="media-tag teal">A home do NEXUM</span>
+        <div class="figure-frame">
+          <!-- troque pelo print real da home do seu projeto -->
+          <img src="img/home-nexum.png" alt="Tela inicial do NEXUM: empreendimentos, mapa, analytics e rede em uma só visão" loading="lazy">
+        </div>
+      </figure>
+      <p class="arrival-caption">Empreendimentos, mapa, estoque, vendas e preço — <b>o mercado inteiro em uma só tela</b>.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTEXTO ================= -->
+<section class="section">
+  <div class="container">
+    <div class="chapter-head" data-reveal>
+      <p class="eyebrow"><i>O problema</i> CONTEXTO</p>
+      <h2>O que acontece fora da sua carteira também decide o que acontece dentro dela.</h2>
+      <p class="lead" style="margin-top:18px">
+        Todo relatório da incorporadora olha para dentro: estoque, vendas, preço.
+        Mas a decisão de preço, ritmo e investimento acontece no território — onde a
+        concorrência lança, o corretor movimenta e o comprador compara.
+      </p>
+    </div>
+
+    <div class="cols" data-reveal data-delay="1">
+      <div>
+        <span class="k"><i>01</i> Carteira</span>
+        <p>O que você já conhece: os seus empreendimentos, o seu estoque, as suas vendas e os seus preços, unidade a unidade.</p>
+      </div>
+      <div>
+        <span class="k"><i>02</i> Mercado</span>
+        <p>A oferta concorrente organizada no território: lançamentos, estoque ativo, preços praticados e velocidade de absorção ao redor.</p>
+      </div>
+      <div>
+        <span class="k"><i>03</i> Entorno</span>
+        <p>A demanda em movimento: onde os corretores estão atuando, onde a pressão de demanda cresce e onde a competição se intensifica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RADAR · 14.048 + ÍNDICES ================= -->
+<section class="section bg-warm" id="radar">
+  <div class="container">
+    <div class="chapter-head" data-reveal>
+      <p class="eyebrow"><i>Radar</i> A BASE DE DADOS</p>
+      <h2>Uma leitura construída sobre o mercado real.</h2>
+    </div>
+
+    <div class="ipd-card" data-reveal>
+      <div class="ipd-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+
+      <div class="ipd-card-main">
+        <div class="ipd-count-block">
+          <span class="ipd-count-eyebrow">Rede NEXUM</span>
+          <div class="ipd-count"><span class="num" data-count="14048">14.048</span></div>
+        </div>
+        <div class="ipd-count-label">
+          <strong>registros validados na rede de corretores <em>alimentam o radar</em></strong>
+          <span>Nenhum dado estimado no escuro: cada sinal de demanda, visita, proposta e
+          reserva é capturado onde a venda realmente acontece — na planta, com o corretor.</span>
+        </div>
+      </div>
+
+      <div class="ipd-card-strip">
+        <div><b>IPD</b><span>Pressão de demanda</span></div>
+        <div><b>IPO</b><span>Pressão de oferta</span></div>
+        <div><b>IVV · VSO</b><span>Velocidade e absorção</span></div>
+      </div>
+
+      <div class="ipd-tickets">
+        <h4>Escala do monitoramento</h4>
+        <div class="ticket-grid">
+          <div><span>Empreendimentos monitorados</span><b>+680</b></div>
+          <div><span>Corretores ativos na rede</span><b>2.300</b></div>
+          <div><span>Regiões analisadas</span><b>34</b></div>
+          <div><span>Atualização</span><b>Semanal</b></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Definições -->
+    <div class="ipd-def" id="metodologia" data-reveal>
+      <div>
+        <h3><small>Metodologia</small> IPD · Índice de Pressão de Demanda</h3>
+        <p>Mede a intensidade e a concentração da procura por região e produto, a partir do
+        comportamento real da rede de corretores: procuras, visitas, propostas e reservas.
+        É o termômetro de onde o comprador está — antes de ele aparecer no seu funil.</p>
+      </div>
+      <div>
+        <h3><small>Metodologia</small> IPO · Índice de Pressão de Oferta</h3>
+        <p>Organiza a oferta concorrente no território: estoque ativo, lançamentos, ticket
+        médio e velocidade de absorção dos empreendimentos que competem diretamente com
+        a sua carteira. É o mapa do campo adversário.</p>
+      </div>
+    </div>
+
+    <p class="note" data-reveal>
+      Demanda de um lado, oferta do outro. <b>O NEXUM organiza os dois no mesmo território.</b>
+    </p>
+  </div>
+</section>
+
+<!-- ================= VELOCIDADE · IVV/VSO + CENÁRIOS ================= -->
+<section class="section" id="velocidade">
+  <div class="container">
+    <div class="chapter-head" data-reveal>
+      <p class="eyebrow"><i>Velocidade</i> IVV · VSO</p>
+      <h2>Absorção não é um número isolado. É um número com contexto.</h2>
+      <p class="lead" style="margin-top:18px">
+        A VSO da sua carteira só significa algo quando comparada à velocidade do mercado
+        ao redor. O NEXUM coloca as duas na mesma régua — e projeta cenários.
+      </p>
+    </div>
+
+    <div class="absorb" data-reveal>
+      <h3>Velocidade de vendas · leitura comparada</h3>
+      <div class="bar-row">
+        <span class="lab"><b>Sua carteira</b> · VSO média trimestral</span>
+        <span class="val" data-vso="4.8">4,8%</span>
+        <span class="bar-track"><i data-w="62%"></i></span>
+      </div>
+      <div class="bar-row">
+        <span class="lab"><b>Mercado direto</b> · concorrência no mesmo raio</span>
+        <span class="val" data-vso="3.6">3,6%</span>
+        <span class="bar-track"><i data-w="45%"></i></span>
+      </div>
+      <div class="bar-row">
+        <span class="lab"><b>Região</b> · leitura consolidada do território</span>
+        <span class="val" data-vso="4.1">4,1%</span>
+        <span class="bar-track"><i data-w="52%"></i></span>
+      </div>
+      <p class="foot">Valores ilustrativos de demonstração · leitura semanal com contexto de mercado.</p>
+    </div>
+
+    <div class="scen" style="margin-top:52px">
+      <article data-reveal data-delay="1">
+        <span class="letter">A</span>
+        <div>
+          <h3>Cenário de aceleração</h3>
+          <p>Quando a demanda do entorno cresce mais rápido que a oferta, o sistema sinaliza
+          janela de absorção: momento de ajustar tabela, ritmo de vendas e prazo de entrega
+          com confiança — não com intuition.</p>
+        </div>
+      </article>
+      <article data-reveal data-delay="2">
+        <span class="letter">B</span>
+        <div>
+          <h3>Cenário de pressão</h3>
+          <p>Quando a oferta concorrente aperta e a demanda arrefece, o radar mostra antes:
+          quais produtos ficam expostos, onde revisar incentivos e onde segurar investimento.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="note" data-reveal>
+      <b>VSO sem contexto é passado.</b> VSO com contexto é decisão.
+    </p>
+  </div>
+</section>
+
+<!-- ================= ÍNDICE NEXUM ================= -->
+<section class="section bg-teal">
+  <div class="container">
+    <div class="chapter-head center" data-reveal>
+      <p class="eyebrow"><i>Índice</i> PREÇO E CUSTO</p>
+      <h2>O Índice NEXUM conecta o custo da obra ao preço de venda.</h2>
+      <p class="lead" style="margin-top:18px">
+        INCC, CUB, IPCA, IGP-M e FipeZap — cruzados com a performance real da sua carteira
+        e do mercado ao redor.
+      </p>
+    </div>
+
+    <div class="duo">
+      <div class="panel panel-navy" data-reveal data-delay="1">
+        <h3 style="color:#fff">Painel de índices</h3>
+        <p class="sub">Atualização mensal · leitura executiva</p>
+        <ul class="hairline-list">
+          <li>INCC · custo da construção</li>
+          <li>CUB · custo unitário básico</li>
+          <li>IPCA · inflação broad</li>
+          <li>IGP-M · aluguéis e insumos</li>
+          <li>FipeZap · preço de venda residencial</li>
+          <li>Carteira · seus números reais</li>
+        </ul>
+      </div>
+      <div class="panel" data-reveal data-delay="2">
+        <h3>Por que isso importa</h3>
+        <p class="sub">Do custo ao preço, sem trocar de relatório</p>
+        <p style="font-size:14.5px;color:var(--ink-2)">
+          Quando o INCC acelera e o FipeZap da sua região desacelera, a margem do seu
+          empreendimento está sendo decidida fora da sua planilha. O Índice NEXUM cruza
+          essas curvas e mostra onde o preço da sua tabela precisa ser defendido — e onde
+          pode avançar.
+        </p>
+        <div class="tags" style="margin-top:24px">
+          <span>Margem protegida</span>
+          <span>Tabela defensável</span>
+          <span>Lançamento no momento certo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MOVIMENTO / ENTORNO ================= -->
+<section class="section" id="movimento">
+  <div class="container">
+    <div class="chapter-head" data-reveal>
+      <p class="eyebrow"><i>Movimento</i> FORÇA DE VENDAS</p>
+      <h2>Onde a rede está atuando agora — e o que isso sinaliza.</h2>
+      <p class="lead" style="margin-top:18px">
+        A movimentação dos corretores é o sinal mais adiantado do mercado. Antes do
+        lançamento concorrente aparecer no seu relatório, ele já apareceu no radar.
+      </p>
+    </div>
+
+    <div class="duo">
+      <figure class="figure" data-reveal>
+        <span class="media-tag">Território</span>
+        <div class="figure-frame">
+          <!-- troque pela imagem real de mapa/entorno do seu projeto -->
+          <img src="img/entorno-nexum.png" alt="Mapa do entorno com concorrência, demanda e movimento da rede de corretores" loading="lazy">
+        </div>
+        <figcaption><b>Entorno</b> — concorrência, demanda e movimento em um raio</figcaption>
+      </figure>
+
+      <div class="panel" data-reveal data-delay="1">
+        <h3>Sinais que o radar capta</h3>
+        <p class="sub">O mercado antes de virar notícia</p>
+        <ul class="hairline-list">
+          <li>Corretores redirecionando effort para outro empreendimento</li>
+          <li>Aquecimento de procuras em uma faixa de preço específica</li>
+          <li>Concentração de propostas em um concorrente direto</li>
+          <li>Envelhecimento de estoque ativo no seu raio</li>
+        </ul>
+        <div class="tags" style="margin-top:24px">
+          <span>Detecção precoce</span>
+          <span>Alertas por território</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final-cta" id="contato">
+  <div class="container">
+    <p class="eyebrow" data-reveal><i>NEXUM</i> PRÓXIMO PASSO</p>
+    <h2 data-reveal data-delay="1">O mercado está se movimentando. Veja para onde — antes da concorrência.</h2>
+    <p class="lead" data-reveal data-delay="2">
+      Agende uma apresentação executiva com a sua carteira inserida no radar e descubra
+      o que está acontecendo ao redor dos seus empreendimentos agora.
+    </p>
+    <p class="hero-statement" data-reveal data-delay="2">
+      Seus dados mostram o que aconteceu.<br>
+      O <strong>NEXUM</strong> mostra <em>o contexto</em>.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-card" data-reveal>
+        <h3>Falar com o NEXUM</h3>
+        <p>Apresentação executiva de 40 minutos, com leitura do seu território em tempo real.</p>
+        <div class="row">
+          <a class="btn btn-navy" href="mailto:comercial@nexum.com.br">Agendar apresentação</a>
+          <a class="btn btn-text" href="#inicio">Voltar ao início</a>
+        </div>
+        <a class="mail" href="mailto:comercial@nexum.com.br">comercial@nexum.com.br</a>
+      </div>
+      <div class="contact-mini" data-reveal data-delay="1">
+        <h4>O que você recebe na apresentação</h4>
+        <ul>
+          <li>Sua carteira posicionada no mapa do mercado</li>
+          <li>IPD e IPO do seu raio de competição</li>
+          <li>VSO comparada à concorrência direta</li>
+          <li>Cenários de absorção para os próximos 2 trimestres</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="img/logo-nexum.svg" alt="NEXUM">
+        <span>Radar Imobiliário</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#plataforma">Produto</a>
+        <a href="#radar">Radar</a>
+        <a href="#metodologia">Metodologia</a>
+        <a href="#movimento">Movimento</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <p class="footer-legal">© <span id="year">2025</span> NEXUM · Inteligência de mercado imobiliário · Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- ================= JS ================= -->
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Header shadow ---------- */
+  var header = document.querySelector('.site-header');
+  function headerState(){ header.classList.toggle('scrolled', window.scrollY > 8); }
+
+  /* ---------- Drawer ---------- */
+  var drawer = document.getElementById('drawer'),
+      backdrop = document.getElementById('drawerBackdrop'),
+      menuBtn = document.getElementById('menuBtn'),
+      drawerClose = document.getElementById('drawerClose');
+  function openDrawer(){ drawer.classList.add('open'); backdrop.classList.add('open'); document.body.classList.add('no-scroll'); menuBtn.setAttribute('aria-expanded','true'); }
+  function closeDrawer(){ drawer.classList.remove('open'); backdrop.classList.remove('open'); document.body.classList.remove('no-scroll'); menuBtn.setAttribute('aria-expanded','false'); }
+  menuBtn.addEventListener('click', openDrawer);
+  drawerClose.addEventListener('click', closeDrawer);
+  backdrop.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeDrawer); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeDrawer(); });
+
+  /* ---------- Active nav highlight ---------- */
+  var navLinks = document.querySelectorAll('.nav a, .drawer-nav a');
+  var sections = ['plataforma','radar','metodologia','movimento','contato']
+    .map(function(id){ return document.getElementById(id); }).filter(Boolean);
+  if('IntersectionObserver' in window && sections.length){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var id = e.target.id;
+          navLinks.forEach(function(a){
+            a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin:'-40% 0px -55% 0px' });
+    sections.forEach(function(s){ spy.observe(s); });
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  if('IntersectionObserver' in window && !reduce){
+    var ro = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('is-visible'); ro.unobserve(e.target); }
+      });
+    }, { threshold:.15 });
+    revealEls.forEach(function(el){ ro.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('is-visible'); });
+  }
+
+  /* ---------- Barras de absorção (animam ao entrar) ---------- */
+  var absorb = document.querySelector('.absorb');
+  if(absorb && 'IntersectionObserver' in window && !reduce){
+    var ao = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          absorb.querySelectorAll('.bar-track i').forEach(function(i){ i.style.width = i.dataset.w; });
+          ao.disconnect();
+        }
+      });
+    }, { threshold:.3 });
+    ao.observe(absorb);
+  } else {
+    document.querySelectorAll('.bar-track i').forEach(function(i){ i.style.width = i.dataset.w; });
+  }
+
+  /* ---------- Contador 14.048 ---------- */
+  var countEl = document.querySelector('[data-count]');
+  if(countEl && !reduce && 'IntersectionObserver' in window){
+    var target = parseInt(countEl.dataset.count, 10), started = false;
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting && !started){
+          started = true; co.disconnect();
+          var t0 = null, dur = 1600;
+          function step(ts){
+            if(!t0) t0 = ts;
+            var p = Math.min(1, (ts - t0) / dur);
+            var eased = 1 - Math.pow(1 - p, 3);
+            countEl.textContent = Math.round(target * eased).toLocaleString('pt-BR');
+            if(p < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        }
+      });
+    }, { threshold:.4 });
+    co.observe(countEl);
+  }
+
+  /* ---------- PARALLAX NARRATIVO: chegada do NEXUM ---------- */
+  var section = document.querySelector('.arrival');
+  if(section && !reduce){
+    section.classList.add('is-armed');
+    var bg  = section.querySelector('.arrival-bg');
+    var data= section.querySelector('.arrival-data');
+    var ui  = section.querySelector('.arrival-ui');
+    var cap = section.querySelector('.arrival-caption');
+
+    var target = 0, current = -1, raf = null, active = false;
+    function clamp(v){ return Math.min(1, Math.max(0, v)); }
+    function rise(){ return window.innerWidth < 760 ? 46 : 64; } /* distância de chegada (vh) */
+
+    function render(){
+      current += (target - current) * 0.14;
+      if(Math.abs(target - current) < 0.001) current = target;
+      var p = current, inv = 1 - p;
+
+      bg.style.opacity   = (p * 0.96).toFixed(3);
+      data.style.transform = 'translate3d(0,' + (-8 * p).toFixed(2) + 'vh,0) scale(' + (1 - 0.08 * p).toFixed(4) + ')';
+      data.style.opacity   = Math.max(0, 1 - p * 1.15).toFixed(3);
+
+      ui.style.transform = 'translate(-50%, calc(-50% + ' + (rise() * inv).toFixed(2) + 'vh)) scale(' + (0.94 + 0.06 * p).toFixed(4) + ')';
+      ui.style.opacity   = Math.min(1, p * 1.6).toFixed(3);
+      cap.style.opacity  = clamp((p - 0.55) / 0.35).toFixed(3);
+
+      if(active || Math.abs(target - current) > 0.001){ raf = requestAnimationFrame(render); }
+      else { raf = null; }
+    }
+    function measure(){
+      var rect = section.getBoundingClientRect();
+      target = clamp(-rect.top / (section.offsetHeight - window.innerHeight));
+    }
+    function onScroll(){ measure(); if(!raf) raf = requestAnimationFrame(render); }
+
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        active = e.isIntersecting;
+        if(active){ onScroll(); }
+        else if(raf){ cancelAnimationFrame(raf); raf = null; }
+      });
+    }, { rootMargin:'10% 0px' }).observe(section);
+
+    window.addEventListener('scroll', onScroll, { passive:true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+
+  /* ---------- Parallax leve para elementos decorativos ---------- */
+  var driftEls = document.querySelectorAll('[data-drift]');
+  if(driftEls.length && !reduce){
+    var dRaf = null;
+    function driftUpdate(){
+      var vh = window.innerHeight;
+      driftEls.forEach(function(el){
+        var sp = parseFloat(el.dataset.drift) || 0.08;
+        var r  = el.getBoundingClientRect();
+        var mid = r.top + r.height/2 - vh/2;
+        var base = el.classList.contains('hero-radar') ? 'translateY(-50%) ' : '';
+        el.style.transform = base + 'translate3d(0,' + (mid * -sp).toFixed(1) + 'px,0)';
+      });
+      dRaf = null;
+    }
+    window.addEventListener('scroll', function(){ if(!dRaf) dRaf = requestAnimationFrame(driftUpdate); }, { passive:true });
+    driftUpdate();
+  }
+
+  /* ---------- Misc ---------- */
+  window.addEventListener('scroll', headerState, { passive:true });
+  headerState();
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "construindo-parceria-cg",
+      "name": "Construindo Parceria CG",
+      "active": true,
+      "baselineHash": "4665749183e3f1545bfe38b1ddfebd8b0e3d58def572e2fdbf698d21265da85e",
+      "baselineTxtHash": "24eb8d14d06f12f121640e2d61db0f11583f9e45f480053bbd0aa7fe17b6e6a2",
+      "checkpoint": {
+        "sourceId": "construindo-parceria-cg",
+        "occurredAt": "2026-05-03T12:26",
+        "date": "2026-05-03",
+        "time": "12:26",
+        "sender": "+55 83 8862-5551",
+        "senderCanonical": "558388625551",
+        "senderKind": "telefone",
+        "contentHash": "9ad90289ca8bfa7b72e533e953851275a8e6b23eb5c52eff0cb2e5e8ecdec5f7",
+        "occurrence": 1,
+        "fingerprint": "2d2859422df8fa4ca9751bb93fca726826c9d12b4aa0752f755e757d1cd9ed05",
+        "lineHint": 154345
+      },
+      "createdAt": "2026-08-29T12:00:22.743Z",
+      "updatedAt": "2026-08-29T12:00:22.747Z"
+    }
+  ],
+  "batches": [],
+  "imports": [],
+  "reviewDecisions": [],
+  "overrides": {},
+  "createdAt": "2026-08-29T12:00:22.747Z",
+  "updatedAt": "2026-08-29T12:00:22.747Z"
+}
