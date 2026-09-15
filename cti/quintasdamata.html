@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabela de Preços · Quintas da Mata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --forest:     #2d5a1b;
+  --forest-d:   #1a3a0f;
+  --forest-l:   #4a8a2e;
+  --forest-xl:  #eef5e8;
+  --gold:       #8a6a1a;
+  --gold-l:     #c8a84b;
+  --gold-xl:    #fdf6e3;
+  --ink:        #1a1f16;
+  --ink2:       #3d4a35;
+  --ink3:       #7a8a72;
+  --paper:      #f8f6f1;
+  --paper2:     #ede9df;
+  --white:      #ffffff;
+  --alert:      #b83232;
+  --border:     rgba(45,90,27,.10);
+  --radius:     14px;
+  --shadow-sm:  0 1px 4px rgba(26,58,15,.06);
+  --shadow:     0 4px 20px rgba(26,58,15,.10);
+  --shadow-lg:  0 12px 48px rgba(26,58,15,.15);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+.header {
+  background: var(--forest-d);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 24px rgba(0,0,0,.18);
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: 76px;
+  gap: 1rem;
+}
+
+.header-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo-quintas {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: .9;
+}
+
+.logo-sep {
+  width: 1px;
+  height: 32px;
+  background: rgba(255,255,255,.18);
+  flex-shrink: 0;
+}
+
+.logo-lancar {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: .85;
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+}
+
+.header-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: .02em;
+  line-height: 1.2;
+}
+
+.header-sub {
+  font-size: 11px;
+  color: var(--gold-l);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  flex-shrink: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: .55rem 1.1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .2s ease;
+  letter-spacing: .01em;
+  white-space: nowrap;
+}
+
+.btn-back {
+  background: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.85);
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.btn-back:hover {
+  background: rgba(255,255,255,.18);
+  color: #fff;
+  transform: translateX(-2px);
+}
+
+.btn-pdf {
+  background: var(--gold-l);
+  color: var(--forest-d);
+  border: 1px solid transparent;
+  box-shadow: 0 2px 10px rgba(200,168,75,.3);
+}
+
+.btn-pdf:hover {
+  background: #d4b040;
+  box-shadow: 0 4px 18px rgba(200,168,75,.45);
+  transform: translateY(-1px);
+}
+
+.btn svg {
+  flex-shrink: 0;
+}
+
+/* ── HERO BANNER ── */
+.hero-banner {
+  background: linear-gradient(135deg, var(--forest-d) 0%, var(--forest) 55%, #3a7a22 100%);
+  padding: 2rem 1.5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(200,168,75,.06);
+  pointer-events: none;
+}
+
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 10%;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(200,168,75,.04);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-left h1 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.hero-left h1 em {
+  font-style: italic;
+  color: var(--gold-l);
+}
+
+.hero-left p {
+  font-size: 13px;
+  color: rgba(255,255,255,.55);
+  margin-top: .4rem;
+  letter-spacing: .04em;
+}
+
+.hero-kpis {
+  display: flex;
+  gap: .8rem;
+  flex-wrap: wrap;
+}
+
+.kpi {
+  background: rgba(255,255,255,.09);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px;
+  padding: .75rem 1.1rem;
+  backdrop-filter: blur(4px);
+  text-align: center;
+  min-width: 100px;
+}
+
+.kpi-val {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.kpi-lbl {
+  font-size: 10px;
+  color: rgba(255,255,255,.5);
+  margin-top: 4px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+/* ── MAIN CONTAINER ── */
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* ── TABLE CARD ── */
+.table-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.table-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.4rem .85rem;
+  border-bottom: 1px solid var(--paper2);
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+.table-card-title {
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--forest-d);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-card-title::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--forest);
+  flex-shrink: 0;
+}
+
+.table-card-meta {
+  font-size: 12px;
+  color: var(--ink3);
+  background: var(--paper);
+  border-radius: 20px;
+  padding: 3px 10px;
+  border: 1px solid var(--paper2);
+}
+
+.scroll-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ── PRICE TABLE ── */
+.tp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  min-width: 880px;
+}
+
+.tp-table thead {
+  position: sticky;
+  top: 68px; /* below header */
+  z-index: 20;
+}
+
+.tp-table thead tr.tp-th-top th {
+  background: var(--forest-d);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: .6rem .75rem;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,.08);
+  white-space: nowrap;
+}
+
+.tp-table thead tr.tp-th-sub th {
+  background: var(--forest);
+  color: rgba(255,255,255,.85);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: .45rem .65rem;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,.07);
+  white-space: nowrap;
+}
+
+.tp-table th.sticky-col  { position: sticky; left: 0;    z-index: 6; }
+.tp-table td.sticky-col  { position: sticky; left: 0;    z-index: 4; }
+.tp-table th.sticky-col2 { position: sticky; left: 54px; z-index: 6; }
+.tp-table td.sticky-col2 { position: sticky; left: 54px; z-index: 4; }
+
+/* Quadra separator rows */
+.tp-qd-row td {
+  background: linear-gradient(to right, var(--forest-xl), var(--paper));
+  color: var(--forest-d);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  border-top: 2px solid var(--forest-l);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Data rows */
+.tp-table tbody tr.tp-data-row {
+  border-bottom: 1px solid var(--paper2);
+  transition: background .12s;
+}
+
+.tp-table tbody tr.tp-data-row:hover td {
+  background: var(--forest-xl) !important;
+}
+
+.tp-table tbody td {
+  padding: .6rem .75rem;
+  color: var(--ink);
+  text-align: right;
+  white-space: nowrap;
+  background: #fff;
+}
+
+.tp-table tbody td.tp-td-center { text-align: center; }
+
+/* Sticky col bg */
+.tp-table tbody tr.tp-data-row td.sticky-col  { background: var(--paper); }
+.tp-table tbody tr.tp-data-row td.sticky-col2 { background: #fff; }
+.tp-table tbody tr.tp-data-row:hover td.sticky-col,
+.tp-table tbody tr.tp-data-row:hover td.sticky-col2 { background: var(--forest-xl) !important; }
+
+/* Badges */
+.tp-badge-qd {
+  display: inline-block;
+  background: var(--forest-d);
+  color: #fff;
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+  letter-spacing: .04em;
+}
+
+.tp-lote-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  background: var(--forest-xl);
+  border: 1.5px solid var(--forest-l);
+  color: var(--forest-d);
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 1px 6px;
+}
+
+.tp-val    { font-weight: 700; color: var(--forest-d); }
+.tp-entrada { font-weight: 700; color: var(--gold); }
+.tp-parcela { color: var(--ink2); }
+.tp-inter  { font-size: 10px; color: var(--gold); font-weight: 600; }
+
+/* ── OBSERVATIONS ── */
+.obs-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.obs-header {
+  background: var(--forest-xl);
+  padding: .85rem 1.4rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--forest-d);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.obs-header svg {
+  flex-shrink: 0;
+  color: var(--forest);
+}
+
+.obs-list {
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  counter-reset: obs;
+  list-style: none;
+}
+
+.obs-list li {
+  counter-increment: obs;
+  font-size: 12.5px;
+  color: var(--ink2);
+  line-height: 1.6;
+  display: flex;
+  gap: 10px;
+  padding-left: 2px;
+}
+
+.obs-list li::before {
+  content: counter(obs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  background: var(--forest);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── FOOTER ── */
+.site-footer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--ink3);
+  padding: 1.5rem;
+  border-top: 1px solid var(--paper2);
+  background: var(--white);
+}
+
+.site-footer strong { color: var(--forest); }
+
+.btn-back-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(45,90,27,.08);
+  border: 1.5px solid rgba(45,90,27,.18);
+  color: var(--forest-d);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .2s ease;
+  flex-shrink: 0;
+}
+
+.btn-back-icon:hover {
+  background: rgba(45,90,27,.16);
+  transform: translateX(-2px);
+}
+
+
+
+/* Tooltip dos FABs */
+.fab::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  background: rgba(20,20,20,.88);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: .38rem .75rem;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .18s ease, transform .18s ease;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.fab:hover::before,
+.fab.tooltip-auto::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* ── FAB BUTTONS (floating action buttons) ── */
+.fab-group {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  z-index: 999;
+}
+
+.fab {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,.22);
+  transition: transform .18s cubic-bezier(.34,1.56,.64,1), box-shadow .18s ease, opacity .18s ease;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.fab:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 28px rgba(0,0,0,.28);
+}
+
+.fab:active {
+  transform: scale(.94);
+  box-shadow: 0 2px 10px rgba(0,0,0,.18);
+}
+
+.fab-pdf {
+  background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
+}
+
+.fab-share {
+  background: linear-gradient(135deg, #1565c0 0%, #1976d2 100%);
+}
+
+.fab svg { flex-shrink: 0; }
+
+/* Toast */
+.fab-toast {
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1.75rem;
+  background: var(--ink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: .55rem 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.22);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .2s ease, transform .2s ease;
+  z-index: 1000;
+  white-space: nowrap;
+  max-width: calc(100vw - 3.5rem);
+}
+
+.fab-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── PRINT ── */
+@page {
+  size: A4 landscape;
+  margin: 8mm;
+}
+@media print {
+  html, body { margin: 0 !important; padding: 0 !important; background: #fff; }
+  .header, .fab-group, .fab-toast, .hero-banner, .obs-card, .site-footer { display: none !important; }
+  .main { padding: 0 !important; margin: 0 !important; max-width: 100% !important; width: 100% !important; }
+  .table-card { box-shadow: none; border-radius: 0; border: none; margin: 0; width: 100%; }
+  .table-card-header { padding: .4rem .5rem; }
+  .scroll-wrap { overflow: visible !important; width: 100% !important; }
+  .tp-table { min-width: unset !important; width: 100% !important; font-size: 7.5px; table-layout: auto; }
+  .tp-table thead { position: static !important; top: 0 !important; }
+  .tp-table thead tr.tp-th-top th { font-size: 7px; padding: .3rem .35rem; }
+  .tp-table thead tr.tp-th-sub th  { font-size: 6.5px; padding: .25rem .35rem; }
+  .tp-table tbody td { padding: .3rem .35rem; }
+  .tp-table th.sticky-col, .tp-table td.sticky-col,
+  .tp-table th.sticky-col2, .tp-table td.sticky-col2 { position: static !important; }
+  .print-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 .45rem;
+    border-bottom: 2px solid #2d5a1b;
+    margin-bottom: .45rem;
+  }
+  .print-header .ph-quintas { height: 40px; width: auto; filter: none; }
+  .print-header .ph-lancar  { height: 28px; width: auto; filter: none; }
+  .print-header .ph-title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #1a3a0f;
+    line-height: 1.4;
+  }
+  .print-header .ph-title span {
+    display: block;
+    font-size: 9px;
+    font-weight: 400;
+    color: #7a8a72;
+  }
+}
+
+.print-header { display: none; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .header-inner { height: 62px; padding: 0 1rem; }
+  .logo-quintas { height: 42px; }
+  .logo-lancar  { height: 42px; }
+  .logo-sep     { display: none; }
+  .header-center { display: none; }
+  .header-actions { display: none; }
+  body { padding-bottom: 80px; }
+  .hero-banner { padding: 1.2rem 1rem 1rem; }
+  .hero-left h1 { font-size: 1.3rem; }
+  .kpi { min-width: 80px; padding: .6rem .8rem; }
+  .kpi-val { font-size: 1rem; }
+  .main { padding: 1rem .75rem 2rem; }
+  .table-card-header { padding: .85rem 1rem; }
+  .tp-table { font-size: 11px; }
+  .tp-table thead tr.tp-th-top th { font-size: 8.5px; padding: .5rem .4rem; }
+  .tp-table thead tr.tp-th-sub th { font-size: 8px; padding: .4rem .4rem; }
+  .tp-table tbody td { padding: .5rem .4rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-kpis { gap: .5rem; }
+  .kpi { min-width: 72px; padding: .5rem .65rem; }
+  .kpi-val { font-size: .9rem; }
+  .tp-table td.sticky-col { min-width: 52px; }
+  .obs-list { padding: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- PRINT HEADER (only shows in print) -->
+<div class="print-header" id="print-header">
+  <img src="Quintas_logo.png" alt="Quintas da Mata" class="ph-quintas">
+  <div class="ph-title">Tabela de Preços — Quintas da Mata<span>Março 2026 &nbsp;·&nbsp; 124 lotes disponíveis &nbsp;·&nbsp; Uso exclusivo interno</span></div>
+  <img src="lançar21_logo.png" alt="Lançar 21" class="ph-lancar">
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-logos">
+      <img src="Quintas_logo_pb_01.png" alt="Quintas da Mata" class="logo-quintas">
+      <div class="logo-sep"></div>
+      <img src="lançar21.png" alt="Lançar 21" class="logo-lancar">
+    </div>
+    <div class="header-center">
+      <div class="header-title">Tabela de Preços</div>
+      <div class="header-sub">Quintas da Mata · Março 2026</div>
+    </div>
+    <div class="header-actions">
+      <a href="quintas.html" class="btn btn-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Voltar
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO BANNER -->
+<div class="hero-banner">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <h1>Quintas <em>da Mata</em></h1>
+      <p>124 lotes disponíveis &nbsp;·&nbsp; 13 quadras &nbsp;·&nbsp; Atualizado Março 2026</p>
+    </div>
+    <div class="hero-kpis">
+      <div class="kpi"><div class="kpi-val">124</div><div class="kpi-lbl">Lotes</div></div>
+      <div class="kpi"><div class="kpi-val">R$ 51,2k</div><div class="kpi-lbl">Menor valor</div></div>
+      <div class="kpi"><div class="kpi-val">R$ 68,1k</div><div class="kpi-lbl">Ticket médio</div></div>
+      <div class="kpi"><div class="kpi-val">R$ 147,2k</div><div class="kpi-lbl">Maior valor</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- TABLE CARD -->
+  <div class="table-card">
+    <div class="table-card-header">
+      <div class="table-card-title">Condições de Pagamento por Lote</div>
+      <div class="table-card-meta">124 lotes &nbsp;·&nbsp; 13 quadras</div>
+    </div>
+    <div class="scroll-wrap">
+      <table class="tp-table" id="tp-table">
+        <thead>
+          <tr class="tp-th-top">
+            <th class="sticky-col tp-th-quadra-info" rowspan="2" style="min-width:54px;text-align:left">Qd.</th>
+            <th class="sticky-col2 tp-th-quadra-info" rowspan="2" style="min-width:46px;text-align:center">Lote</th>
+            <th rowspan="2">Área</th>
+            <th rowspan="2">Valor Total</th>
+            <th rowspan="2" style="color:var(--gold-l)">Entrada 10%</th>
+            <th colspan="1">12×</th>
+            <th colspan="1">24×</th>
+            <th colspan="1">36×</th>
+            <th colspan="2">36× c/ 3 Intercaladas</th>
+            <th colspan="1">60×</th>
+            <th colspan="2">60× c/ 5 Intercaladas</th>
+          </tr>
+          <tr class="tp-th-sub">
+            <th>Mensal</th>
+            <th>Mensal</th>
+            <th>Mensal</th>
+            <th>Mensal</th><th>Intercalada</th>
+            <th>Mensal</th>
+            <th>Mensal</th><th>Intercalada</th>
+          </tr>
+        </thead>
+        <tbody id="tp-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- OBSERVATIONS -->
+  <div class="obs-card">
+    <div class="obs-header">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Observações
+    </div>
+    <ol class="obs-list">
+      <li>Índice de Correção: Parcelas corrigidas anualmente pela variação positiva acumulada do INCC durante o período do contrato.</li>
+      <li>Percentual para Edificação: Para quaisquer fins de edificação na unidade imobiliária o Promitente Comprador deverá ter pago no mínimo 50% do parcelamento.</li>
+      <li>Multa de Desistência: Em caso de desistência será retido o valor do sinal mais 25% do valor referente ao pagamento de parcelas até o momento do pedido de distrato, em quantidade de pagamentos igual ao de parcelas pagas pelo cliente.</li>
+      <li>Documentação necessária para a compra pessoa física: RG, CPF, comprovante de residência, certidão de estado civil, comprovante de renda (em caso de casado(a) anexar a documentação do cônjuge).</li>
+      <li>Documentação necessária para a compra pessoa jurídica: contrato social e alterações, incluindo RG, CPF, comprovante de residência, certidão de estado civil, comprovante de renda dos sócios.</li>
+      <li>Datas de vencimento: todo dia 10 ou 25 de cada mês.</li>
+      <li>Os valores presentes nesta tabela poderão ser ajustados sem a necessidade de aviso prévio.</li>
+    </ol>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  Tabela de Preços · Quintas da Mata · Uso exclusivo interno &nbsp;·&nbsp; <strong>Desenvolvido por Ericson Tenório</strong> &nbsp;·&nbsp; Gerado em Março 2026
+</footer>
+
+<!-- FAB GROUP -->
+<div class="fab-group" role="group" aria-label="Ações rápidas">
+
+  <!-- BOTÃO 1: GERAR PDF (dinâmico da tela atual) -->
+  <button class="fab fab-pdf" id="btn-gerar-pdf" aria-label="Gerar PDF" data-tooltip="Exportar PDF">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+      <polyline points="14 2 14 8 20 8"/>
+      <line x1="12" y1="13" x2="12" y2="18"/>
+      <polyline points="9 16 12 19 15 16"/>
+    </svg>
+  </button>
+
+  <!-- BOTÃO 2: COMPARTILHAR PDF FIXO DO SERVIDOR -->
+  <button class="fab fab-share" id="btn-compartilhar" aria-label="Compartilhar PDF" data-tooltip="Compartilhar Tabela">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="18" cy="5" r="3"/>
+      <circle cx="6" cy="12" r="3"/>
+      <circle cx="18" cy="19" r="3"/>
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+    </svg>
+  </button>
+
+</div>
+
+<!-- TOAST -->
+<div class="fab-toast" id="fab-toast"></div>
+
+<script>
+const TABELA_ROWS = [{"quadra":"QD-10","lote":1,"m2":252.0,"valor":78120.0,"entrada":7812.0,"p12":5859.0,"p24":2929.5,"p36":1953.0,"p36i":1786.33,"p36i_inter":2000,"p60":1171.8,"p60i":1005.13,"p60i_inter":2000},{"quadra":"QD-10","lote":21,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-10","lote":23,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-10","lote":33,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-11","lote":1,"m2":252.0,"valor":78120.0,"entrada":7812.0,"p12":5859.0,"p24":2929.5,"p36":1953.0,"p36i":1786.33,"p36i_inter":2000,"p60":1171.8,"p60i":1005.13,"p60i_inter":2000},{"quadra":"QD-11","lote":4,"m2":252.0,"valor":78120.0,"entrada":7812.0,"p12":5859.0,"p24":2929.5,"p36":1953.0,"p36i":1786.33,"p36i_inter":2000,"p60":1171.8,"p60i":1005.13,"p60i_inter":2000},{"quadra":"QD-11","lote":37,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-11","lote":38,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-11","lote":42,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-11","lote":44,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-11","lote":47,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-12","lote":1,"m2":268.0,"valor":101425.62,"entrada":10142.56,"p12":7606.92,"p24":3803.46,"p36":2535.64,"p36i":2368.97,"p36i_inter":2000,"p60":1521.38,"p60i":1354.72,"p60i_inter":2000},{"quadra":"QD-12","lote":2,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-12","lote":3,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-12","lote":4,"m2":213.96,"valor":80973.97,"entrada":8097.4,"p12":6073.05,"p24":3036.52,"p36":2024.35,"p36i":1857.68,"p36i_inter":2000,"p60":1214.61,"p60i":1047.94,"p60i_inter":2000},{"quadra":"QD-12","lote":5,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-12","lote":6,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-12","lote":7,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-12","lote":8,"m2":339.5,"valor":128485.05,"entrada":12848.51,"p12":9636.38,"p24":4818.19,"p36":3212.13,"p36i":3045.46,"p36i_inter":2000,"p60":1927.28,"p60i":1760.61,"p60i_inter":2000},{"quadra":"QD-13","lote":11,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-13","lote":12,"m2":240.0,"valor":87655.24,"entrada":8765.52,"p12":6574.14,"p24":3287.07,"p36":2191.38,"p36i":2024.71,"p36i_inter":2000,"p60":1314.83,"p60i":1148.16,"p60i_inter":2000},{"quadra":"QD-13","lote":13,"m2":356.5,"valor":130204.55,"entrada":13020.46,"p12":9765.34,"p24":4882.67,"p36":3255.11,"p36i":3088.45,"p36i_inter":2000,"p60":1953.07,"p60i":1786.4,"p60i_inter":2000},{"quadra":"QD-13","lote":14,"m2":206.67,"valor":75482.12,"entrada":7548.21,"p12":5661.16,"p24":2830.58,"p36":1887.05,"p36i":1720.39,"p36i_inter":2000,"p60":1132.23,"p60i":965.57,"p60i_inter":2000},{"quadra":"QD-14","lote":1,"m2":240.0,"valor":87655.24,"entrada":8765.52,"p12":6574.14,"p24":3287.07,"p36":2191.38,"p36i":2024.71,"p36i_inter":2000,"p60":1314.83,"p60i":1148.16,"p60i_inter":2000},{"quadra":"QD-14","lote":2,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-14","lote":3,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-14","lote":4,"m2":240.0,"valor":87655.24,"entrada":8765.52,"p12":6574.14,"p24":3287.07,"p36":2191.38,"p36i":2024.71,"p36i_inter":2000,"p60":1314.83,"p60i":1148.16,"p60i_inter":2000},{"quadra":"QD-14","lote":5,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-14","lote":6,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-14","lote":7,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-14","lote":8,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-14","lote":14,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-14","lote":15,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-14","lote":16,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-14","lote":17,"m2":240.0,"valor":87655.24,"entrada":8765.52,"p12":6574.14,"p24":3287.07,"p36":2191.38,"p36i":2024.71,"p36i_inter":2000,"p60":1314.83,"p60i":1148.16,"p60i_inter":2000},{"quadra":"QD-14","lote":18,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-14","lote":21,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-14","lote":22,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-14","lote":23,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-14","lote":28,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-14","lote":29,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-14","lote":30,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-15","lote":1,"m2":240.0,"valor":74400.0,"entrada":7440.0,"p12":5580.0,"p24":2790.0,"p36":1860.0,"p36i":1693.33,"p36i_inter":2000,"p60":1116.0,"p60i":949.33,"p60i_inter":2000},{"quadra":"QD-15","lote":2,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-15","lote":3,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-15","lote":4,"m2":240.0,"valor":74400.0,"entrada":7440.0,"p12":5580.0,"p24":2790.0,"p36":1860.0,"p36i":1693.33,"p36i_inter":2000,"p60":1116.0,"p60i":949.33,"p60i_inter":2000},{"quadra":"QD-15","lote":19,"m2":327.6,"valor":98280.0,"entrada":9828.0,"p12":7371.0,"p24":3685.5,"p36":2457.0,"p36i":2290.33,"p36i_inter":2000,"p60":1474.2,"p60i":1307.53,"p60i_inter":2000},{"quadra":"QD-15","lote":20,"m2":490.8,"valor":147240.0,"entrada":14724.0,"p12":11043.0,"p24":5521.5,"p36":3681.0,"p36i":3514.33,"p36i_inter":2000,"p60":2208.6,"p60i":2041.93,"p60i_inter":2000},{"quadra":"QD-17","lote":1,"m2":184.42,"valor":58092.3,"entrada":5809.23,"p12":4356.92,"p24":2178.46,"p36":1452.31,"p36i":1285.64,"p36i_inter":2000,"p60":871.38,"p60i":704.72,"p60i_inter":2000},{"quadra":"QD-17","lote":2,"m2":153.2,"valor":49024.0,"entrada":4902.4,"p12":3676.8,"p24":1838.4,"p36":1225.6,"p36i":1058.93,"p36i_inter":2000,"p60":735.36,"p60i":568.69,"p60i_inter":2000},{"quadra":"QD-17","lote":3,"m2":171.2,"valor":53928.0,"entrada":5392.8,"p12":4044.6,"p24":2022.3,"p36":1348.2,"p36i":1181.53,"p36i_inter":2000,"p60":808.92,"p60i":642.25,"p60i_inter":2000},{"quadra":"QD-17","lote":4,"m2":278.1,"valor":84820.5,"entrada":8482.05,"p12":6361.54,"p24":3180.77,"p36":2120.51,"p36i":1953.85,"p36i_inter":2000,"p60":1272.31,"p60i":1105.64,"p60i_inter":2000},{"quadra":"QD-17","lote":11,"m2":304.5,"valor":92872.5,"entrada":9287.25,"p12":6965.44,"p24":3482.72,"p36":2321.81,"p36i":2155.15,"p36i_inter":2000,"p60":1393.09,"p60i":1226.42,"p60i_inter":2000},{"quadra":"QD-17","lote":12,"m2":342.25,"valor":102675.0,"entrada":10267.5,"p12":7700.62,"p24":3850.31,"p36":2566.88,"p36i":2400.21,"p36i_inter":2000,"p60":1540.12,"p60i":1373.46,"p60i_inter":2000},{"quadra":"QD-17","lote":18,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-18","lote":1,"m2":248.4,"valor":90723.17,"entrada":9072.32,"p12":6804.24,"p24":3402.12,"p36":2268.08,"p36i":2101.41,"p36i_inter":2000,"p60":1360.85,"p60i":1194.18,"p60i_inter":2000},{"quadra":"QD-18","lote":2,"m2":164.4,"valor":60043.84,"entrada":6004.38,"p12":4503.29,"p24":2251.64,"p36":1501.1,"p36i":1334.43,"p36i_inter":2000,"p60":900.66,"p60i":733.99,"p60i_inter":2000},{"quadra":"QD-18","lote":3,"m2":163.4,"valor":59678.61,"entrada":5967.86,"p12":4475.9,"p24":2237.95,"p36":1491.97,"p36i":1325.3,"p36i_inter":2000,"p60":895.18,"p60i":728.51,"p60i_inter":2000},{"quadra":"QD-18","lote":4,"m2":162.4,"valor":59313.38,"entrada":5931.34,"p12":4448.5,"p24":2224.25,"p36":1482.83,"p36i":1316.17,"p36i_inter":2000,"p60":889.7,"p60i":723.03,"p60i_inter":2000},{"quadra":"QD-18","lote":5,"m2":314.95,"valor":115029.23,"entrada":11502.92,"p12":8627.19,"p24":4313.6,"p36":2875.73,"p36i":2709.06,"p36i_inter":2000,"p60":1725.44,"p60i":1558.77,"p60i_inter":2000},{"quadra":"QD-18","lote":6,"m2":252.8,"valor":92330.18,"entrada":9233.02,"p12":6924.76,"p24":3462.38,"p36":2308.25,"p36i":2141.59,"p36i_inter":2000,"p60":1384.95,"p60i":1218.29,"p60i_inter":2000},{"quadra":"QD-18","lote":7,"m2":251.8,"valor":91964.95,"entrada":9196.5,"p12":6897.37,"p24":3448.69,"p36":2299.12,"p36i":2132.46,"p36i_inter":2000,"p60":1379.47,"p60i":1212.81,"p60i_inter":2000},{"quadra":"QD-18","lote":8,"m2":247.6,"valor":90430.98,"entrada":9043.1,"p12":6782.32,"p24":3391.16,"p36":2260.77,"p36i":2094.11,"p36i_inter":2000,"p60":1356.46,"p60i":1189.8,"p60i_inter":2000},{"quadra":"QD-18","lote":9,"m2":235.0,"valor":85829.09,"entrada":8582.91,"p12":6437.18,"p24":3218.59,"p36":2145.73,"p36i":1979.06,"p36i_inter":2000,"p60":1287.44,"p60i":1120.77,"p60i_inter":2000},{"quadra":"QD-18","lote":10,"m2":210.8,"valor":76990.52,"entrada":7699.05,"p12":5774.29,"p24":2887.14,"p36":1924.76,"p36i":1758.1,"p36i_inter":2000,"p60":1154.86,"p60i":988.19,"p60i_inter":2000},{"quadra":"QD-18","lote":11,"m2":319.1,"valor":116544.94,"entrada":11654.49,"p12":8740.87,"p24":4370.44,"p36":2913.62,"p36i":2746.96,"p36i_inter":2000,"p60":1748.17,"p60i":1581.51,"p60i_inter":2000},{"quadra":"QD-18","lote":12,"m2":275.5,"valor":104264.01,"entrada":10426.4,"p12":7819.8,"p24":3909.9,"p36":2606.6,"p36i":2439.93,"p36i_inter":2000,"p60":1563.96,"p60i":1397.29,"p60i_inter":2000},{"quadra":"QD-18","lote":13,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-18","lote":14,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-18","lote":15,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-18","lote":16,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-18","lote":17,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-18","lote":18,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-18","lote":19,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":1,"m2":246.0,"valor":89846.62,"entrada":8984.66,"p12":6738.5,"p24":3369.25,"p36":2246.17,"p36i":2079.5,"p36i_inter":2000,"p60":1347.7,"p60i":1181.03,"p60i_inter":2000},{"quadra":"QD-19","lote":2,"m2":162.8,"valor":59459.48,"entrada":5945.95,"p12":4459.46,"p24":2229.73,"p36":1486.49,"p36i":1319.82,"p36i_inter":2000,"p60":891.89,"p60i":725.23,"p60i_inter":2000},{"quadra":"QD-19","lote":3,"m2":162.0,"valor":59167.28,"entrada":5916.73,"p12":4437.55,"p24":2218.77,"p36":1479.18,"p36i":1312.52,"p36i_inter":2000,"p60":887.51,"p60i":720.84,"p60i_inter":2000},{"quadra":"QD-19","lote":4,"m2":241.2,"valor":88093.51,"entrada":8809.35,"p12":6607.01,"p24":3303.51,"p36":2202.34,"p36i":2035.67,"p36i_inter":2000,"p60":1321.4,"p60i":1154.74,"p60i_inter":2000},{"quadra":"QD-19","lote":5,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-19","lote":6,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-19","lote":7,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-19","lote":8,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-19","lote":9,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-19","lote":10,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-19","lote":11,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-19","lote":12,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-19","lote":13,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-19","lote":14,"m2":224.7,"valor":82067.21,"entrada":8206.72,"p12":6155.04,"p24":3077.52,"p36":2051.68,"p36i":1885.01,"p36i_inter":2000,"p60":1231.01,"p60i":1064.34,"p60i_inter":2000},{"quadra":"QD-19","lote":15,"m2":206.8,"valor":75529.59,"entrada":7552.96,"p12":5664.72,"p24":2832.36,"p36":1888.24,"p36i":1721.57,"p36i_inter":2000,"p60":1132.94,"p60i":966.28,"p60i_inter":2000},{"quadra":"QD-19","lote":16,"m2":396.5,"valor":144813.76,"entrada":14481.38,"p12":10861.03,"p24":5430.52,"p36":3620.34,"p36i":3453.68,"p36i_inter":2000,"p60":2172.21,"p60i":2005.54,"p60i_inter":2000},{"quadra":"QD-19","lote":17,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":18,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":19,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":20,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":21,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":22,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":23,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":24,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":25,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":26,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-19","lote":27,"m2":160.0,"valor":60552.61,"entrada":6055.26,"p12":4541.45,"p24":2270.72,"p36":1513.82,"p36i":1347.15,"p36i_inter":2000,"p60":908.29,"p60i":741.62,"p60i_inter":2000},{"quadra":"QD-20","lote":5,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":6,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":7,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":8,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":9,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":10,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":11,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":12,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":13,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":14,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-20","lote":15,"m2":160.0,"valor":58436.82,"entrada":5843.68,"p12":4382.76,"p24":2191.38,"p36":1460.92,"p36i":1294.25,"p36i_inter":2000,"p60":876.55,"p60i":709.89,"p60i_inter":2000},{"quadra":"QD-25","lote":15,"m2":175.6,"valor":55314.0,"entrada":5531.4,"p12":4148.55,"p24":2074.28,"p36":1382.85,"p36i":1216.18,"p36i_inter":2000,"p60":829.71,"p60i":663.04,"p60i_inter":2000},{"quadra":"QD-25","lote":16,"m2":164.8,"valor":51912.0,"entrada":5191.2,"p12":3893.4,"p24":1946.7,"p36":1297.8,"p36i":1131.13,"p36i_inter":2000,"p60":778.68,"p60i":612.01,"p60i_inter":2000},{"quadra":"QD-25","lote":17,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-25","lote":20,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-28","lote":1,"m2":240.0,"valor":74400.0,"entrada":7440.0,"p12":5580.0,"p24":2790.0,"p36":1860.0,"p36i":1693.33,"p36i_inter":2000,"p60":1116.0,"p60i":949.33,"p60i_inter":2000},{"quadra":"QD-28","lote":2,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-28","lote":3,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-28","lote":4,"m2":240.0,"valor":74400.0,"entrada":7440.0,"p12":5580.0,"p24":2790.0,"p36":1860.0,"p36i":1693.33,"p36i_inter":2000,"p60":1116.0,"p60i":949.33,"p60i_inter":2000},{"quadra":"QD-29","lote":1,"m2":240.0,"valor":74400.0,"entrada":7440.0,"p12":5580.0,"p24":2790.0,"p36":1860.0,"p36i":1693.33,"p36i_inter":2000,"p60":1116.0,"p60i":949.33,"p60i_inter":2000},{"quadra":"QD-29","lote":2,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-29","lote":3,"m2":160.0,"valor":51200.0,"entrada":5120.0,"p12":3840.0,"p24":1920.0,"p36":1280.0,"p36i":1113.33,"p36i_inter":2000,"p60":768.0,"p60i":601.33,"p60i_inter":2000},{"quadra":"QD-29","lote":4,"m2":240.0,"valor":74400.0,"entrada":7440.0,"p12":5580.0,"p24":2790.0,"p36":1860.0,"p36i":1693.33,"p36i_inter":2000,"p60":1116.0,"p60i":949.33,"p60i_inter":2000}];
+
+function brl(v) {
+  if (v === null || v === undefined) return '—';
+  return 'R$\u00a0' + v.toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+
+function buildRows() {
+  const tbody = document.getElementById('tp-tbody');
+  if (!tbody) return;
+  let html = '', lastQ = null;
+  TABELA_ROWS.forEach(r => {
+    if (r.quadra !== lastQ) {
+      lastQ = r.quadra;
+      html += `<tr class="tp-qd-row"><td colspan="13">&#9632; ${r.quadra}</td></tr>`;
+    }
+    const p12cell = r.p12
+      ? `<td class="tp-parcela">${brl(r.p12)}</td>`
+      : `<td style="color:var(--ink3);text-align:right;padding:.6rem .75rem">—</td>`;
+    html += `<tr class="tp-data-row">
+      <td class="sticky-col tp-td-center"><span class="tp-badge-qd">${r.quadra.replace('QD-','')}</span></td>
+      <td class="sticky-col2 tp-td-center"><span class="tp-lote-chip">${r.lote}</span></td>
+      <td style="text-align:right">${r.m2.toFixed(1)} m²</td>
+      <td class="tp-val">${brl(r.valor)}</td>
+      <td class="tp-entrada">${brl(r.entrada)}</td>
+      ${p12cell}
+      <td class="tp-parcela">${brl(r.p24)}</td>
+      <td class="tp-parcela">${brl(r.p36)}</td>
+      <td class="tp-parcela">${brl(r.p36i)}</td>
+      <td class="tp-inter">${brl(r.p36i_inter)}</td>
+      <td class="tp-parcela">${brl(r.p60)}</td>
+      <td class="tp-parcela">${brl(r.p60i)}</td>
+      <td class="tp-inter">${brl(r.p60i_inter)}</td>
+    </tr>`;
+  });
+  tbody.innerHTML = html;
+}
+
+buildRows();
+
+/* ── FAB LOGIC ── */
+const PDF_NOME = 'Tabela de Preços · Quintas da Mata.pdf';
+const PDF_FIXO_URL = location.origin + location.pathname.replace(/[^/]*$/, '') + encodeURIComponent(PDF_NOME);
+const SHARE_TEXT = `Segue a tabela do Quintas das Matas.\n\nPara reservas, confirme conosco a disponibilidade e as condições, sujeitas a alterações sem aviso prévio.`;
+
+function showToast(msg, duration = 2800) {
+  const t = document.getElementById('fab-toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove('show'), duration);
+}
+
+/* BOTÃO PDF — gera da tela atual */
+function gerarPDF() {
+  showToast('⏳ Gerando PDF…', 5000);
+  setTimeout(() => {
+    window.print();
+    showToast('✅ PDF gerado com sucesso!');
+  }, 200);
+}
+
+/* BOTÃO COMPARTILHAR — envia o PDF fixo do servidor como arquivo (blob) */
+async function compartilhar() {
+  showToast('⏳ Carregando PDF…', 10000);
+
+  let file = null;
+
+  /* ── 1. Tenta fetch com CORS (necessário para ler o blob) ── */
+  try {
+    const resp = await fetch(PDF_FIXO_URL, { mode: 'cors', cache: 'force-cache' });
+    if (resp.ok) {
+      const blob = await resp.blob();
+      file = new File([blob], PDF_NOME, { type: 'application/pdf' });
+    }
+  } catch (_) { /* CORS bloqueado no servidor — cai no fallback */ }
+
+  /* ── 2. Compartilhamento com arquivo (mobile: WhatsApp recebe PDF real) ── */
+  if (file && navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+    try {
+      await navigator.share({ files: [file], text: SHARE_TEXT });
+      showToast('✅ PDF compartilhado!');
+      return;
+    } catch (e) {
+      if (e.name === 'AbortError') { showToast(''); return; }
+      /* share com files falhou — tenta fallback com URL */
+    }
+  }
+
+  /* ── 3. Fallback: share só com URL + texto (WhatsApp exibe preview do link) ── */
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: PDF_NOME, text: SHARE_TEXT, url: PDF_FIXO_URL });
+      showToast('✅ Compartilhado via link!');
+      return;
+    } catch (e) {
+      if (e.name === 'AbortError') { showToast(''); return; }
+    }
+  }
+
+  /* ── 4. Desktop fallback: copia texto + link para clipboard ── */
+  fallbackCopy();
+}
+
+function fallbackCopy() {
+  const texto = SHARE_TEXT + '\n\n' + PDF_FIXO_URL;
+  navigator.clipboard.writeText(texto).then(() => {
+    showToast('📋 Link copiado para a área de transferência!');
+  }).catch(() => {
+    /* último fallback: execCommand */
+    const el = document.createElement('textarea');
+    el.value = texto;
+    el.style.cssText = 'position:fixed;opacity:0;pointer-events:none';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    showToast('📋 Link copiado!');
+  });
+}
+
+document.getElementById('btn-gerar-pdf').addEventListener('click', gerarPDF);
+document.getElementById('btn-compartilhar').addEventListener('click', compartilhar);
+
+/* ── TOOLTIP AUTO-REVEAL após 2s do carregamento ── */
+(function autoTooltip() {
+  const fabPdf   = document.getElementById('btn-gerar-pdf');
+  const fabShare = document.getElementById('btn-compartilhar');
+  const SHOW_MS  = 1800; // tempo que fica visível
+  const GAP_MS   = 400;  // pausa entre os dois
+
+  function addClass(el, cls)  { el.classList.add(cls); }
+  function remClass(el, cls)  { el.classList.remove(cls); }
+
+  setTimeout(() => {
+    // 1. Abre o tooltip do PDF
+    addClass(fabPdf, 'tooltip-auto');
+    setTimeout(() => {
+      // 2. Fecha o PDF
+      remClass(fabPdf, 'tooltip-auto');
+      setTimeout(() => {
+        // 3. Abre o Compartilhar
+        addClass(fabShare, 'tooltip-auto');
+        setTimeout(() => {
+          // 4. Fecha o Compartilhar
+          remClass(fabShare, 'tooltip-auto');
+        }, SHOW_MS);
+      }, GAP_MS);
+    }, SHOW_MS);
+  }, 2000);
+})();
+</script>
+</body>
+</html>

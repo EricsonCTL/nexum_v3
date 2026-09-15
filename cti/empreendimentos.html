@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTI Investlar · Empreendimentos</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #152033;
+      --muted: #6c7480;
+      --paper: #f7f5f1;
+      --paper2: #ebe7df;
+      --white: #fff;
+      --black: #191d24;
+      --black2: #252a31;
+      --gold: #c99a17;
+      --gold2: #f0c044;
+      --red: #e30613;
+      --blue: #191d24;
+      --line: rgba(21, 32, 51, .12);
+      --shadow: 0 18px 40px rgba(25, 29, 36, .12);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: "DM Sans", "Segoe UI", system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 15px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      min-height: 82px;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand-logo {
+      width: min(420px, 46vw);
+      height: auto;
+      display: block;
+    }
+
+    .nav-actions {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-btn, .card-btn {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      min-height: 42px;
+      padding: 0 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: transform .18s, box-shadow .18s, background .18s;
+    }
+
+    .nav-btn:hover, .card-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(25,29,36,.1); }
+    .nav-btn.dark, .card-btn.dark { background: var(--black); color: #fff; border-color: var(--black); }
+    .nav-btn.red { background: var(--red); color: #fff; border-color: var(--red); }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 420px;
+      color: #fff;
+      background:
+        linear-gradient(90deg, rgba(25,29,36,.94) 0%, rgba(25,29,36,.82) 45%, rgba(25,29,36,.38) 100%),
+        url("https://images.unsplash.com/photo-1773215023063-e662ea91a69c?auto=format&fit=crop&fm=jpg&q=70&w=2400") center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(115deg, transparent 0 57%, rgba(255,255,255,.08) 57.1% 57.4%, transparent 57.5%),
+        linear-gradient(130deg, transparent 0 70%, rgba(201,154,23,.2) 70.1% 70.25%, transparent 70.3%);
+      pointer-events: none;
+    }
+
+    .hero-logo {
+      position: absolute;
+      right: 9%;
+      bottom: -18px;
+      width: 42%;
+      max-width: 620px;
+      opacity: .11;
+      filter: grayscale(1) brightness(1.6);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 58px 24px 54px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--gold2);
+      font-weight: 800;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      font-size: .78rem;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--gold2);
+    }
+
+    h1 {
+      font-family: "DM Serif Display", Georgia, serif;
+      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 660px;
+      color: rgba(255,255,255,.78);
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      line-height: 1.6;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      width: min(760px, 100%);
+      margin-top: 34px;
+    }
+
+    .stat {
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.07);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .stat-icon { color: var(--gold2); font-size: 1.55rem; line-height: 1; }
+    .stat strong { display: block; font-size: 1.55rem; line-height: 1; }
+    .stat span { display: block; margin-top: 4px; color: rgba(255,255,255,.65); text-transform: uppercase; font-size: .76rem; }
+
+    main {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 34px 24px 56px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 18px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .section-head h2 { font-size: 1.18rem; }
+    .section-head span { margin-left: auto; color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .card-media {
+      position: relative;
+      height: 190px;
+      overflow: hidden;
+      background: var(--paper2);
+    }
+
+    .card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .35s;
+    }
+
+    .card:hover .card-media img { transform: scale(1.04); }
+
+    .badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.9);
+      color: var(--gold);
+      padding: 6px 12px;
+      font-size: .72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .card-body {
+      padding: 22px;
+      display: grid;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .card h3 {
+      font-size: 1.34rem;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    .location {
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 9px;
+    }
+
+    .kpi {
+      background: #f6f3ec;
+      border: 1px solid rgba(201,154,23,.16);
+      border-radius: var(--radius);
+      padding: 10px;
+    }
+
+    .kpi strong { display: block; color: var(--black); font-size: 1rem; }
+    .kpi span { display: block; color: var(--muted); font-size: .74rem; margin-top: 3px; }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: .82rem;
+      margin-bottom: 7px;
+    }
+
+    .progress {
+      height: 8px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #e9e2d4;
+    }
+
+    .progress div {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      border-radius: inherit;
+    }
+
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+
+    .card-btn {
+      min-height: 40px;
+      font-size: .88rem;
+      padding: 0 14px;
+    }
+
+    .card-btn.disabled {
+      color: #9ca3af;
+      background: #edf0f2;
+      border-color: #edf0f2;
+      pointer-events: none;
+      box-shadow: none;
+    }
+
+    footer {
+      background: var(--black);
+      color: rgba(255,255,255,.58);
+      text-align: center;
+      padding: 18px 24px;
+      font-size: .78rem;
+    }
+
+    @media (max-width: 760px) {
+      .nav-inner { min-height: 72px; padding: 10px 14px; }
+      .brand-logo { width: min(260px, 56vw); }
+      .nav-actions { gap: 6px; }
+      .nav-btn { min-height: 38px; padding: 0 13px; font-size: .86rem; }
+      .hero { min-height: 390px; }
+      .hero-inner { padding: 40px 18px; }
+      .hero-logo { display: none; }
+      .stats { grid-template-columns: 1fr; }
+      main { padding: 26px 14px 42px; }
+      .section-head { align-items: flex-start; }
+      .section-head span { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <img class="brand-logo" src="cti_logo.png" alt="CTI Investlar">
+      <div class="nav-actions">
+        <a class="nav-btn" href="index.html">Voltar</a>
+        <button type="button" class="nav-btn dark" onclick="logoutCTI()">Sair</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img class="hero-logo" src="cti_logo.png" alt="" aria-hidden="true">
+    <div class="hero-inner">
+      <div class="eyebrow">Central de Tabelas</div>
+      <h1>Empreendimentos</h1>
+      <p>Acesse os empreendimentos publicados, materiais comerciais, tabelas e área administrativa conforme o perfil selecionado.</p>
+      <div class="stats" id="hero-stats"></div>
+    </div>
+  </section>
+
+  <main>
+    <div class="section-head">
+      <div class="dot"></div>
+      <h2>Todos os empreendimentos</h2>
+      <span id="sh-meta">- empreendimentos</span>
+    </div>
+    <section class="grid" id="emp-grid" aria-label="Empreendimentos"></section>
+  </main>
+
+  <footer>CTI Investlar · Central de Tabelas Investlar</footer>
+
+  <script src="auth.js"></script>
+  <script>
+    const dados = [
+      {
+        nome: 'Quintas da Mata',
+        localizacao: 'R. Jose Simoes de Medeiros, Sao Jose da Mata, Campina Grande - PB',
+        vgv: 8426429.63,
+        disponiveis: 124,
+        total: 180,
+        quadras: 13,
+        hrefAdmin: 'quintas.html',
+        hrefBroker: 'corretor.html',
+        hrefGallery: 'quintas-galeria.html',
+        publicado: true,
+        badge: 'Estavel',
+        image: 'https://images.unsplash.com/photo-1773215023063-e662ea91a69c?auto=format&fit=crop&fm=jpg&q=70&w=1400'
+      },
+      {
+        nome: 'Novo Horizonte',
+        localizacao: 'Cadastro comercial pendente',
+        vgv: 5200000,
+        disponiveis: 98,
+        total: 120,
+        quadras: 10,
+        hrefAdmin: null,
+        hrefBroker: null,
+        hrefGallery: null,
+        publicado: false,
+        badge: 'Em breve',
+        image: 'https://images.unsplash.com/photo-1758304480344-f8d0de5f4f25?auto=format&fit=crop&fm=jpg&q=70&w=1400'
+      },
+      {
+        nome: 'Reserva Verde',
+        localizacao: 'Cadastro comercial pendente',
+        vgv: 3800000,
+        disponiveis: 76,
+        total: 110,
+        quadras: 8,
+        hrefAdmin: null,
+        hrefBroker: null,
+        hrefGallery: null,
+        publicado: false,
+        badge: 'Em breve',
+        image: 'https://images.unsplash.com/photo-1763680694053-6e86cd08053e?auto=format&fit=crop&fm=jpg&q=70&w=1400'
+      },
+      {
+        nome: 'Parque Central',
+        localizacao: 'Cadastro comercial pendente',
+        vgv: 4100000,
+        disponiveis: 62,
+        total: 95,
+        quadras: 9,
+        hrefAdmin: null,
+        hrefBroker: null,
+        hrefGallery: null,
+        publicado: false,
+        badge: 'Em breve',
+        image: 'https://images.unsplash.com/photo-1776066361436-65884f2d14e5?auto=format&fit=crop&fm=jpg&q=70&w=1400'
+      }
+    ];
+
+    const user = requireCTIUser(['ADMIN', 'BROKER']);
+    const isBroker = user && user.role === 'BROKER';
+    const lista = dados;
+
+    function fmtBRLM(v) {
+      return v >= 1e6 ? 'R$ ' + (v / 1e6).toFixed(2).replace('.', ',') + ' M' : 'R$ ' + v.toLocaleString('pt-BR');
+    }
+
+    function renderStats() {
+      const totalLotes = lista.reduce((acc, emp) => acc + emp.disponiveis, 0);
+      const totalVgv = lista.reduce((acc, emp) => acc + emp.vgv, 0);
+      document.getElementById('hero-stats').innerHTML = `
+        <article class="stat"><div class="stat-icon">▦</div><div><strong>${lista.length}</strong><span>Empreendimentos</span></div></article>
+        <article class="stat"><div class="stat-icon">□</div><div><strong>${totalLotes}</strong><span>Lotes disponiveis</span></div></article>
+        <article class="stat"><div class="stat-icon">◉</div><div><strong>${isBroker ? 'Sem senha' : fmtBRLM(totalVgv)}</strong><span>${isBroker ? 'Acesso corretor' : 'VGV total'}</span></div></article>
+      `;
+    }
+
+    function actionButton(href, label, dark) {
+      return href
+        ? `<a class="card-btn ${dark ? 'dark' : ''}" href="${href}">${label}</a>`
+        : `<span class="card-btn disabled">Em breve</span>`;
+    }
+
+    function renderCards() {
+      document.getElementById('sh-meta').textContent = `${lista.length} empreendimentos`;
+
+      document.getElementById('emp-grid').innerHTML = lista.map((emp) => {
+        const vendidos = emp.total - emp.disponiveis;
+        const perc = Math.round(vendidos / emp.total * 100);
+        const primaryHref = isBroker ? emp.hrefBroker : emp.hrefAdmin;
+        return `
+          <article class="card">
+            <div class="card-media">
+              <img src="${emp.image}" alt="${emp.nome}">
+              <span class="badge">${emp.badge}</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3>${emp.nome}</h3>
+                <p class="location">${emp.localizacao}</p>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><strong>${emp.disponiveis}</strong><span>Disponiveis</span></div>
+                <div class="kpi"><strong>${emp.total}</strong><span>Total</span></div>
+                <div class="kpi"><strong>${emp.quadras}</strong><span>Quadras</span></div>
+              </div>
+              <div>
+                <div class="progress-label"><span>${isBroker ? 'Disponibilidade' : 'Velocidade de vendas'}</span><strong>${perc}%</strong></div>
+                <div class="progress"><div style="width:${perc}%"></div></div>
+              </div>
+              <div class="card-actions">
+                ${actionButton(emp.hrefGallery, 'Apresentacao', false)}
+                ${actionButton(primaryHref, isBroker ? 'Lotes e tabela' : 'Analise interna', true)}
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    renderStats();
+    renderCards();
+  </script>
+</body>
+</html>
