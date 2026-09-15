@@ -1,6 +1,7 @@
 {
   "name": "nexo-radar-imobiliario",
   "version": "1.0.0",
+  "main": "api/index.js",
   "private": true,
   "description": "Nexo Radar Imobiliário — módulo de cadastro e versionamento",
   "engines": { "node": ">=20" },
