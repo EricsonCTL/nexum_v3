@@ -2456,6 +2456,18 @@ function attachPressureToPortfolioHome(home, pressure) {
   home.pulse = { ...home.pulse, modules:selectedModules, paragraphs:narratives.portfolio ? [narratives.portfolio] : selectedModules.map((module) => module.text), events:selectedModules.map((module) => ({ id:module.id, family:module.family, type:module.kind, score:module.score, confidence:module.confidence, enterpriseId:module.enterpriseId, enterprise:module.enterprise })), narratives, weights:{ ...home.pulse?.weights, pressao_mercado:EDITORIAL_WEIGHTS.market_pressure } };
   return home;
 }
+function compactPortfolioHome(home) {
+  const compactEntry = (entry) => ({
+    ...entry,
+    latestTable: entry.latestTable ? { id:entry.latestTable.id, name:entry.latestTable.name, validityDate:entry.latestTable.validityDate } : null,
+    current: entry.current ? { units:entry.current.units, available:entry.current.available, sold:entry.current.sold, averagePrice:entry.current.averagePrice, pricePerM2:entry.current.pricePerM2 } : null,
+    comparison: entry.comparison ? { salesConfirmed:entry.comparison.salesConfirmed, added:entry.comparison.added, returned:entry.comparison.returned, reajuste:entry.comparison.reajuste } : null,
+    latestFacts: []
+  });
+  const entries = (home.entries || []).map(compactEntry);
+  const byId = new Map(entries.map((entry) => [entry.id, entry]));
+  return { ...home, entries, podium:(home.podium || []).map((entry) => byId.get(entry.id) || compactEntry(entry)) };
+}
 function transitiveTableDependencies(empreendimento, tableId) {
   const found = new Map(); const queue = [tableId];
   while (queue.length) { const current = queue.shift(); for (const dependency of tableDependencies(empreendimento, current)) if (!found.has(dependency.id) && dependency.id !== tableId) { found.set(dependency.id, dependency); queue.push(dependency.id); } }
@@ -2935,7 +2947,7 @@ async function api(req, res, pathname) {
   if (method === 'GET' && pathname === '/api/portfolio-home') {
     const data = await readData(), actor = requestActor(req), context = marketPressureContext(data, query, actor.codigo), home = buildPortfolioHome(data, query, actor.codigo);
     const pressure = await getMarketPressure(context.pressureQuery, { neighborhoods:data.neighborhoods || [], enterprises:context.scoped.empreendimentos, referenceEnterprises:context.references });
-    return send(res, 200, attachPressureToPortfolioHome(home, pressure));
+    return send(res, 200, compactPortfolioHome(attachPressureToPortfolioHome(home, pressure)));
   }
   if (method === 'GET' && pathname === '/api/empreendimentos') { const data = await readData(), includeInactive=isTruthyQuery(query.incluirInativos); return send(res, 200, data.empreendimentos.filter((item) => includeInactive || item.status !== 'inactive').map(publicEmpreendimento)); }
   if (method === 'POST' && pathname === '/api/empreendimentos') {

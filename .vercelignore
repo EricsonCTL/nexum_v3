@@ -1,0 +1,13 @@
+gestao/
+PDF Entrada/
+PDF cadastrados/
+JSON Entrada/
+JSON cadastrados/
+pdf/
+cti/
+Nexum/
+docs/
+engine/investlar/tests/
+scripts/
+tmp/
+*.py
