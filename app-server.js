@@ -2686,7 +2686,7 @@ async function redeNeighborhoodRows(data, query = {}) {
     if (item.operacao_mercado === 'repasse') addNeighborhoodMetric(row, 'repasse', item.valor_repasse_agio || item.valor_venda);
     if (item.sender_id) row.corretores.add(String(item.sender_id));
   }
-  const reviews = await listReviews();
+  const reviews = process.env.VERCEL ? [] : await listReviews();
   const pending = new Map();
   reviews.filter((item) => item.status === 'pendente' && item.type === 'bairro_novo').forEach((item) => {
     const key = BrokerNetwork.canonicalNeighborhood(item.candidateName); pending.set(key, (pending.get(key) || 0) + 1);
