@@ -1,5 +1,13 @@
 {
   "framework": null,
+  "functions": {
+    "api/index.js": {
+      "includeFiles": ["data/**", "tb apoio/**", "img_empreendimentos/**", "logo/**"]
+    },
+    "api/[...path].js": {
+      "includeFiles": ["data/**", "tb apoio/**", "img_empreendimentos/**", "logo/**"]
+    }
+  },
   "headers": [
     {
       "source": "/(.*\\.pdf)",
