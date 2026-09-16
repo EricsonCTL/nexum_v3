@@ -312,6 +312,7 @@ async function loadCommittedData() {
 }
 
 async function ingestionVersion() {
+  if (process.env.VERCEL) return 'vercel-demo';
   await ensureIngestionStorage();
   const catalog = await readCatalog();
   const files = [CATALOG_FILE, ...catalog.batches.map((item) => path.join(BATCH_DIR, path.basename(item.file)))];

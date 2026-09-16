@@ -72,7 +72,9 @@ async function loadBrokerData() {
     const baselineDirectory = JSON.parse(directoryText);
     const baselineReviewTranscripts = JSON.parse(transcriptText).records || [];
     validateData(manifest, baselineOpportunities, baselineDirectory);
-    const incremental = await loadCommittedData();
+    const incremental = process.env.VERCEL
+      ? { directoryUpdates: [], opportunities: [], reviewMessages: [], overrides: {} }
+      : await loadCommittedData();
     const directoryById = new Map(baselineDirectory.map((item) => [String(item.sender_id), item]));
     incremental.directoryUpdates.forEach((item) => directoryById.set(String(item.sender_id), item));
     const directory = [...directoryById.values()];

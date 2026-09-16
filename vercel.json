@@ -2,10 +2,10 @@
   "framework": null,
   "functions": {
     "api/index.js": {
-      "includeFiles": "{data/**,tb apoio/**,img_empreendimentos/**,logo/**}"
+      "includeFiles": "{data/**,dados/corretores/**,tb apoio/**,img_empreendimentos/**,logo/**}"
     },
     "api/[...path].js": {
-      "includeFiles": "{data/**,tb apoio/**,img_empreendimentos/**,logo/**}"
+      "includeFiles": "{data/**,dados/corretores/**,tb apoio/**,img_empreendimentos/**,logo/**}"
     }
   },
   "headers": [
