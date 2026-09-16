@@ -8,6 +8,9 @@
       "includeFiles": "{data/**,dados/corretores/**,tb apoio/**,img_empreendimentos/**,logo/**}"
     }
   },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/index.js" }
+  ],
   "headers": [
     {
       "source": "/(.*\\.pdf)",
